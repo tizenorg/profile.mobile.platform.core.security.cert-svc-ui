@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Nėra turinio"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Tema"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Serijos numeris"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Pašalinta"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Programos informacija"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Iš viso"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Programa"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Duomenys"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "baitai"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Numatytasis paleidimas"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Valyti numatytuosius"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Pagal numatytuosius nustatymus dėl kai kurių veiksmų ši programa nustatyta atsidaryti"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operatorius"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Trečiosios šalys"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Saugykla"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Daugiau informacijos"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikatai"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Pašalinama..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Gamintojas"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Galioja nuo"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Galioja iki"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Nykščio atspaudas"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Leidėjas"
+

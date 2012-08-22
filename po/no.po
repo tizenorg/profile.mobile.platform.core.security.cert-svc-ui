@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Ikke noe innhold"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Emne"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Serienummer"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Avinstallert"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Programinfo"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Total"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Program"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Data"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "byte"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Start som standard"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Tøm standarder"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Dette programmet er angitt å åpne som standard for noen handlinger"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operatør"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Tredjepart"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Lagring"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Flere detaljer"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikater"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Avinstallerer ..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Produsent"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Gyldig fra"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Gyldig til"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Tommelfingeravtrykk"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Utstedt av"
+

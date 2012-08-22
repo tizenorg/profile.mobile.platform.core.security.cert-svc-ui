@@ -1,0 +1,122 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "No contents"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Subject"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Serial number"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Uninstalled"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Application info"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Total"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Application"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Data"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "bytes"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Launch by default"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Clear defaults"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "This app is set to open by default for some actions"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operator"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Third parties"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Storage"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "More details"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certificates"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Uninstalling..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Manufacturer"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Valid from"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Valid until"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Thumbprint"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Issuer"
+
+msgid "JAVA_CERTIFICATE"
+msgstr "Java certificate en"
+
+msgid "OPERATOR"
+msgstr "Operator en"
+
+msgid "MANUFACTURER"
+msgstr "Manufacturer en"
+
+msgid "3RD_PARTIES"
+msgstr "3rd parties en"
+
+msgid "PFX_CERTIFICATES"
+msgstr "PFX/PKCS#12 Certificates"
+
+msgid "PFX_CERTIFICATE"
+msgstr "PFX/PKCS#12 Certificate"
+
+msgid "CHOOSE_PFX_TO_INSTALL"
+msgstr "Choose certificate to install"
+
+msgid "INSTALL"
+msgstr "Install"
+
+msgid "CANCEL"
+msgstr "Cancel"
+
+msgid "SUCH_ALIAS_ALREADY_EXIST"
+msgstr "Such alias already exist.<br>Please put another one."
+
+msgid "WRONG_PASSWORD"
+msgstr "Wrong password."
+
+msgid "OK_BUTTON"
+msgstr "OK"
+
+msgid "ENTER_PASSWORD"
+msgstr "Enter password:"
+
+msgid "ENTER_KEY_ALIAS"
+msgstr "Enter key alias:"

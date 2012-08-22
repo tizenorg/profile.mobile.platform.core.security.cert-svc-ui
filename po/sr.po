@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Nema sadržaja"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Naslov"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Serijski broj"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Deinstalirano"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Informacije o aplikaciji"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Ukupno"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplikacija"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Podaci"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "bajtova"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Pokreni podrazumevano"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Obriši podrazumevane vrednosti"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Podešeno je da se ova aplikacija podrazumevano otvara za neke radnje"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operator"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Treća lica"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Memorija"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Više informacija"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikati"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Deinstaliranje..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Proizvođač"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Važi od"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Važi do"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Otisak palca"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Izdavač"
+

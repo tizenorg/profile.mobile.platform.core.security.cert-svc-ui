@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "कोई सामग्री नहीं"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "विषय"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "सीरियल नंबर"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "अनइंस्‍टॉल किया गया"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "अनुप्रयोग की जानकारी"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "कुल"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "एप्लीकेशन"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "डाटा"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "बाइट्स"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "बाई डिफ़ॉल्‍ट शुरू करें"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "डिफौल्ट्स साफ़ करें"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "कुछ कार्रवाइयों के लिए यह ऐप खोलें पर सेट किया गया है"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "ऑपरेटर"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "सैमसंग"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "तृतीय पक्ष"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "स्टोरेज"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "जीबी"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "केबी"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "अधिक विवरण"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "प्रमाणपत्र"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "अस्थापित किया जा रहा है..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "निर्माता"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "से मान्य"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "वैध जब तक की"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "थंबप्रिंट"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "जारीकर्ता"
+

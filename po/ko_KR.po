@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "내용이 없습니다"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "제목"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "시리얼 번호"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "삭제하였습니다"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "애플리케이션 정보"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "전체"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "애플리케이션"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "데이터"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "바이트"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "기본으로 실행"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "기본 정보 지우기"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "이 애플리케이션은 일부 동작에 대해 기본적으로 실행되도록 설정되어 있습니다"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "사업자"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "참여업체"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "저장소"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "자세히 보기"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "인증서"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "삭제 중..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "제조사"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "유효기간 시작일"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "만료일"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Thumbprint"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "발행자"
+

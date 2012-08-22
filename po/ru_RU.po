@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Нет содержимого"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Тема"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Серийный номер"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Удалено"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Сведения о приложении"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Всего"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Приложение"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Данные"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "байт"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Запускать по умолчанию"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Сбросить настройки по умолчанию"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Это приложение по умолчанию открывается для некоторых действий"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Оператор"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Третьи стороны"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Память"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "Гб"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "Мб"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "Кб"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Дополнительно"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Сертификаты"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Удаление..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Изготовитель"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Действителен с"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Действителен до"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Отпечаток"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Выдан"
+

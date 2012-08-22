@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Няма съдържание"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Тема"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Сериен номер"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Деинсталирано"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Информация за приложението"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Общо"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Приложение"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Данни"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "байта"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Стартиране по подразбиране"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Изчистване на настройките по подразбиране"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Това приложение е зададено на отворено по подразбиране за някои действия"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Оператор"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Трети лица"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Устройство за съхранение на данни"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Още подробности"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Сертификати"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Деинсталиране..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Производител"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Валиден от"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Валидно до"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Отпечатък"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Издал"
+

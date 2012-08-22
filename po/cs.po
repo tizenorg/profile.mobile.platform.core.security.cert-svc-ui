@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Žádný obsah"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Předmět"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Sériové číslo"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Odinstalováno"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Informace o aplikaci"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Celkem"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplikace"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Data"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "B"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Spustit ve výchozím nastavení"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Vymazat výchozí nastavení"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Některé akce spustí tuto aplikaci"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operátor"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Třetí strany"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Úložiště"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "kB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Další detaily"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certifikáty"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Odinstalování..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Výrobce"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Platné od"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Platné do"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Otisk palce"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Vydavatel"
+

@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "אין תוכן"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "הזן נושא"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "מספר סידורי"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "לא מותקן"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "פרטי יישום"
+
+#msgid "IDS_ST_BODY_TOTAL"
+#msgstr "סה"כ"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "יישום"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "נתונים"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "בתים"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "הפעל כברירת מחדל"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "נקה ברירות מחדל"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "יישום זה מוגדר להיפתח כברירת מחדל עבור פעולות מסוימות"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "מפעיל"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "גורמי צד שלישי"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "אחסון"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "ג'יגה בייט"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "פרטים נוספים"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "אישורים"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "מסיר התקנה..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "יצרן"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "חוקי מ"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "חוקי עד"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "טביעת אגודל"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "מנפיק"
+

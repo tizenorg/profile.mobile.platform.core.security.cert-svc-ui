@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Κανένα περιεχόμενο"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Θέμα"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Σειριακός αριθμός"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Καταργήθηκε η εγκατάσταση"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Πληροφορίες εφαρμογής"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Σύνολο"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Εφαρμογή"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Δεδομένα"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "byte"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Εκκίνηση από προεπιλογή"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Διαγραφή προεπιλογών"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Αυτή η εφαρμογή έχει ρυθμιστεί ώστε να ανοίγει από προεπιλογή για ορισμένες ενέργειες"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Παροχέας"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Τρίτα μέρη"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Αποθήκευση"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Περισσότερες λεπτομέρειες"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Πιστοποιητικά"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Κατάργηση εγκατάστασης..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Κατασκευαστής"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Ισχύει από"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Ισχύει έως"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Αποτύπωμα"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Εκδότης"
+

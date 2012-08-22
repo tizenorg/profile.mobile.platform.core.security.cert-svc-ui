@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "No hay contenido"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Asunto"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Número de serie"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Desinstalado"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Información de aplicación"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Total"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplicación"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Datos"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "bytes"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Iniciar de forma predeterminada"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Borrar valores predeterminados"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Esta aplicación está definida para abrirse de forma predeterminada para algunas acciones"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operador"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Terceros"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Almacenamiento"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Más detalles"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certificados"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Desinstalando..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricante"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Válido desde"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Válido hasta"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Huella digital"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emisor"
+

@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Ei sisältöjä"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Aihe"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Sarjanumero"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Asennus poistettu"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Sovelluksen tiedot"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Yhteensä"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Sovellus"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Data"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "tavua"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Käynnistä oletuksena"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Poista oletukset"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Tämä sovellus on oletusarvoisesti määritetty avautumaan tiettyjen toimenpiteiden suorittamista varten"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operaattori"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Kolmannet osapuolet"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Tallennustila"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "Gt"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "Mt"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "kt"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Lisätietoja"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Varmenteet"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Asennusta poistetaan..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Valmistaja"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Voimassa alkaen"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Voimassaolo päättyy"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Tunniste"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Myöntäjä"
+

@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "İçerik yok"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Konu"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr " Seri numarası"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Uygulama kaldırıldı"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Uygulama bilgisi"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Toplam"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Uygulama"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Data"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "bayt"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Varsayılan olarak başlat"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Varsayılanları sil"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Bu uygulama bazı eylemler için varsayılan olarak açılmaya ayarlanmış"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operatör"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Üçüncü taraflar"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Kayıt yeri"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Daha fazla ayrıntı"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikalar"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Kaldırılıyor..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Üretici"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr " Geçerlilik süresi başlangıcı"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Geçerlilik süresi"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Parmak izi"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr " Veren"
+

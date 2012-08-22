@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "ไม่​มี​คอน​เทนท์"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "เรื่อง"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "ซีเรีย​ล​นัมเบอร์"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "ลบ​การ​ติด​ตั้ง​แล้ว"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "ข้อ​มูล​แอ​พพลิ​เค​ชั่น"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "รวม"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "แอ​พพลิ​เค​ชั่น"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "ข้อมูล"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "ไบ​ท์"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "เริ่ม​โดย​ค่า​พื้น​ฐาน"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "ลบ​​ค่า​พื้น​ฐาน"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "แอพส์​นี้​ตั้ง​ค่า​ให้​เปิด​ตาม​พื้น​ฐาน​ด้วย​การ​ดำเนิน​การ​บาง​ประการ"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "ผู้​ให้​บริการ"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "บุคคล​ที่​สาม"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "ที่​เก็บ"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "ราย​ละเอียด​เพิ่ม​เติม"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "ใบ​รับรอง"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "กำลัง​ลบ​การ​ติด​ตั้ง..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ผู้ผลิต"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "อนุมัติ​จาก"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "อนุญาต​จน​กระทั่ง"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "พิมพ์​ลาย​นิ้ว​มือ"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ผู้​จำหน่าย"
+

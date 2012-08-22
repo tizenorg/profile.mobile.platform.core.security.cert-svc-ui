@@ -1,0 +1,95 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "No contents"
+
+msgid "CERTIFICATE_MENU_TITLE"
+msgstr "Certificate "
+
+msgid "USER_CERTIFICATE"
+msgstr "User certificate"
+
+msgid "OPERATOR"
+msgstr "Operator"
+
+msgid "MANUFACTURER"
+msgstr "Manufacturer"
+
+msgid "3RD_PARTIES"
+msgstr "3rd parties"
+
+msgid "TRUSTED_ROOT_CERTIFICATE"
+msgstr "Trusted root certificate"
+
+msgid "UNINSTALL"
+msgstr "Uninstall"
+
+msgid "INSTALL"
+msgstr "Install"
+
+msgid "CANCEL"
+msgstr "Cancel"
+
+msgid "SELECT_ALL"
+msgstr "Select all"
+
+msgid "INSTALL_CERT_FROM_SD_QUESTION"
+msgstr "Install certificates from SD card?"
+
+msgid "YES_ANSWER"
+msgstr "Yes"
+
+msgid "NO_ANSWER"
+msgstr "No"
+
+msgid "CERTIFICATE_DETAILS"
+msgstr "Certificate details"
+
+msgid "SEARCHED_CERTIFICATE"
+msgstr "Searched certificate"
+
+msgid "COMMON_NAME"
+msgstr "Common name:"
+
+msgid "ORGANIZATION"
+msgstr "Organization:"
+
+msgid "VERSION"
+msgstr "Version:"
+
+msgid "VALID_FROM"
+msgstr "Valid from:"
+
+msgid "VALID_TO"
+msgstr "Valid to:"
+
+msgid "SERIAL_NUMBER"
+msgstr "Serial number:"
+
+msgid "SIGNATURE_ALGORITHM"
+msgstr "Signature Algorithm:"
+
+msgid "PUBLIC_KEY"
+msgstr "Public key:"
+
+msgid "KEY_USAGE"
+msgstr "Key usage:"
+
+msgid "CA:"
+msgstr "CA:"
+
+msgid "CA_TRUE"
+msgstr "true"
+
+msgid "CA_FALSE"
+msgstr "false"
+
+msgid "NO_DATA"
+msgstr "No data"
+
+msgid "CERT_OWNER"
+msgstr "Owner"
+
+msgid "CERT_ISSUER"
+msgstr "Issuer"
+
+msgid "CERT_DATA"
+msgstr "Certificate data"

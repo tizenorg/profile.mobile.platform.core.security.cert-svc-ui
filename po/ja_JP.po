@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "コンテンツがありません。"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "件名"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "シリアル​番号"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "アンインストールしました。"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "アプリケーション​情報"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "合計"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "アプリケーション"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "データ"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "バイト数"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "初期状態で起動"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "初期設定に戻す"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "このアプリはいくつかのアクションが初期値で起動するように設定されています。"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "認証あり"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "サードパーティ"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "ストレージ"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "注意事項の詳細"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "証明書"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "アンインストール中..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "製造社"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "有効​期限​（開始）"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "有効期限​（終了）"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "拇印"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "発行者"
+

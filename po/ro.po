@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Conţinuturi inexistente"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Subiect"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Număr serie"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Dezinstalat"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Informaţii aplicaţie"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Total"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplicaţie"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Date"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "octeţi"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Lansare implicită"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Ştergere valori implicite"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Această aplicaţie este setată să se deschidă în mod implicit pentru anumite acţiuni"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operator"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Terţi"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Stocare"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MO"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KO"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Mai multe detalii"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certificate"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Se dezinstalează..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricant"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Valabil de la"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Valid până la"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Imprimare miniaturi"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emitent"
+

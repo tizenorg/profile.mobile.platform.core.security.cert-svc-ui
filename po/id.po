@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Tdk ada konten"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Subyek"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Nomor serial"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Instalan terhapus"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Info aplikasi"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Total"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplikasi"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Data"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "byte"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Jalankan sebagai default"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Hapus default"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Aplikasi ini diatur untuk buka dengan default untuk beberapa tindakan"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operator"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Pihak ketiga"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Penyimpanan"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Rincian lainnya"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikat"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Menghapus instalan..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Pabrikan"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Berlaku dari"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Berlaku sampai"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Cetak mini"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Penerbit"
+

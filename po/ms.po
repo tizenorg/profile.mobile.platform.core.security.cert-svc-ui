@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Tiada kandungan"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Subjek"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Nombor bersiri"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Dinyahpasang"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Maklumat aplikasi"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Jumlah"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplikasi"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Data"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "bait"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Lancarkan secara lalai"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Kosongkan lalai"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Aplikasi ini ditetapkan untuk membuka dengan lalai untuk beberapa tindakan"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Pengendali"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Pihak ketiga"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Penyimpanan"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Lebih butiran"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sijil"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Nyah-pasang"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Pengilang"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Sah dari"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Sah sehingga"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Cap jari"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Pengeluar"
+

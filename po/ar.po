@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "بدون محتويات"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "الموضوع"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "الرقم التسلسلي"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "تم إلغاء التثبيت"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "معلومات التطبيق"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "كلي"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "التطبيق"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "بيانات"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "وحدات البايت"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "بدء تشغيل افتراضي"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "مسح الافتراضيات"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "تم ضبط هذا التطبيق على الفتح بشكل افتراضي مع بعض الإجراءات"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "المزود"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "الجهات الخارجية"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "مكان التخزين"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "جيجابايت"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "مزيد من التفاصيل"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "الشهادات"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "جار إلغاء التثبيت..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "المصنع"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "صالح من"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "صالح لغاية"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "مختصر"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "المصدر"
+

@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "No hi ha continguts"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Assumpte"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Número de sèrie"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Desinstal·lat"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Informació de l'aplicació"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Total"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplicació"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Dades"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "bytes"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Executar de forma predeterminada"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Esborrar valors predeterminats"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Aquesta aplicació està definida per obrir-se de forma predeterminada en algunes accions"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operador"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Tercers"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Emmagatzematge"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Més detalls"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certificats"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Desinstal·lant..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricant"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Vàlid des de"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Vàlid fins a"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Miniatura d'impressió"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emissor"
+

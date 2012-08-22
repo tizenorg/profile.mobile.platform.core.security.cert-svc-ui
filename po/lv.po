@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Nav satura"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Tēma"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Sērijas numurs"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Atinstalēts"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Informācija par programmu"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Kopā"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Programma"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Dati"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "baiti"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Palaist pēc noklusējuma"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Notīrīt noklusējumus"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Dažām darbībām ir iestatīts, ka šī programma tiek atvērta pēc noklusējuma"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operators"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Trešās puses"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Krātuve"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Papildinformācija"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikāti"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Atinstalē..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Ražotājs"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Derīgs no"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Derīgs līdz"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Īkšķa nospiedums"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Izdevējs"
+

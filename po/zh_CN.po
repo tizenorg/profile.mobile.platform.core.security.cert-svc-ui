@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "无内容"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "主题"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "序号"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "已卸载"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "应用程序信息"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "全部"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "软件"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "数据"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "字节"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "默认启动"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "清除默认值"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "该应用程序设置为由部分动作默认打开"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "运营商"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "第三方"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "存储器"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "更多详情"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "证书"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "正在卸载…"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "制造商"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "有效由"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "有效直至"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "大头像"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "发行者"
+

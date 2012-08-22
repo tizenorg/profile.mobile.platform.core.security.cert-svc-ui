@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Nincs tartalomjegyzék"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Tárgy"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Sorozatszám"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Eltávolítva"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Alkalmazás adatai"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Összesen"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Alkalmazás"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Adat"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "bájt"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Alapértelmezett indítás"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Alapértelmezések törlése"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "A beállításnak megfelelően bizonyos műveleteknél alapértelmezésként megnyílik ez az alkalmazás"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Szolgáltató"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Harmadik felek"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Tárhely"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "További részletek"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Tanúsítványok"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Eltávolítás..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Gyártó"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Érvényesség kezdete"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Érvényesség vége"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Ujjlenyomat"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Kibocsátó"
+

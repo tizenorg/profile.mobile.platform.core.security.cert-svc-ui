@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Không nội dung"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Chủ đề"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Số sêri"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Gỡ c.đặt"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Thông tin ứng dụng"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Tổng cộng"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Ứng dụng"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Dữ liệu"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "byte"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Khởi chạy theo mặc định"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Xóa các mặc định"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Ứng dụng này được đặt để mở theo mặc định cho một số hành động"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Bộ vận hành"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Bên thứ ba"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Lưu trữ"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "KB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Nhiều chi tiết hơn"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Chứng nhận"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Đang gỡ cài đặt..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Nhà sản xuất"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Hiệu lực từ"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Hiệu lực đến"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "In dạng nhỏ"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Nhà phát hành"
+

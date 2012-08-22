@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Žiadny obsah"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Predmet"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Sériové číslo"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Odinštalované"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Informácie o aplikácii"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Celkom"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Aplikácia"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Dáta"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "B"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Spustiť ako predvolené"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Vymazať predvolené"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Táto aplikácia je nastavená na predvolené otvorenie pre niektoré akcie"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Operátor"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Ostatní výrobcovia"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Úložisko"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "GB"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "MB"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "kB"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Ďalšie podrobnosti"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certifikáty"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Odinštaluje sa..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Výrobca"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Platné od"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Platné do"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Odtlačok"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Vydavateľ"
+

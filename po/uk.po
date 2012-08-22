@@ -1,0 +1,81 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "Немає вмісту"
+
+msgid "IDS_COM_BODY_SUBJECT"
+msgstr "Тема"
+
+msgid "IDS_COM_BODY_SERIAL_NUMBER"
+msgstr "Серійний номер"
+
+msgid "IDS_ST_POP_UNINSTALLED"
+msgstr "Видалено"
+
+msgid "IDS_ST_HEADER_APPLICATION_INFO"
+msgstr "Відомості про програму"
+
+msgid "IDS_ST_BODY_TOTAL"
+msgstr "Загалом"
+
+msgid "IDS_ST_BODY_APPLICATION"
+msgstr "Програма"
+
+msgid "IDS_ST_BODY_DATA"
+msgstr "Дані"
+
+msgid "IDS_ST_BODY_BYTES"
+msgstr "байтів"
+
+msgid "IDS_ST_BODY_LAUNCH_BY_DEFAULT"
+msgstr "Запускати за замовчуванням"
+
+msgid "IDS_ST_BODY_CLEAR_DEFAULTS"
+msgstr "Очистити стандартні установки"
+
+msgid "IDS_ST_BODY_YOU_HAVE_SELECTED_TO_LAUNCH_THIS_APPLICATION_BY_DEFAULT_FOR_SOME_ACTIONS"
+msgstr "Цю програму встановлено як програму за замовчуванням для виконання певних дій"
+
+msgid "IDS_ST_BODY_OPERATOR"
+msgstr "Оператор"
+
+msgid "IDS_ST_BODY_SAMSUNG"
+msgstr "Samsung"
+
+msgid "IDS_ST_BODY_THIRD_PARTIES"
+msgstr "Треті сторони"
+
+msgid "IDS_ST_BODY_STORAGE"
+msgstr "Місце збереження"
+
+msgid "IDS_ST_BODY_GB"
+msgstr "ГБ"
+
+msgid "IDS_ST_BODY_MB"
+msgstr "МБ"
+
+msgid "IDS_ST_BODY_KB"
+msgstr "КБ"
+
+msgid "IDS_ST_BODY_MORE_DETAILS"
+msgstr "Додаткові деталі"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Сертифікати"
+
+msgid "IDS_ST_POP_UNINSTALLING_ING"
+msgstr "Видалення..."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Виробник"
+
+msgid "IDS_ST_BODY_VALID_FROM"
+msgstr "Дійсно з"
+
+msgid "IDS_ST_BODY_VALID_UNTIL"
+msgstr "Дійсно до"
+
+msgid "IDS_ST_BODY_THUMBPRINT"
+msgstr "Відбиток"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Видано"
+
