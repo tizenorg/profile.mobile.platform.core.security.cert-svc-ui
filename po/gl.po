@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificados"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versión:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Desinstalar"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricante"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Seleccionar todo"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emisor:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalar"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "O alcume xa existe. Insire un alcume único"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "O alcume non pode permanecer baleiro"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certificados atopados"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detalles de certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Información do certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Autoridade de certificación:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Introducir alcume de clave:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Insire o contrasinal:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificados externos"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Falso"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Instalar certificado"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Desexas instalar certificados da tarxeta SD?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Uso da clave:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organización:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Propietario:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Clave pública:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Seleccione o certificado"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Selecciona un certificado para instalar"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Número de serie:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritmo de sinatura:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Verdade"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Certificados raíz seguros"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificados de usuario"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Válido desde:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Válido ata:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Abrir"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nome común:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Contrasinal non válido"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Sen contidos"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Non hai datos"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Non"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Si"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "Aceptar"
+

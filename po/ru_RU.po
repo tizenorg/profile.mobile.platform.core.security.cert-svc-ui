@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Сертификаты"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Версия:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Удалить"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Изготовитель"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Выбрать все"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Издатель:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Установить"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Такой псевдоним уже существует. Введите уникальный псевдоним"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Поле псевдонима не может быть пустым"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Обнаруженные сертификаты"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Сведения о сертификате"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Сведения о сертификате"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Центр сертификации:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Введите псевдоним ключа:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Введите пароль:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Внешние сертификаты"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Ложь"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Установить сертификат"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Установить сертификаты с карты памяти SD?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Использование ключа:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Организация:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Владелец:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Открытый ключ:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Выберите сертификат"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Выберите сертификат для установки"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Серийный номер:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Алгоритм подписи:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Действителен"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Доверенные корневые сертификаты"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Сертификаты пользователей"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Действителен с:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Действителен для:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Открыть"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Имя:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Неправильный пароль"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Нет содержимого"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Нет данных"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Нет"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Да"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Отмена"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ОК"
+

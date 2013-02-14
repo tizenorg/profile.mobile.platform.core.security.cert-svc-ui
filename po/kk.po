@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Сертификаттар"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Нұсқа:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Жою"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Дайындаушы"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Бәрін бөлектеу"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Беруші:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Орнату"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Лақап ат бұрыннан бар. Бірегей лақап атты енгізіңіз"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Лақап ат бос болмауы қажет"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Куәліктер табылды"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Сертификат туралы мәліметтер"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Куәлік туралы ақпарат"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Куәліктендіру орталығы:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Кілт лақап атын енгізіңіз:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Құпиясөзді енгізіңіз:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Сыртқы куәліктер"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Қате"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Куәлік орнату"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "SD картасынан куәліктер орнату керек пе?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Кілт қолданысы:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Ұйым:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Иесі:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Ашық кілт:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Сертификатты таңдау"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Орнатуға қажетті куәлікті таңдау"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Сериялық нөмірі:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Қол қою алгоритмі:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Шын"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Сенімді түбір куәліктер"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Пайдаланушы куәліктері"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Жарамды:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Көрсетілген мерзімге дейін жарамды:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Ашу"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Жалпы атауы:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Қате кілтсөз"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Мазмұн жоқ"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Деректер жоқ"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Жоқ"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Иә"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Бас тарту"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

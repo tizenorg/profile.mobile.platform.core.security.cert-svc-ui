@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificados"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versão:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Desinstalar"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricante"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Selec. tudo"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emissor:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalar"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Pseudónimo já existe. Introduza um pseudónimo único"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "O pseudónimo não pode estar vazio"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certificados encontrados"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detalhes do certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Informação do certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Autoridade de certificação:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Introduzir pseudónimo principal:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Introduzir palavra-passe:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificados externos"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Falso"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Instalar certificado"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Instalar certificados do cartão SD?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Utilização do código:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organização:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Proprietário:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Código público:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Seleccione o certificado"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Seleccionar certificado para instalar"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Número de série:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritmo de assinatura:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Verdadeiro"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Certificados raiz fidedignos"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificados de utilizador"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Válido de:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Válido até:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Aberta"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nome comum:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Palavra-passe incorrecta"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Sem conteúdo"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Nenhuns dados"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Não"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Sim"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

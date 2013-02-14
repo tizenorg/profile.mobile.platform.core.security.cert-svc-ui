@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Skírteini"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Útgáfa:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Fjarlægja"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Framleiðandi"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Velja allt"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Útgefandi:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Setja upp"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Samnefnið er þegar í notkun. Sláðu inn einkvæmt samnefni"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Samnefnið getur ekki verið autt"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Vottorð fundust"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Upplýsingar um skírteini"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Upplýsingar um vottorð"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Vottunaraðili:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Sláðu inn samnefni lykils:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Sláðu inn lykilorð:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Ytri vottorð"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Ósatt"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Setja upp vottorð"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Setja upp vottorð af SD-korti?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Notkun lykils:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Fyrirtæki:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Eigandi:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Almennur lykill:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Veldu vottorðið"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Veldu vottorð til að setja upp"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Raðnúmer:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algóritmi undirskriftar:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Rétt"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Traust rótarvottorð"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Notandavottorð"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Gildir frá:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Gildir til:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Opna"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Sameiginlegt nafn:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Rangt aðgangsorð"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Efni vantar"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Engin gögn"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Nei"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Já"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Hætta við"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "Í lagi"
+
