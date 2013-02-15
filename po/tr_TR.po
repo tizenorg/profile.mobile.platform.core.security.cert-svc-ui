@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Sertifikalar"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Sürüm:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Kaldır"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Üretici"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Hepsini seç"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Düzenleyici:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Kur"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Takma ad zaten var. Benzersiz bir takma ad seçin"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Takma ad boş bırakılamaz"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Sertifikalar bulundu"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Sertifika detayları"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Sertifika bilgileri"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Sertifikasyon yetkisi:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Anahtar takma adını girin:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Şifreyi girin:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Harici sertifikalar"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Yanlış"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Sertifika yükle"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Sertifikalar SD kartından yüklensin mi?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Anahtar kullanımı:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organizasyon:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Sahibi:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Genel anahtar:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr " Sertifika seç"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Yüklenecek sertifikayı seçin"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Seri numarası:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "İmza algoritması:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Doğru"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Güvenilir kök sertifikalar"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Kullanıcı sertifikaları"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "İlk geçerlilik tarihi:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Son geçerlilik tarihi:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Aç"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Ortak isim:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Yanlış şifre"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "İçerik yok"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Bulunamadı"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Hayır"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Evet"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "İptal"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "Tamam"
+

@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Deimhnithe"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Leagan:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Díshuiteáil"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Déantúsóir"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Roghnaigh gach"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Eisitheoir:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Suiteáil"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Tá an t-ailias ann cheana. Iontráil ailias uathúil"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Ní féidir leis an ailias a bheith folamh"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Aimsíodh deimhnithe"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Sonraí deimhnithe"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Faisnéis faoin dheimhniú"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Údarás deimhnithe:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Iontráil eochair an ailias:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Iontráil pasfhocal:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Deimhnithe seachtracha"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Bréige"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Suiteálaí deimhniú"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Suiteáil deimhnithe ón gcárta SD?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Úsáid eochracha:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Eagraíocht:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Úinéir:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Eochair phoiblí:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Roghnaigh deimhniú amháin"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Roghnaigh deimhniú le suiteáil"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Sraithuimhir:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algartam sínithe:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Fíor"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Deimhnithe fréimhe iontaofa"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Deimhnithe úsáideora"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Bailí ó:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Bailí go dtí:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Oscail"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Ainm coitianta:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Pasfhocal mícheart"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Níl inneachar ann"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Níl sonraí ann"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Ná déan é"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Déan é"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Cuir ar ceal"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

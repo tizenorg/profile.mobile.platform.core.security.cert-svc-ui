@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certifikáty"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Verzia:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Odinštalovať"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Výrobca"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Vybrať všetky"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Vydavateľ:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Inštalovať"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Pseudonym už existuje. Zadajte jedinečný pseudonym"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Pseudonym nemôže byť prázdny"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Našli sa certifikáty"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detaily certifikátu"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Informácie o certifikáte"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Certifikačný úrad:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Zadajte pseudonym kľúča:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Zadajte heslo:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "﻿Externé certifikáty"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Nepravda"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Inštalovať certifikát"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Inštalovať certifikáty z karty SD?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Použitie kľúča:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organizácia:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Vlastník:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Verejný kľúč:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Vyberte certifikát"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Vyberte certifikát, ktorý chcete nainštalovať"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Sériové číslo:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritmus podpisu:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Áno"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Dôveryhodné koreňové certifikáty"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Používateľské certifikáty"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Platnosť od:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Platnosť do:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Otvoriť"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Všeobecný názov:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Nesprávne heslo"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Žiadny obsah"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Žiadne údaje"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Nie"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Áno"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Zrušiť"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

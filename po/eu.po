@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Ziurtagiriak"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Bertsioa:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Desinstalatu"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabrikatzailea"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Denak aukeratu"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Jaulkitzailea:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalatu"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Ezizena badago. Adierazi ezizen berdin gabea"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Ezizena ezin da hutsik utzi"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Ziurtagiriak aurkituta"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Ziurtagiriaren xehetasunak"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Ziurtagiri informazioa"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Ziurtapen agintea:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Adierazi gako ezizena:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Adierazi pasahitza:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Kanpo egiaztapenak"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Faltsua"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Instalatu ziurtagiria"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Instalatu ziurtagiriak SD txarteletik?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Gako erabilera:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Erakundea:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Jabea:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Gako publikoa:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Ziurtagiri bat aukeratu"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Hautatu ziurtagiria instalatzeko"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Serie zenbakia:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Sinatzeko algoritmoa:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Benetakoa"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Erroko ziurtagiri fidagarriak"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Erabiltzaile ziurtagiriak"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Noiztik balioduna:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Noiz arte balioduna:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Ireki"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Ohiko izena:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Pasahitz okerra"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Ez dago edukirik"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Daturik ez"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Ez"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Bai"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Ezeztatu"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "Ados"
+

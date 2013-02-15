@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certifikati"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Verzija:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Deinstaliraj"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Proizvođač"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Odaberi sve"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Izdavatelj:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instaliraj"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Alias već postoji. Unesite jedinstveni alias"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Alias ne može ostati prazan"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Pronađene potvrde"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detalji o certifikatu"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Podaci potvrde"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Odgovornost za izdavanje potvrde:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Unesite alias:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Unesite lozinku:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Vanjske potvrde"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Ne"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Instaliraj potvrdu"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Instalirati potvrde s SD kartice?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Uporaba ključa:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organizacija:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Vlasnik:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Javni ključ:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Odaberite certifikat"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Odaberi potvrdu za instaliranje"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Serijski broj:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritam potpisa:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Istinito"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Pouzdane potvrde"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Korisničke potvrde"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Vrijedi od:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Vrijedi do:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Otvori"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Zajednički naziv:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Neispravna šifra"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Nema sadržaja"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Nema podataka"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Ne"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Da"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Prekid"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "U redu"
+

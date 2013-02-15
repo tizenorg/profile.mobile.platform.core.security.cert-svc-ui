@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Sertifikāti"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versija:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Atinstalēt"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Ražotājs"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Izv. visu"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Izdevējs:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalēt"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Aizstājvārds jau pastāv. Ievadiet unikālu aizstājvārdu"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Aizstājvārda lauks nevar būt tukšs"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Atrastie sertifikāti"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Sertifikāta detaļas"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Informācija par sertifikātu"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Sertificēšanas iestāde:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Ievadiet atslēgas aizstājvārdu:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Ievadiet paroli:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Ārējie sertifikāti"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Nepareizs"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Instalēt sertifikātu"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Vai instalēt sertifikātus no SD kartes?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Atslēgas lietojums:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organizācija:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Īpašnieks:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Publiskā atslēga:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Izvēlēties sertifikātu"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Izvēlieties sertifikātu, lai instalētu"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Sērijas numurs:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Paraksta algoritms:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Patiess"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Uzticami saknes sertifikāti"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Lietotāju sertifikāti"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Derīgs no:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Derīgs līdz:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Atvērt"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Vispārējais nosaukums:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Nepareiza parole"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Nav satura"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Nav datu"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Nē"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Jā"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Atcelt"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "Labi"
+

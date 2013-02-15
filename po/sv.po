@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certifikat"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Version:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Avinstallera"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Tillverkare"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Välj alla"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Utfärdare:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Installera"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Detta alias finns redan. Ange ett unikt alias"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Alias kan inte vara tomt"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certifikat hittades"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Certifikatinformation"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Certifikatinformation"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Certifikatutfärdare:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Ange nyckelalias:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Ange lösenord:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Externa certifikat"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Falsk"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Installera certifikat"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Installera certifikat från SD-kort?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Nyckelanvändning:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organisation:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Ägare:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Offentlig nyckel:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Välj ett certifikat"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Välj certifikat att installera"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Serienummer:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Signaturalgoritm:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Rätt"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Tillförlitliga rotcertifikat"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Användarcertifikat"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Giltig från:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Giltig för:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Öppna"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Allmänt namn:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Fel lösenord"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Inget innehåll"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Inga data"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Nej"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Ja"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Avbryt"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificati"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versione:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Disinstalla"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Produttore"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Seleziona tutto"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emittente:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Installa"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Alias già esistente. Immettere un alias univoco"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "L'alias non può essere vuoto"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certificati trovati"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Dettagli certificato"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Informazioni certificato"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Autorità di certificazione:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Inserire chiave alias:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Inserire password:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificati esterni"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Falso"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Installa certificato"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Installare certificati dalla scheda SD?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Utilizzo chiave:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organizzazione:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Proprietario:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Chiave pubblica:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Seleziona certificato"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Selezionare il certificato da installare"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Numero di serie:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritmo di firma:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Vero"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Certificati fonte attendibile"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificati utente"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Valido da:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Valido fino a:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Apri"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nome comune:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Password errata"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Nessun contenuto"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Nessun dato"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Annulla"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Sì"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Annulla"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+
