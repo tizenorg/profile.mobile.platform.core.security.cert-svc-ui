@@ -1,0 +1,2 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "אין תוכן"

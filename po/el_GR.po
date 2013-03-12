@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Πιστοποιητικά"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Έκδοση:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Κατάργ. εγκατ."
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Κατασκευαστής"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Επιλογή όλων"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Εκδότης:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Εγκατάσταση"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Το ψευδώνυμο υπάρχει ήδη. Καταχωρίστε ένα μοναδικό ψευδώνυμο"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Το ψευδώνυμο δεν μπορεί να είναι κενό"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Βρέθηκαν πιστοποιητικά"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Λεπτομέρειες πιστοποιητικού"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Πληροφορίες πιστοποιητικού"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Αρχή πιστοποίησης:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Εισαγωγή ψευδώνυμου κλειδιού:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Εισαγωγή κωδικού πρόσβασης:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Εξωτερικά πιστοποιητικά"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Ψευδές"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Εγκατάσταση πιστοποιητικού"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Εγκατάσταση πιστοποιητικών από την κάρτα SD;"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Χρήση κλειδιού:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Οργανισμός:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Κάτοχος:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Δημόσιο κλειδί:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Επιλέξτε πιστοποιητικό"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Επιλέξτε πιστοποιητικό προς εγκατάσταση"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Σειριακός αριθμός:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Αλγόριθμος υπογραφής:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Αλήθεια"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Αξιόπιστα πιστοποιητικά ρίζας"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Πιστοποιητικά χρήστη"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Έγκυρο απο:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Ισχύει έως:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Άνοιγμα"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Κοινό όνομα:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Λάθος κωδικός"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Κανένα περιεχόμενο"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Δεν υπάρχουν δεδομένα"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Όχι"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Ναι"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Ακύρωση"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

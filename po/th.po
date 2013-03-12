@@ -1,0 +1,3 @@
+msgid "IDS_COM_BODY_NO_CONTENTS"
+msgstr "ไม่​มี​คอน​เทนท์"
+

@@ -1,0 +1,123 @@
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificats"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versió:"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Desinstal·lar"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricant"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Seleccioni-ho tot"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emissor:"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instal·lar"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Ja existeix l'àlies. Introdueixi'n un d'únic"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "L'àlies no pot estar buit"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certificats trobats"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detalls del certificat"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Informació del certificat"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Autoritat de certificació:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Introduir àlies de clau:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Introdueixi la contrasenya:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificats externs"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Fals"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
+msgstr "Instal·lar certificat"
+
+msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
+msgstr "Instal·lar certificats de la targeta SD?"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Ús de clau:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organització:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Propietari:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Clau pública:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Seleccioni el certificat"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
+msgstr "Seleccioni el certificat per instal·lar"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
+msgstr "Número de sèrie:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algorisme de signatura:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Veritat"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
+msgstr "Certificats arrel de confiança"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificats d'usuari"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Vàlid des de:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Vàlid fins a:"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Obrir"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nom comú:"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Contrasenya incorrecta"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "No hi ha continguts"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Sense dades"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "No"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Sí"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "Acceptar"
+
