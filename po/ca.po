@@ -43,9 +43,6 @@ msgstr "Introduir àlies de clau:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introdueixi la contrasenya:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificats externs"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fals"
 

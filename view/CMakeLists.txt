@@ -20,8 +20,6 @@ SET(SRCS
     src/certificates/certificates_menu.c
     src/certificates/certificate_util.c
     src/certificates/trusted_root_ca_cert/trusted_root_ca_cert.c
-    src/certificates/user_cert/install_certificate.c
-    src/certificates/user_cert/user_cert.c
     src/certificates/pfx_cert/pfx_cert.c
     src/certificates/pfx_cert/pfx_cert_install.c
     src/certificates/pfx_cert/pfx_cert_remove.c

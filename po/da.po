@@ -43,9 +43,6 @@ msgstr "Indtast nøglealias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Indtast adgangskode:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Eksterne certifikater"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falsk"
 

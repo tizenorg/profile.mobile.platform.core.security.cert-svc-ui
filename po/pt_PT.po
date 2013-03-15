@@ -43,9 +43,6 @@ msgstr "Introduzir pseudónimo principal:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introduzir palavra-passe:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificados externos"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falso"
 

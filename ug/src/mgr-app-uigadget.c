@@ -52,8 +52,7 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
     ugd->win_main = ug_get_parent_layout(ug);
     if (NULL == ugd->win_main)
         return NULL;
-    elm_win_conformant_set(ugd->win_main, EINA_TRUE);
-
+    
     ugd->bg = elm_bg_add(ugd->win_main);
     if (!ugd->bg) {
         LOGD("ugd->bg is null");
@@ -61,7 +60,6 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
         return NULL;
     }
     evas_object_size_hint_weight_set(ugd->bg, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    elm_win_resize_object_add(ugd->win_main, ugd->bg);
     evas_object_show(ugd->bg);
 
     ugd->layout_main = elm_layout_add(ugd->win_main);
@@ -73,7 +71,6 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
     }
     elm_layout_theme_set(ugd->layout_main, "layout", "application", "default");
     evas_object_size_hint_weight_set(ugd->layout_main, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    elm_win_resize_object_add(ugd->win_main, ugd->layout_main);
     evas_object_show(ugd->layout_main);
 
     elm_object_part_content_set(ugd->layout_main, "elm.swallow.bg", ugd->bg);
@@ -86,8 +83,8 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
         free(ugd->layout_main);
         return NULL;
     }
-    evas_object_show(ugd->navi_bar);
     elm_object_part_content_set(ugd->layout_main, "elm.swallow.content", ugd->navi_bar);
+    evas_object_show(ugd->navi_bar);	
 
     certificates_menu_cb((void*) ugd, NULL, NULL);
 

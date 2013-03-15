@@ -215,17 +215,44 @@ char *extractDataFromCert(char *path) {
 
     CertSvcCertificate cert;
     CertSvcString buffer;
-    char *char_buffer;
+    char *char_buffer = NULL;
 
     if (CERTSVC_SUCCESS != certsvc_certificate_new_from_file(ad->instance, path, &cert)) {
-        LOGD("certsvc_certificate_new_from_file returned not CERTSVC_SUCCESS");
+        LOGD("certsvc_certificate_new_from_file has been succeeded");
         return NULL;
     }
 
-    if (CERTSVC_SUCCESS != certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_COMMON_NAME, &buffer)) {
-        LOGD("certsvc_certificate_get_string_field returned not CERTSVC_SUCCESS");
-        return NULL;
+    if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_COMMON_NAME, &buffer) && buffer.privateLength > 0) {
+        LOGD("certsvc_certificate_get_string_field for the CN field has been succeeded");
+        goto CATCH;
+    } else {
+        certsvc_string_free(buffer);
     }
+
+    if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_ORGANIZATION_NAME, &buffer) && buffer.privateLength > 0) {
+        LOGD("certsvc_certificate_get_string_field for the O field has been succeeded");
+        goto CATCH;
+    } else {
+        certsvc_string_free(buffer);
+    }
+
+    if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_ORGANIZATION_UNIT_NAME, &buffer) && buffer.privateLength > 0) {
+        LOGD("certsvc_certificate_get_string_field for the OU field has been succeeded");
+        goto CATCH;
+    } else {
+        certsvc_string_free(buffer);
+    }
+
+    if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_EMAIL_ADDRESS, &buffer) && buffer.privateLength > 0) {
+        LOGD("certsvc_certificate_get_string_field for the emailAddress field has been succeeded");
+        goto CATCH;
+    } else {
+        certsvc_string_free(buffer);
+		certsvc_certificate_free(cert);
+		return NULL;
+    }
+
+CATCH:
     char_buffer = strndup(buffer.privateHandler, buffer.privateLength);
     LOGD("char_buffer : %s", char_buffer);
 
@@ -528,22 +555,6 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *list, const char *dir_path,
                 lastListElement = current;
 
                 switch (type) {
-
-                case TO_INSTALL:
-                    if (strlen(title) < 1){
-                        // if Common name of cert is empty print the name of file instead.
-                        it = elm_list_item_append(list, dp->d_name, NULL, NULL, install_cb, current);
-                        if (!it){
-                            LOGE("Error in elm_list_item_append");
-                        }
-                    }
-                    else {
-                        it = elm_list_item_append(list, title, NULL, NULL, install_cb, current);
-                        if (!it){
-                            LOGE("Error in elm_list_item_append");
-                        }
-                    }
-                    break;
 
                 case TO_UNINSTALL: // in this case item isn't append to the list, because "uninstall" use-case uses more complex genlist
                     break;

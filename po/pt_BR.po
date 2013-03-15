@@ -43,9 +43,6 @@ msgstr "Insira o cognome da chave:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Insira a senha:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificados externos"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falso"
 

@@ -43,9 +43,6 @@ msgstr "Vnesite ključ vzdevka:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Vnesite geslo:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Zunanji certifikati"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Napačno"
 

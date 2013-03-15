@@ -43,9 +43,6 @@ msgstr "Wprowadź alias klucza:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Wprowadź hasło:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certyfikaty zewnętrzne"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fałsz"
 

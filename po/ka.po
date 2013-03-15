@@ -43,9 +43,6 @@ msgstr "შეიყვანეთ ძირითადი ალიასი:
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "აკრიფეთ პაროლი:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "გარე სერტიფიკატები"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "მცდარი"
 

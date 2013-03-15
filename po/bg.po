@@ -43,9 +43,6 @@ msgstr "Въведете псевдоним на ключ:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Въведете парола:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Външни сертификати"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Невярно"
 

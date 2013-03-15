@@ -283,7 +283,7 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
 
         itm = elm_naviframe_item_push(
                 ad->navi_bar,
-                dgettext(PACKAGE, "CERTIFICATE_SELECTION_SCREEN_TITLE"),
+                dgettext(PACKAGE, "CLIENT CERTIFICATE"),
                 NULL,
                 NULL,
                 no_content,
@@ -296,7 +296,7 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
 
         itm = elm_naviframe_item_push(
                 ad->navi_bar,
-                dgettext(PACKAGE, "CERTIFICATE_SELECTION_SCREEN_TITLE"),
+                dgettext(PACKAGE, "CLIENT CERTIFICATE"),
                 NULL,
                 NULL,
                 genlist,

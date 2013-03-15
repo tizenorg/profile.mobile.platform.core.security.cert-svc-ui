@@ -43,9 +43,6 @@ msgstr "Enter key alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Enter password:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "External certificates"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "False"
 

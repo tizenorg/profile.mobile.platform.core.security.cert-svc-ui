@@ -42,7 +42,7 @@
 enum Screen {
     NONE_SCREEN,         // Screen is unknown
     TRUSTED_ROOT_SCREEN, // Trusted root
-    USER_SCREEN,         // User certificates/External
+    USER_SCREEN,         // User certificates
     PKCS12_SCREEN        // PKCS12/PFX
 };
 

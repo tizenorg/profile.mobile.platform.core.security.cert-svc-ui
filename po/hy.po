@@ -43,9 +43,6 @@ msgstr "Մուտքագրեք բանալու փոխանուն՝"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Մուտքագրեք գաղտնաբառ՝"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Արտաքին վկայականներ"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Կեղծ"
 

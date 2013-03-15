@@ -43,9 +43,6 @@ msgstr "Sisestage võtme alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Sisestage parool:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Välissertifikaadid"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Vale"
 

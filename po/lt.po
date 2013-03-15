@@ -43,9 +43,6 @@ msgstr "Įveskite rakto alternatyvųjį vardą:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Įveskite slaptažodį:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Išoriniai sertifikatai"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Neteisinga"
 

@@ -43,9 +43,6 @@ msgstr "कुंजी उपनाम दर्ज करें:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "पासवर्ड दर्ज करें:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "बाह्य प्रमाणपत्र"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "ग़लत"
 

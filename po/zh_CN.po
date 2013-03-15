@@ -43,9 +43,6 @@ msgstr "输入密钥别名："
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "输入密码："
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "外部证书"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "假"
 

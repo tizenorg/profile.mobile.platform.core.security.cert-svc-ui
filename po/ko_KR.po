@@ -43,9 +43,6 @@ msgstr "키 대체 이름 입력:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "비밀번호 입력:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "외부 인증서"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "거짓"
 

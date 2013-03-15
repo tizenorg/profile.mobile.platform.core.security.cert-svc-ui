@@ -43,9 +43,6 @@ msgstr "Adierazi gako ezizena:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Adierazi pasahitza:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Kanpo egiaztapenak"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Faltsua"
 

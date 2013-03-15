@@ -43,9 +43,6 @@ msgstr "Anahtar takma adını girin:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Şifreyi girin:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Harici sertifikalar"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Yanlış"
 

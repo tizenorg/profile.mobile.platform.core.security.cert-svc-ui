@@ -43,9 +43,6 @@ msgstr "Anna avaimen alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Anna salasana:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Ulkoiset varmenteet"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Epätosi"
 

@@ -43,9 +43,6 @@ msgstr "Introduceţi aliasul cheie:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introduceţi parola:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificate externe"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fals"
 

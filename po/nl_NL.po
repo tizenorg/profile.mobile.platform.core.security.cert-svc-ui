@@ -43,9 +43,6 @@ msgstr "Sleutelalias invoeren:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Wachtwoord invoeren:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Externe certificaten"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Onwaar"
 

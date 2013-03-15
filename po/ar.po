@@ -43,9 +43,6 @@ msgstr "إدخال الاسم المستعار للمفتاح:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "إدخال كلمة المرور:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "الشهادات الخارجية"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "خطأ"
 

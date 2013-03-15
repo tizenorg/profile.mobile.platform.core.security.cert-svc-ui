@@ -43,9 +43,6 @@ msgstr "Iontráil eochair an ailias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Iontráil pasfhocal:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Deimhnithe seachtracha"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Bréige"
 

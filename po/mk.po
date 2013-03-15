@@ -43,9 +43,6 @@ msgstr "Внесете прекар за клучот:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Внесете лозинка:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Надворешни сертификати"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Неточно"
 

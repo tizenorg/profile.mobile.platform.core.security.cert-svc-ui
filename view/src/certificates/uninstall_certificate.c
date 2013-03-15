@@ -209,10 +209,6 @@ static void back_uninstall_cb() {
             LOGD("back to TRUSTED_ROOT_SCREEN");
             trusted_root_cert_cb(ad, NULL, NULL);
             break;
-        case USER_SCREEN:
-            LOGD("back to USER_SCREEN");
-            user_cert_cb(ad, NULL, NULL);
-            break;
         default:
             break;
     }

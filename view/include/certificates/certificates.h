@@ -60,7 +60,6 @@
 // certificates menu
 void certificates_menu_cb (void *data, Evas_Object *obj, void *event_info);
 void trusted_root_cert_cb (void *data, Evas_Object *obj, void *event_info);
-void user_cert_cb         (void *data, Evas_Object *obj, void *event_info);
 void pfx_cert_cb          (void *data, Evas_Object *obj, void *event_info);
 
 
@@ -84,7 +83,6 @@ Eina_Bool pfx_cert_create_list   (struct ug_data *ad);
 void get_info_cert_from_file_cb        (struct ug_data *ad);
 void get_info_cert_from_certificate_cb (CertSvcCertificate cert);
 void delete_cert_cb                    (void *data, Evas_Object *obj, void *event_info);
-void install_cb                        (void *data, Evas_Object *obj, void *event_info);
 
 //---------------------------------------------
 

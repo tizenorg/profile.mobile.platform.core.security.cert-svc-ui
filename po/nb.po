@@ -43,9 +43,6 @@ msgstr "Angi nøkkelalias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Skriv inn passord:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Eksterne sertifikater"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Usann"
 

@@ -43,9 +43,6 @@ msgstr "Введіть ключове коротке ім'я:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Введіть пароль:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Зовнішні сертифікати"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Хибний"
 

@@ -43,9 +43,6 @@ msgstr "Zadajte pseudonym kľúča:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Zadajte heslo:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "﻿Externé certifikáty"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Nepravda"
 
