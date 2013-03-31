@@ -54,8 +54,8 @@
 
 //sd-card
 #define PATH_SDCARD                  "/opt/storage/sdcard"
-#define PATH_MEDIA                   "/opt/media"
-#define PATH_MEDIA_DOWNLOADS         "/opt/media/Downloads"
+#define PATH_MEDIA                   "/opt/usr/media"
+#define PATH_MEDIA_DOWNLOADS         "/opt/usr/media/Downloads"
 
 // certificates menu
 void certificates_menu_cb (void *data, Evas_Object *obj, void *event_info);
