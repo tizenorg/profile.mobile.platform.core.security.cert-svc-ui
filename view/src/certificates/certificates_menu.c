@@ -64,7 +64,5 @@ void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_object_style_set(back, "naviframe/end_btn/default");
     evas_object_smart_callback_add(back, "clicked", _quit_cb, ad);
 
-    Elm_Object_Item *navi_it = NULL;
-    navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), back, NULL, list,
-            NULL);
+    elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), back, NULL, list, NULL);
 }
