@@ -118,6 +118,8 @@ static void on_destroy(ui_gadget_h ug, service_h service, void *priv) {
 
     ugd = priv;
 
+	certsvc_instance_free(ugd->instance);
+
     evas_object_del(ugd->layout_main);
     ugd->layout_main = NULL;
     LOGD("on_destroy() END");

@@ -29,8 +29,6 @@
 static void _quit_cb(void *data, Evas_Object* obj, void* event_info) {
     struct ug_data *ad = (struct ug_data*) data;
 
-    certsvc_instance_free(ad->instance);
-
 	if (ad->ug) {
 		ug_destroy_me(ad->ug);
 		ad->ug = NULL;
