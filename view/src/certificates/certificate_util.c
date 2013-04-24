@@ -499,14 +499,19 @@ void deleteList(struct ListElement* listElement) {
     LOGD("Removed %d elements", count);
 }
 // ------------------------------------------------
-
-void back_cb(void *data, Evas_Object *obj, void *event_info) {
+//@@@test
+Eina_Bool back_cb(void *data, Elm_Object_Item *it)
+{
     LOGD("back_cb");
     struct ug_data *ad = (struct ug_data *) data;
 
     deleteList(ad->list_element);
     ad->list_element = NULL;
+	   
+	return EINA_TRUE;   
 }
+
+
 
 void back_install_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("back_install_cb");

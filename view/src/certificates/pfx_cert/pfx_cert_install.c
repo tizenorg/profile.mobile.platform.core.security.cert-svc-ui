@@ -33,12 +33,10 @@ static void install_pfx_button_cb (void *data, Evas_Object *obj, void *event_inf
 static void _clear_list (struct ListElement *listElement){
     deleteList(listElement);
 }
-
-static void _back_cb (void *data, Evas_Object *obj, void *event_info){
-
-    if(NULL == data)
-        return;
-    _clear_list((struct ListElement *) data);
+Eina_Bool _back_cb(void *data, Elm_Object_Item *it) {
+    if(NULL != data)
+		_clear_list((struct ListElement *) data);
+	return EINA_TRUE;   
 }
 
 static struct ListElement* scan_dir(const char * dir_path, Evas_Object *list, struct ListElement *lastListElement){
@@ -107,13 +105,7 @@ void pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_info) {
 
     Elm_Object_Item *navi_it = NULL;
     if(firstListElement->next) {
-        navi_it = elm_naviframe_item_push(
-                ad->navi_bar,
-                dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"),
-                NULL,
-                NULL,
-                list,
-                NULL);
+		navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"), NULL, NULL, list, NULL);
     }
     else { //No content
         Evas_Object *no_content = create_no_content_layout(ad);
@@ -122,17 +114,10 @@ void pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_info) {
             LOGD("Cannot create no_content layout (NULL); return");
             return;
         }
-        navi_it = elm_naviframe_item_push(
-                ad->navi_bar,
-                dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"),
-                NULL,
-                NULL,
-                no_content,
-                NULL);
+		navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"), NULL, NULL, no_content, NULL);
     }
 
-    Evas_Object *back = elm_object_item_part_content_get(navi_it, "prev_btn");
-    evas_object_smart_callback_add(back, "clicked", _back_cb, firstListElement);
+	elm_naviframe_item_pop_cb_set(navi_it, _back_cb, NULL);  
 }
 
 static void install_pfx_button_cb(void *data, Evas_Object *obj, void *event_info) {

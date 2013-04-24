@@ -26,14 +26,18 @@
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
-static void _quit_cb(void *data, Evas_Object* obj, void* event_info) {
+Eina_Bool _quit_cb(void *data, Elm_Object_Item *it)
+{
     struct ug_data *ad = (struct ug_data*) data;
 
 	if (ad->ug) {
 		ug_destroy_me(ad->ug);
 		ad->ug = NULL;
 	}
+
+	return EINA_TRUE;   
 }
+	  
 
 void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
     struct ug_data *ad = (struct ug_data*) data;
@@ -57,10 +61,10 @@ void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_list_item_append(list, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, pfx_cert_cb, ad);
 
     elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), NULL, NULL, list, NULL);
+	
+	back = elm_button_add(ad->navi_bar);
 
-    back = elm_button_add(ad->navi_bar);
-    elm_object_style_set(back, "naviframe/end_btn/default");
-    evas_object_smart_callback_add(back, "clicked", _quit_cb, ad);
-
-    elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), back, NULL, list, NULL);
+	elm_object_style_set(back, "naviframe/back_btn/default");
+	Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), back, NULL, list, NULL);
+	elm_naviframe_item_pop_cb_set(nf_it, _quit_cb, data); 
 }

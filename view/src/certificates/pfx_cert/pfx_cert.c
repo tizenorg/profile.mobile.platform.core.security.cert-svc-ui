@@ -88,8 +88,9 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
     return NULL;
 }
 
-static void back_pfx_cb(void *data, Evas_Object *obj, void *event_info){
+Eina_Bool back_pfx_cb(void *data, Elm_Object_Item *it) {
     clear_pfx_genlist_data();
+	return EINA_TRUE;   
 }
 
 static void pfx_selection_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -254,13 +255,7 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
 
     Elm_Object_Item *itm = NULL;
     if(!pfx_cert_create_list(ad)){
-        itm = elm_naviframe_item_push(
-                ad->navi_bar,
-                dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"),
-                NULL,
-                NULL,
-                ad->genlist_pfx,
-                NULL);
+		itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, ad->genlist_pfx, NULL);
 
         elm_object_disabled_set(uninstall_button, EINA_FALSE);
     }
@@ -271,13 +266,7 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
             LOGD("Cannot create no_content layout (NULL); return");
             return;
         }
-        itm = elm_naviframe_item_push(
-                ad->navi_bar,
-                dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"),
-                NULL,
-                NULL,
-                no_content,
-                NULL);
+		itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, no_content, NULL);
 
         elm_object_disabled_set(uninstall_button, EINA_TRUE);
     }
@@ -285,7 +274,5 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_object_item_part_content_set(itm, "toolbar_button1", install_button);
     elm_object_item_part_content_set(itm, "toolbar_button2", uninstall_button);
 
-    Evas_Object *back = NULL;
-    back = elm_object_item_part_content_get(itm, "prev_btn");
-    evas_object_smart_callback_add(back, "clicked", back_pfx_cb, NULL);
+	elm_naviframe_item_pop_cb_set(itm, back_pfx_cb, NULL);  
 }

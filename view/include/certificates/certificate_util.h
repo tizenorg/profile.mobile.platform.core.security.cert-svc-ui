@@ -109,7 +109,8 @@ char *extractDataFromCert(char *path);
 const char* get_email(CertSvcString alias);
 
 void cert_selection_cb(void *data, Evas_Object *obj, void *event_info);
-void back_cb          (void *data, Evas_Object *obj, void *event_info);
+//void back_cb          (void *data, Evas_Object *obj, void *event_info);
+Eina_Bool back_cb (void *data, Elm_Object_Item *it);
 void back_install_cb  (void *data, Evas_Object *obj, void *event_info);
 void install_button_cb(void *data, Evas_Object *obj, void *event_info);
 

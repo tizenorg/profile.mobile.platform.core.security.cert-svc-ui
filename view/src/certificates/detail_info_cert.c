@@ -32,7 +32,7 @@
 #include "certificates/certificates.h"
 
 static char* format_key (char *key);
-static void _back_cb(void *data, Evas_Object* obj, void* event_info);
+Eina_Bool _back(void *data, Elm_Object_Item *it);
 
 static char *Cert_Data_Field[12];
 static char *Cert_Data[12];
@@ -405,7 +405,6 @@ void show_detail_info() {
     struct ug_data *ad = get_ug_data();
 
     Evas_Object *genlist = NULL;
-    Evas_Object *back = NULL;
 
     genlist = elm_genlist_add(ad->win_main);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
@@ -441,13 +440,9 @@ void show_detail_info() {
     }
 
     LOGD("Push genlist");
-    Elm_Object_Item *navi_it = NULL;
-    navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATE_DETAILS"), NULL, NULL, genlist,
-            NULL);
+	Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATE_DETAILS"), NULL, NULL, genlist, NULL);
+	elm_naviframe_item_pop_cb_set(nf_it, _back, (struct Evas_Object *)ad);
 
-    LOGD("Setup callback for back button");
-    back = elm_object_item_part_content_get(navi_it, "prev_btn");
-    evas_object_smart_callback_add(back, "clicked", _back_cb, ad);
 }
 
 void get_info_cert_from_file_cb(struct ug_data *ad) {
@@ -494,7 +489,10 @@ void get_info_cert_from_certificate_cb(CertSvcCertificate cert) {
     show_detail_info();
 }
 
-static void _back_cb(void *data, Evas_Object* obj, void* event_info) {
-
+Eina_Bool _back(void *data, Elm_Object_Item *it)
+{
+	   
     clearCertData();
+	return EINA_TRUE;   
 }
+
