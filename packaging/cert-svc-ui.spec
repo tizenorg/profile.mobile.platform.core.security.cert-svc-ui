@@ -64,6 +64,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %manifest %{_datadir}/%{name}.manifest
+/etc/smack/accesses2.d/ug.%{name}.include
 %{_ugdir}/lib/libmgr-cert-view.so
 %{_ugdir}/lib/libug-setting-manage-certificates-efl.so.*
 %{_ugdir}/lib/libug-setting-manage-certificates-efl.so
