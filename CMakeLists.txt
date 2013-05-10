@@ -39,3 +39,5 @@ ADD_SUBDIRECTORY(cert-selection-ug)
 
 # i18n
 ADD_SUBDIRECTORY(po)
+
+INSTALL(FILES packaging/ug.cert-svc-ui.include DESTINATION /etc/smack/accesses2.d)

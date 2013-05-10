@@ -1,5 +1,9 @@
 <manifest>
-    <request>
-        <domain name="_"/>
-    </request>
+	<define>
+		<domain name="cert-svc-ui"/>
+	</define>
+	<assign>
+		<filesystem path="/usr/ug/lib/*" label="_" />
+		<filesystem path="/usr/ug/res/*" label="_" />
+	</assign>
 </manifest>
