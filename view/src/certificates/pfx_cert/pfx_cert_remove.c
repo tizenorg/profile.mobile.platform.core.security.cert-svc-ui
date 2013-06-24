@@ -38,18 +38,18 @@ static CertSvcStringList stringList;
 static Eina_Bool *state_pointer; //check states
 static int list_length = 0;
 static Elm_Object_Item *select_all_item = NULL;
-static Evas_Object *uninstallButton = NULL;
+static Elm_Object_Item *uninstallButton = NULL;
 
 static void uninstall_button_set () {
 
     int i;
     for (i = 1; i <= list_length; ++i) {
         if (EINA_TRUE == state_pointer[i]){
-            elm_object_disabled_set(uninstallButton, EINA_FALSE);
+            elm_object_item_disabled_set(uninstallButton, EINA_FALSE);
             return;
         }
     }
-    elm_object_disabled_set(uninstallButton, EINA_TRUE);
+    elm_object_item_disabled_set(uninstallButton, EINA_TRUE);
 }
 
 static void _gl_sel(void *data, Evas_Object *obj, void *event_info){
@@ -220,24 +220,21 @@ void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info) {
 
     struct ug_data *ad = (struct ug_data *) data;
     Evas_Object *genlist = NULL;
-    Evas_Object *cancel_button;
+    Evas_Object *toolbar = NULL;
+    Elm_Object_Item *cancel_button;
 
     certsvc_pkcs12_get_id_list(ad->instance, &stringList);
 
-    uninstallButton = elm_button_add(ad->navi_bar);
-    if (!uninstallButton)
-        return;
-    elm_object_text_set(uninstallButton, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"));
-    elm_object_style_set(uninstallButton, "naviframe/toolbar/left");
-    evas_object_smart_callback_add(uninstallButton, "clicked", genlist_pfx_delete_cb, ad);
-    elm_object_disabled_set(uninstallButton, EINA_TRUE);
+    toolbar = elm_toolbar_add(ad->navi_bar);
+    if (!toolbar) return;
+    elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
+    elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
 
-    cancel_button = elm_button_add(ad->navi_bar);
-    if (!cancel_button)
-        return;
-    elm_object_text_set(cancel_button, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"));
-    elm_object_style_set(cancel_button, "naviframe/toolbar/right");
-    evas_object_smart_callback_add(cancel_button, "clicked", genlist_pfx_cancel_cb, ad);
+    uninstallButton = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), genlist_pfx_delete_cb, ad);
+    if (!uninstallButton) return;
+
+    cancel_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"), genlist_pfx_cancel_cb, ad);
+    if (!cancel_button) return;
 
     genlist = elm_genlist_add(ad->navi_bar);
 
@@ -259,7 +256,6 @@ void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info) {
             NULL,
             genlist,
             NULL);
-    elm_object_item_part_content_set(itm, "toolbar_button1", uninstallButton);
-    elm_object_item_part_content_set(itm, "toolbar_button2", cancel_button);
+    elm_object_item_part_content_set(itm, "toolbar", toolbar);
     elm_object_item_part_content_unset(itm, "prev_btn");
 }

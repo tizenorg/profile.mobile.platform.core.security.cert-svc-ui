@@ -14,6 +14,7 @@ pkg_check_modules(pkgs_view
     ui-gadget-1
     capi-appfw-application
     cert-svc-vcore
+	efl-assist
 )
 
 SET(SRCS

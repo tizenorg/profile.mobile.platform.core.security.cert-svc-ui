@@ -6,6 +6,7 @@ pkg_check_modules(ug-cert-selection-ug-efl_pkgs
     dlog
     capi-appfw-application
     cert-svc-vcore
+	efl-assist
 )
 
 SET(SRCS

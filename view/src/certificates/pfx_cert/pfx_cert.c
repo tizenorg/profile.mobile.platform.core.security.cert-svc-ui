@@ -229,35 +229,36 @@ Eina_Bool pfx_cert_create_list(struct ug_data *ad){
 void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("pfx_cert_cb()");
 
-    Evas_Object *install_button;
-    Evas_Object *uninstall_button;
+    Evas_Object* toolbar;
+    Elm_Object_Item* install_button;
+    Elm_Object_Item* uninstall_button;
 
     if(NULL == data){
         return;
     }
     struct ug_data *ad = (struct ug_data *) data;
 
-    install_button = elm_button_add(ad->navi_bar);
+    toolbar = elm_toolbar_add(ad->navi_bar);
+    if (!toolbar)
+        return;
+    elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
+    elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
+
+    install_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), install_button_cb, (void*)PKCS12);
     if (!install_button)
         return;
-    elm_object_text_set(install_button, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"));
-    elm_object_style_set(install_button, "naviframe/toolbar/left");
-    evas_object_smart_callback_add(install_button, "clicked", install_button_cb, (void *) PKCS12);
-
-    uninstall_button = elm_button_add(ad->navi_bar);
+    
+    uninstall_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), pfx_cert_remove_cb, ad);
     if (!uninstall_button)
         return;
-    elm_object_text_set(uninstall_button, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"));
-    elm_object_style_set(uninstall_button, "naviframe/toolbar/right");
-    evas_object_smart_callback_add(uninstall_button, "clicked", pfx_cert_remove_cb, ad);
 
     ad->genlist_pfx = elm_genlist_add(ad->win_main);
 
     Elm_Object_Item *itm = NULL;
     if(!pfx_cert_create_list(ad)){
-		itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, ad->genlist_pfx, NULL);
+        itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, ad->genlist_pfx, NULL);
 
-        elm_object_disabled_set(uninstall_button, EINA_FALSE);
+        elm_object_item_disabled_set(uninstall_button, EINA_FALSE);
     }
     else { // No content
         Evas_Object *no_content = create_no_content_layout(ad);
@@ -266,13 +267,12 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
             LOGD("Cannot create no_content layout (NULL); return");
             return;
         }
-		itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, no_content, NULL);
+        itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, no_content, NULL);
 
-        elm_object_disabled_set(uninstall_button, EINA_TRUE);
+        elm_object_item_disabled_set(uninstall_button, EINA_TRUE);
     }
 
-    elm_object_item_part_content_set(itm, "toolbar_button1", install_button);
-    elm_object_item_part_content_set(itm, "toolbar_button2", uninstall_button);
+    elm_object_item_part_content_set(itm, "toolbar", toolbar);
 
-	elm_naviframe_item_pop_cb_set(itm, back_pfx_cb, NULL);  
+    elm_naviframe_item_pop_cb_set(itm, back_pfx_cb, NULL);
 }

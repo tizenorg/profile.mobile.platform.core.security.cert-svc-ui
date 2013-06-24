@@ -22,6 +22,7 @@
 
 #include <cert-svc/cinstance.h>
 #include <dlog.h>
+#include <efl_assist.h>
 
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
@@ -66,5 +67,9 @@ void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
 
 	elm_object_style_set(back, "naviframe/back_btn/default");
 	Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), back, NULL, list, NULL);
-	elm_naviframe_item_pop_cb_set(nf_it, _quit_cb, data); 
+	elm_naviframe_item_pop_cb_set(nf_it, _quit_cb, data);
+
+	elm_naviframe_prev_btn_auto_pushed_set(ad->navi_bar, EINA_FALSE);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_BACK, ea_naviframe_back_cb, NULL);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_MORE, ea_naviframe_more_cb, NULL);
 }

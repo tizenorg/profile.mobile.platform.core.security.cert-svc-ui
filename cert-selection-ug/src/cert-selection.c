@@ -20,7 +20,8 @@
  */
 
 #include <Elementary.h>
-#include "dlog.h"
+#include <efl_assist.h>
+#include <dlog.h>
 
 #include <stdio.h>
 #include <dirent.h>
@@ -43,7 +44,7 @@ static int             state_index    = -1; //selected radio index
 static char            *selected_name = NULL;
 static Eina_Bool       selected       = EINA_FALSE;
 static Evas_Object     *radio_main    = NULL;
-static Evas_Object     *open_button   = NULL;
+static Elm_Object_Item *open_button   = NULL;
 static Elm_Genlist_Item_Class itc;
 
 static void _open(void *data, Evas_Object *obj, void *event_info) {
@@ -201,7 +202,7 @@ static void _gl_sel(void *data, Evas_Object *obj, void *event_info) {
         selected = EINA_FALSE;
         return;
     }
-    elm_object_disabled_set(open_button, EINA_FALSE);
+    elm_object_item_disabled_set(open_button, EINA_FALSE);
 
     if(selected_name)
         free(selected_name);
@@ -220,9 +221,10 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
     (void)event_info;
 
     struct ug_data *ad = (struct ug_data *) data;
+    Evas_Object *toolbar = NULL;
     Evas_Object *genlist = NULL;
     Evas_Object *layout  = NULL;
-    Evas_Object *cancel_button = NULL;
+    Elm_Object_Item *cancel_button = NULL;
 
     state_index = -1;
 
@@ -231,17 +233,16 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
         return;
     elm_layout_theme_set(layout, "layout", "tabbar", "default");
 
-    open_button = elm_button_add(ad->navi_bar);
-    if (!open_button) return;
-    elm_object_text_set(open_button, dgettext(PACKAGE, "IDS_ST_BUTTON_OPEN"));
-    elm_object_style_set(open_button, "naviframe/toolbar/left");
-    evas_object_smart_callback_add(open_button, "clicked", _open, ad);
+    toolbar = elm_toolbar_add(ad->navi_bar);
+    if (!toolbar) return;
+    elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
+    elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
 
-    cancel_button = elm_button_add(ad->navi_bar);
+    open_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_OPEN"), _open, ad);
+    if (!open_button) return;
+
+    cancel_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"), _cancel, ad);
     if (!cancel_button) return;
-    elm_object_text_set(cancel_button, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"));
-    elm_object_style_set(cancel_button, "naviframe/toolbar/right");
-    evas_object_smart_callback_add(cancel_button, "clicked", _cancel, ad);
 
     // Create genlist;
     genlist = elm_genlist_add(layout);
@@ -302,9 +303,12 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
                 genlist,
                 NULL);
     }
-    elm_object_item_part_content_set(itm, "toolbar_button1", open_button);
-    elm_object_item_part_content_set(itm, "toolbar_button2", cancel_button);
-    elm_object_disabled_set(open_button, EINA_TRUE);
+    elm_object_item_part_content_set(itm, "toolbar", toolbar);
+    elm_object_item_disabled_set(open_button, EINA_TRUE);
+	
+	elm_naviframe_prev_btn_auto_pushed_set(ad->navi_bar, EINA_FALSE);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_BACK, ea_naviframe_back_cb, NULL);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_MORE, ea_naviframe_more_cb, NULL);
 
     LOGD("end of cert_selection");
 }
