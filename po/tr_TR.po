@@ -121,6 +121,9 @@ msgstr "İptal"
 msgid "IDS_ST_SK2_OK"
 msgstr "Tamam"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "İstemci sertifikası"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Seri numarası:"
 

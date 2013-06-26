@@ -121,6 +121,9 @@ msgstr "Tühista"
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Kliendi sertifikaat"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Seerianumber:"
 

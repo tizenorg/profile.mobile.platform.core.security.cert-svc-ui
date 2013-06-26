@@ -121,6 +121,9 @@ msgstr "Atcelt"
 msgid "IDS_ST_SK2_OK"
 msgstr "Labi"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Klienta sertifikāts"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Sērijas numurs:"
 

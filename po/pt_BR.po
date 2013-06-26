@@ -121,6 +121,9 @@ msgstr "Cancelar"
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certif. do cliente"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Número de série:"
 

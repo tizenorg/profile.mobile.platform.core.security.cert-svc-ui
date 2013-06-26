@@ -121,6 +121,9 @@ msgstr "取消"
 msgid "IDS_ST_SK2_OK"
 msgstr "确定"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "客户端证书"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "序列号："
 

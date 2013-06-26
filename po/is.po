@@ -121,6 +121,9 @@ msgstr "Hætta við"
 msgid "IDS_ST_SK2_OK"
 msgstr "Í lagi"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Biðlaravottorð"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Raðnúmer:"
 

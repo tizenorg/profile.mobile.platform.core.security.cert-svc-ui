@@ -121,6 +121,9 @@ msgstr "취소"
 msgid "IDS_ST_SK2_OK"
 msgstr "확인"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "클라이언트 인증서"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "시리얼 번호:"
 

@@ -284,7 +284,7 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
 
         itm = elm_naviframe_item_push(
                 ad->navi_bar,
-                dgettext(PACKAGE, "CLIENT CERTIFICATE"),
+                dgettext(PACKAGE, "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"),
                 NULL,
                 NULL,
                 no_content,
@@ -297,7 +297,7 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
 
         itm = elm_naviframe_item_push(
                 ad->navi_bar,
-                dgettext(PACKAGE, "CLIENT CERTIFICATE"),
+                dgettext(PACKAGE, "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"),
                 NULL,
                 NULL,
                 genlist,

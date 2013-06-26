@@ -121,6 +121,9 @@ msgstr "გაუქმება"
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "კლიენტის სერთიფიკატი"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "სერიული ნომერი:"
 

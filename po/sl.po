@@ -121,6 +121,9 @@ msgstr "Prekliči"
 msgid "IDS_ST_SK2_OK"
 msgstr "V redu"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certifikat odjemalca"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Serijska številka:"
 

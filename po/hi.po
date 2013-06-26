@@ -121,6 +121,9 @@ msgstr "रद्द"
 msgid "IDS_ST_SK2_OK"
 msgstr "ओके"
 
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "क्लाइंट प्रमाणपत्र"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "सीरियल नंबर:"
 
