@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Abbruch"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Zertifikate"
 
@@ -43,6 +46,9 @@ msgstr "Schlüsselalias eingeben:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Passwort eingeben:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Externe Zertifikate"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falsch"
 
@@ -69,9 +75,6 @@ msgstr "Zertifikat wählen"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Zertifikat für Installation auswählen"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Seriennummer:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Signatur-Algorithmus:"
@@ -117,4 +120,7 @@ msgstr "Abbrechen"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Seriennummer:"
 

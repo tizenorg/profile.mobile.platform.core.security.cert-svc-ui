@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Anuluj"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certyfikaty"
 
@@ -43,6 +46,9 @@ msgstr "Wprowadź alias klucza:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Wprowadź hasło:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certyfikaty zewnętrzne"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fałsz"
 
@@ -70,9 +76,6 @@ msgstr "Wybierz certyfikat"
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Wybierz certyfikat do zainstalowania"
 
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Numer seryjny:"
-
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algorytm podpisywania:"
 
@@ -86,7 +89,7 @@ msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Certyfikaty użytkownika"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "Ważny od:"
+msgstr "Ważny do:"
 
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Ważny do:"
@@ -117,4 +120,7 @@ msgstr "Anuluj"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Numer seryjny:"
 

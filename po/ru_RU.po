@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Отмена"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Сертификаты"
 
@@ -43,6 +46,9 @@ msgstr "Введите псевдоним ключа:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Введите пароль:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Внешние сертификаты"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ложь"
 
@@ -69,9 +75,6 @@ msgstr "Выберите сертификат"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Выберите сертификат для установки"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Серийный номер:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Алгоритм подписи:"
@@ -117,4 +120,7 @@ msgstr "Отмена"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "ОК"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Серийный номер:"
 

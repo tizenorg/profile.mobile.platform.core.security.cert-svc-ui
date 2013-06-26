@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Annuler"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificats"
 
@@ -14,7 +17,7 @@ msgid "IDS_ST_BODY_SELECT_ALL"
 msgstr "Sélectionner tout"
 
 msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Emetteur :"
+msgstr "Émetteur :"
 
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Installer"
@@ -43,6 +46,9 @@ msgstr "Entrez l'alias de la clé :"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Saisissez le mot de passe :"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificats externes"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Faux"
 
@@ -70,9 +76,6 @@ msgstr "Sélectionner un certificat"
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Sélectionnez le certificat à installer"
 
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "N° de série :"
-
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algorithme de signature :"
 
@@ -92,7 +95,7 @@ msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Valide jusqu'à :"
 
 msgid "IDS_ST_BUTTON_OPEN"
-msgstr "Open"
+msgstr "Ouvrir"
 
 msgid "IDS_ST_BODY_COMMON_NAME_C"
 msgstr "Nom commun :"
@@ -117,4 +120,7 @@ msgstr "Annuler"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Numéro de série :"
 

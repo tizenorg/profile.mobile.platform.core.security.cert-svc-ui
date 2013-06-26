@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cealaigh"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Deimhnithe"
 
@@ -20,10 +23,10 @@ msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Suiteáil"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Tá an t-ailias ann cheana. Iontráil ailias uathúil"
+msgstr "Tá an t-ainm bréige ann cheana. Iontráil ainm bréige uathúil"
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Ní féidir leis an ailias a bheith folamh"
+msgstr "Ní féidir leis an ainm bréige a bheith folamh"
 
 msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
 msgstr "Aimsíodh deimhnithe"
@@ -32,19 +35,22 @@ msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Sonraí deimhnithe"
 
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "Faisnéis faoin dheimhniú"
+msgstr "Faisnéis faoin deimhniú"
 
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Údarás deimhnithe:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "Iontráil eochair an ailias:"
+msgstr "Iontráil eochair an ainm bhreige:"
 
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Iontráil pasfhocal:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Deimhnithe seachtracha"
+
 msgid "IDS_ST_BODY_FALSE"
-msgstr "Bréige"
+msgstr "Bréagach"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
 msgstr "Suiteálaí deimhniú"
@@ -69,9 +75,6 @@ msgstr "Roghnaigh deimhniú amháin"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Roghnaigh deimhniú le suiteáil"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Sraithuimhir:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algartam sínithe:"
@@ -117,4 +120,7 @@ msgstr "Cuir ar ceal"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sraithuimhir:"
 

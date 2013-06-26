@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Prekliči"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certifikati"
 
@@ -43,6 +46,9 @@ msgstr "Vnesite ključ vzdevka:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Vnesite geslo:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Zunanji certifikati"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Napačno"
 
@@ -69,9 +75,6 @@ msgstr "Izberite certifikat"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Izberite certifikat za namestitev"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serijska številka:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritem podpisa:"
@@ -117,4 +120,7 @@ msgstr "Prekliči"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "V redu"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serijska številka:"
 

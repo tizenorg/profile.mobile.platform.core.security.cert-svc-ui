@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Avbryt"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certifikat"
 
@@ -43,6 +46,9 @@ msgstr "Ange nyckelalias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Ange lösenord:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Externa certifikat"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falsk"
 
@@ -68,10 +74,7 @@ msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
 msgstr "Välj ett certifikat"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Välj certifikat att installera"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serienummer:"
+msgstr "Välj certifikat som du önskar installera"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Signaturalgoritm:"
@@ -117,4 +120,7 @@ msgstr "Avbryt"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serienummer:"
 

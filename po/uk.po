@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Скасувати"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Сертифікати"
 
@@ -43,6 +46,9 @@ msgstr "Введіть ключове коротке ім'я:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Введіть пароль:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Зовнішні сертифікати"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Хибний"
 
@@ -69,9 +75,6 @@ msgstr "Виберіть сертифікат"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Виберіть сертифікат для інсталяції"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Серійний номер:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Алгоритм підпису:"
@@ -117,4 +120,7 @@ msgstr "Скасувати"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Серійний номер:"
 

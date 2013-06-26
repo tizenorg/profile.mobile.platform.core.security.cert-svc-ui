@@ -1,9 +1,6 @@
 msgid "IDS_ST_BUTTON_CANCEL"
 msgstr "キャンセル"
 
-msgid "IDS_COM_BODY_SIZE"
-msgstr "サイズ"
-
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "証明書"
 
@@ -79,9 +76,6 @@ msgstr "証明書を選択してください。"
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "インストールする証明書を選択"
 
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serial number:"
-
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "署名アルゴリズム:"
 
@@ -127,12 +121,6 @@ msgstr "キャンセル"
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
 
-msgid "IDS_MF_OPT_NAME_HA_TO_Z"
-msgstr "名前(A～Z)"
-
-msgid "IDS_MF_OPT_NAME_HZ_TO_A"
-msgstr "名前(Z～A)"
-
-msgid "IDS_ST_BODY_FLIGHT_MODE_MSG"
-msgstr "機内モードを有効にすると、電話、SMS、およびデータネットワーク機能がOFFになります。また、Wi-FiやBluetoothなどの接続機能もOFFになります。Wi-Fi​や​Bluetoothを使用するには、設定または通知パネルからONにしてください。"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "シリアル番号:"
 

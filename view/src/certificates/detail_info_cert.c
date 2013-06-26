@@ -74,7 +74,7 @@ static void fillCertDataField() {
             break;
 
         case 7:
-            Cert_Data_Field[i] = dgettext(PACKAGE, "IDS_ST_BODY_SERIAL_NUMBER_C");
+            Cert_Data_Field[i] = dgettext(PACKAGE, "IDS_ST_BODY_SERIAL_NUMBER_COLON");
             break;
 
         case 8:

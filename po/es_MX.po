@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancelar"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificados"
 
@@ -11,7 +14,7 @@ msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "Fabricante"
 
 msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Seleccionar todo"
+msgstr "Todo"
 
 msgid "IDS_ST_BODY_ISSUER_COLON"
 msgstr "Emisor:"
@@ -20,7 +23,7 @@ msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Instalar"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Este alias ya existe. Ingrese un alias único"
+msgstr "Este alias ya existe. Intoducir un alias único"
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
 msgstr "El campo alias no puede estar vacío"
@@ -38,10 +41,13 @@ msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Autoridad de certificación:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "Ingresar alias de clave:"
+msgstr "Introducir alias de clave:"
 
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "Ingresar contraseña:"
+msgstr "Introducir contraseña:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificados externos"
 
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falso"
@@ -50,7 +56,7 @@ msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
 msgstr "Instalar certificado"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "¿Instalar certificados desde la tarjeta SD?"
+msgstr "¿Instalar certificados desde la tarjeta de memoria?"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Uso de la clave:"
@@ -69,9 +75,6 @@ msgstr "Seleccione el certificado"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Seleccione el certificado para instalar"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Número de serie:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritmo de firma:"
@@ -117,4 +120,7 @@ msgstr "Cancelar"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Aceptar"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Número de serie:"
 

@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Չեղարկել"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Վկայականներ"
 
@@ -43,6 +46,9 @@ msgstr "Մուտքագրեք բանալու փոխանուն՝"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Մուտքագրեք գաղտնաբառ՝"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Արտաքին վկայականներ"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Կեղծ"
 
@@ -69,9 +75,6 @@ msgstr "Ընտրեք վկայականը"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Ընտրել տեղադրելու վկայականը"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Սերիական համար՝"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Ստորագրության ալգորիթմ՝"
@@ -117,4 +120,7 @@ msgstr "Դադարեցնել"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Սերիական համարը՝"
 

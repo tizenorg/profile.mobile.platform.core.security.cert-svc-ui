@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancelar"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificados"
 
@@ -20,7 +23,7 @@ msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Instalar"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Ya existe el alias. Introduzca uno único"
+msgstr "Ya existe el alias. Introduzca uno único alias"
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
 msgstr "El alias no puede estar vacío"
@@ -32,7 +35,7 @@ msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Detalles de certificado"
 
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "Información de certificado"
+msgstr "Información del certificado"
 
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Autoridad de certificación:"
@@ -42,6 +45,9 @@ msgstr "Introduzca alias de clave:"
 
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introduzca contraseña:"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificados externos"
 
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falso"
@@ -68,10 +74,7 @@ msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
 msgstr "Seleccione el certificado"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Seleccione el certificado que instalar"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Número de serie:"
+msgstr "Seleccione el certificado a instalar"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritmo de firma:"
@@ -117,4 +120,7 @@ msgstr "Cancelar"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Número de serie:"
 

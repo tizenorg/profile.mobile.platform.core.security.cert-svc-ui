@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "रद्द"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "प्रमाणपत्र"
 
@@ -43,6 +46,9 @@ msgstr "कुंजी उपनाम दर्ज करें:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "पासवर्ड दर्ज करें:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "बाह्य प्रमाणपत्र"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "ग़लत"
 
@@ -69,9 +75,6 @@ msgstr "प्रमाणपत्र चुनें"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "स्थापित करने के लिए प्रमाणपत्र चुनें"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "सीरियल नंबर:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "हस्ताक्षर एल्गोरिथम:"
@@ -117,4 +120,7 @@ msgstr "रद्द"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "ओके"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "सीरियल नंबर:"
 

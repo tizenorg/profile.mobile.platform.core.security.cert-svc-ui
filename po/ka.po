@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "გაუქმება"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "სერთიფიკატები"
 
@@ -43,6 +46,9 @@ msgstr "შეიყვანეთ ძირითადი ალიასი:
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "აკრიფეთ პაროლი:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "გარე სერტიფიკატები"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "მცდარი"
 
@@ -69,9 +75,6 @@ msgstr "აირჩიეთ სერთიფიკატი"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "აირჩიეთ დასაინსტალირებელი სერთიფიკატი"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "სერიული ნომერი:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "ხელმოწერის ალგორითმი:"
@@ -117,4 +120,7 @@ msgstr "გაუქმება"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "სერიული ნომერი:"
 

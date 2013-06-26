@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Ακύρωση"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Πιστοποιητικά"
 
@@ -43,6 +46,9 @@ msgstr "Εισαγωγή ψευδώνυμου κλειδιού:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Εισαγωγή κωδικού πρόσβασης:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Εξωτερικά πιστοποιητικά"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ψευδές"
 
@@ -69,9 +75,6 @@ msgstr "Επιλέξτε πιστοποιητικό"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Επιλέξτε πιστοποιητικό προς εγκατάσταση"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Σειριακός αριθμός:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Αλγόριθμος υπογραφής:"
@@ -117,4 +120,7 @@ msgstr "Ακύρωση"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Σειριακός αριθμός:"
 

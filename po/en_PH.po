@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancel"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificates"
 
@@ -43,6 +46,9 @@ msgstr "Enter key alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Enter password:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "External certificates"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "False"
 
@@ -69,9 +75,6 @@ msgstr "Select a certificate"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Select certificate to install"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serial number:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Signature algorithm:"
@@ -117,4 +120,7 @@ msgstr "Cancel"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serial number:"
 

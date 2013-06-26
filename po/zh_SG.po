@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "取消"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "证书"
 
@@ -43,6 +46,9 @@ msgstr "输入密钥别名："
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "输入密码："
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "外部证书"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "假"
 
@@ -69,9 +75,6 @@ msgstr "选择证书"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "选择要安装的证书"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serial number:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "签名算法："
@@ -117,4 +120,7 @@ msgstr "取消"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "确定"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "序列号："
 

@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Anulare"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificate"
 
@@ -43,6 +46,9 @@ msgstr "Introduceţi aliasul cheie:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introduceţi parola:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificate externe"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fals"
 
@@ -69,9 +75,6 @@ msgstr "Selectaţi certificatul"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Selectaţi certificatul de instalat"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Număr serie:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritmul semnăturii:"
@@ -117,4 +120,7 @@ msgstr "Anulare"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Număr de serie:"
 

@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Atcelt"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Sertifikāti"
 
@@ -43,6 +46,9 @@ msgstr "Ievadiet atslēgas aizstājvārdu:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Ievadiet paroli:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Ārējie sertifikāti"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Nepareizs"
 
@@ -69,9 +75,6 @@ msgstr "Izvēlēties sertifikātu"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Izvēlieties sertifikātu, lai instalētu"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Sērijas numurs:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Paraksta algoritms:"
@@ -117,4 +120,7 @@ msgstr "Atcelt"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Labi"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sērijas numurs:"
 

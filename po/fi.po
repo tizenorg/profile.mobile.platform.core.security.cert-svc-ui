@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Peruuta"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Varmenteet"
 
@@ -43,6 +46,9 @@ msgstr "Anna avaimen alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Anna salasana:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Ulkoiset varmenteet"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Epätosi"
 
@@ -69,9 +75,6 @@ msgstr "Valitse sertifikaatti"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Valitse asennettava varmenne"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Sarjanumero:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Allekirjoitusalgoritmi:"
@@ -117,4 +120,7 @@ msgstr "Peruuta"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sarjanumero:"
 

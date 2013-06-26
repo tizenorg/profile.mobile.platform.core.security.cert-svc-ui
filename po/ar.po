@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "إلغاء"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "الشهادات"
 
@@ -43,6 +46,9 @@ msgstr "إدخال الاسم المستعار للمفتاح:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "إدخال كلمة المرور:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "الشهادات الخارجية"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "خطأ"
 
@@ -69,9 +75,6 @@ msgstr "اختر الشهادة"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "حدد الشهادة المطلوب تثبيتها"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "الرقم التسلسلي:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "خوارزمية التوقيع:"
@@ -117,4 +120,7 @@ msgstr "إلغاء"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "موافق"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "الرقم التسلسلي:"
 
