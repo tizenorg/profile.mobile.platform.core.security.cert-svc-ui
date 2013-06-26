@@ -307,7 +307,7 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_object_item_disabled_set(open_button, EINA_TRUE);
 	
 	elm_naviframe_prev_btn_auto_pushed_set(ad->navi_bar, EINA_FALSE);
-	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_BACK, ea_naviframe_back_cb, NULL);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_BACK, _cancel, ad);
 	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_MORE, ea_naviframe_more_cb, NULL);
 
     LOGD("end of cert_selection");
