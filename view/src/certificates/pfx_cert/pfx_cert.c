@@ -88,9 +88,9 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
     return NULL;
 }
 
-Eina_Bool back_pfx_cb(void *data, Elm_Object_Item *it) {
+static Eina_Bool _back_pfx_cb(void *data, Elm_Object_Item *it) {
     clear_pfx_genlist_data();
-	return EINA_TRUE;   
+	return EINA_TRUE;
 }
 
 static void pfx_selection_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -117,7 +117,7 @@ static void pfx_selection_cb(void *data, Evas_Object *obj, void *event_info) {
         LOGD("certsvc_string_list_get_one returned not CERTSVC_SUCCESS");
         return;
     }
-    LOGD("alias == %s", buffer);
+    SECURE_LOGD("alias == %s", buffer);
 
     returned = certsvc_pkcs12_load_certificate_list(ad->instance, buffer, &certList);
     if(CERTSVC_SUCCESS == returned) {
@@ -158,72 +158,94 @@ static void pfx_selection_cb(void *data, Evas_Object *obj, void *event_info) {
     get_info_cert_from_certificate_cb(cert);
 }
 
-Eina_Bool pfx_cert_create_list(struct ug_data *ad){
+void pfx_cert_create_list(struct ug_data *ad){
     LOGD("pfx_cert_create_list()");
 
-    int       result;
-    Eina_Bool no_content = EINA_TRUE;
+    int i;
+    int list_length = 0;
+    Evas_Object *no_content = NULL;
+    Evas_Object *genlist_pfx = NULL;
 
-    result = certsvc_pkcs12_get_id_list(ad->instance, &stringList);
-    if (CERTSVC_FAIL == result){
-        LOGD("certsvc_pkcs12_get_id_list returned CERTSVC_FAIL!!!");
-        return no_content;
-    }
-    else if (CERTSVC_BAD_ALLOC == result){
-        LOGD("certsvc_pkcs12_get_id_list returned CERTSVC_BAD_ALLOC!!!");
-        return no_content;
-    }
-    else if (CERTSVC_IO_ERROR == result){
-        LOGD("certsvc_pkcs12_get_id_list returned CERTSVC_IO_ERROR!!!");
-        return no_content;
-    }
-    else if (CERTSVC_SUCCESS == result){
-        LOGD("certsvc_pkcs12_get_id_list returned CERTSVC_SUCCESS");
-    }
-    else {
-        LOGD("certsvc_pkcs12_get_id_list returned %d", result);
+    certsvc_pkcs12_get_id_list(ad->instance, &stringList);
+    certsvc_string_list_get_length(stringList, &list_length);
+
+    // Refresh logic: 1. clear Main Screen
+    // if ad->user_cert_list_item is there that mean we are going to refresh the screen
+    if (ad->user_cert_list_item) {
+    	elm_object_item_part_content_set(ad->user_cert_list_item, NULL , NULL); //deletes the previous object set.
     }
 
-    elm_genlist_clear(ad->genlist_pfx);
     clear_pfx_genlist_data();
 
-    int i;
-    int list_length;
-    result = certsvc_string_list_get_length(stringList, &list_length);
-    if(CERTSVC_WRONG_ARGUMENT == result){
-        LOGD("certsvc_string_list_get_length returned CERTSVC_WRONG_ARGUMENT!!!");
-        return no_content;
-    }
-    else if (CERTSVC_SUCCESS == result){
-        LOGD("certsvc_string_list_get_length returned CERTSVC_SUCCESS");
-    }
+    // Refresh logic: 2. Make new layouts on Main screen
+    if (1 > list_length) { // No content
+		no_content = create_no_content_layout(ad);
+		if(!no_content){
+			LOGD("Cannot create no_content layout (NULL); return");
+			return;
+		}
 
-    max_length = list_length;
-    if(list_length > 0 ){
-        no_content = EINA_FALSE;
-        alias_list = malloc(list_length * sizeof(char *));
-        email_list = malloc(list_length * sizeof(char *));
-    }
+    	if (ad->user_cert_list_item) {
+    		elm_object_item_part_content_set(ad->user_cert_list_item, NULL , no_content); //deletes the previous object set.
+    	}
+    	else {
+    		ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, no_content, NULL);
+    	}
 
-    CertSvcString buffer;
-    const char *char_buffer;
-    for(i = 0; i < list_length; i++) {
-        if (CERTSVC_SUCCESS != certsvc_string_list_get_one(stringList, i, &buffer)) {
-            alias_list[i] = strdup("ERROR WHILE LOADING STRING");
-            email_list[i] = strdup("");
-            continue;
+    	elm_object_item_disabled_set(ad->uninstall_button, EINA_TRUE);
+
+    }
+    else {
+
+    	CertSvcString buffer;
+    	const char *char_buffer;
+
+    	genlist_pfx = elm_genlist_add(ad->win_main);
+        if (!genlist_pfx)
+        	return;
+
+		max_length = list_length;
+		if(list_length > 0 ){
+			alias_list = malloc(list_length * sizeof(char *));
+			email_list = malloc(list_length * sizeof(char *));
+		}
+
+		for(i = 0; i < list_length; i++) {
+			if (CERTSVC_SUCCESS != certsvc_string_list_get_one(stringList, i, &buffer)) {
+				alias_list[i] = strdup("ERROR WHILE LOADING STRING");
+				email_list[i] = strdup("");
+				continue;
+			}
+			certsvc_string_to_cstring(buffer, &char_buffer, NULL);
+			alias_list[i] = strdup(char_buffer);
+			email_list[i] = strdup(get_email(buffer));
+			LOGD("%s, %s", alias_list[i], email_list[i]);
+		}
+
+		for (i = 0; i < list_length; i++) {
+			LOGD("elm_genlist_item_append: %d: %s, %s", i, alias_list[i], email_list[i]);
+			elm_genlist_item_append(genlist_pfx, &itc_2text, (void*) i, NULL, ELM_GENLIST_ITEM_NONE, pfx_selection_cb, (void*) i);
+		}
+
+        if (ad->user_cert_list_item) {
+        	elm_object_item_part_content_set(ad->user_cert_list_item, NULL , genlist_pfx); //deletes the previous object set.
         }
-        certsvc_string_to_cstring(buffer, &char_buffer, NULL);
-        alias_list[i] = strdup(char_buffer);
-        email_list[i] = strdup(get_email(buffer));
-        LOGD("%s, %s", alias_list[i], email_list[i]);
-    }
+        else {
+        	ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, genlist_pfx, NULL);
+        }
 
-    for (i = 0; i < list_length; i++) {
-        LOGD("elm_genlist_item_append: %d: %s, %s", i, alias_list[i], email_list[i]);
-        elm_genlist_item_append(ad->genlist_pfx, &itc_2text, (void*) i, NULL, ELM_GENLIST_ITEM_NONE, pfx_selection_cb, (void*) i);
+    	elm_object_item_disabled_set(ad->uninstall_button, EINA_FALSE);
+
     }
-    return no_content;
+}
+
+void refresh_pfx_cert_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	struct ug_data *ad = (struct ug_data *) data;
+	if (!ad)
+		return;
+
+	pfx_cert_create_list(ad);
 }
 
 void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -231,12 +253,11 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
 
     Evas_Object* toolbar;
     Elm_Object_Item* install_button;
-    Elm_Object_Item* uninstall_button;
-
-    if(NULL == data){
-        return;
-    }
     struct ug_data *ad = (struct ug_data *) data;
+    if (!ad)
+    	return;
+
+    ad->user_cert_list_item = NULL;
 
     toolbar = elm_toolbar_add(ad->navi_bar);
     if (!toolbar)
@@ -244,35 +265,23 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
     elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
 
-    install_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), install_button_cb, (void*)PKCS12);
+    install_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), install_button_cb, ad);
     if (!install_button)
         return;
     
-    uninstall_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), pfx_cert_remove_cb, ad);
-    if (!uninstall_button)
-        return;
+    ad->uninstall_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), pfx_cert_remove_cb, ad);
+    if (!ad->uninstall_button)
+    	return;
 
-    ad->genlist_pfx = elm_genlist_add(ad->win_main);
+    pfx_cert_create_list(ad);
 
-    Elm_Object_Item *itm = NULL;
-    if(!pfx_cert_create_list(ad)){
-        itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, ad->genlist_pfx, NULL);
+    if (!ad->user_cert_list_item)
+    	return;
 
-        elm_object_item_disabled_set(uninstall_button, EINA_FALSE);
-    }
-    else { // No content
-        Evas_Object *no_content = create_no_content_layout(ad);
+    elm_object_item_part_content_set(ad->user_cert_list_item, "toolbar", toolbar);
 
-        if(!no_content){
-            LOGD("Cannot create no_content layout (NULL); return");
-            return;
-        }
-        itm = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, no_content, NULL);
+    elm_naviframe_item_pop_cb_set(ad->user_cert_list_item, _back_pfx_cb, NULL);
 
-        elm_object_item_disabled_set(uninstall_button, EINA_TRUE);
-    }
+    ad->refresh_screen_cb = refresh_pfx_cert_cb;
 
-    elm_object_item_part_content_set(itm, "toolbar", toolbar);
-
-    elm_naviframe_item_pop_cb_set(itm, back_pfx_cb, NULL);
 }

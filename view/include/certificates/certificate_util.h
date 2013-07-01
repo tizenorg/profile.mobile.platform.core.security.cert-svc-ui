@@ -65,6 +65,7 @@ enum CountOfSelected {
     SELECTED_ALL,    // ALL element are selected
 };
 
+Eina_Bool quit_cb(void *data, Elm_Object_Item *it);
 void list_clicked_cb    (void *data, Evas_Object *obj, void *event_info);
 void genlist_clicked_cb (void *data, Evas_Object *obj, void *event_info);
 
@@ -108,14 +109,12 @@ char *path_cat(const char *str1, char *str2);
 char *extractDataFromCert(char *path);
 const char* get_email(CertSvcString alias);
 
-void cert_selection_cb(void *data, Evas_Object *obj, void *event_info);
 //void back_cb          (void *data, Evas_Object *obj, void *event_info);
 Eina_Bool back_cb (void *data, Elm_Object_Item *it);
 void back_install_cb  (void *data, Evas_Object *obj, void *event_info);
 void install_button_cb(void *data, Evas_Object *obj, void *event_info);
 
-void refresh_list             (struct ug_data *ad);
-Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content, enum TypeOfCert typeOfCert);
+Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content);
 Evas_Object *create_ok_pop    (struct ug_data *ad, const char *content);
 
 Evas_Object *create_no_content_layout (struct ug_data *ad);
@@ -124,8 +123,7 @@ Eina_Bool make_list(
         struct ug_data     *ad,
         Evas_Object        *list,
         const char         *dir_path,
-        struct ListElement *lastListElement,
-        enum TypeOfCert    type );
+        struct ListElement *lastListElement);
 
 #ifdef _cplusplus
 }

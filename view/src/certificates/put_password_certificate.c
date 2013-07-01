@@ -159,7 +159,6 @@ static void _cancel_button_cb(void *data, Evas_Object *obj, void *event_info) {
     struct ug_data *ad = get_ug_data();
 
     elm_naviframe_item_pop(ad->navi_bar);
-    elm_naviframe_item_pop(ad->navi_bar);
 }
 
 static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -173,7 +172,7 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     int returned_value;
     int is_unique = CERTSVC_FALSE;
     CertSvcString pkcs_alias;
-    LOGD("alias:    %s", elm_entry_entry_get(_entry));
+    SECURE_LOGD("alias:    %s", elm_entry_entry_get(_entry));
 
     if(NULL == elm_entry_entry_get(_entry_pass))
         password = NULL;
@@ -203,12 +202,12 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     certsvc_pkcs12_alias_exists(ad->instance, pkcs_alias, &is_unique);
     // Alias already exists
     if (CERTSVC_FALSE == is_unique || 1 > strlen(alias)) {
-        LOGD("alias %s already exist", alias);
+        SECURE_LOGD("alias %s already exist", alias);
         create_ok_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"));
         free(path);
         goto exit;
     }
-    LOGD("certsvc_pkcs12_import_from_file( %s, %s, %s)", path, password, alias);
+    SECURE_LOGD("certsvc_pkcs12_import_from_file( %s, %s, %s)", path, password, alias);
     certsvc_string_new(ad->instance, alias, strlen(alias), &Alias);
     certsvc_string_new(ad->instance, path, strlen(path), &Path);
     certsvc_string_new(ad->instance, (password) ? password : "", (password) ? strlen(password) : 1, &Password);
@@ -218,28 +217,35 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     
     switch (returned_value) {
     case CERTSVC_SUCCESS:
-        LOGD("Certificate %s import success", current_file->name);
-        elm_naviframe_item_pop(ad->navi_bar);
-        elm_naviframe_item_pop(ad->navi_bar);
-        elm_genlist_clear(ad->genlist_pfx);   // TODO: This may not be the optimal solution
-        clear_pfx_genlist_data();             // Refactoring may be needed
-        elm_naviframe_item_pop(ad->navi_bar);
-        pfx_cert_cb(ad, NULL, NULL);
+        SECURE_LOGD("Certificate %s import success", current_file->name);
+        if (ad->user_cert_list_item)
+        {
+        	elm_naviframe_item_pop_to(ad->user_cert_list_item);
+        }
+        else if (ad->type_of_screen == PKCS12_SCREEN) {
+        	quit_cb(ad, NULL); //Exit from UG called directly by cert select UG.
+        }
+        else {
+        	elm_naviframe_item_pop(ad->navi_bar);
+        }
+
+        if (ad && ad->refresh_screen_cb)
+        {
+        	ad->refresh_screen_cb(ad, NULL, NULL);
+        }
         break;
 
     case CERTSVC_INVALID_PASSWORD:
-        LOGD("Invalid password to %s", current_file->name);
+        SECURE_LOGD("Invalid password to %s", current_file->name);
         break;
 
     case CERTSVC_IO_ERROR:
         LOGD("There's no such file!");
         elm_naviframe_item_pop(ad->navi_bar);
-        elm_naviframe_item_pop(ad->navi_bar);
         break;
 
     case CERTSVC_WRONG_ARGUMENT:
         LOGD("Wrong PKCS12 or PFX file.");
-        elm_naviframe_item_pop(ad->navi_bar);
         elm_naviframe_item_pop(ad->navi_bar);
         break;
 
@@ -330,8 +336,7 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
             _gl_sel,
             NULL );
 
-    Elm_Object_Item *navi_it = NULL;
-    navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
@@ -344,7 +349,7 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
     struct ug_data *ad = get_ug_data();
     current_file = (struct ListElement *) data;
 
-    _set_itc_classes();
+   _set_itc_classes();
     Evas_Object *genlist = elm_genlist_add(ad->win_main);
 
     name_entry_label = elm_genlist_item_append(
@@ -383,8 +388,7 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
                 _gl_sel,
                 NULL );
 
-    Elm_Object_Item *navi_it = NULL;
-    elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }

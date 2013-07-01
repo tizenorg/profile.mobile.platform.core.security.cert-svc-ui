@@ -175,28 +175,32 @@ static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info
     if (EINA_TRUE == state_pointer[0]) {
         for (i = 0; i < list_length; i++) {
             if (certsvc_string_list_get_one(stringList, i, &buffer) == CERTSVC_SUCCESS) {
-                certsvc_pkcs12_delete(ad->instance, buffer);
-                LOGD("%s --- removed", buffer);
+                if (certsvc_pkcs12_delete(ad->instance, buffer) == CERTSVC_SUCCESS)
+                {
+                    SECURE_LOGD("%s --- removed", buffer);
+                }
+				certsvc_string_free(buffer);
             }
-            certsvc_string_free(buffer);
         }
     } else {;
         for (i = 0; i < list_length; i++) {
             if (EINA_TRUE == state_pointer[i+1] &&
                     certsvc_string_list_get_one(stringList, i, &buffer) == CERTSVC_SUCCESS) {
-                certsvc_pkcs12_delete(ad->instance, buffer);
-                LOGD("%s --- removed", buffer);
+                if (certsvc_pkcs12_delete(ad->instance, buffer) == CERTSVC_SUCCESS)
+                {
+                    SECURE_LOGD("%s --- removed", buffer);
+                }
                 certsvc_string_free(buffer);
             }
         }
     }
     free(state_pointer);
-    elm_genlist_clear(ad->genlist_pfx);
-    clear_pfx_genlist_data();
     elm_naviframe_item_pop(ad->navi_bar);
-    elm_naviframe_item_pop(ad->navi_bar);
-    pfx_cert_cb(ad, NULL, NULL); //TODO: This may not be the optimal solution
-                                 // Refactoring may be needed
+    if (ad && ad->refresh_screen_cb)
+	{
+		ad->refresh_screen_cb(ad, NULL, NULL);
+	}
+
 }
 
 static void genlist_pfx_cancel_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -211,7 +215,6 @@ static void genlist_pfx_cancel_cb(void *data, Evas_Object *obj, void *event_info
     struct ug_data *ad = (struct ug_data *) data;
 
     free(state_pointer);
-    pfx_cert_create_list(ad);
     elm_naviframe_item_pop(ad->navi_bar);
 }
 

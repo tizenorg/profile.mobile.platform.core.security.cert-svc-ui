@@ -30,6 +30,7 @@
 #include <cert-svc/ccrl.h>
 #include <cert-svc/cocsp.h>
 #include <cert-svc/cpkcs12.h>
+#include <efl_assist.h>
 
 #include "mgr-app-uigadget.h"
 #include "dlog.h"
@@ -42,23 +43,22 @@
 static const char* const align_begin = "<align=center>";
 static const char* const align_end   = "</align>";
 
+static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info);
+
 static void _info_pop_response_no_cb(void *data, Evas_Object *obj, void *event_info) {
 
-    struct ug_data *ad = get_ug_data();
-    evas_object_del(ad->popup);
+	struct ug_data *ad = (struct ug_data *)data;
+	evas_object_del(ad->popup);
+	ad->popup = NULL;
 }
 
 static void _info_pop_response_yes_cb(void *data, Evas_Object *obj, void *event_info) {
 
-    enum TypeOfCert typeOfCert = (enum TypeOfCert) data;
-    struct ug_data *ad = get_ug_data();
-    if (PKCS12 == typeOfCert){
-        pfx_cert_install_cb(ad, NULL, NULL);
-    }
-    else {
-        user_search_cert_cb(ad, NULL, NULL);
-    }
+    //struct ug_data *ad = get_ug_data();
+	struct ug_data *ad = (struct ug_data *)data;
+    pfx_cert_install_cb(ad, NULL, NULL);
     evas_object_del(ad->popup);
+    ad->popup = NULL;
 }
 
 static void _info_pop_response_ok_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -68,6 +68,32 @@ static void _info_pop_response_ok_cb(void *data, Evas_Object *obj, void *event_i
     }
     Evas_Object *pop = (Evas_Object *) data;
     evas_object_del(pop);
+}
+
+static void _popup_quit_cb(void *data, Evas_Object *obj, void *event_info)
+{
+    struct ug_data *ad = (struct ug_data*) data;
+
+	evas_object_del(ad->popup);
+	ad->popup = NULL;
+
+	if (ad->ug) {
+		ug_destroy_me(ad->ug);
+		ad->ug = NULL;
+	}
+
+}
+
+Eina_Bool quit_cb(void *data, Elm_Object_Item *it)
+{
+    struct ug_data *ad = (struct ug_data*) data;
+
+	if (ad->ug) {
+		ug_destroy_me(ad->ug);
+		ad->ug = NULL;
+	}
+
+	return EINA_TRUE;   
 }
 
 void list_clicked_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -87,7 +113,7 @@ void genlist_clicked_cb(void *data, Evas_Object *obj, void *event_info) {
 }
 
 //create yes/no popup
-Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content, enum TypeOfCert typeOfCert) {
+Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content) {
 
     if (NULL == ad){
         return NULL;
@@ -121,12 +147,20 @@ Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content, enum Typ
     //yes button
     Evas_Object *btn_yes = elm_button_add(ad->popup);
     elm_object_text_set(btn_yes, dgettext(PACKAGE, "IDS_ST_BUTTON_YES"));
-    evas_object_smart_callback_add(btn_yes, "clicked", _info_pop_response_yes_cb, (void *) typeOfCert);
+    evas_object_smart_callback_add(btn_yes, "clicked", _info_pop_response_yes_cb, ad);
 
     //no button
     Evas_Object *btn_no = elm_button_add(ad->popup);
     elm_object_text_set(btn_no, dgettext(PACKAGE, "IDS_ST_BUTTON_NO"));
-    evas_object_smart_callback_add(btn_no, "clicked", _info_pop_response_no_cb, NULL);
+
+    if (ad->type_of_screen == PKCS12_SCREEN) {
+    	evas_object_smart_callback_add(btn_no, "clicked", _popup_quit_cb, ad);
+    	ea_object_event_callback_add(ad->popup, EA_CALLBACK_BACK, _popup_quit_cb, ad);
+    }
+    else {
+    	evas_object_smart_callback_add(btn_no, "clicked", _info_pop_response_no_cb, ad);
+    	ea_object_event_callback_add(ad->popup, EA_CALLBACK_BACK, _info_pop_response_no_cb, ad);
+    }
 
     elm_object_text_set(ad->popup, text);
     free(text);
@@ -141,9 +175,9 @@ Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content, enum Typ
 
 void install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("install_button_cb()");
-    enum TypeOfCert typeOfCert = (enum TypeOfCert) data;
-    struct ug_data *ad = get_ug_data();
-    create_yes_no_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"), typeOfCert);
+    //struct ug_data *ad = get_ug_data();
+    struct ug_data *ad = (struct ug_data *)data;
+    create_yes_no_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"));
 }
 
 Evas_Object *create_ok_pop(struct ug_data *ad, const char *content) {
@@ -186,6 +220,8 @@ Evas_Object *create_ok_pop(struct ug_data *ad, const char *content) {
     free(text);
 
     elm_object_part_content_set(ad->popup, "button1", btn_ok);
+
+    ea_object_event_callback_add(ad->popup, EA_CALLBACK_BACK, _info_pop_response_ok_cb, ad->popup);
 
     evas_object_show(ad->popup);
 
@@ -300,14 +336,14 @@ struct ListElement* addListElement(struct ListElement* lastListElement, const ch
     if (newListElement == NULL)
         return NULL;
 
-    LOGD("name %s", name);
+    SECURE_LOGD("name %s", name);
     newListElement->name = malloc((strlen(name) + 1) * sizeof(char));
     if (NULL == newListElement->name) {
         free(newListElement);
         return NULL;
     }
     strncpy(newListElement->name, name, strlen(name) + 1);
-    LOGD("name %s", newListElement->name);
+    SECURE_LOGD("name %s", newListElement->name);
 
     newListElement->title = NULL;
     newListElement->path = NULL;
@@ -521,7 +557,7 @@ void back_install_cb(void *data, Evas_Object *obj, void *event_info) {
     ad->list_element_install = NULL;
 }
 
-Eina_Bool make_list(struct ug_data *ad, Evas_Object *list, const char *dir_path, struct ListElement *lastListElement, enum TypeOfCert type) {
+Eina_Bool make_list(struct ug_data *ad, Evas_Object *list, const char *dir_path, struct ListElement *lastListElement) {
 
     LOGD("make_list()");
     DIR                *dir;
@@ -552,35 +588,29 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *list, const char *dir_path,
                 LOGD("Extract data returned NULL pointer");
                 continue;
             } else {
-                LOGD("title = \"%s\"", title);
-                LOGD("name  = %s", dp->d_name);
+                SECURE_LOGD("title = \"%s\"", title);
+                SECURE_LOGD("name  = %s", dp->d_name);
                 no_content_bool = EINA_FALSE;
 
                 current = addListElementWithPathAndTitle(lastListElement, dp->d_name, dir_path, title);
                 lastListElement = current;
 
-                switch (type) {
 
-                case TO_UNINSTALL: // in this case item isn't append to the list, because "uninstall" use-case uses more complex genlist
-                    break;
+				LOGD("strlen(title) = %d", strlen(title));
+				if (strlen(title) < 1){
+					// if Common name of cert is empty print the name of file instead.
+					it = elm_list_item_append(list, dp->d_name, NULL, NULL, _cert_selection_cb, current);
+					if (!it){
+						LOGE("Error in elm_list_item_append");
+					}
+				} else {
+					it = elm_list_item_append(list, title, NULL, NULL, _cert_selection_cb, current);
+					if (!it){
+						LOGE("Error in elm_list_item_append");
+					}
+				}
 
-                default:
-                    LOGD("strlen(title) = %d", strlen(title));
-                    if (strlen(title) < 1){
-                        // if Common name of cert is empty print the name of file instead.
-                        it = elm_list_item_append(list, dp->d_name, NULL, NULL, cert_selection_cb, current);
-                        if (!it){
-                            LOGE("Error in elm_list_item_append");
-                        }
-                    } else {
-                        it = elm_list_item_append(list, title, NULL, NULL, cert_selection_cb, current);
-                        if (!it){
-                            LOGE("Error in elm_list_item_append");
-                        }
-                    }
-                    break;
-                }
-                LOGD("elm list append = %s", current->name);
+                SECURE_LOGD("elm list append = %s", current->name);
 
                 free(title);
                 title = NULL;
@@ -611,15 +641,15 @@ Evas_Object *create_no_content_layout (struct ug_data *ad) {
     return no_content;
 }
 
-void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
+static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
 
-    LOGD("cert_selection_cb ()");
+    LOGD("_cert_selection_cb ()");
     if (NULL == data){
         return;
     }
     struct ListElement *current = (struct ListElement *) data;
     char *path = path_cat(current->path, current->name);
-    LOGD("cert_path = %s", path);
+    SECURE_LOGD("cert_path = %s", path);
 
     Elm_Object_Item *it = (Elm_Object_Item *) elm_list_selected_item_get(obj);
     if (it == NULL){
@@ -636,26 +666,6 @@ void cert_selection_cb(void *data, Evas_Object *obj, void *event_info) {
     free(path);
 }
 
-void refresh_list(struct ug_data *ad) {
-
-    LOGD("refresh_list");
-
-    switch (ad->type_of_screen) {
-
-    case TRUSTED_ROOT_SCREEN:
-        trusted_root_cert_create_list(ad);
-        break;
-
-    case USER_SCREEN:
-        user_cert_create_list(ad);
-        break;
-
-    default:
-        break;
-    }
-
-    return;
-}
 
 const char* get_email(CertSvcString alias) {
     LOGD("get_email()");

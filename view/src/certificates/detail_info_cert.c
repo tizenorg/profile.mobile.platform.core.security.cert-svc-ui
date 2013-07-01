@@ -237,7 +237,7 @@ static int fillCertData(CertSvcCertificate cert) {
     if (!Cert_Data[11]) {
         return -1;
     }
-    LOGD("Public Key: %s", Cert_Data[11]);
+    SECURE_LOGD("Public Key: %s", Cert_Data[11]);
 
     return 0;
 }
@@ -458,11 +458,11 @@ void get_info_cert_from_file_cb(struct ug_data *ad) {
         return;
     }
     char *cert_path = (char *) ad->data;
-    LOGD("cert_path = %s", cert_path);
+    SECURE_LOGD("cert_path = %s", cert_path);
 
     LOGD("filling cert data...");
     if (fillCertDataFromFile(cert_path)) {
-        LOGD("Error in fillCertDataFromFile( %s )", cert_path);
+        SECURE_LOGD("Error in fillCertDataFromFile( %s )", cert_path);
         LOGD("EXIT");
         return;
     }

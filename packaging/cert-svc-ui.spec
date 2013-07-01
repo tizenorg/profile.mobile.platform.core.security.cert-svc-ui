@@ -29,9 +29,7 @@ BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(ui-gadget-1)
 BuildRequires: pkgconfig(icu-i18n)
 BuildRequires: pkgconfig(bundle)
-BuildRequires: pkgconfig(ui-gadget-1)
 BuildRequires: pkgconfig(capi-appfw-application)
-BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(efl-assist)
 
 %description

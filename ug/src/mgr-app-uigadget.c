@@ -37,7 +37,6 @@ struct ug_data *get_ug_data() {
 }
 
 static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, void *priv) {
-    LOGD("on_create() BEGIN");
 
     if (NULL == ug)
         return NULL;
@@ -52,7 +51,7 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
     ugd->win_main = ug_get_parent_layout(ug);
     if (NULL == ugd->win_main)
         return NULL;
-    
+
     ugd->bg = elm_bg_add(ugd->win_main);
     if (!ugd->bg) {
         LOGD("ugd->bg is null");
@@ -86,9 +85,14 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
     elm_object_part_content_set(ugd->layout_main, "elm.swallow.content", ugd->navi_bar);
     evas_object_show(ugd->navi_bar);	
 
-    certificates_menu_cb((void*) ugd, NULL, NULL);
 
-    LOGD("on_create() END");
+    if(service != NULL) {
+    	direct_pfx_install_screen_cb((void*) ugd, NULL, NULL);
+    } else {
+		certificates_menu_cb((void*) ugd, NULL, NULL);
+    }
+
+
     return ugd->layout_main;
 }
 
@@ -105,7 +109,6 @@ static void on_resume(ui_gadget_h ug, service_h service, void *priv) {
 }
 
 static void on_destroy(ui_gadget_h ug, service_h service, void *priv) {
-    LOGD("on_destroy() BEGIN");
 
     if (NULL == ug) {
         LOGD("NULL == ug; return");
@@ -122,7 +125,6 @@ static void on_destroy(ui_gadget_h ug, service_h service, void *priv) {
 
     evas_object_del(ugd->layout_main);
     ugd->layout_main = NULL;
-    LOGD("on_destroy() END");
 }
 
 static void on_message(ui_gadget_h ug, service_h msg, service_h service, void *priv) {
@@ -130,7 +132,6 @@ static void on_message(ui_gadget_h ug, service_h msg, service_h service, void *p
 }
 
 static void on_event(ui_gadget_h ug, enum ug_event event, service_h service, void *priv) {
-    LOGD("on_event() BEGIN");
     switch (event) {
     case UG_EVENT_LOW_MEMORY:
         break;
@@ -149,11 +150,9 @@ static void on_event(ui_gadget_h ug, enum ug_event event, service_h service, voi
     default:
         break;
     }
-    LOGD("on_event() END");
 }
 
 static void on_key_event(ui_gadget_h ug, enum ug_key_event event, service_h service, void *priv) {
-    LOGD("on_key_event() BEGIN");
     if (NULL == ug) {
         LOGD("NULL == ug; return");
         return;
@@ -166,11 +165,10 @@ static void on_key_event(ui_gadget_h ug, enum ug_key_event event, service_h serv
     default:
         break;
     }
-    LOGD("on_key_event() END");
 }
 
 UG_MODULE_API int UG_MODULE_INIT(struct ug_module_ops *ops) {
-    LOGD("UG_MODULE_INIT() BEGIN");
+
     if (NULL == ops) {
         LOGD("NULL == ops; return");
         return -1;
@@ -189,12 +187,11 @@ UG_MODULE_API int UG_MODULE_INIT(struct ug_module_ops *ops) {
     ops->priv = ugd;
     ops->opt = UG_OPT_INDICATOR_ENABLE;
 
-    LOGD("UG_MODULE_INIT() END");
     return 0;
 }
 
 UG_MODULE_API void UG_MODULE_EXIT(struct ug_module_ops *ops) {
-    LOGD("UG_MODULE_EXIT() BEGIN");
+
     if (NULL == ops) {
         LOGD("NULL == ops; return");
         return;
@@ -202,12 +199,9 @@ UG_MODULE_API void UG_MODULE_EXIT(struct ug_module_ops *ops) {
 
     ugd = ops->priv;
     free(ugd);
-    LOGD("UG_MODULE_EXIT() END");
 }
 
 UG_MODULE_API int setting_plugin_reset(service_h service, void *priv) {
-    LOGD("setting_plugin_reset() BEGIN");
     /* nothing to do for Setting>Reset */
-    LOGD("setting_plugin_reset() END");
     return 0;
 }
