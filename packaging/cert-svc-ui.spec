@@ -62,6 +62,7 @@ rm -rf %{buildroot}
 %postun -p /sbin/ldconfig
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root,-)
 %manifest %{_datadir}/%{name}.manifest
 /etc/smack/accesses2.d/ug.%{name}.include
