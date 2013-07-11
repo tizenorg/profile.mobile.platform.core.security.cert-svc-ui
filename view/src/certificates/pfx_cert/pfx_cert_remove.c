@@ -40,6 +40,12 @@ static int list_length = 0;
 static Elm_Object_Item *select_all_item = NULL;
 static Elm_Object_Item *uninstallButton = NULL;
 
+static void _pfx_cert_remove_cleanup()
+{
+	free(state_pointer);
+	state_pointer = NULL;
+	certsvc_string_list_free(stringList);
+}
 static void uninstall_button_set () {
 
     int i;
@@ -194,7 +200,8 @@ static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info
             }
         }
     }
-    free(state_pointer);
+    _pfx_cert_remove_cleanup();
+
     elm_naviframe_item_pop(ad->navi_bar);
     if (ad && ad->refresh_screen_cb)
 	{
@@ -214,7 +221,8 @@ static void genlist_pfx_cancel_cb(void *data, Evas_Object *obj, void *event_info
     }
     struct ug_data *ad = (struct ug_data *) data;
 
-    free(state_pointer);
+    _pfx_cert_remove_cleanup();
+
     elm_naviframe_item_pop(ad->navi_bar);
 }
 
@@ -232,6 +240,7 @@ void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info) {
     if (!toolbar) return;
     elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
     elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
+    elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
 
     uninstallButton = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), genlist_pfx_delete_cb, ad);
     if (!uninstallButton) return;

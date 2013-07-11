@@ -66,6 +66,8 @@ void clear_pfx_genlist_data(){
         email_list = NULL;
     }
     max_length = 0;
+
+    certsvc_string_list_free(stringList);
 }
 
 static Elm_Genlist_Item_Class itc_2text = {
@@ -166,18 +168,12 @@ void pfx_cert_create_list(struct ug_data *ad){
     Evas_Object *no_content = NULL;
     Evas_Object *genlist_pfx = NULL;
 
+    clear_pfx_genlist_data();
+
     certsvc_pkcs12_get_id_list(ad->instance, &stringList);
     certsvc_string_list_get_length(stringList, &list_length);
 
-    // Refresh logic: 1. clear Main Screen
-    // if ad->user_cert_list_item is there that mean we are going to refresh the screen
-    if (ad->user_cert_list_item) {
-    	elm_object_item_part_content_set(ad->user_cert_list_item, NULL , NULL); //deletes the previous object set.
-    }
-
-    clear_pfx_genlist_data();
-
-    // Refresh logic: 2. Make new layouts on Main screen
+    //With Refresh logic: 1. Make new layouts on Main screen or set part content
     if (1 > list_length) { // No content
 		no_content = create_no_content_layout(ad);
 		if(!no_content){
@@ -264,6 +260,7 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
         return;
     elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
     elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
+    elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
 
     install_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), install_button_cb, ad);
     if (!install_button)

@@ -49,7 +49,7 @@ struct ug_data *get_ug_data() {
 
 static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, void *priv) {
 
-    if (NULL == ug)
+  if (NULL == ug)
         return NULL;
     if (NULL == priv)
         return NULL;
@@ -61,11 +61,12 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
     ugd = priv;
     ugd->ug = ug;
 
-    ugd->win_main = ug_get_parent_layout(ug);
-    if (NULL == ugd->win_main)
+    ugd->win_main = evas_object_top_get(evas_object_evas_get(ug_get_parent_layout(ug)));
+    if (NULL == ugd->win_main) {
         return NULL;
+    }
 
-    ugd->bg = elm_bg_add(ugd->win_main);
+	ugd->bg = elm_bg_add(ugd->win_main);
     if (!ugd->bg) {
         LOGD("ugd->bg is null");
         free(ugd->win_main);

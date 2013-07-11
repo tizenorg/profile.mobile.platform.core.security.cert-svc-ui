@@ -54,6 +54,45 @@ static Elm_Genlist_Item_Class itc;
  ****************************************************/
 static void create_selection_list(struct ug_data *ad);
 
+							static void _cert_selection_cleanup()
+{
+	if (selected_name)
+	{
+		free(selected_name);
+		selected_name = NULL;
+	}
+
+	certsvc_string_list_free(stringList);
+
+	certsvc_instance_free(instance);
+}
+
+static Eina_Bool _quit_cb(void *data, Elm_Object_Item *it)
+{
+    struct ug_data *ad = (struct ug_data*) data;
+
+    _cert_selection_cleanup();
+
+    /* bg must delete before starting on_destroy */
+    if (ad->bg) {
+    	evas_object_del(ad->bg);
+    	ad->bg = NULL;
+    }
+
+    if (ad->ug) {
+         ug_destroy_me(ad->ug);
+         ad->ug = NULL;
+    }
+
+    return EINA_TRUE;
+}
+
+static void _dismissed_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	evas_object_smart_callback_del(obj,"dismissed", _dismissed_cb);
+	evas_object_del(obj);
+}
+
 static void __cert_layout_ug_cb(ui_gadget_h ug, enum ug_mode mode,
 				  void *priv)
 {
@@ -103,6 +142,8 @@ static void _cert_install_cb(void *data, Evas_Object *obj, void *event_info)
 		return;
 	}
 
+	_dismissed_cb(data, obj, event_info);
+
 	cbs->layout_cb = __cert_layout_ug_cb;
 	cbs->result_cb = NULL;
 	cbs->destroy_cb = __destroy_certificates_ug_cb;
@@ -134,13 +175,7 @@ static void _open(void *data, Evas_Object *obj, void *event_info) {
         LOGD("result send");
     }
 
-    /* bg must delete before starting on_destroy */
-    LOGD("Closing UG");
-    free(selected_name);
-    evas_object_del(ad->bg);
-    ad->bg = NULL;
-    ug_destroy_me(ad->ug);
-    ad->ug = NULL;
+    _quit_cb(data, NULL);
 }
 
 const char* get_email(CertSvcString alias) {
@@ -262,17 +297,17 @@ static void _gl_sel(void *data, Evas_Object *obj, void *event_info) {
     certsvc_string_free(buffer);
 }
 
-Eina_Bool _quit_cb(void *data, Elm_Object_Item *it)
-{
-    struct ug_data *ad = (struct ug_data*) data;
+static Evas_Object *create_no_content_layout (struct ug_data *ad) {
 
-    free(selected_name);
-    if (ad->ug) {
-         ug_destroy_me(ad->ug);
-         ad->ug = NULL;
+    Evas_Object *no_content = elm_layout_add(ad->win_main);
+    if(NULL == no_content){
+        return NULL;
     }
-
-    return EINA_TRUE;
+    elm_layout_theme_set(no_content, "layout", "nocontents", "text");
+    elm_object_part_text_set(no_content, "elm.text", dgettext(PACKAGE, "IDS_ST_BODY_NO_CONTENT"));
+    evas_object_size_hint_weight_set(no_content, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+    evas_object_show(no_content);
+    return no_content;
 }
 
 static void create_selection_list(struct ug_data *ad)
@@ -281,36 +316,23 @@ static void create_selection_list(struct ug_data *ad)
     int list_length = 0;
     Evas_Object *no_content = NULL;
     Evas_Object *genlist = NULL;
-    Evas_Object *layout = NULL;
-
-    if (!ad)
-    	return;
 
 	certsvc_pkcs12_get_id_list(instance, &stringList);
 
 	certsvc_string_list_get_length(stringList, &list_length);
 
 	LOGD("create_selection_list: Number Of Certs [%d]", list_length);
-	// Refresh logic: 1. clear Main Screen
-	// if ad->user_cert_list_item is there that mean we are going to refresh the screen
-    if (ad->user_cert_list_item) {
-    	elm_object_item_part_content_set(ad->user_cert_list_item, NULL , NULL); //deletes the previous object set.
-    	radio_main = NULL;
-    }
+
+	radio_main = NULL;
 
     // Refresh logic: 2. Make new layouts on Main screen
 	if(1 > list_length){
 		// No Content message when list is empty
-		no_content = elm_layout_add(ad->win_main);
-		if(!no_content)
-		{
+		no_content = create_no_content_layout(ad);
+		if(!no_content) {
 			LOGD("create_selection_list: Failed to create NO Layout");
-			return NULL;
+			return;
 		}
-
-		elm_layout_theme_set(no_content, "layout", "nocontents", "text");
-		elm_object_part_text_set(no_content, "elm.text", dgettext(PACKAGE, "IDS_ST_BODY_NO_CONTENT"));
-		evas_object_size_hint_weight_set(no_content, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 
 		if (ad->user_cert_list_item) {
 			elm_object_item_part_content_set(ad->user_cert_list_item, NULL, no_content);
@@ -327,15 +349,7 @@ static void create_selection_list(struct ug_data *ad)
 	}
 	else {
 	    // Create genlist;
-	    layout = elm_layout_add(ad->win_main);
-	    if (!layout)
-	    {
-	    	LOGD("create_selection_list: Failed to create GenList Layout");
-	        return;
-	    }
-	    elm_layout_theme_set(layout, "layout", "tabbar", "default");
-
-		genlist = elm_genlist_add(layout);
+		genlist = elm_genlist_add(ad->win_main);
 		radio_main = elm_radio_add(genlist);
 		elm_radio_state_value_set(radio_main, 0);
 		elm_radio_value_set(radio_main, 0);
@@ -368,12 +382,64 @@ static void create_selection_list(struct ug_data *ad)
 
 }
 
+static void _move_more_ctxpopup(void *data, Evas_Object *ctx)
+{
+	Evas_Coord w = 0, h = 0;
+	int pos = -1;
+	struct ug_data *ad = (struct ug_data *) data;
+	Evas_Object *elm_win = ad->win_main; //NOTE: if UG is created using ug_get_parent_layout
+										 //then please use elm_main =	evas_object_top_get(evas_object_evas_get(ad->win_main));
+
+	elm_win_screen_size_get(elm_win, NULL, NULL, &w, &h);
+
+	pos = elm_win_rotation_get(elm_win);
+
+	switch (pos) {
+		case 0:
+		case 180:
+			evas_object_move(ctx, 0, h);
+			break;
+		case 90:
+			evas_object_move(ctx, 0, w);
+			break;
+		case 270:
+			evas_object_move(ctx, h, w);
+			break;
+	}
+}
+
+//A callback function that will be called when More event is triggered.
+static void _cert_naviframe_more_cb(void *data, Evas_Object *obj, void *event_info) {
+	struct ug_data *ad = (struct ug_data *) data;
+	Evas_Object *more_popup = NULL;
+
+	//Create a Ctxpopup if the ctxpopup is not on active.
+	more_popup = elm_ctxpopup_add(ad->navi_bar);
+	if (!more_popup) return;
+
+	ea_object_event_callback_add(more_popup, EA_CALLBACK_BACK, ea_ctxpopup_back_cb, NULL);
+	ea_object_event_callback_add(more_popup, EA_CALLBACK_MORE, ea_ctxpopup_back_cb, NULL);
+	elm_object_style_set(more_popup, "more/default");
+	evas_object_smart_callback_add(more_popup,"dismissed", _dismissed_cb, NULL);
+
+	elm_ctxpopup_item_append(more_popup, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), NULL, _cert_install_cb, ad);
+
+	elm_ctxpopup_direction_priority_set(more_popup, ELM_CTXPOPUP_DIRECTION_UP,
+											ELM_CTXPOPUP_DIRECTION_UNKNOWN,
+											ELM_CTXPOPUP_DIRECTION_UNKNOWN,
+											ELM_CTXPOPUP_DIRECTION_UNKNOWN);
+
+	_move_more_ctxpopup(data, more_popup);
+
+
+	evas_object_show(more_popup);
+}
+
 void cert_selection_install_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("cert_selection");
 
     struct ug_data *ad = (struct ug_data *) data;
     Evas_Object *toolbar = NULL;
-    Elm_Object_Item *install_button = NULL;
 
     state_index = -1;
 
@@ -383,12 +449,10 @@ void cert_selection_install_cb(void *data, Evas_Object *obj, void *event_info) {
     if (!toolbar) return;
     elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
     elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
+    elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
 
     open_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_OPEN"), _open, ad);
     if (!open_button) return;
-
-	install_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), _cert_install_cb, ad);
-    if (!install_button) return;
 
     // Set genlist item class
     itc.item_style       = "2text.1icon.2";
@@ -404,15 +468,17 @@ void cert_selection_install_cb(void *data, Evas_Object *obj, void *event_info) {
 
     create_selection_list(ad);
 
-    if (!ad->user_cert_list_item)
+    if (!ad->user_cert_list_item) {
     	return;
+    }
 
     elm_object_item_part_content_set(ad->user_cert_list_item, "toolbar", toolbar);
     elm_naviframe_item_pop_cb_set(ad->user_cert_list_item, _quit_cb, data);
 
     elm_naviframe_prev_btn_auto_pushed_set(ad->navi_bar, EINA_FALSE);
+
     ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_BACK, ea_naviframe_back_cb, NULL);
-    ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_MORE, ea_naviframe_more_cb, NULL);
+    ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_MORE, _cert_naviframe_more_cb, ad);
 
     LOGD("end of cert_selection");
 }

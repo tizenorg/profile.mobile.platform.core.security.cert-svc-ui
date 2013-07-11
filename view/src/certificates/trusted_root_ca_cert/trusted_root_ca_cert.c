@@ -60,12 +60,6 @@ void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     firstListElement = initList();
     lastListElement  = firstListElement;
     ad->list_element = firstListElement;
-
-    Evas_Object *toolbar = elm_toolbar_add(ad->navi_bar);
-    if (!toolbar)
-        return;
-    elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
-
     ad->list_to_refresh = NULL;
     ad->list_to_refresh = elm_list_add(ad->win_main);
     elm_list_mode_set(ad->list_to_refresh, ELM_LIST_COMPRESS);

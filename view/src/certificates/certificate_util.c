@@ -88,6 +88,12 @@ Eina_Bool quit_cb(void *data, Elm_Object_Item *it)
 {
     struct ug_data *ad = (struct ug_data*) data;
 
+    /* bg must delete before starting on_destroy */
+    if (ad->bg) {
+    	evas_object_del(ad->bg);
+    	ad->bg = NULL;
+    }
+
 	if (ad->ug) {
 		ug_destroy_me(ad->ug);
 		ad->ug = NULL;
