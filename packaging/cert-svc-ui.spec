@@ -6,7 +6,7 @@ Release: 47
 Group:   System/Libraries
 License: SAMSUNG
 Source0: %{name}-%{version}.tar.gz
-Source1: %{name}.manifest
+Source1001: %{name}.manifest
 
 Requires(post):   /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
@@ -38,6 +38,7 @@ Certification service
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %define _ugdir /usr/ug
 
@@ -52,7 +53,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/license
 cp LICENSE.APLv2 %{buildroot}/usr/share/license/%{name}
 %make_install
-install -D %{SOURCE1} %{buildroot}%{_datadir}/%{name}.manifest
 
 %clean
 rm -rf %{buildroot}
@@ -64,7 +64,6 @@ rm -rf %{buildroot}
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
-%manifest %{_datadir}/%{name}.manifest
 /etc/smack/accesses2.d/ug.%{name}.include
 %{_ugdir}/lib/libmgr-cert-view.so
 %{_ugdir}/lib/libug-setting-manage-certificates-efl.so.*
