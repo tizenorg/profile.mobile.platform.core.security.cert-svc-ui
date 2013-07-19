@@ -207,7 +207,7 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
         free(path);
         goto exit;
     }
-    SECURE_LOGD("certsvc_pkcs12_import_from_file( %s, %s, %s)", path, password, alias);
+    SECURE_LOGD("certsvc_pkcs12_import_from_file(%s, %s)", path, alias);
     certsvc_string_new(ad->instance, alias, strlen(alias), &Alias);
     certsvc_string_new(ad->instance, path, strlen(path), &Path);
     certsvc_string_new(ad->instance, (password) ? password : "", (password) ? strlen(password) : 1, &Password);
