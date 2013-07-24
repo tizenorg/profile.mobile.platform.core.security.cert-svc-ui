@@ -212,22 +212,25 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
 
     (void)obj;
     int index = (int) data;
-
+    char *char_buffer = NULL;
     CertSvcString buffer;
+
     if (certsvc_string_list_get_one(stringList, index, &buffer) != CERTSVC_SUCCESS) {
         return strdup("ERROR WHILE LOADING STRING");
     }
-    char *char_buffer;
 
     if (!strcmp(part, "elm.text.1") || !strcmp(part, "elm.text")) {
         char_buffer = strndup(buffer.privateHandler, buffer.privateLength);
-        certsvc_string_free(buffer);
-        return char_buffer;
     } else if (!strcmp(part, "elm.text.2")) {
-        return (char *) get_email(buffer);
+    	char_buffer = get_email(buffer);
+    	if (char_buffer) {
+    		char_buffer = strdup(char_buffer);
+    	}
     }
 
-    return NULL;
+    certsvc_string_free(buffer);
+    return char_buffer;
+
 }
 
 static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *part) {
