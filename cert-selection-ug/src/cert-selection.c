@@ -73,12 +73,6 @@ static Eina_Bool _quit_cb(void *data, Elm_Object_Item *it)
 
     _cert_selection_cleanup();
 
-    /* bg must delete before starting on_destroy */
-    if (ad->bg) {
-    	evas_object_del(ad->bg);
-    	ad->bg = NULL;
-    }
-
     if (ad->ug) {
          ug_destroy_me(ad->ug);
          ad->ug = NULL;
@@ -222,7 +216,7 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
     if (!strcmp(part, "elm.text.1") || !strcmp(part, "elm.text")) {
         char_buffer = strndup(buffer.privateHandler, buffer.privateLength);
     } else if (!strcmp(part, "elm.text.2")) {
-    	char_buffer = get_email(buffer);
+    	char_buffer = (char*) get_email(buffer);
     	if (char_buffer) {
     		char_buffer = strdup(char_buffer);
     	}
