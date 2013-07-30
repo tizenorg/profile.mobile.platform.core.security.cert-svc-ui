@@ -52,9 +52,6 @@ msgstr "외부 인증서"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "거짓"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "인증서 설치"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "SD 카드에 있는 인증서를 설치할까요?"
 
@@ -126,4 +123,7 @@ msgstr "클라이언트 인증서"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "시리얼 번호:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "인증서 설치"
 

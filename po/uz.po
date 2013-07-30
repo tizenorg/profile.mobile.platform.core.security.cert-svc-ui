@@ -52,9 +52,6 @@ msgstr "Tashqi sertifikatlar"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Yolg‘on"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Sertifikatni o‘rnatish"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "SD-kartadan sertifikatlar o‘rnatilsinmi?"
 
@@ -126,4 +123,7 @@ msgstr "Mijoz sertifikati"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Seriya raqami:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Sertifikatni o‘rnatish"
 

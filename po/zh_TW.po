@@ -52,9 +52,6 @@ msgstr "外部證書"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "假"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "安裝憑證"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "從 SD 卡安裝證書嗎？"
 
@@ -126,4 +123,7 @@ msgstr "用戶憑證"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "序號："
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "安裝憑證"
 

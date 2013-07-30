@@ -336,7 +336,7 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
             _gl_sel,
             NULL );
 
-    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
@@ -388,7 +388,7 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
                 _gl_sel,
                 NULL );
 
-    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }

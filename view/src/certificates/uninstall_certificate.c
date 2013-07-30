@@ -98,7 +98,7 @@ static Evas_Object *__get_content_check(void *data, Evas_Object *eo, const char 
     Evas_Object *toggle = elm_check_add(eo);
 
     elm_check_state_pointer_set(toggle, &(current->isChecked));
-    LOGD("toggle <---> %s.isChecked", current->name);
+    SECURE_LOGD("toggle <---> %s.isChecked", current->name);
 
     return toggle;
 }
@@ -108,10 +108,10 @@ static void __toggle(void *data, Evas_Object *obj, void *event_info) {
     struct ListElement *current = (struct ListElement*) data;
     if (current->isChecked) {
         current->isChecked = EINA_FALSE;
-        LOGD("isChecked should be changed to FASLE --- %s", current->name);
+        SECURE_LOGD("isChecked should be changed to FASLE --- %s", current->name);
     } else {
         current->isChecked = EINA_TRUE;
-        LOGD("isChecked should be changed to TRUE --- %s", current->name);
+        SECURE_LOGD("isChecked should be changed to TRUE --- %s", current->name);
     }
 
     Eina_Bool count_of_selected;
@@ -275,7 +275,7 @@ void delete_cert_cb(void *data, Evas_Object *obj, void *event_info) {
             Elm_Object_Item * it;
             it = elm_genlist_item_append(genlist, &itc_check, current, NULL, ELM_GENLIST_ITEM_NONE, __toggle, current);
             current->it = it;
-            LOGD("state pointer set to: %s", current->name);
+            SECURE_LOGD("state pointer set to: %s", current->name);
             current = nextElement(current);
         }
     }
@@ -309,11 +309,11 @@ static void uninstall_cb(void *data, Evas_Object *obj, void *event_info) {
     while (current != NULL) {
         if (current->isChecked) {
             buf =  path_cat(current->path, current->name);
-            LOGD("remove ( %s )", buf);
+            SECURE_LOGD("remove ( %s )", buf);
             if (remove(buf)){
                 LOGE("Fail in removing path.");
             }
-            LOGD("Uninstalled succesful -- %s!", current->name);
+            SECURE_LOGD("Uninstalled succesful -- %s!", current->name);
             nothingToUninstall = EINA_FALSE;
         }
         tmpListElement = current;

@@ -52,9 +52,6 @@ msgstr "Ārējie sertifikāti"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Nepareizs"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Instalēt sertifikātu"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Vai instalēt sertifikātus no SD kartes?"
 
@@ -126,4 +123,7 @@ msgstr "Klienta sertifikāts"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Sērijas numurs:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instalēt sertifikātu"
 

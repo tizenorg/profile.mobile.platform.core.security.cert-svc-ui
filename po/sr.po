@@ -52,9 +52,6 @@ msgstr "Eksterni sertifikati"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Pogrešno"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Instaliraj sertifikat"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Instalirati sertifikate sa SD kartice?"
 
@@ -126,4 +123,7 @@ msgstr "Sertifikat klijenta"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Serijski broj:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instaliraj sertifikat"
 

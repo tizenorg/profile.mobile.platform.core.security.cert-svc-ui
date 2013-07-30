@@ -52,9 +52,6 @@ msgstr "გარე სერტიფიკატები"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "მცდარი"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "დააინსტალირეთ სერთიფიკატი"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "დააინსტალირებთ სერტიფიკატებს SD ბარათიდან?"
 
@@ -126,4 +123,7 @@ msgstr "კლიენტის სერთიფიკატი"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "სერიული ნომერი:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "დააინსტალირეთ სერთიფიკატი"
 

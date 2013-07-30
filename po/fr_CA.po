@@ -52,9 +52,6 @@ msgstr "Certificats externes"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Faux"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Installer le certificat"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Installer les certificats depuis la carte SD ?"
 
@@ -126,4 +123,7 @@ msgstr "Certificat client"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Numéro de série :"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Installer le certificat"
 

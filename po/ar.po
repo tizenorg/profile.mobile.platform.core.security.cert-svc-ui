@@ -52,9 +52,6 @@ msgstr "الشهادات الخارجية"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "خطأ"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "تثبيت الشهادة"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "تثبيت الشهادات من بطاقة SD؟"
 
@@ -126,4 +123,7 @@ msgstr "شهادة العملاء"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "الرقم التسلسلي:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "تثبيت الشهادة"
 

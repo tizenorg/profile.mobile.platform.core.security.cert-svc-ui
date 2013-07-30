@@ -52,9 +52,6 @@ msgstr "﻿Externé certifikáty"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Nepravda"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Inštalovať certifikát"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Inštalovať certifikáty z karty SD?"
 
@@ -126,4 +123,7 @@ msgstr "Klientsky certifikát"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Sériové číslo:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Inštalovať certifikát"
 

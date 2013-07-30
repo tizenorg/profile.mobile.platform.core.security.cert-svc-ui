@@ -52,9 +52,6 @@ msgstr "बाह्य प्रमाणपत्र"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "ग़लत"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "प्रमाणपत्र स्थापित करें"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "SD कार्ड से प्रमाणपत्र स्थापित करें?"
 
@@ -126,4 +123,7 @@ msgstr "क्लाइंट प्रमाणपत्र"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "सीरियल नंबर:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "प्रमाणपत्र स्थापित करें"
 

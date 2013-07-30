@@ -52,9 +52,6 @@ msgstr "Сыртқы куәліктер"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Қате"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Куәлік орнату"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "SD картасынан куәліктер орнату керек пе?"
 
@@ -126,4 +123,7 @@ msgstr "Клиенттік сертификат"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Сериялық нөмірі:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Куәлік орнату"
 

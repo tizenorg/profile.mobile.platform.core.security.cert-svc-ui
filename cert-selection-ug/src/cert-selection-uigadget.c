@@ -66,7 +66,7 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
         return NULL;
     }
 
-	ugd->bg = elm_bg_add(ugd->win_main);
+    ugd->bg = elm_bg_add(ugd->win_main);
     if (!ugd->bg) {
         LOGD("ugd->bg is null");
         free(ugd->win_main);

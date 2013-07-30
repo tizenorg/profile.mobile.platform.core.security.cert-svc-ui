@@ -52,9 +52,6 @@ msgstr "Zunanji certifikati"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Napačno"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Namesti certifikat"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Želite namestiti certifikate iz kartice SD?"
 
@@ -126,4 +123,7 @@ msgstr "Certifikat odjemalca"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Serijska številka:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Namestite certifikat"
 

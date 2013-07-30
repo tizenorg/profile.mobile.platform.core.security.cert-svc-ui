@@ -595,7 +595,6 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *list, const char *dir_path,
                 current = addListElementWithPathAndTitle(lastListElement, dp->d_name, dir_path, title);
                 lastListElement = current;
 
-
 				LOGD("strlen(title) = %d", strlen(title));
 				if (strlen(title) < 1){
 					// if Common name of cert is empty print the name of file instead.

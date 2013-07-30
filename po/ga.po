@@ -52,9 +52,6 @@ msgstr "Deimhnithe seachtracha"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Bréagach"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Suiteálaí deimhniú"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Suiteáil deimhnithe ón gcárta SD?"
 
@@ -126,4 +123,7 @@ msgstr "Deimhniú cliaint"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Sraithuimhir:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Suiteáil deimhniú"
 

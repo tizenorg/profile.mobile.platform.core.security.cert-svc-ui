@@ -52,9 +52,6 @@ msgstr "外部証明書"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "False"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "証明書をインストールしてください。"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "SDカードから証明書をインストールしますか？"
 
@@ -126,4 +123,7 @@ msgstr "クライアント証明書"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "シリアル番号:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "証明書をインストール"
 

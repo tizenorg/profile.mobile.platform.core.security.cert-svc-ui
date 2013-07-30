@@ -52,9 +52,6 @@ msgstr "Ytri vottorð"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ósatt"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Setja upp vottorð"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Setja upp vottorð af SD-korti?"
 
@@ -126,4 +123,7 @@ msgstr "Biðlaravottorð"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Raðnúmer:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Setja upp vottorð"
 

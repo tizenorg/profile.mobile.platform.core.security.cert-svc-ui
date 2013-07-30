@@ -52,9 +52,6 @@ msgstr "Külső tanúsítványok"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Hamis"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Tanúsítvány telepítése"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Telepíti a tanúsítványokat az SD-kártyáról?"
 
@@ -126,4 +123,7 @@ msgstr "Klienstanúsítvány"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Sorozatszám:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Tanúsítvány telepítése"
 

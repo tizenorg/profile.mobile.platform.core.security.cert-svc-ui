@@ -52,9 +52,6 @@ msgstr "Надворешни сертификати"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Неточно"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Инсталирај сертификати"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Да се инсталираат сертификати од SD-картичка?"
 
@@ -126,4 +123,7 @@ msgstr "Сертиф. на клиентот"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Сериски број:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Инсталирај сертификат"
 

@@ -52,9 +52,6 @@ msgstr "Արտաքին վկայականներ"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Կեղծ"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Տեղադրել վկայականը"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Տեղադրե՞լ վկայականներ SD քարտից:"
 
@@ -126,4 +123,7 @@ msgstr "Սպասառուի վկայական"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Սերիական համարը՝"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Տեղադրել վկայականը"
 

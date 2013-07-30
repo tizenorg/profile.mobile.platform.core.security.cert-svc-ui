@@ -52,9 +52,6 @@ msgstr "Externe certificaten"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Onwaar"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Certificaat installeren"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Certificaten van SD-kaart installeren?"
 
@@ -126,4 +123,7 @@ msgstr "Clientcertificaat"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Serienummer:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Certificaat installeren"
 

@@ -52,9 +52,6 @@ msgstr "Išoriniai sertifikatai"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Neteisinga"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Įdiegti sertifikatą"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Įdiegti sertifikatus iš SD kortelės?"
 
@@ -126,4 +123,7 @@ msgstr "Kliento sertifikatas"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Serijos numeris:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Įdiegti sertifikatą"
 

@@ -52,9 +52,6 @@ msgstr "Harici sertifikalar"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Yanlış"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Sertifika yükle"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Sertifikalar SD kartından yüklensin mi?"
 
@@ -126,4 +123,7 @@ msgstr "İstemci sertifikası"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Seri numarası:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Sertifika yükle"
 
