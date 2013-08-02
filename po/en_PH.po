@@ -80,7 +80,7 @@ msgid "IDS_ST_BODY_TRUE"
 msgstr "True"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Trusted root certificates"
+msgstr "Trusted root CA certificates"
 
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "User certificates"
