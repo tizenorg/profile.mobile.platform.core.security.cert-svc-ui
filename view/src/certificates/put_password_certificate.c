@@ -166,7 +166,10 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("_install_button_cb");
 
     struct ug_data *ad = get_ug_data();
-
+    if(!ad){
+        LOGE("ug_data can't be null!");
+        return;
+    }
     char *alias, *password, *path;
     CertSvcString Alias, Path, Password;
     int returned_value;
