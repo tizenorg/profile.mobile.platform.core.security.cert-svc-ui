@@ -28,7 +28,6 @@
 
 static const char * const dir_path = PATH_SDCARD;
 
-static Elm_Genlist_Item_Class itc_btn;
 static Elm_Genlist_Item_Class itc_group;
 static Elm_Genlist_Item_Class itc_entry;
 static Elm_Genlist_Item_Class itc_entry_passwd;
@@ -92,26 +91,6 @@ static void _gl_sel(void *data, Evas_Object *obj, void *event_info)
         elm_genlist_item_selected_set(event_info, EINA_FALSE);
 }
 
-static Evas_Object *_gl_button_get(void *data, Evas_Object *obj, const char *part) {
-
-    if (0 == (int) data) {
-        Evas_Object *btn = elm_button_add(obj);
-        elm_object_text_set(btn, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"));
-        evas_object_propagate_events_set(btn, EINA_FALSE);
-        evas_object_smart_callback_add(btn, "clicked", _install_button_cb, NULL);
-        return btn;
-    }
-    else if (1 == (int) data) {
-        Evas_Object *btn = elm_button_add(obj);
-        elm_object_text_set(btn, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"));
-        evas_object_propagate_events_set(btn, EINA_FALSE);
-        evas_object_smart_callback_add(btn, "clicked", _cancel_button_cb, NULL);
-        return btn;
-    }
-
-    return NULL;
-}
-
 static char* _gl_get_text_group(void *data, Evas_Object *obj, const char *part) {
 
     int index = (int) data;
@@ -130,10 +109,6 @@ static char* _gl_get_text_group(void *data, Evas_Object *obj, const char *part) 
 }
 
 static void _set_itc_classes(void) {
-    itc_btn.item_style = "dialogue/1icon";
-    itc_btn.func.content_get = _gl_button_get;
-    itc_entry.func.state_get = NULL;
-    itc_entry.func.del = NULL;
 
     itc_group.item_style = "dialogue/grouptitle";
     itc_group.func.text_get = _gl_get_text_group;
@@ -276,10 +251,22 @@ exit:
     return;
 }
 
+static Evas_Object *_create_title_text_btn(Evas_Object *parent, const char *text, Evas_Smart_Cb func, void *data)
+{
+	Evas_Object *btn = elm_button_add(parent);
+	if (!btn) return NULL;
+	elm_object_style_set(btn, "naviframe/title_text");
+	elm_object_text_set(btn, text);
+	evas_object_smart_callback_add(btn, "clicked", func, data);
+	return btn;
+}
+
 void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info) {
 
     LOGD("put_pkcs12_name_and_pass_cb");
     struct ug_data *ad = get_ug_data();
+    Evas_Object *btn = NULL;
+
     current_file = (struct ListElement *) data;
 
     _set_itc_classes();
@@ -321,28 +308,18 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
             _gl_sel,
             NULL );
 
-    elm_genlist_item_append(
-            genlist,
-            &itc_btn,
-            (void *) 0,
-            NULL,
-            ELM_GENLIST_ITEM_NONE,
-            _gl_sel,
-            NULL );
-
-    elm_genlist_item_append(
-            genlist,
-            &itc_btn,
-            (void *) 1,
-            NULL,
-            ELM_GENLIST_ITEM_NONE,
-            _gl_sel,
-            NULL );
-
     Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
+
+    //Title Text Left Button
+    btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
+
+    //Title Text Right Button
+    btn = _create_title_text_btn(ad->navi_bar, "Cancel", _cancel_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }
 
 void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -350,6 +327,8 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("put_pkcs12_name_cb");
 
     struct ug_data *ad = get_ug_data();
+    Evas_Object *btn = NULL;
+
     current_file = (struct ListElement *) data;
 
    _set_itc_classes();
@@ -373,26 +352,16 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
                 _gl_sel,
                 NULL );
 
-    elm_genlist_item_append(
-                genlist,
-                &itc_btn,
-                (void *) 0,
-                NULL,
-                ELM_GENLIST_ITEM_NONE,
-                _gl_sel,
-                NULL );
-
-    elm_genlist_item_append(
-                genlist,
-                &itc_btn,
-                (void *) 1,
-                NULL,
-                ELM_GENLIST_ITEM_NONE,
-                _gl_sel,
-                NULL );
-
     Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
+
+    //Title Text Left Button
+    btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
+
+    //Title Text Right Button
+    btn = _create_title_text_btn(ad->navi_bar, "Cancel", _cancel_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }
