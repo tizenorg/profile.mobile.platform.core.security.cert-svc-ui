@@ -50,9 +50,16 @@ static Evas_Object *_singleline_editfield_add(Evas_Object *parent) {
     _entry = elm_entry_add(parent);
     elm_entry_scrollable_set(_entry, EINA_TRUE); // Make entry as scrollable single line.
     elm_entry_single_line_set(_entry, EINA_TRUE);
-
+    evas_object_smart_callback_add(_entry, "activated", _install_button_cb, NULL);
+    evas_object_propagate_events_set(_entry, EINA_TRUE);
+    elm_entry_input_panel_enabled_set(_entry, EINA_TRUE);
     elm_object_part_content_set(layout, "elm.swallow.content", _entry);
     return layout;
+}
+
+static void _next_button_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	 elm_object_focus_set(_entry, EINA_TRUE);
 }
 
 static Evas_Object *_singleline_passfield_add(Evas_Object *parent) {
@@ -66,7 +73,9 @@ static Evas_Object *_singleline_passfield_add(Evas_Object *parent) {
     elm_entry_scrollable_set(_entry_pass, EINA_TRUE); // Make entry as scrollable single line password.
     elm_entry_single_line_set(_entry_pass, EINA_TRUE);
     elm_entry_password_set(_entry_pass, EINA_TRUE);
-
+    elm_entry_input_panel_return_key_type_set(_entry_pass, ELM_INPUT_PANEL_RETURN_KEY_TYPE_NEXT);
+    elm_entry_prediction_allow_set(_entry_pass, EINA_FALSE);
+    evas_object_smart_callback_add(_entry_pass, "activated", _next_button_cb, NULL);
     elm_object_part_content_set(layout, "elm.swallow.content", _entry_pass);
     return layout;
 }
@@ -313,6 +322,8 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
         LOGE("Error in elm_naviframe_item_push");
     }
 
+    elm_genlist_item_selected_set(passwd_entry, EINA_TRUE);
+
     //Title Text Left Button
     btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
@@ -356,6 +367,8 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
+
+    elm_genlist_item_selected_set(name_entry, EINA_TRUE);
 
     //Title Text Left Button
     btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
