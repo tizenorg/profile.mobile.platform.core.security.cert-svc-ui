@@ -52,9 +52,6 @@ msgstr "﻿Externé certifikáty"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Nepravda"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Inštalovať certifikáty z karty SD?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Použitie kľúča:"
 
@@ -126,4 +123,7 @@ msgstr "Inštalovať certifikát"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Dôveryhodné koreňové certifikáty CA"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Nainštalujú sa certifikáty z pamäte zariadenia a karty SD"
 

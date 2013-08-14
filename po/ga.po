@@ -52,9 +52,6 @@ msgstr "Deimhnithe seachtracha"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Bréagach"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Suiteáil deimhnithe ón gcárta SD?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Úsáid eochracha:"
 
@@ -126,4 +123,7 @@ msgstr "Suiteáil deimhniú"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Deimhnithe CA fréimhe iontaofa"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Suiteálfar deimhnithe ó chuimhne an ghléis agus ón gcárta SD"
 

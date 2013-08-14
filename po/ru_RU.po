@@ -52,9 +52,6 @@ msgstr "Внешние сертификаты"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ложь"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Установить сертификаты с карты памяти SD?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Использование ключа:"
 
@@ -126,4 +123,7 @@ msgstr "Установить сертификат"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Сертификаты доверенных корневых ЦС"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Будут установлены сертификаты из памяти устройства и с карты памяти SD"
 

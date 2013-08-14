@@ -52,9 +52,6 @@ msgstr "Externa certifikat"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falsk"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Installera certifikat från SD-kort?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Nyckelanvändning:"
 
@@ -126,4 +123,7 @@ msgstr "Installera certifikat"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Tillförlitliga rot-CA-certifikat"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certifikat från enhetsminnet och SD-kortet kommer att installeras"
 

@@ -52,9 +52,6 @@ msgstr "Зовнішні сертифікати"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Хибний"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Інсталювати сертифікати з карти пам’яті?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Використання ключа:"
 
@@ -126,4 +123,7 @@ msgstr "Інсталювати сертифікат"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Довірені кореневі сертифікати CA"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Сертифікати з пам'яті пристрою та карти пам'яті буде інстальовано"
 

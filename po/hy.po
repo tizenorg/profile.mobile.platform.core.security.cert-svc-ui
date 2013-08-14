@@ -52,9 +52,6 @@ msgstr "Արտաքին վկայականներ"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Կեղծ"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Տեղադրե՞լ վկայականներ SD քարտից:"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Բանալու օգտագործում՝"
 
@@ -126,4 +123,7 @@ msgstr "Տեղադրել վկայականը"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Վստահելի արմատային CA վկայագրեր"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Սարքի հիշողությունից եւ SD քարտից վկայականները կտեղադրվեն"
 

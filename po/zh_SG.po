@@ -52,9 +52,6 @@ msgstr "外部证书"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "假"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "是否从 SD 卡安装证书？"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "密钥使用："
 
@@ -126,4 +123,7 @@ msgstr "安装证书"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "信任的根 CA 证书"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "将安装设备内存与 SD 卡中的证书"
 

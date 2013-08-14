@@ -52,9 +52,6 @@ msgstr "Certyfikaty zewnętrzne"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fałsz"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Zainstalować certyfikaty z karty pamięci?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Wykorzystanie klucza:"
 
@@ -126,4 +123,7 @@ msgstr "Zainstaluj certyfikat"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Certyfikaty CA zaufanego głównego urzędu"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certyfikaty z pamięci urządzenia i karty pamięci zostaną zainstalowane"
 

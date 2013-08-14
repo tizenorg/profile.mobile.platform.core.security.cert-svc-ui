@@ -177,7 +177,7 @@ void install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("install_button_cb()");
     //struct ug_data *ad = get_ug_data();
     struct ug_data *ad = (struct ug_data *)data;
-    create_yes_no_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"));
+    create_yes_no_pop(ad, dgettext(PACKAGE, "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"));
 }
 
 Evas_Object *create_ok_pop(struct ug_data *ad, const char *content) {

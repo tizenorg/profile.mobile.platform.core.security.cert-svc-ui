@@ -52,9 +52,6 @@ msgstr "Külső tanúsítványok"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Hamis"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Telepíti a tanúsítványokat az SD-kártyáról?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Kulcs használata:"
 
@@ -126,4 +123,7 @@ msgstr "Tanúsítvány telepítése"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Megbízható hitelesítésszolgáltatói főtanúsítványok"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Telepítve lesznek a tanúsítványok az eszközmemóriából és az SD-kártyáról"
 

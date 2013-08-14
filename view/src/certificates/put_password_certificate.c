@@ -328,11 +328,11 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
     }
 
     //Title Text Left Button
-    btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), _install_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
 
     //Title Text Right Button
-    btn = _create_title_text_btn(ad->navi_bar, "Cancel", _cancel_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_CANCEL"), _cancel_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }
 

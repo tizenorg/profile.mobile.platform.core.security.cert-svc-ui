@@ -52,9 +52,6 @@ msgstr "Сыртқы куәліктер"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Қате"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "SD картасынан куәліктер орнату керек пе?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Кілт қолданысы:"
 
@@ -126,4 +123,7 @@ msgstr "Куәлік орнату"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Сенімді түбірлік CA сертификаттары"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Құрылғы жадындағы және SD картасындағы сертификаттар орнатылады"
 

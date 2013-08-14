@@ -52,9 +52,6 @@ msgstr "Надворешни сертификати"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Неточно"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Да се инсталираат сертификати од SD-картичка?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Употреба на шифрата:"
 
@@ -126,4 +123,7 @@ msgstr "Инсталирај сертификат"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Доверливи основни CA сертификати"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Сертификатите од меморијата на уредот и SD-картичката ќе се инсталираат"
 

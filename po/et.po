@@ -52,9 +52,6 @@ msgstr "Välissertifikaadid"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Vale"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Kas installida sertifikaadid SD-kaardilt?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Võtmekasutus:"
 
@@ -126,4 +123,7 @@ msgstr "Installi sertifikaat"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Usaldusväärsed sertifitseerimiskeskuse juursertifikaadid"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Seadme mälus ja SD-kaardil olevad sertifikaadid installitakse"
 

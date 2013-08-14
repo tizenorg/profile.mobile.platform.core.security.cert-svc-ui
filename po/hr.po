@@ -52,9 +52,6 @@ msgstr "Vanjske potvrde"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ne"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instalirati potvrde s SD kartice?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Uporaba ključa:"
 
@@ -126,4 +123,7 @@ msgstr "Instaliraj potvrdu"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Pouzdane CA potvrde"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Instalirat će se potvrde s memorije uređaja i SD kartice"
 

@@ -52,9 +52,6 @@ msgstr "Certificate externe"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fals"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instalaţi certificate de pe cardul SD?"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Utilizare cheie:"
 
@@ -126,4 +123,7 @@ msgstr "Instalare certificat"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "Certificate CA rădăcină de încredere"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certificatele din memoria dispozitivului şi de pe cardul SD vor fi instalate"
 

@@ -52,9 +52,6 @@ msgstr "外部証明書"
 msgid "IDS_ST_BODY_FALSE"
 msgstr "False"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "SDカードから証明書をインストールしますか？"
-
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "キー使用法:"
 
@@ -126,4 +123,7 @@ msgstr "証明書をインストール"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
 msgstr "信頼されたルート認証機関の証明書"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "システムメモリ(本体)と外部SDカードから証明書がインストールされます。"
 
