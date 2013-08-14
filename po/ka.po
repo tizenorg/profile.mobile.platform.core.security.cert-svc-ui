@@ -79,9 +79,6 @@ msgstr "ხელმოწერის ალგორითმი:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "ჭეშმარიტი"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "სანდო ძირითადი სერთიფიკატები"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "მომხმარებლის სერთიფიკატი"
 
@@ -126,4 +123,7 @@ msgstr "სერიული ნომერი:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "დააინსტალირეთ სერთიფიკატი"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "სანდო ძირითადი CA სერთიფიკატები"
 

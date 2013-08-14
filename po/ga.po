@@ -79,9 +79,6 @@ msgstr "Algartam sínithe:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Fíor"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Deimhnithe fréimhe iontaofa"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Deimhnithe úsáideora"
 
@@ -126,4 +123,7 @@ msgstr "Sraithuimhir:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Suiteáil deimhniú"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Deimhnithe CA fréimhe iontaofa"
 

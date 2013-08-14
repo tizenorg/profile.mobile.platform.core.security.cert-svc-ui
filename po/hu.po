@@ -79,9 +79,6 @@ msgstr "Aláírási algoritmus:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "true"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Megbízható főtanúsítványok"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Felhasználó tanúsítványai"
 
@@ -126,4 +123,7 @@ msgstr "Sorozatszám:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Tanúsítvány telepítése"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Megbízható hitelesítésszolgáltatói főtanúsítványok"
 

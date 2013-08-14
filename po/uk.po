@@ -79,9 +79,6 @@ msgstr "Алгоритм підпису:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Реальний час"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Довірені кореневі сертифікати"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Сертифікати користувача"
 
@@ -126,4 +123,7 @@ msgstr "Серійний номер:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Інсталювати сертифікат"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Довірені кореневі сертифікати CA"
 

@@ -79,9 +79,6 @@ msgstr "Алгоритам за потпис:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Точно"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Доверливи основни сертификати"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Кориснички сертификати"
 
@@ -126,4 +123,7 @@ msgstr "Сериски број:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Инсталирај сертификат"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Доверливи основни CA сертификати"
 

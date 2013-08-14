@@ -79,9 +79,6 @@ msgstr "Signatur-Algorithmus:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Wahr"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Vertrauenswürdige Root-Zertifikate"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Benutzerzertifikat"
 
@@ -126,4 +123,7 @@ msgstr "Seriennummer:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Zertifikat installieren"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Vertrauenswürdige Root-CA-Zertifikate"
 

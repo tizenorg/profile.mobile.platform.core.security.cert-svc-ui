@@ -79,9 +79,6 @@ msgstr "हस्ताक्षर एल्गोरिथम:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "सच"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "विश्वसनीय मूल प्रमाणपत्र"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "उपभोक्ता प्रमाणपत्र"
 
@@ -126,4 +123,7 @@ msgstr "सीरियल नंबर:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "प्रमाणपत्र स्थापित करें"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "विश्वसनीय रूट CA प्रमाणपत्र"
 

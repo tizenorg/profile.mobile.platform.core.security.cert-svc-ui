@@ -79,9 +79,6 @@ msgstr "Қол қою алгоритмі:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Шын"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Сенімді түбір куәліктер"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Пайдаланушы куәліктері"
 
@@ -126,4 +123,7 @@ msgstr "Сериялық нөмірі:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Куәлік орнату"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Сенімді түбірлік CA сертификаттары"
 

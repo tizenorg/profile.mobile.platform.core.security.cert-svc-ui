@@ -79,9 +79,6 @@ msgstr "İmza alqoritmi:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Doğru"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Etibarlı əsas sertifikat"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "İstifadəçi sertifikatları"
 
@@ -126,4 +123,7 @@ msgstr "Seriya nömrəsi:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Sertifikatı quraşdır"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Etibarlı əsas CA sertifikatları"
 

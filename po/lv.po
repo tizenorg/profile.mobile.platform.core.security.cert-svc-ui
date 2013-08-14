@@ -79,9 +79,6 @@ msgstr "Paraksta algoritms:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Patiess"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Uzticami saknes sertifikāti"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Lietotāju sertifikāti"
 
@@ -126,4 +123,7 @@ msgstr "Sērijas numurs:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Instalēt sertifikātu"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Uzticami saknes CA sertifikāti"
 

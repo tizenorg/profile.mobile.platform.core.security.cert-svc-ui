@@ -79,9 +79,6 @@ msgstr "Allekirjoitusalgoritmi:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Tosi"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Luotettavat päävarmenteet"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Käyttäjävarmenteet"
 
@@ -126,4 +123,7 @@ msgstr "Sarjanumero:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Asenna varmenne"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Luotettavat myöntäjävarmenteet"
 

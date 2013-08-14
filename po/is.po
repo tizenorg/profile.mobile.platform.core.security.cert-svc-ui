@@ -79,9 +79,6 @@ msgstr "Algóritmi undirskriftar:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Rétt"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Traust rótarvottorð"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Notandavottorð"
 
@@ -126,4 +123,7 @@ msgstr "Raðnúmer:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Setja upp vottorð"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Traust CA-rótarvottorð"
 

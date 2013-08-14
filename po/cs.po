@@ -79,9 +79,6 @@ msgstr "Algoritmus podpisu:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Ano"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Důvěryhodné kořenové certifikáty"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Uživatelské certifikáty"
 
@@ -126,4 +123,7 @@ msgstr "Sériové číslo:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Instalovat certifikát"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Důvěryhodné kořenové certifikáty CA"
 

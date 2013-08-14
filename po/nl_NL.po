@@ -79,9 +79,6 @@ msgstr "Handtekeningalgoritme:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Waar"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Vertrouwde hoofdcertificaten"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Gebruikerscertificaten"
 
@@ -126,4 +123,7 @@ msgstr "Serienummer:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Certificaat installeren"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Vertrouwde CA-hoofdcertificaten"
 

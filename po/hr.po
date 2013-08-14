@@ -79,9 +79,6 @@ msgstr "Algoritam potpisa:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Istinito"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Pouzdane potvrde"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Korisničke potvrde"
 
@@ -126,4 +123,7 @@ msgstr "Serijski broj:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Instaliraj potvrdu"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Pouzdane CA potvrde"
 

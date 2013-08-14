@@ -79,9 +79,6 @@ msgstr "Algorytm podpisywania:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "true"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Certyfikaty zaufanego głównego urzędu"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Certyfikaty użytkownika"
 
@@ -126,4 +123,7 @@ msgstr "Numer seryjny:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Zainstaluj certyfikat"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Certyfikaty CA zaufanego głównego urzędu"
 

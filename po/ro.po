@@ -79,9 +79,6 @@ msgstr "Algoritmul semnăturii:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Adevărat"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Certificate rădăcină de încredere"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Certificate utilizator"
 
@@ -126,4 +123,7 @@ msgstr "Număr de serie:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Instalare certificat"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Certificate CA rădăcină de încredere"
 

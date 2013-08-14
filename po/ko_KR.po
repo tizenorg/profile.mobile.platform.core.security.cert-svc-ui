@@ -79,9 +79,6 @@ msgstr "서명 알고리즘:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "진실"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "신뢰할 수 있는 루트 인증서"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "사용자 인증서"
 
@@ -126,4 +123,7 @@ msgstr "시리얼 번호:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "인증서 설치"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "신뢰할 수 있는 루트 CA 인증서"
 

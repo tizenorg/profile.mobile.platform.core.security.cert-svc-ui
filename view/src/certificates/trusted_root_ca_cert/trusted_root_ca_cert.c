@@ -67,7 +67,7 @@ void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     Elm_Object_Item *nf_it;
     if (!trusted_root_cert_create_list(ad)) { // There is some content
 
-		nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"), NULL, NULL, ad->list_to_refresh, NULL);
+		nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"), NULL, NULL, ad->list_to_refresh, NULL);
 
     } else {
         // No content
@@ -77,7 +77,7 @@ void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info) {
             LOGD("Cannot create no_content layout (NULL); return");
             return;
         }
-		nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"), NULL, NULL, no_content, NULL);
+		nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"), NULL, NULL, no_content, NULL);
     }
 
 	elm_naviframe_item_pop_cb_set(nf_it, back_cb, (struct Evas_Object *)ad);  

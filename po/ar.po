@@ -79,9 +79,6 @@ msgstr "خوارزمية التوقيع:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "صحيح"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "الشهادات الجذر الموثوقة"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "شهادات المستخدم"
 
@@ -126,4 +123,7 @@ msgstr "الرقم التسلسلي:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "تثبيت الشهادة"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "شهادات المرجع المصدق الجذرية الموثوق بها"
 

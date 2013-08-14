@@ -14,7 +14,7 @@ msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "Изготовитель"
 
 msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Выбрать все"
+msgstr "Выделить все"
 
 msgid "IDS_ST_BODY_ISSUER_COLON"
 msgstr "Издатель:"
@@ -79,9 +79,6 @@ msgstr "Алгоритм подписи:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Действителен"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Доверенные корневые сертификаты"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Сертификаты пользователей"
 
@@ -89,7 +86,7 @@ msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Действителен с:"
 
 msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "Действителен для:"
+msgstr "Действителен до:"
 
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Открыть"
@@ -126,4 +123,7 @@ msgstr "Серийный номер:"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Установить сертификат"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Сертификаты доверенных корневых ЦС"
 

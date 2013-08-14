@@ -79,9 +79,6 @@ msgstr "簽名算法："
 msgid "IDS_ST_BODY_TRUE"
 msgstr "正確"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "信任的根證書"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "用戶證書"
 
@@ -126,4 +123,7 @@ msgstr "序號："
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "安裝證書"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "信任的根 CA 證書"
 

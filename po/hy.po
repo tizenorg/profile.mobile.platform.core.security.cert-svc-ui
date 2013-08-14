@@ -79,9 +79,6 @@ msgstr "Ստորագրության ալգորիթմ՝"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Ստույգ"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Վստահելի արմատային վկայականներ"
-
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Օգտվողի վկայականներ"
 
@@ -126,4 +123,7 @@ msgstr "Սերիական համարը՝"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
 msgstr "Տեղադրել վկայականը"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Վստահելի արմատային CA վկայագրեր"
 
