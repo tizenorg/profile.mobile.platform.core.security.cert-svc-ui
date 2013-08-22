@@ -350,6 +350,7 @@ void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info) {
     cancel_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"), genlist_pfx_cancel_cb, ad);
     if (!cancel_button) return;
 
+    elm_object_item_disabled_set(uninstallButton, EINA_TRUE);
 
     Elm_Object_Item *itm = elm_naviframe_item_push(
             ad->navi_bar,

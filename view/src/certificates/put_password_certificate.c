@@ -51,8 +51,6 @@ static Evas_Object *_singleline_editfield_add(Evas_Object *parent) {
     elm_entry_scrollable_set(_entry, EINA_TRUE); // Make entry as scrollable single line.
     elm_entry_single_line_set(_entry, EINA_TRUE);
     evas_object_smart_callback_add(_entry, "activated", _install_button_cb, NULL);
-    evas_object_propagate_events_set(_entry, EINA_TRUE);
-    elm_entry_input_panel_enabled_set(_entry, EINA_TRUE);
     elm_object_part_content_set(layout, "elm.swallow.content", _entry);
     return layout;
 }
@@ -60,6 +58,13 @@ static Evas_Object *_singleline_editfield_add(Evas_Object *parent) {
 static void _next_button_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	 elm_object_focus_set(_entry, EINA_TRUE);
+}
+
+static void _focus_set_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	 struct ug_data *ad = (struct ug_data *)data;
+	 elm_object_focus_set(_entry_pass, EINA_TRUE);
+	 evas_object_smart_callback_del(ad->navi_bar, "transition,finished", _focus_set_cb);
 }
 
 static Evas_Object *_singleline_passfield_add(Evas_Object *parent) {
@@ -73,7 +78,6 @@ static Evas_Object *_singleline_passfield_add(Evas_Object *parent) {
     elm_entry_scrollable_set(_entry_pass, EINA_TRUE); // Make entry as scrollable single line password.
     elm_entry_single_line_set(_entry_pass, EINA_TRUE);
     elm_entry_password_set(_entry_pass, EINA_TRUE);
-    elm_entry_input_panel_return_key_type_set(_entry_pass, ELM_INPUT_PANEL_RETURN_KEY_TYPE_NEXT);
     elm_entry_prediction_allow_set(_entry_pass, EINA_FALSE);
     evas_object_smart_callback_add(_entry_pass, "activated", _next_button_cb, NULL);
     elm_object_part_content_set(layout, "elm.swallow.content", _entry_pass);
@@ -279,7 +283,7 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
     current_file = (struct ListElement *) data;
 
     _set_itc_classes();
-    Evas_Object *genlist = elm_genlist_add(ad->win_main);
+    Evas_Object *genlist = elm_genlist_add(ad->navi_bar);
 
     passwd_entry_label = elm_genlist_item_append(
             genlist,
@@ -317,12 +321,11 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
             _gl_sel,
             NULL );
 
+    evas_object_smart_callback_add(ad->navi_bar, "transition,finished", _focus_set_cb, ad);
     Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
-
-    elm_genlist_item_selected_set(passwd_entry, EINA_TRUE);
 
     //Title Text Left Button
     btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
@@ -343,7 +346,7 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
     current_file = (struct ListElement *) data;
 
    _set_itc_classes();
-    Evas_Object *genlist = elm_genlist_add(ad->win_main);
+    Evas_Object *genlist = elm_genlist_add(ad->navi_bar);
 
     name_entry_label = elm_genlist_item_append(
                 genlist,
@@ -368,13 +371,11 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
         LOGE("Error in elm_naviframe_item_push");
     }
 
-    elm_genlist_item_selected_set(name_entry, EINA_TRUE);
-
     //Title Text Left Button
-    btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), _install_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
 
     //Title Text Right Button
-    btn = _create_title_text_btn(ad->navi_bar, "Cancel", _cancel_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_CANCEL"), _cancel_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }

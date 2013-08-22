@@ -38,7 +38,8 @@ struct ug_data *get_ug_data() {
 
 static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, void *priv) {
 
-    if (NULL == ug)
+	int theme = 0;
+	if (NULL == ug)
         return NULL;
     if (NULL == priv)
         return NULL;
@@ -49,10 +50,17 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
     ugd->ug = ug;
 
     ugd->win_main = ug_get_parent_layout(ug);
-    if (NULL == ugd->win_main)
+    if (NULL == ugd->win_main) {
         return NULL;
+    }
 
-    ugd->bg = elm_bg_add(ugd->win_main);
+	if (strncmp(elm_theme_get(NULL), "tizen-HD-dark", strlen("tizen-HD-dark")) == 0) {
+		theme = 0;
+	} else if (strncmp(elm_theme_get(NULL), "tizen-HD-light", strlen("tizen-HD-light")) == 0) {
+		theme = 1;
+	}
+
+	ugd->bg = elm_bg_add(ugd->win_main);
     if (!ugd->bg) {
         LOGD("ugd->bg is null");
         free(ugd->win_main);
@@ -68,6 +76,16 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
         free(ugd->bg);
         return NULL;
     }
+
+    ugd->theme = elm_theme_new();
+
+    if (theme == 1) {
+    	elm_theme_set(ugd->theme, "tizen-HD-light");
+	}
+    else {
+    	elm_theme_set(ugd->theme, "tizen-HD-dark");
+    }
+    elm_object_theme_set(ugd->layout_main, ugd->theme);
     elm_layout_theme_set(ugd->layout_main, "layout", "application", "default");
     evas_object_size_hint_weight_set(ugd->layout_main, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
     evas_object_show(ugd->layout_main);
@@ -83,7 +101,7 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
         return NULL;
     }
     elm_object_part_content_set(ugd->layout_main, "elm.swallow.content", ugd->navi_bar);
-    evas_object_show(ugd->navi_bar);	
+    evas_object_show(ugd->navi_bar);
 
 
     if(service != NULL) {
@@ -120,6 +138,11 @@ static void on_destroy(ui_gadget_h ug, service_h service, void *priv) {
     }
 
     ugd = priv;
+
+    if (ugd->theme) {
+    	elm_theme_free(ugd->theme);
+    	ugd->theme = NULL;
+    }
 
 	certsvc_instance_free(ugd->instance);
 

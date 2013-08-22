@@ -47,6 +47,7 @@ struct ug_data {
     service_h           *service;
     void                *data;
     Elm_Object_Item		*user_cert_list_item;
+    Elm_Theme 			*theme;
 };
 
 struct ug_data *get_ug_data();

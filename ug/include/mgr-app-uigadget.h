@@ -56,6 +56,7 @@ struct ug_data {
     ui_gadget_h         sub_ug;
     void                *data;
     Evas_Object         *popup;
+    Elm_Theme 			*theme;
 
     Evas_Object         *list_to_refresh;
     enum Screen         type_of_screen;
