@@ -28,7 +28,6 @@
 
 static const char * const dir_path = PATH_SDCARD;
 
-static Elm_Genlist_Item_Class itc_btn;
 static Elm_Genlist_Item_Class itc_group;
 static Elm_Genlist_Item_Class itc_entry;
 static Elm_Genlist_Item_Class itc_entry_passwd;
@@ -51,9 +50,21 @@ static Evas_Object *_singleline_editfield_add(Evas_Object *parent) {
     _entry = elm_entry_add(parent);
     elm_entry_scrollable_set(_entry, EINA_TRUE); // Make entry as scrollable single line.
     elm_entry_single_line_set(_entry, EINA_TRUE);
-
+    evas_object_smart_callback_add(_entry, "activated", _install_button_cb, NULL);
     elm_object_part_content_set(layout, "elm.swallow.content", _entry);
     return layout;
+}
+
+static void _next_button_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	 elm_object_focus_set(_entry, EINA_TRUE);
+}
+
+static void _focus_set_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	 struct ug_data *ad = (struct ug_data *)data;
+	 elm_object_focus_set(_entry_pass, EINA_TRUE);
+	 evas_object_smart_callback_del(ad->navi_bar, "transition,finished", _focus_set_cb);
 }
 
 static Evas_Object *_singleline_passfield_add(Evas_Object *parent) {
@@ -67,7 +78,8 @@ static Evas_Object *_singleline_passfield_add(Evas_Object *parent) {
     elm_entry_scrollable_set(_entry_pass, EINA_TRUE); // Make entry as scrollable single line password.
     elm_entry_single_line_set(_entry_pass, EINA_TRUE);
     elm_entry_password_set(_entry_pass, EINA_TRUE);
-
+    elm_entry_prediction_allow_set(_entry_pass, EINA_FALSE);
+    evas_object_smart_callback_add(_entry_pass, "activated", _next_button_cb, NULL);
     elm_object_part_content_set(layout, "elm.swallow.content", _entry_pass);
     return layout;
 }
@@ -92,26 +104,6 @@ static void _gl_sel(void *data, Evas_Object *obj, void *event_info)
         elm_genlist_item_selected_set(event_info, EINA_FALSE);
 }
 
-static Evas_Object *_gl_button_get(void *data, Evas_Object *obj, const char *part) {
-
-    if (0 == (int) data) {
-        Evas_Object *btn = elm_button_add(obj);
-        elm_object_text_set(btn, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"));
-        evas_object_propagate_events_set(btn, EINA_FALSE);
-        evas_object_smart_callback_add(btn, "clicked", _install_button_cb, NULL);
-        return btn;
-    }
-    else if (1 == (int) data) {
-        Evas_Object *btn = elm_button_add(obj);
-        elm_object_text_set(btn, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"));
-        evas_object_propagate_events_set(btn, EINA_FALSE);
-        evas_object_smart_callback_add(btn, "clicked", _cancel_button_cb, NULL);
-        return btn;
-    }
-
-    return NULL;
-}
-
 static char* _gl_get_text_group(void *data, Evas_Object *obj, const char *part) {
 
     int index = (int) data;
@@ -130,10 +122,6 @@ static char* _gl_get_text_group(void *data, Evas_Object *obj, const char *part) 
 }
 
 static void _set_itc_classes(void) {
-    itc_btn.item_style = "dialogue/1icon";
-    itc_btn.func.content_get = _gl_button_get;
-    itc_entry.func.state_get = NULL;
-    itc_entry.func.del = NULL;
 
     itc_group.item_style = "dialogue/grouptitle";
     itc_group.func.text_get = _gl_get_text_group;
@@ -159,7 +147,6 @@ static void _cancel_button_cb(void *data, Evas_Object *obj, void *event_info) {
     struct ug_data *ad = get_ug_data();
 
     elm_naviframe_item_pop(ad->navi_bar);
-    elm_naviframe_item_pop(ad->navi_bar);
 }
 
 static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -167,13 +154,16 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("_install_button_cb");
 
     struct ug_data *ad = get_ug_data();
-
+    if(!ad){
+        LOGE("ug_data can't be null!");
+        return;
+    }
     char *alias, *password, *path;
     CertSvcString Alias, Path, Password;
     int returned_value;
     int is_unique = CERTSVC_FALSE;
     CertSvcString pkcs_alias;
-    LOGD("alias:    %s", elm_entry_entry_get(_entry));
+    SECURE_LOGD("alias:    %s", elm_entry_entry_get(_entry));
 
     if(NULL == elm_entry_entry_get(_entry_pass))
         password = NULL;
@@ -203,12 +193,12 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     certsvc_pkcs12_alias_exists(ad->instance, pkcs_alias, &is_unique);
     // Alias already exists
     if (CERTSVC_FALSE == is_unique || 1 > strlen(alias)) {
-        LOGD("alias %s already exist", alias);
+        SECURE_LOGD("alias %s already exist", alias);
         create_ok_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"));
         free(path);
         goto exit;
     }
-    LOGD("certsvc_pkcs12_import_from_file( %s, %s, %s)", path, password, alias);
+    SECURE_LOGD("certsvc_pkcs12_import_from_file(%s, %s)", path, alias);
     certsvc_string_new(ad->instance, alias, strlen(alias), &Alias);
     certsvc_string_new(ad->instance, path, strlen(path), &Path);
     certsvc_string_new(ad->instance, (password) ? password : "", (password) ? strlen(password) : 1, &Password);
@@ -218,28 +208,35 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     
     switch (returned_value) {
     case CERTSVC_SUCCESS:
-        LOGD("Certificate %s import success", current_file->name);
-        elm_naviframe_item_pop(ad->navi_bar);
-        elm_naviframe_item_pop(ad->navi_bar);
-        elm_genlist_clear(ad->genlist_pfx);   // TODO: This may not be the optimal solution
-        clear_pfx_genlist_data();             // Refactoring may be needed
-        elm_naviframe_item_pop(ad->navi_bar);
-        pfx_cert_cb(ad, NULL, NULL);
+        SECURE_LOGD("Certificate %s import success", current_file->name);
+        if (ad->user_cert_list_item)
+        {
+        	elm_naviframe_item_pop_to(ad->user_cert_list_item);
+        }
+        else if (ad->type_of_screen == PKCS12_SCREEN) {
+        	quit_cb(ad, NULL); //Exit from UG called directly by cert select UG.
+        }
+        else {
+        	elm_naviframe_item_pop(ad->navi_bar);
+        }
+
+        if (ad && ad->refresh_screen_cb)
+        {
+        	ad->refresh_screen_cb(ad, NULL, NULL);
+        }
         break;
 
     case CERTSVC_INVALID_PASSWORD:
-        LOGD("Invalid password to %s", current_file->name);
+        SECURE_LOGD("Invalid password to %s", current_file->name);
         break;
 
     case CERTSVC_IO_ERROR:
         LOGD("There's no such file!");
         elm_naviframe_item_pop(ad->navi_bar);
-        elm_naviframe_item_pop(ad->navi_bar);
         break;
 
     case CERTSVC_WRONG_ARGUMENT:
         LOGD("Wrong PKCS12 or PFX file.");
-        elm_naviframe_item_pop(ad->navi_bar);
         elm_naviframe_item_pop(ad->navi_bar);
         break;
 
@@ -267,14 +264,26 @@ exit:
     return;
 }
 
+static Evas_Object *_create_title_text_btn(Evas_Object *parent, const char *text, Evas_Smart_Cb func, void *data)
+{
+	Evas_Object *btn = elm_button_add(parent);
+	if (!btn) return NULL;
+	elm_object_style_set(btn, "naviframe/title_text");
+	elm_object_text_set(btn, text);
+	evas_object_smart_callback_add(btn, "clicked", func, data);
+	return btn;
+}
+
 void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info) {
 
     LOGD("put_pkcs12_name_and_pass_cb");
     struct ug_data *ad = get_ug_data();
+    Evas_Object *btn = NULL;
+
     current_file = (struct ListElement *) data;
 
     _set_itc_classes();
-    Evas_Object *genlist = elm_genlist_add(ad->win_main);
+    Evas_Object *genlist = elm_genlist_add(ad->navi_bar);
 
     passwd_entry_label = elm_genlist_item_append(
             genlist,
@@ -312,29 +321,19 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
             _gl_sel,
             NULL );
 
-    elm_genlist_item_append(
-            genlist,
-            &itc_btn,
-            (void *) 0,
-            NULL,
-            ELM_GENLIST_ITEM_NONE,
-            _gl_sel,
-            NULL );
-
-    elm_genlist_item_append(
-            genlist,
-            &itc_btn,
-            (void *) 1,
-            NULL,
-            ELM_GENLIST_ITEM_NONE,
-            _gl_sel,
-            NULL );
-
-    Elm_Object_Item *navi_it = NULL;
-    navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
+    evas_object_smart_callback_add(ad->navi_bar, "transition,finished", _focus_set_cb, ad);
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
+
+    //Title Text Left Button
+    btn = _create_title_text_btn(ad->navi_bar, "Install", _install_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
+
+    //Title Text Right Button
+    btn = _create_title_text_btn(ad->navi_bar, "Cancel", _cancel_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }
 
 void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -342,10 +341,12 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
     LOGD("put_pkcs12_name_cb");
 
     struct ug_data *ad = get_ug_data();
+    Evas_Object *btn = NULL;
+
     current_file = (struct ListElement *) data;
 
-    _set_itc_classes();
-    Evas_Object *genlist = elm_genlist_add(ad->win_main);
+   _set_itc_classes();
+    Evas_Object *genlist = elm_genlist_add(ad->navi_bar);
 
     name_entry_label = elm_genlist_item_append(
                 genlist,
@@ -365,27 +366,16 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
                 _gl_sel,
                 NULL );
 
-    elm_genlist_item_append(
-                genlist,
-                &itc_btn,
-                (void *) 0,
-                NULL,
-                ELM_GENLIST_ITEM_NONE,
-                _gl_sel,
-                NULL );
-
-    elm_genlist_item_append(
-                genlist,
-                &itc_btn,
-                (void *) 1,
-                NULL,
-                ELM_GENLIST_ITEM_NONE,
-                _gl_sel,
-                NULL );
-
-    Elm_Object_Item *navi_it = NULL;
-    elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_INSTALL_CERTIFICATE"), NULL, NULL, genlist, NULL);
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
+
+    //Title Text Left Button
+    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), _install_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
+
+    //Title Text Right Button
+    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_CANCEL"), _cancel_button_cb, NULL);
+    elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }

@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Tühista"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Sertifikaadid"
 
@@ -43,11 +46,11 @@ msgstr "Sisestage võtme alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Sisestage parool:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Välissertifikaadid"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Vale"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Installi sertifikaat"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Kas installida sertifikaadid SD-kaardilt?"
@@ -69,9 +72,6 @@ msgstr "Valige sertifikaat"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Valige sertifikaat, mida installida"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Seerianumber:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Allkirja algoritm:"
@@ -117,4 +117,13 @@ msgstr "Tühista"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Kliendi sertifikaat"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Seerianumber:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Installi sertifikaat"
 

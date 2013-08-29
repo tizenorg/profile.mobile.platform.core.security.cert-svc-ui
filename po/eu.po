@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Ezeztatu"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Ziurtagiriak"
 
@@ -43,11 +46,11 @@ msgstr "Adierazi gako ezizena:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Adierazi pasahitza:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Kanpo egiaztapenak"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Faltsua"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Instalatu ziurtagiria"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Instalatu ziurtagiriak SD txarteletik?"
@@ -70,9 +73,6 @@ msgstr "Ziurtagiri bat aukeratu"
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Hautatu ziurtagiria instalatzeko"
 
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serie zenbakia:"
-
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Sinatzeko algoritmoa:"
 
@@ -80,7 +80,7 @@ msgid "IDS_ST_BODY_TRUE"
 msgstr "Benetakoa"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Erroko ziurtagiri fidagarriak"
+msgstr "Erro ziurtagiri fidagarriak"
 
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "Erabiltzaile ziurtagiriak"
@@ -117,4 +117,13 @@ msgstr "Ezeztatu"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Ados"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Bezeroaren ziurtagiria"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serie zenbakia:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instalatu ziurtagiria"
 

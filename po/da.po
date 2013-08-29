@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Annullér"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certifikater"
 
@@ -43,14 +46,14 @@ msgstr "Indtast nøglealias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Indtast adgangskode:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Eksterne certifikater"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falsk"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Installér certifikat"
-
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Installer certifikater fra SD-kort?"
+msgstr "Installér certifikater fra SD-kort?"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Nøglebrug:"
@@ -69,9 +72,6 @@ msgstr "Vælg certifikat"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Vælg certifikat at installere"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serienummer:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Signaturalgoritme:"
@@ -117,4 +117,13 @@ msgstr "Annullér"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Kundecertifikat"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serienummer:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Installér certifikat"
 

@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Zrušiť"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certifikáty"
 
@@ -43,11 +46,11 @@ msgstr "Zadajte pseudonym kľúča:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Zadajte heslo:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "﻿Externé certifikáty"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Nepravda"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Inštalovať certifikát"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Inštalovať certifikáty z karty SD?"
@@ -69,9 +72,6 @@ msgstr "Vyberte certifikát"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Vyberte certifikát, ktorý chcete nainštalovať"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Sériové číslo:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritmus podpisu:"
@@ -117,4 +117,13 @@ msgstr "Zrušiť"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Klientsky certifikát"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sériové číslo:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Inštalovať certifikát"
 

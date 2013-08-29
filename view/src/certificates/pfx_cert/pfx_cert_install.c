@@ -33,7 +33,8 @@ static void install_pfx_button_cb (void *data, Evas_Object *obj, void *event_inf
 static void _clear_list (struct ListElement *listElement){
     deleteList(listElement);
 }
-Eina_Bool _back_cb(void *data, Elm_Object_Item *it) {
+
+static Eina_Bool _back_cb(void *data, Elm_Object_Item *it) {
     if(NULL != data)
 		_clear_list((struct ListElement *) data);
 	return EINA_TRUE;   
@@ -68,8 +69,8 @@ static struct ListElement* scan_dir(const char * dir_path, Evas_Object *list, st
                     LOGE("Error in elm_list_item_append");
                 }
 
-                LOGD("elm list append     = %s", current->name);
-                LOGD("elm list append dir = %s", current->path);
+                SECURE_LOGD("elm list append     = %s", current->name);
+                SECURE_LOGD("elm list append dir = %s", current->path);
             }
 
         }
@@ -84,11 +85,11 @@ static struct ListElement* scan_dir(const char * dir_path, Evas_Object *list, st
     return lastListElement;
 }
 
-void pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_info) {
-    LOGD("pfx_cert_cb");
+Elm_Object_Item* pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_info) {
+    LOGD("pfx_cert_install_cb : IN");
 
     if(NULL == data){
-        return;
+        return NULL;
     }
     struct ug_data *ad   = (struct ug_data *) data;
     Evas_Object    *list = NULL;
@@ -100,6 +101,7 @@ void pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_list_mode_set(list, ELM_LIST_COMPRESS);
 
     lastListElement = scan_dir(PATH_SDCARD, list, lastListElement);
+
     lastListElement = scan_dir(PATH_MEDIA, list, lastListElement);
     scan_dir(PATH_MEDIA_DOWNLOADS, list, lastListElement);
 
@@ -111,27 +113,35 @@ void pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_info) {
         Evas_Object *no_content = create_no_content_layout(ad);
 
         if(!no_content){
-            LOGD("Cannot create no_content layout (NULL); return");
-            return;
+            LOGD("pfx_cert_install_cb: Cannot create no_content layout (NULL); return");
+            return NULL;
         }
 		navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"), NULL, NULL, no_content, NULL);
     }
 
-	elm_naviframe_item_pop_cb_set(navi_it, _back_cb, NULL);  
+    if (ad->type_of_screen == PKCS12_SCREEN) {
+    	elm_naviframe_item_pop_cb_set(navi_it, quit_cb, ad);
+    }
+    else {
+    	elm_naviframe_item_pop_cb_set(navi_it, _back_cb, NULL);
+    }
+
+    LOGD("pfx_cert_install_cb : EXIT");
+	return navi_it;
 }
 
 static void install_pfx_button_cb(void *data, Evas_Object *obj, void *event_info) {
-    LOGD("install_pfx_button_cb()");
+    LOGD("install_pfx_button_cb() :IN ");
 
     struct ListElement *current = (struct ListElement *) data;
     struct ug_data *ad = get_ug_data();
+    char *path = NULL;
+    CertSvcString certSvcString_path;
+
     Elm_Object_Item *it = (Elm_Object_Item *) elm_list_selected_item_get(obj);
     if (it){
         elm_list_item_selected_set(it, EINA_FALSE);
     }
-
-    char *path = NULL;
-    CertSvcString certSvcString_path;
 
     path = path_cat(current->path, current->name);
     if(!path){
@@ -139,12 +149,14 @@ static void install_pfx_button_cb(void *data, Evas_Object *obj, void *event_info
         return;
     }
 
+    LOGD("install_pfx_button_cb: path [%s] to install", path);
+
     certsvc_string_new(ad->instance, path, strlen(path), &certSvcString_path);
 
     int returned_value;
     if(certsvc_pkcs12_has_password(ad->instance, certSvcString_path, &returned_value)
             != CERTSVC_SUCCESS){
-        LOGD("Wrong PKCS12 or PFX file.");
+        LOGD("install_pfx_button_cb: Wrong PKCS12 or PFX file.");
         elm_naviframe_item_pop(ad->navi_bar);
         _clear_list(current);
         free(path);
@@ -153,13 +165,13 @@ static void install_pfx_button_cb(void *data, Evas_Object *obj, void *event_info
 
     switch (returned_value){
     case CERTSVC_TRUE:
-        LOGD("%s/%s is passwod protected", current->path, current->name);
+        SECURE_LOGD("%s/%s is passwod protected", current->path, current->name);
         put_pkcs12_name_and_pass_cb(current, NULL, NULL);
         free(path);
         return;
 
     case CERTSVC_FALSE:
-        LOGD("%s/%s is NOT passwod protected", current->path, current->name);
+        SECURE_LOGD("%s/%s is NOT passwod protected", current->path, current->name);
         put_pkcs12_name_cb(current, NULL, NULL);
         free(path);
         return;

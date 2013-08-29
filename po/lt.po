@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Atšaukti"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Sertifikatai"
 
@@ -43,11 +46,11 @@ msgstr "Įveskite rakto alternatyvųjį vardą:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Įveskite slaptažodį:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Išoriniai sertifikatai"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Neteisinga"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Įdiegti sertifikatą"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Įdiegti sertifikatus iš SD kortelės?"
@@ -69,9 +72,6 @@ msgstr "Pasirinkite sertifikatą"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Pasirinkite norimą įdiegti sertifikatą"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serijos numeris:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Parašo algoritmas:"
@@ -117,4 +117,13 @@ msgstr "Atšaukti"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Gerai"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Kliento sertifikatas"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serijos numeris:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Įdiegti sertifikatą"
 

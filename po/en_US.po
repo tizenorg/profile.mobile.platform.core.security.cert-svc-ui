@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancel"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificates"
 
@@ -43,11 +46,11 @@ msgstr "Enter key alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Enter password:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "External certificates"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "False"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Install certificate"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Install certificates from SD card?"
@@ -70,9 +73,6 @@ msgstr "Select the certificate"
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Select certificate to install"
 
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serial number:"
-
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Signature algorithm:"
 
@@ -80,7 +80,7 @@ msgid "IDS_ST_BODY_TRUE"
 msgstr "True"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Trusted root certificates"
+msgstr "Trusted root CA certificates"
 
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "User certificates"
@@ -117,4 +117,13 @@ msgstr "Cancel"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Client certificate"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serial number:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Install certificate"
 

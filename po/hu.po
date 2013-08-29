@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Mégse"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Tanúsítványok"
 
@@ -43,11 +46,11 @@ msgstr "Adja meg a kulcsaliast:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Adja meg a jelszót:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Külső tanúsítványok"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Hamis"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Tanúsítvány telepítése"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Telepíti a tanúsítványokat az SD-kártyáról?"
@@ -69,9 +72,6 @@ msgstr "Válassza ki a tanúsítványt"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Válassza ki a telepíteni kívánt tanúsítványt"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Sorozatszám:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Aláírási algoritmus:"
@@ -117,4 +117,13 @@ msgstr "Mégse"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Klienstanúsítvány"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sorozatszám:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Tanúsítvány telepítése"
 

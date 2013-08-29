@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Poništi"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Sertifikati"
 
@@ -43,11 +46,11 @@ msgstr "Unesi ključni pseudonim:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Unesi lozinku:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Eksterni sertifikati"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Pogrešno"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Instaliraj sertifikat"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Instalirati sertifikate sa SD kartice?"
@@ -69,9 +72,6 @@ msgstr "Izaberi sertifikat"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Izaberi sertifikat koji može da se instalira"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serijski broj:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritam potpisa:"
@@ -117,4 +117,13 @@ msgstr "Otkaži"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Sertifikat klijenta"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serijski broj:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instaliraj sertifikat"
 

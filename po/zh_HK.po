@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "取消"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "證書"
 
@@ -14,7 +17,7 @@ msgid "IDS_ST_BODY_SELECT_ALL"
 msgstr "選擇全部"
 
 msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "發行者："
+msgstr "頒發者："
 
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "安裝"
@@ -43,11 +46,11 @@ msgstr "輸入金鑰別名："
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "輸入密碼："
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "外部證書"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "偽"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "安裝證書"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "從 SD 卡安裝證書嗎？"
@@ -70,17 +73,14 @@ msgstr "選擇證書"
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "選擇要安裝的證書"
 
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serial number:"
-
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "簽章演算法："
+msgstr "簽名算法："
 
 msgid "IDS_ST_BODY_TRUE"
 msgstr "正確"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "信任的根憑證"
+msgstr "信任的根證書"
 
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
 msgstr "用戶證書"
@@ -117,4 +117,13 @@ msgstr "取消"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "確認"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "客戶端證書"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "序號："
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "安裝證書"
 

@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Откажи"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Сертификати"
 
@@ -5,7 +8,7 @@ msgid "IDS_ST_BODY_VERSION_C"
 msgstr "Верзија:"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Одинсталирај"
+msgstr "Деинсталирај"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "Производител"
@@ -20,7 +23,7 @@ msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Инсталирај"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Прекарот веќе потои. Внесете единствен прекар"
+msgstr "Прекарот веќе постои. Внесете уникатен прекар"
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
 msgstr "Не може да биде без прекар"
@@ -38,22 +41,22 @@ msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Издавач на сертификатот:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "Внесете прекар за клучот:"
+msgstr "Внесете прекар за шифрата:"
 
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Внесете лозинка:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Надворешни сертификати"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Неточно"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Инсталирај сертификати"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Да се инсталираат сертификати од SD-картичка?"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "Употреба на клучот:"
+msgstr "Употреба на шифрата:"
 
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Организација:"
@@ -69,9 +72,6 @@ msgstr "Одберете сертификат"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Изберете сертификат за инсталирање"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Сериски број:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Алгоритам за потпис:"
@@ -117,4 +117,13 @@ msgstr "Откажи"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Сертиф. на клиентот"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Сериски број:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Инсталирај сертификат"
 

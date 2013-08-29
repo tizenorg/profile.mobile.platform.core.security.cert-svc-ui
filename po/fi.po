@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Peruuta"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Varmenteet"
 
@@ -43,11 +46,11 @@ msgstr "Anna avaimen alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Anna salasana:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Ulkoiset varmenteet"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Epätosi"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Asenna varmenne"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Asennetaanko varmenteet SD-kortilta?"
@@ -69,9 +72,6 @@ msgstr "Valitse sertifikaatti"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Valitse asennettava varmenne"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Sarjanumero:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Allekirjoitusalgoritmi:"
@@ -117,4 +117,13 @@ msgstr "Peruuta"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Asiakasvarmenne"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sarjanumero:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Asenna varmenne"
 

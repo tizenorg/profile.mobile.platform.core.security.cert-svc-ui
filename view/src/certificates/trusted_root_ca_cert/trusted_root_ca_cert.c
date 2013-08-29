@@ -36,11 +36,11 @@ Eina_Bool trusted_root_cert_create_list(struct ug_data *ad){
     elm_list_clear(ad->list_to_refresh);
 
     Eina_Bool no_content_bool = EINA_TRUE;
-    if(!make_list(ad, ad->list_to_refresh, PATH_CERT_TRUSTEDUSER, ad->list_element, TRUSTED_ROOT)){
+    if(!make_list(ad, ad->list_to_refresh, PATH_CERT_TRUSTEDUSER, ad->list_element)){
         no_content_bool = EINA_FALSE;
     }
     ad->list_element = findLastElement(ad->list_element);
-    if(!make_list(ad, ad->list_to_refresh, PATH_CERT_SSL_ETC, ad->list_element, TRUSTED_ROOT)){
+    if(!make_list(ad, ad->list_to_refresh, PATH_CERT_SSL_ETC, ad->list_element)){
         no_content_bool = EINA_FALSE;
     }
 
@@ -55,19 +55,11 @@ void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info) {
         return;
     }
     struct ug_data *ad = (struct ug_data *) data;
-    ad->type_of_screen = TRUSTED_ROOT_SCREEN;
-
     struct ListElement *firstListElement = NULL;
     struct ListElement *lastListElement  = NULL;
     firstListElement = initList();
     lastListElement  = firstListElement;
     ad->list_element = firstListElement;
-
-    Evas_Object *toolbar = elm_toolbar_add(ad->navi_bar);
-    if (!toolbar)
-        return;
-    elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
-
     ad->list_to_refresh = NULL;
     ad->list_to_refresh = elm_list_add(ad->win_main);
     elm_list_mode_set(ad->list_to_refresh, ELM_LIST_COMPRESS);

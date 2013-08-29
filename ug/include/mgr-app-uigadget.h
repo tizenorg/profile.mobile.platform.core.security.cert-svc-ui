@@ -56,6 +56,7 @@ struct ug_data {
     ui_gadget_h         sub_ug;
     void                *data;
     Evas_Object         *popup;
+    Elm_Theme 			*theme;
 
     Evas_Object         *list_to_refresh;
     enum Screen         type_of_screen;
@@ -63,10 +64,11 @@ struct ug_data {
     struct ListElement  *list_element_install;
 
     CertSvcInstance     instance;
-    Evas_Object         *genlist_pfx;
-
     Evas_Object         *indicator;
     Ecore_Pipe          *msg_pipe;
+    Elm_Object_Item		*uninstall_button;
+    Elm_Object_Item		*user_cert_list_item;
+    void (*refresh_screen_cb)(void *data, Evas_Object *obj, void *event_info);
 
 };
 

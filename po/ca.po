@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancelar"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificats"
 
@@ -43,11 +46,11 @@ msgstr "Introduir àlies de clau:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introdueixi la contrasenya:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificats externs"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fals"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Instal·lar certificat"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Instal·lar certificats de la targeta SD?"
@@ -69,9 +72,6 @@ msgstr "Seleccioni el certificat"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Seleccioni el certificat per instal·lar"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Número de sèrie:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algorisme de signatura:"
@@ -117,4 +117,13 @@ msgstr "Cancelar"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Acceptar"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certificació client"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Número de sèrie:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instal·lar certificat"
 

@@ -46,11 +46,13 @@ struct ug_data {
     ui_gadget_h         sub_ug;
     service_h           *service;
     void                *data;
+    Elm_Object_Item		*user_cert_list_item;
+    Elm_Theme 			*theme;
 };
 
 struct ug_data *get_ug_data();
 
-void cert_selection_cb(void *data, Evas_Object *obj, void *event_info);
+void cert_selection_install_cb(void *data, Evas_Object *obj, void *event_info);
 
 #ifdef LOG_TAG
     #undef LOG_TAG

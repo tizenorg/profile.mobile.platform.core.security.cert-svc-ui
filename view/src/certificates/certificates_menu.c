@@ -22,28 +22,39 @@
 
 #include <cert-svc/cinstance.h>
 #include <dlog.h>
+#include <efl_assist.h>
 
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
-Eina_Bool _quit_cb(void *data, Elm_Object_Item *it)
-{
+void direct_pfx_install_screen_cb(void *data, Evas_Object *obj, void *event_info) {
+
+	LOGD("certificates_pfx_install_cb : IN");
     struct ug_data *ad = (struct ug_data*) data;
 
-	if (ad->ug) {
-		ug_destroy_me(ad->ug);
-		ad->ug = NULL;
-	}
+    if (certsvc_instance_new(&(ad->instance)) == CERTSVC_FAIL) {
+        LOGD("certsvc_instance_new returned CERTSVC_FAIL");
+        return;
+    }
+    ad->list_element = NULL;
+    ad->type_of_screen = PKCS12_SCREEN;
+    ad->refresh_screen_cb = NULL;
+    ad->user_cert_list_item = NULL;
 
-	return EINA_TRUE;   
+    install_button_cb(ad, obj, event_info);
+
+    elm_naviframe_prev_btn_auto_pushed_set(ad->navi_bar, EINA_FALSE);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_BACK, ea_naviframe_back_cb, NULL);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_MORE, ea_naviframe_more_cb, NULL);
+
+	LOGD("certificates_pfx_install_cb : EXIT");
 }
-	  
+
 
 void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
-    struct ug_data *ad = (struct ug_data*) data;
 
+	struct ug_data *ad = (struct ug_data*) data;
     Evas_Object *list = NULL;
-    Evas_Object *back = NULL;
 
     if (certsvc_instance_new(&(ad->instance)) == CERTSVC_FAIL) {
         LOGD("certsvc_instance_new returned CERTSVC_FAIL");
@@ -51,6 +62,8 @@ void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
     }
     ad->list_element = NULL;
     ad->type_of_screen = NONE_SCREEN;
+    ad->refresh_screen_cb = NULL;
+    ad->user_cert_list_item = NULL;
 
     list = elm_list_add(ad->navi_bar);
     elm_list_mode_set(list, ELM_LIST_COMPRESS);
@@ -60,11 +73,11 @@ void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_list_item_append(list, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"), NULL, NULL, trusted_root_cert_cb, ad);
     elm_list_item_append(list, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, pfx_cert_cb, ad);
 
-    elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), NULL, NULL, list, NULL);
+    Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), NULL, NULL, list, NULL);
 	
-	back = elm_button_add(ad->navi_bar);
+    elm_naviframe_item_pop_cb_set(nf_it, quit_cb, data);
 
-	elm_object_style_set(back, "naviframe/back_btn/default");
-	Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), back, NULL, list, NULL);
-	elm_naviframe_item_pop_cb_set(nf_it, _quit_cb, data); 
+    elm_naviframe_prev_btn_auto_pushed_set(ad->navi_bar, EINA_FALSE);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_BACK, ea_naviframe_back_cb, NULL);
+	ea_object_event_callback_add(ad->navi_bar, EA_CALLBACK_MORE, ea_naviframe_more_cb, NULL);
 }

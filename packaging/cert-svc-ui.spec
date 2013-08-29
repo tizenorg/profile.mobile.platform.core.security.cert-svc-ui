@@ -2,7 +2,7 @@
 Name:    cert-svc-ui
 Summary: Certification service
 Version: 1.0.1
-Release: 47
+Release: 51
 Group:   System/Libraries
 License: SAMSUNG
 Source0: %{name}-%{version}.tar.gz
@@ -29,9 +29,8 @@ BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(ui-gadget-1)
 BuildRequires: pkgconfig(icu-i18n)
 BuildRequires: pkgconfig(bundle)
-BuildRequires: pkgconfig(ui-gadget-1)
 BuildRequires: pkgconfig(capi-appfw-application)
-BuildRequires: pkgconfig(glib-2.0)
+BuildRequires: pkgconfig(efl-assist)
 
 %description
 Certification service

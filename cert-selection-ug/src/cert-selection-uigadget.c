@@ -49,35 +49,36 @@ struct ug_data *get_ug_data() {
 
 static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, void *priv) {
 
-    (void)mode;
-
-    if(NULL == ug)
+	int theme = 0;
+	if (NULL == ug)
         return NULL;
-    if(NULL == priv)
+    if (NULL == priv)
         return NULL;
-
-    ugd = priv;
-    ugd->ug = ug;
-
-    ugd->service = &service;
 
     bindtextdomain(PACKAGE, LOCALEDIR);
 
+    ugd->service = &service;
     ugd = priv;
     ugd->ug = ug;
 
     ugd->win_main = ug_get_parent_layout(ug);
-    if (NULL == ugd->win_main)
+    if (NULL == ugd->win_main) {
         return NULL;
+    }
 
-    ugd->bg = elm_bg_add(ugd->win_main);
+	if (strncmp(elm_theme_get(NULL), "tizen-HD-dark", strlen("tizen-HD-dark")) == 0) {
+		theme = 0;
+	} else if (strncmp(elm_theme_get(NULL), "tizen-HD-light", strlen("tizen-HD-light")) == 0) {
+		theme = 1;
+	}
+
+	ugd->bg = elm_bg_add(ugd->win_main);
     if (!ugd->bg) {
         LOGD("ugd->bg is null");
         free(ugd->win_main);
         return NULL;
     }
     evas_object_size_hint_weight_set(ugd->bg, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    //elm_win_resize_object_add(ugd->win_main, ugd->bg);
     evas_object_show(ugd->bg);
 
     ugd->layout_main = elm_layout_add(ugd->win_main);
@@ -87,9 +88,18 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
         free(ugd->bg);
         return NULL;
     }
+
+    ugd->theme = elm_theme_new();
+
+    if (theme == 1) {
+    	elm_theme_set(ugd->theme, "tizen-HD-light");
+	}
+    else {
+    	elm_theme_set(ugd->theme, "tizen-HD-dark");
+    }
+    elm_object_theme_set(ugd->layout_main, ugd->theme);
     elm_layout_theme_set(ugd->layout_main, "layout", "application", "default");
     evas_object_size_hint_weight_set(ugd->layout_main, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-    //elm_win_resize_object_add(ugd->win_main, ugd->layout_main);
     evas_object_show(ugd->layout_main);
 
     elm_object_part_content_set(ugd->layout_main, "elm.swallow.bg", ugd->bg);
@@ -102,49 +112,43 @@ static void *on_create(ui_gadget_h ug, enum ug_mode mode, service_h service, voi
         free(ugd->layout_main);
         return NULL;
     }
-    evas_object_show(ugd->navi_bar);
     elm_object_part_content_set(ugd->layout_main, "elm.swallow.content", ugd->navi_bar);
+    evas_object_show(ugd->navi_bar);
 
-    cert_selection_cb((void*) ugd, NULL, NULL);
+    cert_selection_install_cb((void*) ugd, NULL, NULL);
 
     return ugd->layout_main;
 }
 
 static void on_start(ui_gadget_h ug, service_h service, void *priv) {
 
-    (void)ug;
-    (void)service;
-    (void)priv;
 }
 
 static void on_pause(ui_gadget_h ug, service_h service, void *priv) {
 
-    (void)ug;
-    (void)service;
-    (void)priv;
 }
 
 static void on_resume(ui_gadget_h ug, service_h service, void *priv) {
 
-    (void)ug;
-    (void)service;
-    (void)priv;
 }
 
 static void on_destroy(ui_gadget_h ug, service_h service, void *priv) {
 
-    (void)service;
-
-    if(NULL == ug){
+    if (NULL == ug) {
         LOGD("NULL == ug; return");
         return;
     }
-    if(NULL == priv){
+    if (NULL == priv) {
         LOGD("NULL == priv; return");
         return;
     }
 
     ugd = priv;
+
+    if (ugd->theme) {
+    	elm_theme_free(ugd->theme);
+    	ugd->theme = NULL;
+    }
 
     evas_object_del(ugd->layout_main);
     ugd->layout_main = NULL;
@@ -152,18 +156,9 @@ static void on_destroy(ui_gadget_h ug, service_h service, void *priv) {
 
 static void on_message(ui_gadget_h ug, service_h msg, service_h service, void *priv) {
 
-    (void)ug;
-    (void)msg;
-    (void)service;
-    (void)priv;
 }
 
 static void on_event(ui_gadget_h ug, enum ug_event event, service_h service, void *priv) {
-
-    (void)ug;
-    (void)service;
-    (void)priv;
-
     switch (event) {
     case UG_EVENT_LOW_MEMORY:
         break;
@@ -185,11 +180,7 @@ static void on_event(ui_gadget_h ug, enum ug_event event, service_h service, voi
 }
 
 static void on_key_event(ui_gadget_h ug, enum ug_key_event event, service_h service, void *priv) {
-
-    (void)service;
-    (void)priv;
-
-    if(NULL == ug){
+    if (NULL == ug) {
         LOGD("NULL == ug; return");
         return;
     }
@@ -205,30 +196,30 @@ static void on_key_event(ui_gadget_h ug, enum ug_key_event event, service_h serv
 
 UG_MODULE_API int UG_MODULE_INIT(struct ug_module_ops *ops) {
 
-    if(NULL == ops){
+    if (NULL == ops) {
         LOGD("NULL == ops; return");
         return -1;
     }
 
     ugd = calloc(1, sizeof(struct ug_data));
 
-    ops->create    = on_create;
-    ops->start     = on_start;
-    ops->pause     = on_pause;
-    ops->resume    = on_resume;
-    ops->destroy   = on_destroy;
-    ops->message   = on_message;
-    ops->event     = on_event;
+    ops->create = on_create;
+    ops->start = on_start;
+    ops->pause = on_pause;
+    ops->resume = on_resume;
+    ops->destroy = on_destroy;
+    ops->message = on_message;
+    ops->event = on_event;
     ops->key_event = on_key_event;
-    ops->priv      = ugd;
-    ops->opt       = UG_OPT_INDICATOR_ENABLE;
+    ops->priv = ugd;
+    ops->opt = UG_OPT_INDICATOR_ENABLE;
 
     return 0;
 }
 
 UG_MODULE_API void UG_MODULE_EXIT(struct ug_module_ops *ops) {
 
-    if(NULL == ops){
+    if (NULL == ops) {
         LOGD("NULL == ops; return");
         return;
     }
@@ -238,10 +229,6 @@ UG_MODULE_API void UG_MODULE_EXIT(struct ug_module_ops *ops) {
 }
 
 UG_MODULE_API int setting_plugin_reset(service_h service, void *priv) {
-
-    (void)service;
-    (void)priv;
     /* nothing to do for Setting>Reset */
-
     return 0;
 }

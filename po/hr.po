@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Prekid"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certifikati"
 
@@ -43,11 +46,11 @@ msgstr "Unesite alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Unesite lozinku:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Vanjske potvrde"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ne"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Instaliraj potvrdu"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Instalirati potvrde s SD kartice?"
@@ -69,9 +72,6 @@ msgstr "Odaberite certifikat"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Odaberi potvrdu za instaliranje"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Serijski broj:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritam potpisa:"
@@ -98,7 +98,7 @@ msgid "IDS_ST_BODY_COMMON_NAME_C"
 msgstr "Zajednički naziv:"
 
 msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Neispravna šifra"
+msgstr "Neispravna lozinka"
 
 msgid "IDS_ST_BODY_NO_CONTENT"
 msgstr "Nema sadržaja"
@@ -117,4 +117,13 @@ msgstr "Prekid"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "U redu"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Potvrda klijenta"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serijski broj:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instaliraj potvrdu"
 

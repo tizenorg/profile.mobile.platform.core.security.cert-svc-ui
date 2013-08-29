@@ -35,69 +35,119 @@
 #include <dirent.h>
 
 static CertSvcStringList stringList;
-static Eina_Bool *state_pointer; //check states
+static Eina_Bool *state_pointer = NULL; //check states
 static int list_length = 0;
-static Elm_Object_Item *select_all_item = NULL;
-static Evas_Object *uninstallButton = NULL;
+static Elm_Object_Item *uninstallButton = NULL;
+static Evas_Object *select_all_layout = NULL;
+static Evas_Object *genlist = NULL;
+static int checked_count = 0;
 
+static void _pfx_cert_remove_cleanup()
+{
+	free(state_pointer);
+	state_pointer = NULL;
+	certsvc_string_list_free(stringList);
+}
 static void uninstall_button_set () {
 
     int i;
     for (i = 1; i <= list_length; ++i) {
         if (EINA_TRUE == state_pointer[i]){
-            elm_object_disabled_set(uninstallButton, EINA_FALSE);
+            elm_object_item_disabled_set(uninstallButton, EINA_FALSE);
             return;
         }
     }
-    elm_object_disabled_set(uninstallButton, EINA_TRUE);
+    elm_object_item_disabled_set(uninstallButton, EINA_TRUE);
 }
 
-static void _gl_sel(void *data, Evas_Object *obj, void *event_info){
 
-    int index;
-    Elm_Object_Item *item = (Elm_Object_Item *) event_info;
-    if (item != NULL) {
-        int i;
-        index = (int) elm_object_item_data_get(item);
-        elm_genlist_item_selected_set(item, EINA_FALSE);
-        state_pointer[index] = !state_pointer[index];
-        elm_genlist_item_update(item);
+static void _select_all_chk_changed_cb(void *data, Evas_Object *obj, void *ei)
+{
+	Eina_Bool state = elm_check_state_get(obj);
 
-        // check/uncheck all check-boxes when SELECT ALL is checked
-        if (0 == index){
-            for (i = 1; i <= list_length; ++i) {
-                state_pointer[i] = state_pointer[0];
-                item = elm_genlist_item_next_get(item);
-                elm_genlist_item_update(item);
-            }
-        }
+	if (state) {
+		checked_count = elm_genlist_items_count(genlist) - 1;
+	}
+	else {
+		checked_count = 0;
+	}
 
-        // setup UNINSTALL button
-        uninstall_button_set ();
+	LOGD("check Select ALL changed, count: %d / %d\n", checked_count, elm_genlist_items_count(genlist));
 
-        // Uncheck SELECT ALL when at least one check-box is unselected
-        if ((state_pointer[index] == EINA_FALSE) && (state_pointer[0] == EINA_TRUE)) {
-            state_pointer[0] = EINA_FALSE;
-            elm_genlist_item_update(select_all_item);
-        }
+	Elm_Object_Item *it = elm_genlist_first_item_get(genlist);
+	while(it) {
+		int index = (int)elm_object_item_data_get(it);
+		// For realized items, set state of real check object
+		Evas_Object *ck = elm_object_item_part_content_get(it, "elm.icon");
+		if (ck) elm_check_state_set(ck, state);
+		// For all items (include unrealized), just set pointer state
+		state_pointer[index] = state;
+		it = elm_genlist_item_next_get(it);
+	}
 
-        // Check SELECT ALL when all check-boxes are selected
-        if ((state_pointer[index] == EINA_TRUE) && (state_pointer[0] == EINA_FALSE)) {
-            Eina_Bool should_select_all = EINA_TRUE;
-            for(i = 1; i <= list_length; ++i){
-                if (EINA_FALSE == state_pointer[i]){
-                    should_select_all = EINA_FALSE;
-                }
-            }
-            state_pointer[0] = should_select_all;
-            elm_genlist_item_update(select_all_item);
-        }
-    }
+	uninstall_button_set();
 }
 
-static Eina_Bool _gl_state_get(void *data, Evas_Object *obj, const char *part) {
+static void _select_all_layout_down_cb(void *data, Evas *evas, Evas_Object *obj, void *event_info)
+{
+	Evas_Object *check = elm_object_part_content_get(select_all_layout, "elm.icon");
+	Eina_Bool state = elm_check_state_get(check);
+	elm_check_state_set(check, !state);
+	_select_all_chk_changed_cb(data, check, NULL);
+}
 
-    return EINA_FALSE;
+static Evas_Object *
+_create_select_all_layout(Evas_Object *parent)
+{
+	Evas_Object *layout = elm_layout_add(parent);
+	elm_layout_theme_set(layout, "genlist", "item", "select_all/default");
+	evas_object_size_hint_weight_set(layout, EVAS_HINT_EXPAND, EVAS_HINT_FILL);
+	evas_object_size_hint_align_set(layout, EVAS_HINT_FILL, EVAS_HINT_FILL);
+	evas_object_event_callback_add(layout, EVAS_CALLBACK_MOUSE_DOWN, _select_all_layout_down_cb, NULL);
+	evas_object_show(layout);
+
+	Evas_Object *check = elm_check_add(layout);
+	evas_object_propagate_events_set(check, EINA_FALSE);
+	evas_object_smart_callback_add(check, "changed", _select_all_chk_changed_cb, NULL);
+	elm_object_part_content_set(layout, "elm.icon", check);
+	elm_object_part_text_set(layout, "elm.text", dgettext(PACKAGE, "IDS_ST_BODY_SELECT_ALL"));
+	return layout;
+}
+
+static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
+{
+	Eina_Bool state = elm_check_state_get(obj);
+	if (state) {
+		checked_count++;
+	}
+	else {
+		checked_count--;
+	}
+	
+	LOGD("check changed, count: %d / %d\n", checked_count, elm_genlist_items_count(genlist));
+
+	Evas_Object *check = elm_object_part_content_get(select_all_layout, "elm.icon");
+	if (elm_genlist_items_count(genlist) == checked_count + 1)	{
+		elm_check_state_set(check, EINA_TRUE);
+	} else {
+		elm_check_state_set(check, EINA_FALSE);
+	}
+
+	uninstall_button_set();
+}
+
+static void _gl_sel(void *data, Evas_Object *obj, void *ei)
+{
+	Elm_Object_Item *item = ei;
+
+	elm_genlist_item_selected_set(item, EINA_FALSE);
+
+	// Update check button
+	Evas_Object *ck = elm_object_item_part_content_get(ei, "elm.icon");
+	Eina_Bool state = elm_check_state_get(ck);
+	elm_check_state_set(ck, !state);
+
+	_chk_changed_cb(data, ck, NULL);
 }
 
 static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *part) {
@@ -106,12 +156,15 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 
     if (!strcmp(part, "elm.icon") || !strcmp(part, "elm.swallow.icon")) {
         check = elm_check_add(obj);
-        //set the State pointer to keep the current UI state of Checkbox.
-        elm_check_state_pointer_set(check, &(state_pointer[index]));
-
-        evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-        evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
-
+		elm_object_style_set(check, "default/genlist");
+		//set the State pointer to keep the current UI state of Checkbox.
+		elm_check_state_pointer_set(check, &(state_pointer[index]));
+		// Repeat events to below object (genlist)
+		// So that if check is clicked, genlist can be clicked.
+		evas_object_repeat_events_set(check, EINA_TRUE);
+		evas_object_propagate_events_set(check, EINA_FALSE);
+		evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+		evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
         return check;
     }
 
@@ -143,21 +196,6 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
     return NULL;
 }
 
-static Elm_Genlist_Item_Class itc_sa = {
-        .item_style = "1text.1icon",
-        .func.text_get = _gl_get_text_sa,
-        .func.content_get = _gl_content_get,
-        .func.state_get = NULL,
-        .func.del = NULL
-};
-
-static Elm_Genlist_Item_Class itc_2text = {
-        .item_style = "2text.1icon.2",
-        .func.text_get = _gl_text_get,
-        .func.content_get = _gl_content_get,
-        .func.state_get = _gl_state_get,
-        .func.del = NULL
-};
 
 static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info) {
 
@@ -175,28 +213,33 @@ static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info
     if (EINA_TRUE == state_pointer[0]) {
         for (i = 0; i < list_length; i++) {
             if (certsvc_string_list_get_one(stringList, i, &buffer) == CERTSVC_SUCCESS) {
-                certsvc_pkcs12_delete(ad->instance, buffer);
-                LOGD("%s --- removed", buffer);
+                if (certsvc_pkcs12_delete(ad->instance, buffer) == CERTSVC_SUCCESS)
+                {
+                    SECURE_LOGD("%s --- removed", buffer);
+                }
+				certsvc_string_free(buffer);
             }
-            certsvc_string_free(buffer);
         }
     } else {;
         for (i = 0; i < list_length; i++) {
             if (EINA_TRUE == state_pointer[i+1] &&
                     certsvc_string_list_get_one(stringList, i, &buffer) == CERTSVC_SUCCESS) {
-                certsvc_pkcs12_delete(ad->instance, buffer);
-                LOGD("%s --- removed", buffer);
+                if (certsvc_pkcs12_delete(ad->instance, buffer) == CERTSVC_SUCCESS)
+                {
+                    SECURE_LOGD("%s --- removed", buffer);
+                }
                 certsvc_string_free(buffer);
             }
         }
     }
-    free(state_pointer);
-    elm_genlist_clear(ad->genlist_pfx);
-    clear_pfx_genlist_data();
+    _pfx_cert_remove_cleanup();
+
     elm_naviframe_item_pop(ad->navi_bar);
-    elm_naviframe_item_pop(ad->navi_bar);
-    pfx_cert_cb(ad, NULL, NULL); //TODO: This may not be the optimal solution
-                                 // Refactoring may be needed
+    if (ad && ad->refresh_screen_cb)
+	{
+		ad->refresh_screen_cb(ad, NULL, NULL);
+	}
+
 }
 
 static void genlist_pfx_cancel_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -210,9 +253,64 @@ static void genlist_pfx_cancel_cb(void *data, Evas_Object *obj, void *event_info
     }
     struct ug_data *ad = (struct ug_data *) data;
 
-    free(state_pointer);
-    pfx_cert_create_list(ad);
+    _pfx_cert_remove_cleanup();
+
     elm_naviframe_item_pop(ad->navi_bar);
+}
+
+
+static Evas_Object * _create_genlist(struct ug_data *ad, Evas_Object *parent)
+{
+	int index;
+	Elm_Object_Item *git;
+
+	//Being
+	certsvc_pkcs12_get_id_list(ad->instance, &stringList);
+
+
+	// Create genlist
+	genlist = elm_genlist_add(parent);
+	evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(genlist, EVAS_HINT_FILL, EVAS_HINT_FILL);
+
+	Elm_Genlist_Item_Class *itc_sa = elm_genlist_item_class_new();
+	Elm_Genlist_Item_Class *itc = elm_genlist_item_class_new();
+
+	// Set genlist item class for "select all"
+	itc_sa->item_style = "selectall_check";
+	itc_sa->func.text_get = _gl_get_text_sa;
+	itc_sa->func.content_get = _gl_content_get;
+
+	// Set genlist item class
+	itc->item_style = "1text.1icon.3";
+	itc->func.text_get = _gl_text_get;
+	itc->func.content_get = _gl_content_get;
+
+	git = elm_genlist_item_append(genlist, itc_sa, (void *) 0, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+	elm_genlist_item_select_mode_set(git, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
+
+
+	certsvc_string_list_get_length(stringList, &list_length);
+	state_pointer = malloc((list_length+1) * sizeof(Eina_Bool));
+	state_pointer[0] = EINA_FALSE;
+
+	// Append items
+	for (index = 1; index <= list_length; index++) {
+		state_pointer[index] = EINA_FALSE;
+		elm_genlist_item_append(
+				genlist,			// genlist object
+				itc,				// item class
+				(void *) index,		// data
+				NULL,
+				ELM_GENLIST_ITEM_NONE,
+				_gl_sel,
+				NULL
+		);
+	}
+	elm_genlist_item_class_free(itc);
+	elm_genlist_item_class_free(itc_sa);
+
+	return genlist;
 }
 
 void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -220,46 +318,47 @@ void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info) {
 
     struct ug_data *ad = (struct ug_data *) data;
     Evas_Object *genlist = NULL;
-    Evas_Object *cancel_button;
+    Evas_Object *toolbar = NULL;
+    Evas_Object *box = NULL;
+    Elm_Object_Item *cancel_button;
 
-    certsvc_pkcs12_get_id_list(ad->instance, &stringList);
+    checked_count = 0;
 
-    uninstallButton = elm_button_add(ad->navi_bar);
-    if (!uninstallButton)
-        return;
-    elm_object_text_set(uninstallButton, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"));
-    elm_object_style_set(uninstallButton, "naviframe/toolbar/left");
-    evas_object_smart_callback_add(uninstallButton, "clicked", genlist_pfx_delete_cb, ad);
-    elm_object_disabled_set(uninstallButton, EINA_TRUE);
+    box = elm_box_add(ad->navi_bar);
+    evas_object_size_hint_weight_set(box, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+    evas_object_size_hint_align_set(box, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
-    cancel_button = elm_button_add(ad->navi_bar);
-    if (!cancel_button)
-        return;
-    elm_object_text_set(cancel_button, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"));
-    elm_object_style_set(cancel_button, "naviframe/toolbar/right");
-    evas_object_smart_callback_add(cancel_button, "clicked", genlist_pfx_cancel_cb, ad);
+	select_all_layout =_create_select_all_layout(box);
+	evas_object_show(select_all_layout);
+	elm_box_pack_end(box, select_all_layout);
 
-    genlist = elm_genlist_add(ad->navi_bar);
+	genlist = _create_genlist(ad, box);
+	evas_object_show(genlist);
+	elm_box_pack_end(box, genlist);
+	evas_object_show(box);
 
-    select_all_item = elm_genlist_item_append(genlist, &itc_sa, (void *) 0, NULL, ELM_GENLIST_ITEM_NONE, _gl_sel, NULL);
+	//toolbar
+    toolbar = elm_toolbar_add(ad->navi_bar);
+    if (!toolbar) return;
+    elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
+    elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
+    elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
 
-    int i;
-    certsvc_string_list_get_length(stringList, &list_length);
-    state_pointer = malloc((list_length+1) * sizeof(Eina_Bool));
-    state_pointer[0] = EINA_FALSE;
-    for (i = 1; i < list_length + 1; i++) {
-        state_pointer[i] = EINA_FALSE;
-        elm_genlist_item_append( genlist, &itc_2text, (void *) i, NULL, ELM_GENLIST_ITEM_NONE, _gl_sel, NULL);
+    uninstallButton = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), genlist_pfx_delete_cb, ad);
+    if (!uninstallButton) return;
 
-    }
+    cancel_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"), genlist_pfx_cancel_cb, ad);
+    if (!cancel_button) return;
+
+    elm_object_item_disabled_set(uninstallButton, EINA_TRUE);
+
     Elm_Object_Item *itm = elm_naviframe_item_push(
             ad->navi_bar,
             dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"),
             NULL,
             NULL,
-            genlist,
+            box,
             NULL);
-    elm_object_item_part_content_set(itm, "toolbar_button1", uninstallButton);
-    elm_object_item_part_content_set(itm, "toolbar_button2", cancel_button);
+    elm_object_item_part_content_set(itm, "toolbar", toolbar);
     elm_object_item_part_content_unset(itm, "prev_btn");
 }

@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "გაუქმება"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "სერთიფიკატები"
 
@@ -43,11 +46,11 @@ msgstr "შეიყვანეთ ძირითადი ალიასი:
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "აკრიფეთ პაროლი:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "გარე სერტიფიკატები"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "მცდარი"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "დააინსტალირეთ სერთიფიკატი"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "დააინსტალირებთ სერტიფიკატებს SD ბარათიდან?"
@@ -69,9 +72,6 @@ msgstr "აირჩიეთ სერთიფიკატი"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "აირჩიეთ დასაინსტალირებელი სერთიფიკატი"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "სერიული ნომერი:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "ხელმოწერის ალგორითმი:"
@@ -117,4 +117,13 @@ msgstr "გაუქმება"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "კლიენტის სერთიფიკატი"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "სერიული ნომერი:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "დააინსტალირეთ სერთიფიკატი"
 

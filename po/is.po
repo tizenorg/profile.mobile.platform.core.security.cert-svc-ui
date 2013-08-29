@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Hætta v."
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Skírteini"
 
@@ -43,11 +46,11 @@ msgstr "Sláðu inn samnefni lykils:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Sláðu inn lykilorð:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Ytri vottorð"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ósatt"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Setja upp vottorð"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Setja upp vottorð af SD-korti?"
@@ -69,9 +72,6 @@ msgstr "Veldu vottorðið"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Veldu vottorð til að setja upp"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Raðnúmer:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algóritmi undirskriftar:"
@@ -117,4 +117,13 @@ msgstr "Hætta við"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Í lagi"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Biðlaravottorð"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Raðnúmer:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Setja upp vottorð"
 

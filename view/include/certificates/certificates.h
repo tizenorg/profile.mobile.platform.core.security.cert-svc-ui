@@ -58,31 +58,27 @@
 #define PATH_MEDIA_DOWNLOADS         "/opt/usr/media/Downloads"
 
 // certificates menu
+void direct_pfx_install_screen_cb(void *data, Evas_Object *obj, void *event_info);
 void certificates_menu_cb (void *data, Evas_Object *obj, void *event_info);
 void trusted_root_cert_cb (void *data, Evas_Object *obj, void *event_info);
 void pfx_cert_cb          (void *data, Evas_Object *obj, void *event_info);
+void refresh_pfx_cert_cb  (void *data, Evas_Object *obj, void *event_info);
 
 
 // trusted root certificates
 void trusted_root_cert_selection_cb     (void *data, Evas_Object *obj, void *event_info);
 Eina_Bool trusted_root_cert_create_list (struct ug_data *ad);
 
-// user certificate
-void user_search_cert_cb        (void *data, Evas_Object *obj, void *event_info);
-void user_cert_selection_cb     (void *data, Evas_Object *obj, void *event_info);
-Eina_Bool user_cert_create_list (struct ug_data *ad);
-
 // PFX certificate
-void pfx_cert_install_cb         (void *data, Evas_Object *obj, void *event_info);
+Elm_Object_Item* pfx_cert_install_cb (void *data, Evas_Object *obj, void *event_info);
 void put_pkcs12_name_cb          (void *data, Evas_Object *obj, void *event_info);
 void put_pkcs12_name_and_pass_cb (void *data, Evas_Object *obj, void *event_info);
 void pfx_cert_remove_cb          (void *data, Evas_Object *obj, void *event_info);
-Eina_Bool pfx_cert_create_list   (struct ug_data *ad);
+void pfx_cert_create_list   (struct ug_data *ad);
 
 // cert general
 void get_info_cert_from_file_cb        (struct ug_data *ad);
 void get_info_cert_from_certificate_cb (CertSvcCertificate cert);
-void delete_cert_cb                    (void *data, Evas_Object *obj, void *event_info);
 
 //---------------------------------------------
 

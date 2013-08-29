@@ -14,6 +14,7 @@ pkg_check_modules(pkgs_view
     ui-gadget-1
     capi-appfw-application
     cert-svc-vcore
+	efl-assist
 )
 
 SET(SRCS
@@ -25,7 +26,7 @@ SET(SRCS
     src/certificates/pfx_cert/pfx_cert_remove.c
     src/certificates/detail_info_cert.c
     src/certificates/put_password_certificate.c
-    src/certificates/uninstall_certificate.c
+#   src/certificates/uninstall_certificate.c
 )
 
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/view/include)

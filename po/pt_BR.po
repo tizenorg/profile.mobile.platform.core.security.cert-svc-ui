@@ -1,3 +1,6 @@
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancelar"
+
 msgid "IDS_ST_BODY_CERTIFICATES"
 msgstr "Certificados"
 
@@ -43,11 +46,11 @@ msgstr "Insira o cognome da chave:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Insira a senha:"
 
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificados externos"
+
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falso"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATE"
-msgstr "Instalar certificado"
 
 msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
 msgstr "Instalar certificados do cartão SD?"
@@ -69,9 +72,6 @@ msgstr "Selecione o certificado"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
 msgstr "Selecionar o certificado para instalação"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_C"
-msgstr "Número de série:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritmo de assinatura:"
@@ -117,4 +117,13 @@ msgstr "Cancelar"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certif. do cliente"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Número de série:"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instalar certificado"
 
