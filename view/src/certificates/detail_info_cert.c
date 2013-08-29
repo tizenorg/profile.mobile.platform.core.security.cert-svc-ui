@@ -317,6 +317,13 @@ static char* format_key(char *key) {
     return result;
 }
 
+static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
+
+{
+   //Update genlist items. The Item texts will be translated in the gl_text_get().
+   elm_genlist_realized_items_update(obj);
+}
+
 static char* _gl_get_text(void *data, Evas_Object *obj, const char *part) {
 
     int index = (int) data;
@@ -408,6 +415,8 @@ void show_detail_info() {
 
     genlist = elm_genlist_add(ad->win_main);
     elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
+
+    evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
     evas_object_smart_callback_add(genlist, "selected", genlist_clicked_cb, NULL);
 
     Elm_Object_Item * it;
@@ -440,7 +449,8 @@ void show_detail_info() {
     }
 
     LOGD("Push genlist");
-	Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATE_DETAILS"), NULL, NULL, genlist, NULL);
+	Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_CERTIFICATE_DETAILS", NULL, NULL, genlist, NULL);
+	elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
 	elm_naviframe_item_pop_cb_set(nf_it, _back, (struct Evas_Object *)ad);
 
 }

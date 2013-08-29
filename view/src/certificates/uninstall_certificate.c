@@ -82,6 +82,12 @@ static enum CountOfSelected get_count_of_selected(struct ListElement *current){
     return SELECTED_FEW;
 }
 
+static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
+{
+   //Update genlist items. The Item texts will be translated in the gl_text_get().
+   elm_genlist_realized_items_update(obj);
+}
+
 static char* __get_text_check(void *data, Evas_Object *obj, const char *part) {
     struct ListElement *current = (struct ListElement*) data;
     LOGD("__get_text_check --- uninstall");
@@ -246,7 +252,7 @@ void delete_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     uninstallButton = elm_button_add(ad->navi_bar);
     if (!uninstallButton)
         return;
-    elm_object_text_set(uninstallButton, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"));
+    elm_object_domain_translatable_text_set(uninstallButton, PACKAGE, "IDS_ST_BUTTON_UNINSTALL");
     elm_object_style_set(uninstallButton, "naviframe/toolbar/left");
     evas_object_smart_callback_add(uninstallButton, "clicked", uninstall_cb, ad);
     elm_object_disabled_set(uninstallButton, EINA_TRUE);
@@ -254,11 +260,13 @@ void delete_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     cancel_button = elm_button_add(ad->navi_bar);
     if (!cancel_button)
         return;
-    elm_object_text_set(cancel_button, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"));
+    elm_object_domain_translatable_text_set(cancel_button, PACKAGE, "IDS_ST_SK2_CANCEL");
     elm_object_style_set(cancel_button, "naviframe/toolbar/right");
     evas_object_smart_callback_add(cancel_button, "clicked", cancel_cb, ad);
 
     genlist = elm_genlist_add(ad->win_main);
+
+    evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
 
     if (!make_list(ad, genlist, dir_path, lastListElement, TO_UNINSTALL)) {
         struct ListElement *current = findFirstElement(firstListElement);
@@ -287,6 +295,7 @@ void delete_cert_cb(void *data, Evas_Object *obj, void *event_info) {
             NULL,
             genlist,
             NULL);
+    elm_object_item_domain_text_translatable_set(itm, PACKAGE, EINA_TRUE);
     elm_object_item_part_content_set(itm, "toolbar_button1", uninstallButton);
     elm_object_item_part_content_set(itm, "toolbar_button2", cancel_button);
 

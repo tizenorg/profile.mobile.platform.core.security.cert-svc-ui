@@ -202,6 +202,12 @@ const char* get_email(CertSvcString alias) {
     return char_buffer;
 }
 
+static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
+{
+   //Update genlist items. The Item texts will be translated in the gl_text_get().
+   elm_genlist_realized_items_update(obj);
+}
+
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
 
     (void)obj;
@@ -337,16 +343,20 @@ static void create_selection_list(struct ug_data *ad)
 		else {
 			ad->user_cert_list_item = elm_naviframe_item_push(
 						ad->navi_bar,
-						dgettext(PACKAGE, "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"),
+						"IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE",
 						NULL,
 						NULL,
 						no_content,
 						NULL);
+
 		}
 	}
 	else {
 	    // Create genlist;
 		genlist = elm_genlist_add(ad->win_main);
+
+		evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
+
 		radio_main = elm_radio_add(genlist);
 		elm_radio_state_value_set(radio_main, 0);
 		elm_radio_value_set(radio_main, 0);
@@ -361,12 +371,16 @@ static void create_selection_list(struct ug_data *ad)
 		else {
 			ad->user_cert_list_item = elm_naviframe_item_push(
 				ad->navi_bar,
-				dgettext(PACKAGE, "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"),
+				"IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE",
 				NULL,
 				NULL,
 				genlist,
 				NULL);
 		}
+	}
+
+	if (ad->user_cert_list_item != NULL) {
+		elm_object_item_domain_text_translatable_set(ad->user_cert_list_item, PACKAGE, EINA_TRUE);
 	}
 
 	if (open_button) {
@@ -409,6 +423,7 @@ static void _move_more_ctxpopup(void *data, Evas_Object *ctx)
 static void _cert_naviframe_more_cb(void *data, Evas_Object *obj, void *event_info) {
 	struct ug_data *ad = (struct ug_data *) data;
 	Evas_Object *more_popup = NULL;
+	Elm_Object_Item* more_popup_item = NULL;
 
 	//Create a Ctxpopup if the ctxpopup is not on active.
 	more_popup = elm_ctxpopup_add(ad->navi_bar);
@@ -419,7 +434,8 @@ static void _cert_naviframe_more_cb(void *data, Evas_Object *obj, void *event_in
 	elm_object_style_set(more_popup, "more/default");
 	evas_object_smart_callback_add(more_popup,"dismissed", _dismissed_cb, NULL);
 
-	elm_ctxpopup_item_append(more_popup, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), NULL, _cert_install_cb, ad);
+	more_popup_item = elm_ctxpopup_item_append(more_popup, "IDS_ST_BUTTON_INSTALL", NULL, _cert_install_cb, ad);
+	elm_object_item_domain_text_translatable_set(more_popup_item, PACKAGE, EINA_TRUE);
 
 	elm_ctxpopup_direction_priority_set(more_popup, ELM_CTXPOPUP_DIRECTION_UP,
 											ELM_CTXPOPUP_DIRECTION_UNKNOWN,
@@ -448,8 +464,10 @@ void cert_selection_install_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
     elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
 
-    open_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_OPEN"), _open, ad);
+    open_button = elm_toolbar_item_append(toolbar, NULL, "IDS_ST_BUTTON_OPEN", _open, ad);
     if (!open_button) return;
+
+    elm_object_item_domain_text_translatable_set(open_button, PACKAGE, EINA_TRUE);
 
     // Set genlist item class
     itc.item_style       = "2text.1icon.2";

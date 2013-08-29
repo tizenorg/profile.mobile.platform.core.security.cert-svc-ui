@@ -184,7 +184,7 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     // Empty alias
     if (NULL == alias || 1 > strlen(alias)) {
         LOGD("alias is empty");
-        create_ok_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"));
+        create_ok_pop(ad, "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY");
         free(path);
         goto exit;
     }
@@ -194,7 +194,7 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
     // Alias already exists
     if (CERTSVC_FALSE == is_unique || 1 > strlen(alias)) {
         SECURE_LOGD("alias %s already exist", alias);
-        create_ok_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"));
+        create_ok_pop(ad, "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS");
         free(path);
         goto exit;
     }
@@ -247,7 +247,7 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info) {
 
     case CERTSVC_FAIL:
         LOGD("Failed. Wrong password probably.");
-        create_ok_pop(ad, dgettext(PACKAGE, "IDS_ST_BODY_INCORRECT_PASSWORD"));
+        create_ok_pop(ad, "IDS_ST_BODY_INCORRECT_PASSWORD");
         // Do NOT delete list in this case!!!
         goto exit;
 
@@ -269,9 +269,16 @@ static Evas_Object *_create_title_text_btn(Evas_Object *parent, const char *text
 	Evas_Object *btn = elm_button_add(parent);
 	if (!btn) return NULL;
 	elm_object_style_set(btn, "naviframe/title_text");
-	elm_object_text_set(btn, text);
+	elm_object_domain_translatable_text_set(btn, PACKAGE, text);
+
 	evas_object_smart_callback_add(btn, "clicked", func, data);
 	return btn;
+}
+
+static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
+{
+   //Update genlist items. The Item texts will be translated in the gl_text_get().
+   elm_genlist_realized_items_update(obj);
 }
 
 void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -321,18 +328,22 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
             _gl_sel,
             NULL );
 
+    evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
     evas_object_smart_callback_add(ad->navi_bar, "transition,finished", _focus_set_cb, ad);
-    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
+
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB", NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
 
+    elm_object_item_domain_text_translatable_set(navi_it, PACKAGE, EINA_TRUE);
+
     //Title Text Left Button
-    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), _install_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, "IDS_ST_BUTTON_INSTALL", _install_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
 
     //Title Text Right Button
-    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_CANCEL"), _cancel_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, "IDS_ST_BUTTON_CANCEL", _cancel_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }
 
@@ -366,16 +377,20 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info) {
                 _gl_sel,
                 NULL );
 
-    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"), NULL, NULL, genlist, NULL);
+    evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
+
+    Elm_Object_Item *navi_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB", NULL, NULL, genlist, NULL);
     if (!navi_it){
         LOGE("Error in elm_naviframe_item_push");
     }
 
+    elm_object_item_domain_text_translatable_set(navi_it, PACKAGE, EINA_TRUE);
+
     //Title Text Left Button
-    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), _install_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, "IDS_ST_BUTTON_INSTALL", _install_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_right_btn", btn);
 
     //Title Text Right Button
-    btn = _create_title_text_btn(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BUTTON_CANCEL"), _cancel_button_cb, NULL);
+    btn = _create_title_text_btn(ad->navi_bar, "IDS_ST_BUTTON_CANCEL", _cancel_button_cb, NULL);
     elm_object_item_part_content_set(navi_it, "title_left_btn", btn);
 }

@@ -70,11 +70,15 @@ void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
 
     evas_object_smart_callback_add(list, "selected", list_clicked_cb, NULL);
 
-    elm_list_item_append(list, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"), NULL, NULL, trusted_root_cert_cb, ad);
-    elm_list_item_append(list, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, pfx_cert_cb, ad);
+    Elm_Object_Item *nf_it = elm_list_item_append(list, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES", NULL, NULL, trusted_root_cert_cb, ad);
+    elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
 
-    Elm_Object_Item *nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_CERTIFICATES"), NULL, NULL, list, NULL);
-	
+    nf_it = elm_list_item_append(list, "IDS_ST_BODY_USER_CERTIFICATES", NULL, NULL, pfx_cert_cb, ad);
+    elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
+
+    nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_CERTIFICATES", NULL, NULL, list, NULL);
+	elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
+
     elm_naviframe_item_pop_cb_set(nf_it, quit_cb, data);
 
     elm_naviframe_prev_btn_auto_pushed_set(ad->navi_bar, EINA_FALSE);

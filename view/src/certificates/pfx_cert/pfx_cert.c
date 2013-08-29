@@ -76,6 +76,12 @@ static Elm_Genlist_Item_Class itc_2text = {
         .func.del = NULL
 };
 
+static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
+{
+   //Update genlist items. The Item texts will be translated in the gl_text_get().
+   elm_genlist_realized_items_update(obj);
+}
+
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
 
     int index = (int) data;
@@ -185,7 +191,7 @@ void pfx_cert_create_list(struct ug_data *ad){
     		elm_object_item_part_content_set(ad->user_cert_list_item, NULL , no_content); //deletes the previous object set.
     	}
     	else {
-    		ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, no_content, NULL);
+    		ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", NULL, NULL, no_content, NULL);
     	}
 
     	elm_object_item_disabled_set(ad->uninstall_button, EINA_TRUE);
@@ -199,6 +205,8 @@ void pfx_cert_create_list(struct ug_data *ad){
     	genlist_pfx = elm_genlist_add(ad->win_main);
         if (!genlist_pfx)
         	return;
+
+        evas_object_smart_callback_add(genlist_pfx, "language,changed", _gl_lang_changed, NULL);
 
 		max_length = list_length;
 		if(list_length > 0 ){
@@ -227,11 +235,14 @@ void pfx_cert_create_list(struct ug_data *ad){
         	elm_object_item_part_content_set(ad->user_cert_list_item, NULL , genlist_pfx); //deletes the previous object set.
         }
         else {
-        	ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"), NULL, NULL, genlist_pfx, NULL);
+        	ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", NULL, NULL, genlist_pfx, NULL);
         }
 
     	elm_object_item_disabled_set(ad->uninstall_button, EINA_FALSE);
+    }
 
+    if (ad->user_cert_list_item != NULL) {
+     	elm_object_item_domain_text_translatable_set(ad->user_cert_list_item, PACKAGE, EINA_TRUE);
     }
 }
 
@@ -262,13 +273,15 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
     elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
 
-    install_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), install_button_cb, ad);
+    install_button = elm_toolbar_item_append(toolbar, NULL, "IDS_ST_BUTTON_INSTALL", install_button_cb, ad);
     if (!install_button)
         return;
+    elm_object_item_domain_text_translatable_set(install_button, PACKAGE, EINA_TRUE);
     
-    ad->uninstall_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), pfx_cert_remove_cb, ad);
+    ad->uninstall_button = elm_toolbar_item_append(toolbar, NULL, "IDS_ST_BUTTON_UNINSTALL", pfx_cert_remove_cb, ad);
     if (!ad->uninstall_button)
     	return;
+    elm_object_item_domain_text_translatable_set(ad->uninstall_button, PACKAGE, EINA_TRUE);
 
     pfx_cert_create_list(ad);
 

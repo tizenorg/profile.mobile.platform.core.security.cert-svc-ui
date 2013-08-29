@@ -171,6 +171,12 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
     return NULL;
 }
 
+static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
+{
+   //Update genlist items. The Item texts will be translated in the gl_text_get().
+   elm_genlist_realized_items_update(obj);
+}
+
 static char* _gl_get_text_sa(void *data, Evas_Object *obj, const char *part) {
 
     return strdup(dgettext(PACKAGE, "IDS_ST_BODY_SELECT_ALL"));
@@ -286,7 +292,10 @@ static Evas_Object * _create_genlist(struct ug_data *ad, Evas_Object *parent)
 	itc->func.text_get = _gl_text_get;
 	itc->func.content_get = _gl_content_get;
 
+	evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
+
 	git = elm_genlist_item_append(genlist, itc_sa, (void *) 0, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+	elm_object_item_domain_text_translatable_set(git, PACKAGE, EINA_TRUE);
 	elm_genlist_item_select_mode_set(git, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 
@@ -344,21 +353,25 @@ void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
     elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_NONE);
 
-    uninstallButton = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), genlist_pfx_delete_cb, ad);
+    uninstallButton = elm_toolbar_item_append(toolbar, NULL, "IDS_ST_BUTTON_UNINSTALL", genlist_pfx_delete_cb, ad);
     if (!uninstallButton) return;
+    elm_object_item_domain_text_translatable_set(uninstallButton, PACKAGE, EINA_TRUE);
 
-    cancel_button = elm_toolbar_item_append(toolbar, NULL, dgettext(PACKAGE, "IDS_ST_SK2_CANCEL"), genlist_pfx_cancel_cb, ad);
+    cancel_button = elm_toolbar_item_append(toolbar, NULL, "IDS_ST_SK2_CANCEL", genlist_pfx_cancel_cb, ad);
     if (!cancel_button) return;
+    elm_object_item_domain_text_translatable_set(cancel_button, PACKAGE, EINA_TRUE);
 
     elm_object_item_disabled_set(uninstallButton, EINA_TRUE);
 
     Elm_Object_Item *itm = elm_naviframe_item_push(
             ad->navi_bar,
-            dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"),
+            "IDS_ST_BUTTON_UNINSTALL",
             NULL,
             NULL,
             box,
             NULL);
+
+    elm_object_item_domain_text_translatable_set(itm, PACKAGE, EINA_TRUE);
     elm_object_item_part_content_set(itm, "toolbar", toolbar);
     elm_object_item_part_content_unset(itm, "prev_btn");
 }

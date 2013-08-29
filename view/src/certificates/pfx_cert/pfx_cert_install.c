@@ -107,7 +107,7 @@ Elm_Object_Item* pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_i
 
     Elm_Object_Item *navi_it = NULL;
     if(firstListElement->next) {
-		navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"), NULL, NULL, list, NULL);
+		navi_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL", NULL, NULL, list, NULL);
     }
     else { //No content
         Evas_Object *no_content = create_no_content_layout(ad);
@@ -116,8 +116,10 @@ Elm_Object_Item* pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_i
             LOGD("pfx_cert_install_cb: Cannot create no_content layout (NULL); return");
             return NULL;
         }
-		navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"), NULL, NULL, no_content, NULL);
+		navi_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL", NULL, NULL, no_content, NULL);
     }
+
+    elm_object_item_domain_text_translatable_set(navi_it, PACKAGE, EINA_TRUE);
 
     if (ad->type_of_screen == PKCS12_SCREEN) {
     	elm_naviframe_item_pop_cb_set(navi_it, quit_cb, ad);

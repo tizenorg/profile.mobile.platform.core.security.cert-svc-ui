@@ -112,86 +112,10 @@ void genlist_clicked_cb(void *data, Evas_Object *obj, void *event_info) {
     elm_genlist_item_selected_set(it, EINA_FALSE);
 }
 
-//create yes/no popup
-Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content) {
 
-    if (NULL == ad){
-        return NULL;
-    }
-
-    ad->popup = elm_popup_add(ad->navi_bar);
-    if (NULL == ad->popup){
-        return NULL;
-    }
-
-    char *text = NULL;
-    int i = 0;
-    int j = 0;
-    text = malloc ( ( strlen(content) + strlen(align_begin) + strlen(align_end) + 1 ) * sizeof(char));
-    for (i=0; i<strlen(align_begin); ++i) {
-        text[j] = align_begin[i];
-        ++j;
-    }
-    for (i=0; i<strlen(content); ++i) {
-        text[j] = content[i];
-        ++j;
-    }
-    for (i=0; i<strlen(align_end); ++i) {
-        text[j] = align_end[i];
-        ++j;
-    }
-    text[j] = 0;
-
-    evas_object_size_hint_weight_set(ad->popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-
-    //yes button
-    Evas_Object *btn_yes = elm_button_add(ad->popup);
-    elm_object_text_set(btn_yes, dgettext(PACKAGE, "IDS_ST_BUTTON_YES"));
-    evas_object_smart_callback_add(btn_yes, "clicked", _info_pop_response_yes_cb, ad);
-
-    //no button
-    Evas_Object *btn_no = elm_button_add(ad->popup);
-    elm_object_text_set(btn_no, dgettext(PACKAGE, "IDS_ST_BUTTON_NO"));
-
-    if (ad->type_of_screen == PKCS12_SCREEN) {
-    	evas_object_smart_callback_add(btn_no, "clicked", _popup_quit_cb, ad);
-    	ea_object_event_callback_add(ad->popup, EA_CALLBACK_BACK, _popup_quit_cb, ad);
-    }
-    else {
-    	evas_object_smart_callback_add(btn_no, "clicked", _info_pop_response_no_cb, ad);
-    	ea_object_event_callback_add(ad->popup, EA_CALLBACK_BACK, _info_pop_response_no_cb, ad);
-    }
-
-    elm_object_text_set(ad->popup, text);
-    free(text);
-
-    elm_object_part_content_set(ad->popup, "button1", btn_yes);
-    elm_object_part_content_set(ad->popup, "button2", btn_no);
-
-    evas_object_show(ad->popup);
-
-    return ad->popup;
-}
-
-void install_button_cb(void *data, Evas_Object *obj, void *event_info) {
-    LOGD("install_button_cb()");
-    //struct ug_data *ad = get_ug_data();
-    struct ug_data *ad = (struct ug_data *)data;
-    create_yes_no_pop(ad, dgettext(PACKAGE, "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"));
-}
-
-Evas_Object *create_ok_pop(struct ug_data *ad, const char *content) {
-
-    if (NULL == ad) {
-        return NULL;
-    }
-
-    ad->popup = elm_popup_add(ad->navi_bar);
-    if (NULL == ad->popup) {
-        return NULL;
-    }
-
-    char *text = NULL;
+void set_object_text_with_alignment(Evas_Object* object, const char* content)
+{
+	char *text = NULL;
     int i = 0;
     int j = 0;
     text = malloc((strlen(content) + strlen(align_begin) + strlen(align_end) + 1) * sizeof(char));
@@ -207,17 +131,90 @@ Evas_Object *create_ok_pop(struct ug_data *ad, const char *content) {
         text[j] = align_end[i];
         ++j;
     }
+
     text[j] = 0;
+
+    elm_object_text_set(object, text);
+    free(text);
+}
+
+static void _popup_lang_changed(void *data, Evas_Object *obj, void *event_info)
+{
+	set_object_text_with_alignment(obj, dgettext(PACKAGE, data));
+}
+
+//create yes/no popup
+Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *contentId) {
+
+    if (NULL == ad){
+        return NULL;
+    }
+
+    ad->popup = elm_popup_add(ad->navi_bar);
+    if (NULL == ad->popup){
+        return NULL;
+    }
+
+    evas_object_size_hint_weight_set(ad->popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+
+    //no button
+    Evas_Object *btn_no = elm_button_add(ad->popup);
+    elm_object_domain_translatable_text_set(btn_no, PACKAGE, "IDS_ST_BUTTON_NO");
+
+    //yes button
+    Evas_Object *btn_yes = elm_button_add(ad->popup);
+    elm_object_domain_translatable_text_set(btn_yes, PACKAGE, "IDS_ST_BUTTON_YES");
+    evas_object_smart_callback_add(btn_yes, "clicked", _info_pop_response_yes_cb, ad);
+
+    if (ad->type_of_screen == PKCS12_SCREEN) {
+    	evas_object_smart_callback_add(btn_no, "clicked", _popup_quit_cb, ad);
+    	ea_object_event_callback_add(ad->popup, EA_CALLBACK_BACK, _popup_quit_cb, ad);
+    }
+    else {
+    	evas_object_smart_callback_add(btn_no, "clicked", _info_pop_response_no_cb, ad);
+    	ea_object_event_callback_add(ad->popup, EA_CALLBACK_BACK, _info_pop_response_no_cb, ad);
+    }
+
+    set_object_text_with_alignment(ad->popup, dgettext(PACKAGE, contentId));
+    evas_object_smart_callback_add(ad->popup, "language,changed", _popup_lang_changed, contentId);
+
+
+    elm_object_part_content_set(ad->popup, "button1", btn_no);
+    elm_object_part_content_set(ad->popup, "button2", btn_yes);
+
+    evas_object_show(ad->popup);
+
+    return ad->popup;
+}
+
+void install_button_cb(void *data, Evas_Object *obj, void *event_info) {
+    LOGD("install_button_cb()");
+    //struct ug_data *ad = get_ug_data();
+    struct ug_data *ad = (struct ug_data *)data;
+    create_yes_no_pop(ad, "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED");
+}
+
+Evas_Object *create_ok_pop(struct ug_data *ad, const char *contentId) {
+
+    if (NULL == ad) {
+        return NULL;
+    }
+
+    ad->popup = elm_popup_add(ad->navi_bar);
+    if (NULL == ad->popup) {
+        return NULL;
+    }
 
     evas_object_size_hint_weight_set(ad->popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 
     //ok button
     Evas_Object *btn_ok = elm_button_add(ad->popup);
-    elm_object_text_set(btn_ok, dgettext(PACKAGE, "IDS_ST_SK2_OK"));
+    elm_object_domain_translatable_text_set(btn_ok, PACKAGE, "IDS_ST_SK2_OK");
     evas_object_smart_callback_add(btn_ok, "clicked", _info_pop_response_ok_cb, ad->popup);
 
-    elm_object_text_set(ad->popup, text);
-    free(text);
+    set_object_text_with_alignment(ad->popup, dgettext(PACKAGE, contentId));
+
+    evas_object_smart_callback_add(ad->popup, "language,changed", _popup_lang_changed, contentId);
 
     elm_object_part_content_set(ad->popup, "button1", btn_ok);
 
