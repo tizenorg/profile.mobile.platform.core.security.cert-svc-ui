@@ -1,10 +1,9 @@
-#sbs-git:slp/pkgs/c/cert-svc cert-svc 1.0.1 ad7eb7efcefb37b06017c69cb2fc44e6f7b6cab7
 Name:    cert-svc-ui
 Summary: Certification service
 Version: 1.0.1
-Release: 51
+Release: 0
 Group:   System/Libraries
-License: SAMSUNG
+License: Apache-2.0
 Source0: %{name}-%{version}.tar.gz
 Source1001: %{name}.manifest
 
@@ -43,7 +42,11 @@ cp %{SOURCE1001} .
 
 %build
 %{!?build_type:%define build_type "Release"}
-cmake . -DCMAKE_INSTALL_PREFIX="%{_ugdir}" -DCMAKE_BUILD_TYPE=%{build_type} -DPKGNAME="cert-svc1-ui"
+
+%cmake . \
+    -DCMAKE_INSTALL_PREFIX="%{_ugdir}" -DCMAKE_BUILD_TYPE=%{build_type} \
+    -DPKGNAME="cert-svc1-ui"
+
 #VERBOSE=1 make
 make
 
@@ -69,4 +72,4 @@ rm -rf %{buildroot}
 %{_ugdir}/lib/libug-setting-manage-certificates-efl.so
 %{_ugdir}/lib/libug-cert-selection-ug-efl.so*
 %{_ugdir}/res/locale/*/LC_MESSAGES/*
-%{_datadir}/license/%{name}
+%license %{_datadir}/license/%{name}
