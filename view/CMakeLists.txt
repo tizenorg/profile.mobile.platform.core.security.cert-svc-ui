@@ -5,6 +5,7 @@ pkg_check_modules(pkgs_view
     dlog
     glib-2.0
     evas
+    edbus
     edje
     aul
     eina

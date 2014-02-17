@@ -23,7 +23,7 @@
 #define _GNU_SOURCE
 
 #include <Ecore_X.h>
-#include <E_Notify.h>
+#include <e_dbus-1/E_Notify.h>
 
 #include <cert-svc/ccert.h>
 #include <cert-svc/cinstance.h>
