@@ -1,3 +1,6 @@
+%bcond_with wayland
+%bcond_with x
+
 Name:    cert-svc-ui
 Summary: Certification service
 Version: 1.0.1
@@ -46,7 +49,18 @@ cp %{SOURCE1001} .
 
 %cmake . \
     -DCMAKE_INSTALL_PREFIX="%{_ugdir}" -DCMAKE_BUILD_TYPE=%{build_type} \
-    -DPKGNAME="cert-svc1-ui"
+    -DPKGNAME="cert-svc1-ui" \
+%if %{with wayland}
+    -DWAYLAND_SUPPORT=On \
+%else
+    -DWAYLAND_SUPPORT=Off \
+%endif
+%if %{with x}
+    -DX_SUPPORT=On \
+%else
+    -DX_SUPPORT=Off \
+%endif
+    #eol
 
 #VERBOSE=1 make
 make

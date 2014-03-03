@@ -22,7 +22,10 @@
 
 #define _GNU_SOURCE
 
+#ifdef HAVE_X
 #include <Ecore_X.h>
+#endif
+
 #include <e_dbus-1/E_Notify.h>
 
 #include <cert-svc/ccert.h>
