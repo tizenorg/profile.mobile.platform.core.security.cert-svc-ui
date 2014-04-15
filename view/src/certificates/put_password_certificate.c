@@ -26,8 +26,6 @@
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
-static const char * const dir_path = PATH_SDCARD;
-
 static Elm_Genlist_Item_Class itc_group;
 static Elm_Genlist_Item_Class itc_entry;
 static Elm_Genlist_Item_Class itc_entry_passwd;

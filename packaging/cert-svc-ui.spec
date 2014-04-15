@@ -34,6 +34,9 @@ BuildRequires: pkgconfig(icu-i18n)
 BuildRequires: pkgconfig(bundle)
 BuildRequires: pkgconfig(capi-appfw-application)
 BuildRequires: pkgconfig(efl-assist)
+BuildRequires: pkgconfig(libtzplatform-config)
+
+Requires: libtzplatform-config
 
 %description
 Certification service
@@ -50,6 +53,7 @@ cp %{SOURCE1001} .
 %cmake . \
     -DCMAKE_INSTALL_PREFIX="%{_ugdir}" -DCMAKE_BUILD_TYPE=%{build_type} \
     -DPKGNAME="cert-svc1-ui" \
+    -DTZ_SYS_BIN=%TZ_SYS_BIN \
 %if %{with wayland}
     -DWAYLAND_SUPPORT=On \
 %else

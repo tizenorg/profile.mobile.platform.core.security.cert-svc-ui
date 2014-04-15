@@ -4,7 +4,7 @@ SET(POFILES
     bg.po  da.po  en_PH.po  es_ES.po  eu.po     fr_FR.po  he.po  hu.po  is.po  ka.po     lt.po     ms.po  no.po     pt_PT.po  sk.po     sv.po  uk.po     zh_CN.po  zh_TW.po
 )
 
-SET(MSGFMT "/usr/bin/msgfmt")
+SET(MSGFMT "${TZ_SYS_BIN}/msgfmt")
 
 FOREACH(pofile ${POFILES})
     SET(pofile ${CMAKE_CURRENT_SOURCE_DIR}/${pofile})

@@ -2,6 +2,10 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 PROJECT(ug-setting-manage-certificates-efl C)
 
 INCLUDE(FindPkgConfig)
+pkg_check_modules(pkgs
+    libtzplatform-config
+    REQUIRED
+)
 
 SET(CMAKE_C_FLAGS_RELEASE "-O2 -Wall")
 SET(CMAKE_C_FLAGS_DEBUG "-O0 -Wall -g -ggdb")

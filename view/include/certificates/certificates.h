@@ -25,37 +25,38 @@
 
 #include <Elementary.h>
 #include <cert-svc/ccert.h>
+#include <tzplatform_config.h>
 
 #include "mgr-app-uigadget.h"
 
 // Path to the certs
 //root path
-#define PATH_CERT_ROOT              "/opt/share/cert-svc/certs"
+#define PATH_CERT_ROOT              tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/")
 
 //mdm
-#define PATH_CERT_MDM               "/opt/share/cert-svc/certs/mdm"
-#define PATH_CERT_MDM_SECURITY      "/opt/share/cert-svc/certs/security"
-#define PATH_CERT_MDM_SECURITY_CERT "/opt/share/cert-svc/certs/security/cert"
+#define PATH_CERT_MDM               tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/mdm/")
+#define PATH_CERT_MDM_SECURITY      tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/security/")
+#define PATH_CERT_MDM_SECURITY_CERT tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/security/cert/")
 
 //ssl
-#define PATH_CERT_SSL               "/opt/share/cert-svc/certs/ssl"
-#define PATH_CERT_SSL_ETC           "/opt/etc/ssl/certs"
+#define PATH_CERT_SSL               tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/ssl/")
+#define PATH_CERT_SSL_ETC           tzplatform_mkpath(TZ_SYS_ETC, "ssl/certs/")
 
 //sim
-#define PATH_CERT_SIM_OPERATOR      "/opt/share/cert-svc/certs/sim/operator"
-#define PATH_CERT_SIM_THIRDPARTY    "/opt/share/cert-svc/certs/sim/thirdparty"
+#define PATH_CERT_SIM_OPERATOR      tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/sim/operator/")
+#define PATH_CERT_SIM_THIRDPARTY    tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/sim/thirdparty/")
 
 //user
-#define PATH_CERT_USER              "/opt/share/cert-svc/certs/user"
-#define PATH_CERT_TRUSTEDUSER       "/opt/share/cert-svc/certs/trusteduser"
+#define PATH_CERT_USER              tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/user/")
+#define PATH_CERT_TRUSTEDUSER       tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/trusteduser/")
 
 //code-signing
-#define PATH_CERT_WAC                "/opt/share/cert-svc/certs/code-signing/wac"
+#define PATH_CERT_WAC               tzplatform_mkpath(TZ_SYS_SHARE, "cert-svc/certs/code-signing/wac/")
 
 //sd-card
-#define PATH_SDCARD                  "/opt/storage/sdcard"
-#define PATH_MEDIA                   "/opt/usr/media"
-#define PATH_MEDIA_DOWNLOADS         "/opt/usr/media/Downloads"
+#define PATH_SDCARD                 tzplatform_mkpath(TZ_SYS_STORAGE, "sdcard/")
+#define PATH_MEDIA                  tzplatform_getenv(TZ_USER_CONTENT)
+#define PATH_MEDIA_DOWNLOADS        tzplatform_mkpath(TZ_USER_CONTENT, "Downloads/")
 
 // certificates menu
 void direct_pfx_install_screen_cb(void *data, Evas_Object *obj, void *event_info);
