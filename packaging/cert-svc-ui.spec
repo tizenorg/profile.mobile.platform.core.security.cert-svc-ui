@@ -35,6 +35,9 @@ BuildRequires: pkgconfig(bundle)
 BuildRequires: pkgconfig(capi-appfw-application)
 BuildRequires: pkgconfig(efl-assist)
 BuildRequires: pkgconfig(libtzplatform-config)
+%if %{with x}
+BuildRequires:  pkgconfig(ecore-x)
+%endif
 
 Requires: libtzplatform-config
 
