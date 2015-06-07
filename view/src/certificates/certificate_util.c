@@ -30,8 +30,6 @@
 
 #include <cert-svc/ccert.h>
 #include <cert-svc/cinstance.h>
-#include <cert-svc/ccrl.h>
-#include <cert-svc/cocsp.h>
 #include <cert-svc/cpkcs12.h>
 #include <efl_assist.h>
 

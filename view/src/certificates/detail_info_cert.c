@@ -25,8 +25,6 @@
 #include <cert-svc/ccert.h>
 #include <cert-svc/cinstance.h>
 #include <cert-svc/cstring.h>
-#include <cert-svc/ccrl.h>
-#include <cert-svc/cocsp.h>
 
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
