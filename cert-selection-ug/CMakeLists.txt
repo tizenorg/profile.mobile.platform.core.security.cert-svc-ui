@@ -8,6 +8,10 @@ pkg_check_modules(ug-cert-selection-ug-efl_pkgs
     cert-svc-vcore
 	efl-assist
 )
+FOREACH (flag ${ug-cert-selection-ug-efl_pkgs_CFLAGS})
+    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
+ENDFOREACH(flag)
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
 SET(SRCS
     src/cert-selection.c

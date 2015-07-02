@@ -7,6 +7,10 @@ pkg_check_modules(ug-setting-manage-certificates-efl_pkgs
     dpl-dbus-efl
     cert-svc-vcore
 )
+FOREACH (flag ${ug-setting-manage-certificates-efl_pkgs_CFLAGS})
+    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
+ENDFOREACH(flag)
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
 SET(SRCS
     src/mgr-app-uigadget.c

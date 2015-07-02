@@ -17,6 +17,10 @@ pkg_check_modules(pkgs_view
     cert-svc-vcore
 	efl-assist
 )
+FOREACH (flag ${pkgs_view_CFLAGS})
+    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
+ENDFOREACH(flag)
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
 SET(SRCS
     src/certificates/certificates_menu.c
