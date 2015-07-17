@@ -4,7 +4,6 @@ pkg_check_modules(ug-setting-manage-certificates-efl_pkgs
     ui-gadget-1
     evas
     dlog
-    dpl-dbus-efl
     cert-svc-vcore
 )
 FOREACH (flag ${ug-setting-manage-certificates-efl_pkgs_CFLAGS})
