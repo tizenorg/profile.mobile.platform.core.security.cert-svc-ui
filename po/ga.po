@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Cealaigh"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Deimhnithe úsáideora"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Deimhnithe"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Níl inneachar ann"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Leagan:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Socruithe"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Díshuiteáil"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Ginearálta"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Déantúsóir"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Príobháideacht"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Roghnaigh gach"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Deimhniú cliaint"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Eisitheoir:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Suiteáil"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Úinéir"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Tá an t-ainm bréige ann cheana. Iontráil ainm bréige uathúil"
+msgstr "Tá an t-ainm bréige ann cheana. Iontráil ainm bréige uathúil."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
 msgstr "Ní féidir leis an ainm bréige a bheith folamh"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Aimsíodh deimhnithe"
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Sonraí deimhnithe"
@@ -37,8 +31,14 @@ msgstr "Sonraí deimhnithe"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Faisnéis faoin deimhniú"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Deimhnithe"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Údarás deimhnithe:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Ainm coitianta:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Iontráil eochair an ainm bhreige:"
@@ -46,32 +46,35 @@ msgstr "Iontráil eochair an ainm bhreige:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Iontráil pasfhocal:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Deimhnithe seachtracha"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Bréagach"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Suiteáil deimhnithe ón gcárta SD?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Eisitheoir"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Eisitheoir:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Úsáid eochracha:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Níl sonraí ann"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Níl sonraí ar fáil."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Eagraíocht:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Úinéir:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Eochair phoiblí:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Roghnaigh deimhniú amháin"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Roghnaigh gach"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Roghnaigh deimhniú le suiteáil"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sraithuimhir:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algartam sínithe:"
@@ -79,11 +82,17 @@ msgstr "Algartam sínithe:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Fíor"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Deimhnithe fréimhe iontaofa"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Deimhnithe úsáideora"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "Fíordhath ort"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Deimhnithe CA fréimhe iontaofa"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Deimhnithe CA fréimhe iontaofa"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Bailí ó:"
@@ -91,39 +100,51 @@ msgstr "Bailí ó:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Bailí go dtí:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Leagan:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cealaigh"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Cuir ar ceal"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Cuir ar ceal"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Suiteáil"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Oscail"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Ainm coitianta:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Díshuiteáil"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Pasfhocal mícheart"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Torthaí an chuardaigh teastais"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Níl inneachar ann"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Suiteáil deimhniú"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Níl sonraí ann"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d roghnaithe"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ná déan é"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Roghnaigh míreanna"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Déan é"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Ní féidir deimhniú a shuiteáil"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Suiteálfar deimhnithe ó chuimhne an ghléis agus ón gcárta SD"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Theip ar shuiteáil an deimhnithe. Tá an deimhniú neamhbhailí, imithe as feidhm, nó d'iontráil tú pasfhocal mícheart."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Cuir ar ceal"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Deimhniú cliaint"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Sraithuimhir:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Suiteáil deimhniú"
 

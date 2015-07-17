@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "انتخاب همه"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "لغو نصب"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "هیچ گواهی یافت نشد"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "انتخاب موارد"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d انتخاب شد"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "بله"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "گواهینامه ها"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "گواهی سرویس گیرنده"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "تأیید"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "لغو کردن"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "گواهی نصب نشد. گواهی نامعتبر است، منقضی شده است یا رمز عبور نادرستی را وارد کرده اید."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "گواهی های حافظه دستگاه و کارت حافظه نصب خواهند شد"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "نصب گواهی ممکن نیست"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "نتایج جستجوی گواهی"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "باز کردن"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "خیر"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "نصب"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "لغو"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "نسخه:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "معتبر تا:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "معتبر از:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "گواهی های کاربر"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "مجوزهای CA ریشه مورد اعتماد"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "صحیح"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "الگوریتم امضا:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "شماره سریال:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "گواهینامه را انتخاب کنید."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "کلید عمومی:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "مالک:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "سازمان:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "داده ای وجود ندارد"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "بدون محتوا"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "سازنده"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "میزان استفاده از کلید:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "صادرکننده:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ناشر"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "رمز اشتباه است."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "غلط"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "گواهی های خارجی"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "وارد کردن رمز ورود:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "وارد کردن نام مستعار کلید:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "نام معمولی:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "مجوز گواهی:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "اطلاعات گواهی"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "جزئیات گواهی"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "گواهی ها یافت شدند."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "نام مستعار نباید خالی باشد."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "نام مستعار از قبل موجود است. یک نام مستعار منحصر بفرد وارد کنید."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "مالک"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "حذف نصب گواهی‌ها"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "انجام شد"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "لغو"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "در حال حذف نصب گواهی..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "نصب ۱ گواهی حذف خواهد شد."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "در حال حذف نصب گواهی‌ها..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "‎%d گواهی حذف حذف خواهد شد."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "نصب گواهی"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "مدیریت گواهی‌ها"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "استفاده شده برای"
+

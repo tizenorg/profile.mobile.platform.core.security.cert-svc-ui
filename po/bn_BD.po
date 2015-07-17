@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "সব নির্বাচন করুন"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "আনইন্সটল"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "কোনো প্রমাণপত্র খুঁজে পাওয়া যায়নি"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "আইটেমগুলো নির্বাচন করুন "
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%dটি নির্বাচিত"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "হ্যাঁ"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "প্রমাণপত্র"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ক্লায়েন্ট শংসাপত্র"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ওকে"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "বাতিল"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "প্রমাণপত্রটি ইন্সটল করতে ব্যর্থ হয়েছে। প্রমাণপত্রটি অকার্যকর, মেয়াদউত্তীর্ণ হয়েছে বা আপনি কোনো ভুল পাসওয়ার্ড লিখেছেন।"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ডিভাইস মেমোরি এবং SD কার্ড থেকে প্রমাণপত্রসমূহ ইন্সটল করা হবে।"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "প্রমাণপত্র ইন্সটল সম্ভব নয়"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "প্রমাণপত্র অনুসন্ধানের ফলাফল"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "খোলা"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "না"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ইন্সটল"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "বাতিল"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "সংস্করণ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "এটি পর্যন্ত কার্যকর:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "এর থেকে কার্যকর:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ইউজার সার্টিফিকেট"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "বিশ্বস্ত রুট CA প্রমাণপত্রসমূহ"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "সত্য"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "স্বাক্ষর অ্যালগারিদম:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "ক্রমিক নম্বর:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "প্রমাণপত্র নির্বাচন করুন"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "সর্বজনীন কী:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "মালিক:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "সংগঠন:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "কোনো তথ্য নেই"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "কোন কন্টেন্ট নেই"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "উৎপাদনকারী"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "কী এর ব্যবহার:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ইস্যুকারী:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "প্রদানকারী"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "ভুল PIN"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "মিথ্যা"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "বাহ্যিক প্রমাণপত্রসমূহ"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "পাসওয়ার্ড লিখুন:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "ছদ্মনাম কী লিখুন:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "প্রচলিত নাম:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "প্রমাণ স্বত্ব:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "প্রমাণ তথ্য"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "সার্টিফিকেটের বিস্তারিত"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "প্রমাণপত্রসমূহ পাওয়া গেছে"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "উপনাম ফাঁকা থাকতে পারে না"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "উপনাম ইতোমধ্যে বিদ্যমান। একটি উপনাম লিখুন"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "মালিক"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "প্রমাণপত্র আনইন্সটল করুন"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "সম্পন্ন"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "বাতিল"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "প্রমাণপত্র আনইন্সটল হচ্ছে..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "একটি প্রমাণপত্র আনইন্সটল করা হবে।"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "শংসাপত্রগুলো আনইন্সটল হচ্ছে..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "একটি প্রমাণপত্র আনইন্সটল করা হবে।"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "প্রমাণপত্র ইন্সটল"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "শংসাপত্রগুলো পরিচালনা করুন"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "এর জন্য ব্যবহৃত"
+

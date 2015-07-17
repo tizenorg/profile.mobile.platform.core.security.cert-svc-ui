@@ -1,3 +1,177 @@
-msgid "IDS_COM_BODY_NO_CONTENTS"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Pilih semua"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Hps instalan"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "Tidak ada sertifikat yang ditemukan"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Pilih item"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d terpilih"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Ya"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikat"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Sertifikat klien"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Batal"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Gagal menginstal sertifikat. Sertifikat tidak valid, sudah kedaluwarsa, atau Anda memasukkan kata sandi yang salah."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Sertifikat dari memori perangkat dan kartu SD akan diinstal."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Tdk dpt menginstal sertifikat"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Hasil pencarian sertifikat"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Buka"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Tidak"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instal"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Batal"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versi:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Berlaku hingga:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Berlaku sejak:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Sertifikat pengguna"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Asal sertifikat CA terpercaya"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Benar"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritma tanda tangan:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Nomor seri:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Pilih sertifikat."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Kunci publik:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Pemilik:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organisasi:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Tidak ada data"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
 msgstr "Tdk ada konten"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Pabrikan"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Penggunaan kunci:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Penerbit:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Penerbit"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Kata sandi salah."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Salah"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Sertifikat eksternal"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Masukkan kata sandi:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Masukkan alias kunci:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nama umum:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Otoritas sertifikasi:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Informasi sertifikat"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detail sertifikat"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Sertifikat ditemukan."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Alias tidak boleh kosong."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Alias sudah ada. Masukkan alias unik."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Pemilik"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Hapus instalasi sertifikat"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "SELESAI"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "BATAL"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Menghapus instalasi sertifikat..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 sertifikat akan dihapus instalasinya."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Menghapus instalasi sertifikat..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d sertifikat akan dihapus instalasinya."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "Instal sertifikat"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Kelola sertifikat"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Digunakan untuk"
 

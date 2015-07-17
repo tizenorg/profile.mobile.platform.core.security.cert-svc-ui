@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Piliin lahat"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "I-uninstall"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "Walang nakitang certificate"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Pumili ng mga item"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ang pinili"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Oo"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Mga Certificate"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Client certificate"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Kanselahin"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Nabigong i-install ang certificate. Ang certificate ay hindi wasto, nag-expire na o nagpasok ka ng maling password."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "I-i-install ang mga certificate mula sa memory ng device at SD card."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Hindi ma-install certificate"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Resulta ng certificate search"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Buksan"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Hindi"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "I-install"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Ikansela"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Bersyon:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "May bisa hanggang:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "May bisa mula:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Mga user certificate"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Mga trusted root CA certificate"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "True"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algorithm ng signature:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serial number:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Pumili ng certificate."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Pampublikong key:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "May-ari:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Samahan:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Walang data"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Walang nilalaman"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Manufacturer"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Paggamit ng key:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Nagbigay:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Tagabigay"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Mali ang password."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "False"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Mga panlabas na certificate"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Ipasok ang password:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Ipasok ang pangunahing alias:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Common name:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Certification authority:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Impormasyon sa certificate"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Mga detalye ng certificate"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Mga nahanap na certificate."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Hindi maaaring walang laman ang alias."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Umiiral na ang alias. Magpasok ng natatanging alias."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "May-ari"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Mag-uninstall ng mga certificate"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "TAPOS NA"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "KANSELAHIN"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Ina-uninstall ang certificate..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "Ia-uninstall ang 1 certificate."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Ina-uninstall ang mga certificate..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "Ia-uninstall ang %d (na) certificate."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "I-install certificate"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Pamahalaan ang mga certificate"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Ginamit para sa"
+

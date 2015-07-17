@@ -1,26 +1,17 @@
 pkg_check_modules(pkgs_view
     REQUIRED
-    appcore-efl
-    elementary
     dlog
-    glib-2.0
-    evas
-    edbus
-    edje
-    aul
-    eina
-    ail
-    appsvc
-    icu-i18n
+    capi-system-system-settings
     ui-gadget-1
-    capi-appfw-application
+    elementary
+    evas
+    edje
+    eina
+    efl-extension
+    icu-i18n
     cert-svc-vcore
-	efl-assist
+    vconf
 )
-FOREACH (flag ${pkgs_view_CFLAGS})
-    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
-ENDFOREACH(flag)
-SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
 SET(SRCS
     src/certificates/certificates_menu.c
@@ -34,8 +25,15 @@ SET(SRCS
 #   src/certificates/uninstall_certificate.c
 )
 
+FOREACH(flag ${pkgs_view_CFLAGS})
+    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
+ENDFOREACH(flag)
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
+
+SET(CMAKE_INSTALL_RPATH "${LIBDIR}")
+SET(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/view/include)
-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/common/include)
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/ug/include)
 INCLUDE_DIRECTORIES(${pkgs_view_INCLUDE_DIRS})
 
@@ -48,8 +46,6 @@ IF("${ARCH}" STREQUAL "arm")
 ENDIF("${ARCH}" STREQUAL "arm")
 
 MESSAGE("CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
-
-ADD_DEFINITIONS("-DSLP_DEBUG")
 
 SET(CMAKE_EXE_LINKER_FLAGS "-Wl,--as-needed")
 

@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "ಎಲ್ಲಾ ಆಯ್ಕೆಮಾಡಿ"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "ಸ್ಥಾಪನೆ ತೆಗೆಯಿರಿ"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "ಸರ್ಟಿಫಿಕೇಟ್‌‌‌ ಪತ್ತೆಯಾಗಿಲ್ಲ."
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ಅಂಶಗಳನ್ನು ಆರಿಸಿ"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ಆಯ್ಕೆಮಾಡಿದೆ"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "ಹೌದು"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "ಪ್ರಮಾಣಪತ್ರಗಳು"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ಗ್ರಾಹಕ ಪ್ರಮಾಣಪತ್ರ"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ಓಕೆ"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ರದ್ದು"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "ಪ್ರಮಾಣಪತ್ರ ಸ್ಥಾಪಿಸಲು ವಿಫಲವಾಗಿದೆ. ಪ್ರಮಾಣಪತ್ರವು ಅಮಾನ್ಯವಾಗಿದೆ, ಅವಧಿ ಮೀರಿದೆ ಅಥವಾ ನೀವು ತಪ್ಪಾದ ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿದ್ದೀರಿ."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ಸಾಧನ ಮೆಮೋರಿ ಮತ್ತು SD ಕಾರ್ಡ್‌ನಿಂದ ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಸ್ಥಾಪಿಸಲಾಗುತ್ತದೆ."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "ಸರ್ಟಿಫಿಕೇಟ್‌ ಸ್ಥಾಪಿಸಲು ಅಸಮರ್ಥ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "ಪ್ರಮಾಣಪತ್ರ ಶೋಧ ಫಲಿತಾಂಶಗಳು"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "ತೆರೆಯಿರಿ"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ಇಲ್ಲ"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ಸ್ಥಾಪಿಸಿ"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ರದ್ದು"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "ಆವೃತ್ತಿ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "ಇದಕ್ಕೆ ಮಾನ್ಯವಾಗಿದೆ:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "ಈ ದಿನದಿಂದ ಮಾನ್ಯ:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ಬಳಕದಾರರ ಪ್ರಮಾಣಪತ್ರಗಳು"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "ನಂಬಿಗಾರ್ಹ ರೂಟ್ CA ಪ್ರಮಾಣಪತ್ರಗಳು"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "ನಿಜ"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "ಸಹಿಯ ಅಲ್ಗಾರಿದಂ:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "ಸೀರಿಯಲ್ ಸಂಖ್ಯೆ:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "ಪ್ರಮಾಣಪತ್ರ ಆಯ್ಕೆಮಾಡಿ."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "ಸಾರ್ವಜನಿಕ ಕೀಲಿ:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ಮಾಲಿಕರು:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "ಸಂಸ್ಥೆ:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲ"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "ಯಾವುದೇ ವಿಷಯಗಳಿಲ್ಲ"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ತಯಾರಕ"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "ಪ್ರಮುಖ ಬಳಕೆ:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ನೀಡುವವರು:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ವಿತರಕ"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "ತಪ್ಪಾದ ಪಾಸ್‌ವರ್ಡ್."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "ಸುಳ್ಳು"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "ಬಾಹ್ಯ ಪ್ರಮಾಣಪತ್ರಗಳು"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "ಪಾಸ್‌ವರ್ಡ್‌ ನಮೂದಿಸಿ:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "ಮುಖ್ಯ ಅಲಿಯಾಸ್ ನಮೂದಿಸಿ:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "ರೂಢಿಯಲ್ಲಿರುವ ಹೆಸರು:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "ಪ್ರಮಾಣಪತ್ರದ ಪ್ರಾಧಿಕಾರ:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ಪ್ರಮಾಣಪತ್ರ ಮಾಹಿತಿ"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "ಪ್ರಮಾಣಪತ್ರ ವಿವರಗಳು"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "ಪ್ರಮಾಣಪತ್ರಗಳು ಪತ್ತೆಯಾಗಿವೆ."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ಅಲಿಯಾಸ್ ಖಾಲಿಯಾಗಿರುವಂತಿಲ್ಲ."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "ಅಲಿಯಾಸ್ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ. ವಿಶಿಷ್ಟ ಅಲಿಯಾಸ್ ನಮೂದಿಸಿ"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "ಮಾಲೀಕರು"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಅಸ್ಥಾಪಿಸಿ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ಮುಗಿದಿದೆ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ರದ್ದುಮಾಡಿ"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "ಪ್ರಮಾಣಪತ್ರ ಅಸ್ಥಾಪನೆಯಾಗುತ್ತಿದೆ..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 ಪ್ರಮಾಣಪತ್ರವನ್ನು ಅಸ್ಥಾಪಿಸಲಾಗುತ್ತದೆ."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಅಸ್ಥಾಪಿಸಲಾಗುತ್ತಿದೆ..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಅಸ್ಥಾಪಿಸಲಾಗುತ್ತದೆ."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "ಪ್ರಮಾಣಪತ್ರ ಸ್ಥಾಪಿಸಿ"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "ಇದಕ್ಕಾಗಿ ಬಳಸಲಾಗಿದೆ"
+

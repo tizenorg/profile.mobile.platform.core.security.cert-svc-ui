@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Bekor q."
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Foydalanuvchi sertifikatlari"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Sertifikatlar"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Tarkib yo‘q"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Versiya:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Parametrlar"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Olib tashlash"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Umumiy"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Ishlab chiqaruvchi"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Maxfiylik"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Barchasini tanlash"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Mijoz sertifikati"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Emitent:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "O‘rnatish"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Ega"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Taxallus oldindan mavjud. Unikal taxallus kiriting"
+msgstr "Taxallus oldindan mavjud. Unikal taxallus kiriting."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Taxallus bo‘sh bo‘lishi mumkin emas"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Sertifikatlar topildi"
+msgstr "Taxallus bo‘sh bo‘lishi mumkin emas."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Sertifikat tafsilotlari"
@@ -37,8 +31,14 @@ msgstr "Sertifikat tafsilotlari"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Sertifikat ma’lumoti"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Sertifikatlar"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Sertifikatlash markazi:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Umumiy nomi:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Kalit taxallusini kiriting:"
@@ -46,32 +46,35 @@ msgstr "Kalit taxallusini kiriting:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Parol kiriting:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Tashqi sertifikatlar"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Yolg‘on"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "SD-kartadan sertifikatlar o‘rnatilsinmi?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emitent"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emitent:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Kalitdan foydalanish:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Ma’lumotlar yo‘q"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Ma’lumot mavjud emas."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Tashkilot:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Egasi:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Umumiy kalit:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Sertifikat tanlang"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Barchasini tanlash"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "O‘rnatiladigan sertifikatni tanlang"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Seriya raqami:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Imzo algoritmi:"
@@ -79,11 +82,17 @@ msgstr "Imzo algoritmi:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Haqiqat"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Ishonchli ildiz sertifikatlari"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True colour on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Foydalanuvchi sertifikatlari"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Ishonchli CA sertifikatlari"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Ishonchli CA sertifikatlari"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Quyidagidan foydalanish mumkin:"
@@ -91,39 +100,51 @@ msgstr "Quyidagidan foydalanish mumkin:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Quyidagigacha foydalanish mumkin:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versiya:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Bekor qilish"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Bekor qilish"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Bekor qilish"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "O‘rnatish"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Ochish"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Umumiy nomi:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Olib tashlash"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Noto‘g‘ri parol"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Sertifikat qidirish natijalari"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Tarkib yo‘q"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Sertifikatni o‘rnatish"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Ma’lumotlar yo‘q"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d tanlandi"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Yo‘q"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Elementlar tanlash"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Ha"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Sertifikat o‘rnatib bo‘lmaydi"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Qurilma xotirasi va SD-kartadan sertifikatlar o‘rnatiladi."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Sertifilatni o‘rnatib bo‘lmadi. Sertifikat noto‘g‘ri, eskirgan yoki Siz noto‘g‘ri parolni kiriting"
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Bekor qilish"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Mijoz sertifikati"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Seriya raqami:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Sertifikatni o‘rnatish"
 

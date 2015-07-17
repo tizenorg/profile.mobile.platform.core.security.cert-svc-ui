@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "取消"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "用戶證書"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "證書"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "無內容"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "版本："
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "設定"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "解除安裝"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "一般"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "製造商"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "私隱"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "選擇全部"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "客戶端證書"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "頒發者："
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "安裝"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "擁有人"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "別名已存在。輸入一個獨特的別名"
+msgstr "別名已存在。輸入一個獨特的別名。"
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "別名不可為空白"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "已找到證書"
+msgstr "別名不可為空白。"
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "證書詳情"
@@ -37,8 +31,14 @@ msgstr "證書詳情"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "證書資訊"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "證書"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "證書授權："
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "一般名稱："
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "輸入金鑰別名："
@@ -46,32 +46,35 @@ msgstr "輸入金鑰別名："
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "輸入密碼："
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "外部證書"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "偽"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "從 SD 卡安裝證書嗎？"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "簽發者"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "頒發者："
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "金鑰使用量："
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "無數據"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "無可用數據"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "機構："
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "擁有者："
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "公開金鑰："
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "選擇證書"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "選擇全部"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "選擇要安裝的證書"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "序號："
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "簽名算法："
@@ -79,11 +82,17 @@ msgstr "簽名算法："
 msgid "IDS_ST_BODY_TRUE"
 msgstr "正確"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "信任的根證書"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "用戶證書"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "信任的根 CA 證書"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "信任的根 CA 證書"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "有效期由："
@@ -91,39 +100,51 @@ msgstr "有效期由："
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "有效期至："
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "版本："
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "取消"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "取消"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "安裝"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "開啟"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "一般名稱："
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "解除安裝"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "密碼不正確"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "證書搜尋結果"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "無內容"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "安裝證書"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "無數據"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "已選擇 %d"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "否"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "選擇項目"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "是"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "無法安裝證書"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "將安裝裝置記憶體與 SD 卡中的證書。"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "無法安裝證書。證書無效、已過期或您輸入的密碼不正確。"
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "取消"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "確認"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "客戶端證書"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "序號："
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "安裝證書"
 

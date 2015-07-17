@@ -29,7 +29,7 @@
 #include <app.h>
 
 #ifndef PACKAGE
-#define PACKAGE "ug-setting-manage-certificates-efl"
+#define PACKAGE "setting-manage-certificates-efl"
 #endif
 
 #ifndef LOCALEDIR
@@ -39,15 +39,17 @@
 struct ug_data {
     Evas_Object         *win_main;
     Evas_Object         *bg;
+    Evas_Object         *popup;
     Evas_Object         *layout_main;
     Evas_Object         *navi_bar;
     GList               *view_list;
     ui_gadget_h         ug;
     ui_gadget_h         sub_ug;
-    service_h           *service;
+    app_control_h       *service;
     void                *data;
     Elm_Object_Item		*user_cert_list_item;
     Elm_Theme 			*theme;
+	Evas_Object 		*ctx_popup;
 };
 
 struct ug_data *get_ug_data();

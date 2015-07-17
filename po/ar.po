@@ -1,129 +1,177 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "إلغاء"
-
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "الشهادات"
-
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "النسخة:"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "اختيار الكل"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "إلغاء التثبيت"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "المصنع"
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "لم يتم العثور على أي شهادة"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "اختيار الكل"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "تحديد عناصر"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "‏‫جهة الإصدار:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "تثبيت"
-
-msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "الاسم المستعار موجود‬ بالفعل. أدخل ‏‫اسما مستعار‬ا فريدا"
-
-msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "لا يمكن ترك الاسم المستعار فارغا"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "تم العثور على شهادات"
-
-msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "تفاصيل الشهادة"
-
-msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "معلومات الشهادة"
-
-msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "المرجع المصدق:"
-
-msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "إدخال الاسم المستعار للمفتاح:"
-
-msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "إدخال كلمة المرور:"
-
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "الشهادات الخارجية"
-
-msgid "IDS_ST_BODY_FALSE"
-msgstr "خطأ"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "تثبيت الشهادات من بطاقة SD؟"
-
-msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "استخدام المفتاح:"
-
-msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "المؤسسة:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "المالك:"
-
-msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "المفتاح العام:"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "اختر الشهادة"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "حدد الشهادة المطلوب تثبيتها"
-
-msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "خوارزمية التوقيع:"
-
-msgid "IDS_ST_BODY_TRUE"
-msgstr "صحيح"
-
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "الشهادات الجذر الموثوقة"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "شهادات المستخدم"
-
-msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "صالح من:"
-
-msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "صالح حتى:"
-
-msgid "IDS_ST_BUTTON_OPEN"
-msgstr "فتح"
-
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "الاسم الشائع:"
-
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "كلمة مرور غير صحيحة"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "بدون محتويات"
-
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "لا توجد بيانات"
-
-msgid "IDS_ST_BUTTON_NO"
-msgstr "لا"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "تم تحديد %d"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "نعم"
 
-msgid "IDS_ST_SK2_CANCEL"
-msgstr "إلغاء"
-
-msgid "IDS_ST_SK2_OK"
-msgstr "موافق"
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "الشهادات"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
 msgstr "شهادة العملاء"
 
+msgid "IDS_ST_SK2_OK"
+msgstr "موافق"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "إلغاء"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "فشل تثبيت الشهادة. الشهادة غير صالحة أو انتهت صلاحيتها أو تم إدخال كلمة مرور غير صحيحة."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "سيتم تثبيت شهادات من ذاكرة الجهاز وبطاقة SD"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "يتعذر تثبيت الشهادة"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "نتائج البحث عن الشهادة"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "فتح"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "لا"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "تثبيت"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "إلغاء"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "النسخة:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "صالح حتى:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "صالح من:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "شهادات المستخدم"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "شهادات CA الجذرية الموثوق بها"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "صحيح"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "خوارزمية التوقيع:"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "الرقم التسلسلي:"
 
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "اختر الشهادة."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "المفتاح العام:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "المالك:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "المؤسسة:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "لا توجد بيانات"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "بدون محتويات"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "المصنع"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "استخدام المفتاح:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "‏‫جهة الإصدار:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "المصدر"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "كلمة مرور غير صحيحة."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "خطأ"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "الشهادات الخارجية"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "إدخال كلمة المرور:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "إدخال الاسم المستعار للمفتاح:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "الاسم الشائع:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "المرجع المصدق:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "معلومات الشهادة"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "تفاصيل الشهادة"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "تم العثور على شهادات."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "لا يمكن ترك الاسم المستعار فارغا."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "الاسم المستعار موجود‬ بالفعل. أدخل ‏‫اسما مستعار‬ا فريدا."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "المالك"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "إلغاء تثبيت الشهادات"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "تم"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "إلغاء"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "جارٍ إلغاء تثبيت الشهادة..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "سيتم إلغاء تثبيت شهادة واحدة."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "جارٍ إلغاء تثبيت الشهادات..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "سيتم إلغاء تثبيت %d من الشهادات."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
 msgstr "تثبيت الشهادة"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "إدارة الشهادات"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "مستخدمة لـ"
 

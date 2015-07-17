@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "সকলো চয়ন কৰক"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "আনইনষ্টল"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "কোনো প্রমাণপত্র পোৱা নগ'ল৷"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "আইটেমসমূহ চয়ন কৰক"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d টা চয়নিত"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "হয়"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "প্ৰমাণপত্ৰসমূহ"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ক্লাইণ্ট প্ৰমাণপত্ৰ"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ঠিক"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "বাতিল"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "প্ৰমাণপত্ৰ ইনষ্টল কৰাত বিফল হৈছে৷ প্ৰমাণপত্ৰ অমান্য, ম্যাদ উকলিল বা আপুনি এটা অশুদ্ধ পাছৱৰ্ড প্ৰৱিষ্ট কৰিছে৷"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ডিভাইচ মেম'ৰি আৰু SD কাৰ্ডৰ পৰা প্ৰমাণপত্ৰসমূহ ইনষ্টল কৰা হ'ব৷"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "প্ৰমাণপত্ৰ ইনষ্টল অক্ষম কৰক"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "প্ৰমাণপত্ৰ অনুসন্ধান ফলাফল"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "খোলক"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "নহয়"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ইনষ্টল"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "বাতিল"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "সংস্কৰণ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "ইয়ালৈকে বৈধ:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "এই দিনৰ পৰা বৈধ:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ব্যৱহাৰকৰ্তাৰ প্ৰমাণপত্ৰ"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "বিশ্বাসী ৰুট CA প্ৰমাণপত্ৰ"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "সঁচা"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "স্বাক্ষৰ আলগ'ৰিথম:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "ক্ৰমিক নম্বৰ:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "প্ৰমাণপত্ৰ এখন চয়ন কৰক৷"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "ৰাজহুৱা কী:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "গৰাকী:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "সংস্থা:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "ডাটা নাই"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "কোনো সমল নাই"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "নিৰ্মাতা"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "কী ব্যৱহাৰ:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "জাৰীকৰ্তা:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ইচ্ছ্যুকাৰী"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "অশুদ্ধ পাছৱৰ্ড৷"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "মিথ্যা"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "বাহ্যিক প্ৰমাণপত্ৰ"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "পাছৱৰ্ড প্ৰবিষ্ট কৰক:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "কী উপনাম প্ৰবিষ্ট কৰক:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "সাধাৰণ নাম:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "প্ৰমাণপত্ৰ কৰ্তৃপক্ষ:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "প্ৰমাণপত্ৰ তথ্য"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "প্রমাণপত্রৰ বিৱৰণ"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "প্ৰমাণপত্ৰ পোৱা গৈছে৷"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "উপনাম খালী ৰাখিব নোৱাৰে৷"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "উপনাম ইতিমধ্যে মজুত আছে৷ এটা একক উপনাম প্ৰবিষ্ট কৰক"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "গৰাকী"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "প্ৰমাণপত্ৰসমূহ আনইনষ্টল কৰক"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "সম্পন্ন"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "বাতিল কৰক"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "প্ৰমাণপত্ৰ আনইনষ্টল হৈ আছে..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 খন প্ৰমাণপত্ৰ আনইনষ্টল কৰা হ'ব৷"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "প্ৰমাণপত্ৰসমূহ আনইনষ্টল হৈ আছে..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d খন প্ৰমাণপত্ৰ আনইনষ্টল কৰা হ'ব৷"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "প্ৰমাণপত্ৰ ইনষ্টল"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "প্ৰমাণপত্ৰসমূহৰ পৰিচালনা"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "ইয়াৰ বাবে ব্যৱহৃত"
+

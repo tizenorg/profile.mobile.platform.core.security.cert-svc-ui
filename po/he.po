@@ -1,2 +1,150 @@
-msgid "IDS_COM_BODY_NO_CONTENTS"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "אישורי משתמש"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
 msgstr "אין תוכן"
+
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "הגדרות"
+
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "כללי"
+
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "פרטיות"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "אישור לקוח"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "בעלים"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "הכינוי קיים כבר. הזן כינוי ייחודי."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "הכינוי לא יכול להיות ריק."
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "פרטי אישור"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "פרטי אישור"
+
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "אישורים"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "רשות אישורים:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "שם נפוץ:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "הזן כינוי מפתח:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "הזן סיסמה:"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "שקר"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "מנפיק"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "מנפיק:"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "שימוש במפתח:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "אין נתונים"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "אין נתונים זמינים."
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "ארגון:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "מפתח ציבורי:"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "בחר הכל"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "מספר סידורי:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "אלגוריתם חתימה:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "אמת"
+
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "אישורי בסיס מהימנים של רשות אישורים"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "אישורי בסיס מהימנים של רשות אישורים"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "חוקי מ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "חוקי עד:"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "גרסה:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ביטול"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "ביטול"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "ביטול"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "התקן"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "פתח"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "הסר התקנה"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "תוצאות חיפוש אישורים"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "התקן אישור"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "נבחרו %d"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "בחר פריטים"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "לא ניתן להתקין את האישור"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "אישורים מזיכרון המכשיר וכרטיס ה-SD יותקנו"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "התקנת האישור נכשלה. האישור אינו חוקי, התוקף שלו פג או שהזנת סיסמה שגויה."
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ביטול"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "אישור"
+

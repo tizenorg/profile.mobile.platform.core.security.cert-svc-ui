@@ -1,0 +1,150 @@
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Benutzerzertifikat"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Kein Inhalt"
+
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Einstellungen"
+
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Allgemein"
+
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Datenschutz"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Client-Zertifikat"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Besitzer"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Alias bereits vorhanden. Eindeutigen Alias eingeben."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Alias darf nicht leer sein."
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Zertifikatsdetails"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Zertifikatsinformationen"
+
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Zertifikate"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Zertifizierungsstelle:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Allgemeiner Name:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Schlüsselalias eingeben:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Passwort eingeben:"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Falsch"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Herausgeber"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Aussteller:"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Schlüsselverwendung:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Keine Daten"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Keine Daten verfügbar"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organisation:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Öffentlicher Schlüssel:"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Alle auswählen"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Seriennummer:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Signatur-Algorithmus:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Wahr"
+
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Vertrauenswürdige Root-CA-Zertifikate"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Vertrauensw. Root-CA-Zertifik."
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Gültig ab:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Gültig bis:"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Version:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Abbruch"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Abbrechen"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Abbrechen"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Installieren"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Öffnen"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Deinstallieren"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Suchergebnisse für Zertifikate"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Zertifikat installieren"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ausgewählt"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Elemente auswählen"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Zertif. kann n. inst. werd."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Zertifikate vom Gerätespeicher und von SD-Karte werden installiert."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Zertifikat konnte nicht installiert werden. Das Zertifikat ist ungültig oder abgelaufen oder Sie haben ein falsches Passwort eingegeben."
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Abbrechen"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

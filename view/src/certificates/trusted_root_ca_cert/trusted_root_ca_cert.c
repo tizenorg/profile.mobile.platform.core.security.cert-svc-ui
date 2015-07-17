@@ -27,59 +27,61 @@
 
 #include <dirent.h>
 
-Eina_Bool trusted_root_cert_create_list(struct ug_data *ad){
-    LOGD("trusted_root_cert_create_list()");
+static Eina_Bool trusted_root_cert_create_genlist(struct ug_data *ad, Evas_Object *parent)
+{
+	if (!ad)
+		return EINA_TRUE;
 
-    if(NULL == ad) {
-        return EINA_TRUE;
-    }
-    elm_list_clear(ad->list_to_refresh);
+	ad->list_to_refresh = elm_genlist_add(parent);
+	evas_object_size_hint_weight_set(ad->list_to_refresh, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(ad->list_to_refresh, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
-    Eina_Bool no_content_bool = EINA_TRUE;
-    if(!make_list(ad, ad->list_to_refresh, PATH_CERT_TRUSTEDUSER, ad->list_element)){
-        no_content_bool = EINA_FALSE;
-    }
-    ad->list_element = findLastElement(ad->list_element);
-    if(!make_list(ad, ad->list_to_refresh, PATH_CERT_SSL_ETC, ad->list_element)){
-        no_content_bool = EINA_FALSE;
-    }
+	Eina_Bool no_content_bool = EINA_TRUE;
 
-    return no_content_bool;
+	if (!make_list(ad, ad->list_to_refresh, NULL, ad->list_element))
+		no_content_bool = EINA_FALSE;
+
+	return no_content_bool;
 }
 
-void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info) {
+void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	if (!data)
+		return;
 
-    LOGD("trusted_root_cert_cb()");
+	struct ug_data *ad = (struct ug_data *)data;
+	struct ListElement *firstListElement = initList();
 
-    if(NULL == data) {
-        return;
-    }
-    struct ug_data *ad = (struct ug_data *) data;
-    struct ListElement *firstListElement = NULL;
-    struct ListElement *lastListElement  = NULL;
-    firstListElement = initList();
-    lastListElement  = firstListElement;
-    ad->list_element = firstListElement;
-    ad->list_to_refresh = NULL;
-    ad->list_to_refresh = elm_list_add(ad->win_main);
-    elm_list_mode_set(ad->list_to_refresh, ELM_LIST_COMPRESS);
+	if (!firstListElement) {
+		LOGE("Fail to initList for firstListElement");
+		return;
+	}
 
-    Elm_Object_Item *nf_it;
-    if (!trusted_root_cert_create_list(ad)) { // There is some content
+	ad->list_element = firstListElement;
 
-		nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"), NULL, NULL, ad->list_to_refresh, NULL);
+	Elm_Object_Item *nf_it;
+	Evas_Object *box = NULL;
+	box = elm_box_add(ad->navi_bar);
+	evas_object_size_hint_weight_set(box, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(box, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
-    } else {
-        // No content
-        Evas_Object *no_content = create_no_content_layout(ad);
+	Eina_Bool no_content_bool = trusted_root_cert_create_genlist(ad, box);
+	evas_object_show(ad->list_to_refresh);
+	elm_box_pack_end(box, ad->list_to_refresh);
+	evas_object_show(box);
 
-        if(!no_content){
-            LOGD("Cannot create no_content layout (NULL); return");
-            return;
-        }
-		nf_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"), NULL, NULL, no_content, NULL);
-    }
+	if (!no_content_bool) { // There is some content
+		nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB", NULL, NULL, box, NULL);
+	} else {
+		// No content
+		Evas_Object *no_content = create_no_content_layout(ad);
 
-	elm_naviframe_item_pop_cb_set(nf_it, back_cb, (struct Evas_Object *)ad);  
-	
+		if(!no_content){
+			LOGD("Cannot create no_content layout (NULL); return");
+			return;
+		}
+		nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB", NULL, NULL, no_content, NULL);
+	}
+	elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
+	elm_naviframe_item_pop_cb_set(nf_it, back_cb, (struct Evas_Object *)ad);
 }

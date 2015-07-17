@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "બધું પસંદ કરો"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "સ્થાપના રદ કરો"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "કોઈ પ્રમાણપત્ર મળેલ નથી."
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "વસ્તુઓ પસંદ કરો"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d પસંદ કર્યા"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "હા"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "પ્રમાણપત્રો"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ગ્રાહક પ્રમાણપત્ર"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ઓકે"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "રદ કરો"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "પ્રમાણપત્ર સ્થાપિત કરવામાં નિષ્ફળ થયું. પ્રમાણપત્ર અમાન્ય છે, સમાપ્ત થઈ ગયું છે અથવા તમે કોઈ ખોટો પાસવર્ડ દાખલ કરો છે."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ઉપકરણની સ્મૃતિ અને SD કાર્ડથી પ્રમાણપત્રોની સ્થાપના કરવામાં આવશે."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "પ્રમાણપત્રની સ્થાપના કરવામાં અસમર્થ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "પ્રમાણપત્ર શોધ પરિણામો"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "ખોલો"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ના"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ઇન્સ્ટોલ કરો"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "રદ કરો"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "સંસ્કરણ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "આ સુધી માન્ય:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "અહીંથી માન્ય:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ઉપયોગકર્તા પ્રમાણ પત્રો"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "વિશ્વસનીય રૂટ CA પ્રમાણપત્રો"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "સત્ય"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "હસ્તાક્ષર ગણના વિધિ:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "સીરિયલ નંબર:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "પ્રમાણપત્ર પસંદ કરો."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "જાહેર કી:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "માલિક:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "સંગઠન:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "કોઈ ડેટા નથી"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "કોઈ સામગ્રીઓ નથી"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "નિર્માતા"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "કી વપરાશ:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ફાળવણીકર્તા:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "મોક્લાવનાર"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "ખોટો પાસવર્ડ."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "ખોટું"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "બાહ્ય પ્રમાણપત્રો"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "પાસવર્ડ દાખલ કરો:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "મુખ્ય અલાયસ દાખલ કરો:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "સામાન્ય નામ:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "પ્રમાણન અધિકારી:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "પ્રમાણપત્ર માહિતી"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "પ્રમણપત્ર વિગતો"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "પ્રમાણપત્રો મળ્યા છે."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "અલાયસ ખાલી હોઈ શકે નહી."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "અલાયસ અગાઉથી હાજર છે. અનોખું અલાયસ દાખલ કરો"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "માલિક"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "પ્રમાણપત્રોને અનઇન્સ્ટોલ કરો"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "પૂર્ણ થયું"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "રદ કરો"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "પ્રમાણપત્રની સ્થાપના રદ કરી રહ્યું છે..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 પ્રમાણપત્રની સ્થાપના રદ કરવામાં આવશે."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "પ્રમાણપત્રોની સ્થાપના રદ કરી રહ્યું છે..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d પ્રમાણપત્રોની સ્થાપના રદ કરવામાં આવશે."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "પ્રમાણપત્ર ઇન્સ્ટોલ કરો"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "પ્રમાણપત્રો વ્યવસ્થિત કરો"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "આ માટે ઉપયોગ કરાયેલ"
+

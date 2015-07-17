@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "ជ្រើស​ទាំង​អស់"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "លុប"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "រក​មិន​ឃើញ​វិញ្ញាបនបត្រ"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ជ្រើស​ធាតុ"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "បាន​ជ្រើស %d"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "បាទ/ចាស"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "វិញ្ញាបនបត្រ"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "វិញ្ញាបនបត្រ​កម្មវិធី"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ព្រម"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "បោះបង់"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ដំឡើង​វិញ្ញាបនបត្រ។ វិញ្ញាបនបត្រ​នេះ​អសុពលភាព, បាន​ផុតកំណត់ ឬ អ្នក​បាន​វាយបញ្ចូល​ពាក្យសម្ងាត់​មិន​ត្រឹមត្រូវ។"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "នឹង​ដំឡើង​វិញ្ញាបនបត្រ​ពី​មេម៉ូរី​ឧបករណ៍ និង កាត SD។"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "មិន​អាច​ដំឡើង​វិញ្ញាបនបត្រ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "លទ្ធផល​ស្វែងរក​វិញ្ញាបនបត្រ"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "បើក"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ទេ"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ដំឡើង"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "បោះ​បង់"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "កំណែ៖"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "មាន​សុពលភាព​ដល់៖"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "មាន​សុពលភាព​ពី៖"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "វិញ្ញាបនបត្រ​អ្នកប្រើប្រាស់"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "វិញ្ញាបនបត្រ CA ឫស​ដែល​ទុក​ចិត្ត"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "ពិត"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "អាល់ហ្គោរីម​ហត្ថលេខា៖"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "លេខ​សៀរៀល:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "ជ្រើស​វិញ្ញាបនបត្រ។"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "សោ​សាធារណៈ៖"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ម្ចាស់៖"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "អង្គការ:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "គ្មាន​ទិន្នន័យ"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "គ្មាន​ខ្លឹមព័ត៌មាន"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ឧស្សាហករ"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "ការប្រើប្រាស់​សោ៖"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "អ្នកចេញ៖"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "អ្នកចេញ"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "ពាក្យសម្ងាត់​មិន​ត្រឹមត្រូវ។"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "ខុស"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "វិញ្ញាបនបត្រ​ខាងក្រៅ"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "វាយបញ្ចូល​ពាក្យ​សម្ងាត់៖"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "វាយបញ្ចូល​សោ​ឈ្មោះ​ក្លែងក្លាយ៖"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "ឈ្មោះធម្មតា:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "ការផ្តល់​សិទ្ធិ​វិញ្ញាបនបត្រ៖"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ព័ត៌មាន​វិញ្ញាបនបត្រ"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "ព័ត៌មាន​លម្អិត​វិញ្ញាបនបត្រ"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "បាន​រកឃើញ​វិញ្ញាបនបត្រ។"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ឈ្មោះ​ក្លែងក្លាយ​មិន​អាច​ទទេ។"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "ឈ្មោះ​ក្លែងក្លាយ​មាន​រួច​ហើយ។ វាយបញ្ចូល​ឈ្មោះ​ក្លែងក្លាយ​វិសេស​មាន​តែ​មួយ។"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "ម្ចាស់"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "លុប​វិញ្ញាបនបត្រ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "រួចរាល់"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "បោះបង់"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "កំពុង​លុប​វិញ្ញាបនបត្រ..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "នឹង​លុប​វិញ្ញាបនបត្រ 1។"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "កំពុង​លុប​វិញ្ញាបនបត្រ..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "នឹង​លុប​វិញ្ញាបនបត្រ %d។"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "ដំឡើង​វិញ្ញាបនបត្រ"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "គ្រប់គ្រង​វិញ្ញាបនបត្រ"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "បាន​ប្រើ​សម្រាប់"
+

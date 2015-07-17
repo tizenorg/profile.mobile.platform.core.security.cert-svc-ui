@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" package="cert-svc-ui" version="0.1" install-location="internal-only">
+        <label>cert-svc-ui ug</label>
+        <description>Cert Service UI</description>
+        <ui-application appid="setting-manage-certificates-efl" exec="/usr/apps/cert-svc-ui/bin/setting-manage-certificates-efl" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false">
+                <label>Setting manager certificate</label>
+       </ui-application>
+        <ui-application appid="cert-selection-ug-efl" exec="/usr/apps/cert-svc-ui/bin/cert-selection-ug-efl" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false">
+                <label>Certificate selection UG</label>
+       </ui-application>
+        <ui-application appid="mgr-cert-view" exec="/usr/apps/cert-svc-ui/bin/mgr-cert-view" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false">
+                <label>Managing cert view</label>
+       </ui-application>
+</manifest>

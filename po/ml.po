@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "എല്ലാം തിരഞ്ഞെടുക്കുക"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "അണ്‍ഇന്‍സ്റ്റോള്‍"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "സര്‍ട്ടിഫിക്കറ്റൊന്നും കണ്ടെത്തിയില്ല"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ഇനങ്ങള്‍ തിരഞ്ഞെടുക്കുക"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d തിരഞ്ഞെടുത്തു"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "അതെ"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "സര്‍ട്ടിഫിക്കറ്റുകള്‍"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ക്ലയന്‍റ് സര്‍ട്ടിഫിക്കറ്റ്"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ശരി"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "റദ്ദാക്കുക"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "സര്‍ട്ടിഫിക്കറ്റ് ഇന്‍സ്റ്റാള്‍ ചെയ്യുന്നത് പരാജയപ്പെട്ടു. സര്‍ട്ടിഫിക്കേറ്റ് അസാധുവാണ് അല്ലെങ്കില്‍ കാലഹരണപ്പെട്ടിരിക്കുന്നു അല്ലെങ്കില്‍ നിങ്ങള്‍ ശരിയല്ലാത്ത രഹസ്യവാക്ക് നല്‍കിയിരിക്കുന്നു."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ഉപകരണ മെമ്മറിയിലെയും SD കാർഡിലെയും സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്റ്റാൾ ചെയ്യപ്പെടും."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "സർട്ടിഫിക്കറ്റ് ഇൻ‍സ്റ്റാൾ ചെയ്യാനാവില്ല"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "സർട്ടിഫിക്കറ്റ് തിരയൽ ഫലങ്ങൾ"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "ഓപ്പണ്‍"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ഇല്ല"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ഇന്‍‌സ്റ്റാള്‍"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "റദ്ദാക്കുക"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "പതിപ്പ്:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "ഇതില്‍ സാധുവാണ്:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "ഇതുമുതല്‍ സാധുതയുണ്ട്:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ഉപയോക്തൃ സര്‍ട്ടിഫിക്കറ്റുകള്‍"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "വിശ്വസനീയ റൂട്ട് CA സർട്ടിഫിക്കറ്റുകൾ"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "സത്യം"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "ഒപ്പ് അല്‍ഗോരിതം:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "സീരിയല്‍ നമ്പര്‍:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "സര്‍ട്ടിഫിക്കറ്റ് തിരഞ്ഞെടുക്കുക."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "പൊതുവായ കീ:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ഉടമ:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "ഓര്‍ഗനൈസേഷന്‍:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "ഡാറ്റ ഇല്ല"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "ഉള്ളടക്കങ്ങളില്ല"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ഉല്‍‌പ്പാദകന്‍‌"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "കീ ഉപയോഗം:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "നല്‍കുന്നയാള്‍:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ദാതാവ്"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "തെറ്റായ പാസ്‌വേഡ്."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "തെറ്റ്"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "ബാഹ്യ സര്‍ട്ടിഫിക്കറ്റുകള്‍"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "രഹസ്യ‍വാക്ക് നല്‍കുക:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "പ്രധാന ഉപനാമങ്ങള്‍ നല്‍കുക:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "പൊതു നാമം:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "സര്‍ട്ടിഫിക്കേഷന്‍ അതോറിറ്റി:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "സര്‍ട്ടിഫിക്കറ്റ് വിവരം"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "സര്‍ട്ടിഫിക്കറ്റ് വിശദാംശങ്ങള്‍"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "സര്‍ട്ടിഫിക്കറ്റുകള്‍ കണ്ടെത്തി."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ഉപനാമം ശൂന്യമായിരിക്കാന്‍ പാടില്ല."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "ഉപനാമം ഇതിനകം നിലവിലുണ്ട്. ഒരു അദ്വിതീയ ഉപനാമം നല്‍കുക"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "ഉടമ"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "സർട്ടിഫിക്കറ്റുകൾ അൺഇൻസ്റ്റാൾ ചെയ്യുക"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ചെയ്‌തു"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "റദ്ദാക്കുക"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "സർട്ടിഫിക്കറ്റ് അൺഇൻസ്റ്റാൾ ചെയ്യുന്നു..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 സർട്ടിഫിക്കറ്റ് അൺഇൻസ്റ്റാൾ ചെയ്യപ്പെടും."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "സർട്ടിഫിക്കറ്റുകൾ അൺഇൻസ്റ്റാൾ ചെയ്യുന്നു..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d സർട്ടിഫിക്കറ്റുകൾ അൺഇൻസ്റ്റാൾ ചെയ്യപ്പെടും."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "സർട്ടിഫിക്കറ്റ് ഇന്‍‌സ്റ്റാള്‍ ചെയ്യുക"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "സർട്ടിഫിക്കറ്റുകൾ മാനേജ് ചെയ്യുക"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "ഉപയോഗിച്ചത്"
+

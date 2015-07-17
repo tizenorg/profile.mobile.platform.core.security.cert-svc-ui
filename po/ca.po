@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Cancelar"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificats d'usuari"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certificats"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "No hi ha continguts"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Versió:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Ajustaments"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Desinstal·lar"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "General"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Fabricant"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Confidencialitat"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Seleccioni-ho tot"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certificació client"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Emissor:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Instal·lar"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Propietari"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Ja existeix l'àlies. Introdueixi'n un d'únic"
+msgstr "Ja existeix l'àlies. Introdueixi'n un d'únic."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
 msgstr "L'àlies no pot estar buit"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certificats trobats"
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Detalls del certificat"
@@ -37,8 +31,14 @@ msgstr "Detalls del certificat"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Informació del certificat"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificats"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Autoritat de certificació:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nom comú:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Introduir àlies de clau:"
@@ -46,32 +46,35 @@ msgstr "Introduir àlies de clau:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introdueixi la contrasenya:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificats externs"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fals"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instal·lar certificats de la targeta SD?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emissor"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emissor:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Ús de clau:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Sense dades"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "No hi ha dades disponibles"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organització:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Propietari:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Clau pública:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Seleccioni el certificat"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Seleccioni-ho tot"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Seleccioni el certificat per instal·lar"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Número de sèrie:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algorisme de signatura:"
@@ -79,11 +82,17 @@ msgstr "Algorisme de signatura:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Veritat"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Certificats arrel de confiança"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Certificats d'usuari"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Certificats CA arrel de confiança"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Certificats CA arrel confiança"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Vàlid des de:"
@@ -91,39 +100,51 @@ msgstr "Vàlid des de:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Vàlid fins a:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versió:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancel"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Cancel·lar"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Cancel·lar"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instal·lar"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Obrir"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Nom comú:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Desinstal·lar"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Contrasenya incorrecta"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Resultats cerca de certificats"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "No hi ha continguts"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instal·lar certificat"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Sense dades"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d seleccionats"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "No"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Seleccionar elements"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Sí"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "No es pot instal certificat"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "S'instal·laran certificats de la memòria del dispositiu i la targeta SD"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Error en instal·lar el certificat. El certificat no és vàlid, ha caducat o ha introduït una contrasenya incorrecta."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Cancelar"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Acceptar"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Certificació client"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Número de sèrie:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Instal·lar certificat"
 

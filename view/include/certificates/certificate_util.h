@@ -42,13 +42,23 @@ enum TypeOfCert {
     TO_UNINSTALL,
 };
 
+typedef struct item_data
+{
+	int status;
+	char *gname;
+	int storeType;
+	int index;
+	char *title;
+} item_data_s;
+
 typedef struct ListElement {
     struct ListElement *prev, *next;
-    char            *name;
     char            *title;
+    int             storeType;
+    char            *gname;
+    char            *name;
     char            *path;
     Eina_Bool       isChecked;
-    Elm_Object_Item *it;
 } ListElement_t;
 
 enum PositionOfElement {
@@ -72,7 +82,6 @@ void genlist_clicked_cb (void *data, Evas_Object *obj, void *event_info);
 struct ListElement* initList();
 struct ListElement* nextElement             (struct ListElement *listElement);
 struct ListElement* addListElement          (struct ListElement* lastListElement, const char *name);
-struct ListElement* addListElementWithTitle (struct ListElement* lastListElement, const char *name, const char *title);
 struct ListElement* addListElementWithPath  (struct ListElement* lastListElement, const char *name, const char *path);
 struct ListElement* addListElementWithPathAndTitle(
         struct ListElement* lastListElement,
@@ -124,6 +133,17 @@ Eina_Bool make_list(
         Evas_Object        *list,
         const char         *dir_path,
         struct ListElement *lastListElement);
+
+int safeStrCmp(const char* s1, const char* s2);
+
+item_data_s *item_data_create(
+        const char *gname,
+        const char *title,
+        int status,
+        int storeType,
+        int index);
+
+void item_data_free(item_data_s *id);
 
 #ifdef _cplusplus
 }

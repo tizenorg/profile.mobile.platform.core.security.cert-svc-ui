@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Mégse"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Felhasználó tanúsítványai"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Tanúsítványok"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Nincs tartalomjegyzék"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Verzió:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Beállítások"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Eltávolítás"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Általános"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Gyártó"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Védett adataim"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Összes kijelölése"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Klienstanúsítvány"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Kiállító:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Telepít"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Tulajdonos"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Már van ilyen alias. Egyedi aliast adjon meg"
+msgstr "Már van ilyen alias. Egyedi aliast adjon meg."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Az alias nem lehet üres"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Talált tanúsítványok"
+msgstr "Az alias nem lehet üres."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Tanúsítvány adatai"
@@ -37,8 +31,14 @@ msgstr "Tanúsítvány adatai"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Tanúsítványadatok"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Tanúsítványok"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Hitelesítésszolgáltató:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Köznapi név:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Adja meg a kulcsaliast:"
@@ -46,32 +46,35 @@ msgstr "Adja meg a kulcsaliast:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Adja meg a jelszót:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Külső tanúsítványok"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Hamis"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Telepíti a tanúsítványokat az SD-kártyáról?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Kibocsátó"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Kiállító:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Kulcs használata:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Nincsenek adatok"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Nincs elérhető adat."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Szervezet:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Tulajdonos:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Nyilvános kulcs:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Válassza ki a tanúsítványt"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Összes kijelölése"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Válassza ki a telepíteni kívánt tanúsítványt"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sorozatszám:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Aláírási algoritmus:"
@@ -79,11 +82,17 @@ msgstr "Aláírási algoritmus:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "true"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Megbízható főtanúsítványok"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Felhasználó tanúsítványai"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Megbízható hitelesítésszolgáltatói főtanúsítványok"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Megbízh. hit.szolg. főtanúsítv."
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Érvényesség kezdete:"
@@ -91,39 +100,51 @@ msgstr "Érvényesség kezdete:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Érvényesség vége:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Verzió:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Mégse"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Mégse"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Mégse"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Telepít"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Megnyitás"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Köznapi név:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Eltávolítás"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Téves jelszó"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Tanúsítványkeresés eredménye"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Nincs tartalomjegyzék"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Tanúsítvány telepítése"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Nincsenek adatok"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d kijelölve"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Nem"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Tételek kijelölése"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Igen"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "A tanúsítvány nem telepíthető"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Telepítve lesznek a tanúsítványok az eszközmemóriából és az SD-kártyáról."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Nem sikerült telepíteni a tanúsítványt. A tanúsítvány érvénytelen vagy lejárt, illetve helytelen a megadott jelszó."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Mégse"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Klienstanúsítvány"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Sorozatszám:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Tanúsítvány telepítése"
 

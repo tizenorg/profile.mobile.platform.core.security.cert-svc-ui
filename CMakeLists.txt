@@ -1,11 +1,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-PROJECT(ug-setting-manage-certificates-efl C)
+PROJECT(setting-manage-certificates-efl C)
 
 INCLUDE(FindPkgConfig)
-pkg_check_modules(pkgs
-    libtzplatform-config
-    REQUIRED
-)
 
 SET(CMAKE_C_FLAGS_RELEASE "-O2 -Wall")
 SET(CMAKE_C_FLAGS_DEBUG "-O0 -Wall -g -ggdb")
@@ -13,7 +9,7 @@ SET(CMAKE_C_FLAGS_CCOV "-O2 -Wall --coverage")
 
 SET(PREFIX ${CMAKE_INSTALL_PREFIX})
 SET(PKGNAME "lib${PROJECT_NAME}")
-SET(LIBDIR "${PREFIX}/lib")
+SET(LIBDIR "${PREFIX}/lib/ug/")
 SET(VERSION 0.1.0)
 SET(RESDIR "${PREFIX}/res")
 SET(DATADIR "${RESDIR}/etc")
@@ -23,39 +19,32 @@ SET(EDJDIR "${RESDIR}/edje")
 SET(IMGDIR "${RESDIR}/images")
 
 SET(TARGET_CERT_VIEW "mgr-cert-view")
-SET(TARGET_CERT_SELECTION_UG "ug-cert-selection-ug-efl")
-SET(TARGET_CERT_MANAGER_UG "ug-setting-manage-certificates-efl")
+SET(TARGET_CERT_SELECTION_UG "cert-selection-ug-efl")
+SET(TARGET_CERT_MANAGER_UG "setting-manage-certificates-efl")
 
 ADD_DEFINITIONS("-DPREFIX=\"${PREFIX}\"")
 ADD_DEFINITIONS("-DPKGNAME=\"${PKGNAME}\"")
 ADD_DEFINITIONS("-DPACKAGE_NAME=\"${PKGNAME}\"")
+
 ADD_DEFINITIONS("-DEDJDIR=\"${EDJDIR}\"")
-ADD_DEFINITIONS("-DPREFIX=\"${PREFIX}\"")
 ADD_DEFINITIONS("-DRESDIR=\"${RESDIR}\"")
 ADD_DEFINITIONS("-DDATADIR=\"${DATADIR}\"")
 ADD_DEFINITIONS("-DLOCALEDIR=\"${LOCALEDIR}\"")
 ADD_DEFINITIONS("-DEDJDIR=\"${EDJDIR}\"")
 ADD_DEFINITIONS("-DIMGDIR=\"${IMGDIR}\"")
+ADD_DEFINITIONS("-DCERTSVC_UI_IMG_PATH=\"${IMGDIR}/cert-svc-ui\"")
+ADD_DEFINITIONS("-DCUSTOM_EDITFIELD_PATH=\"${RESDIR}/custom_editfield.edj\"")
 
-IF(WAYLAND_SUPPORT)
-  ADD_DEFINITIONS(
-    "-DHAVE_WAYLAND"
-    "-DWAYLAND" # TODO fix exitsing headers system wide
-    )
-ENDIF(WAYLAND_SUPPORT)
-
-IF(X_SUPPORT)
-  ADD_DEFINITIONS(
-    "-DHAVE_X"
-    )
-ENDIF(X_SUPPORT)
-
+#ADD_DEFINITIONS("-DHAVE_WAYLAND")
+#ADD_DEFINITIONS("-DWAYLAND")
+ADD_DEFINITIONS("-DUG_WAYLAND")
 
 ADD_SUBDIRECTORY(view)
 ADD_SUBDIRECTORY(ug)
 ADD_SUBDIRECTORY(cert-selection-ug)
-
-# i18n
 ADD_SUBDIRECTORY(po)
 
-INSTALL(FILES packaging/ug.cert-svc-ui.include DESTINATION /etc/smack/accesses2.d)
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/icons/00_icon_select_all.png DESTINATION ${IMGDIR})
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/icons/00_nocontents_text_gray.png DESTINATION ${IMGDIR}/cert-svc-ui)
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/cert-svc-ui.xml DESTINATION ${TZ_SYS_SHARE}/packages)
+INSTALL(FILES ${CMAKE_SOURCE_DIR}/data/icons/custom_editfield.edj DESTINATION ${RESDIR})

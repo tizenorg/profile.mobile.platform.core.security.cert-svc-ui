@@ -1,129 +1,177 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "취소"
-
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "인증서"
-
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "버전:"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "모두 선택"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "삭제"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "제조사"
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "인증서를 찾을 수 없습니다."
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "모두 선택"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "항목 선택"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "발급자:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "설치"
-
-msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "이미 사용 중인 별칭입니다. 고유한 별칭을 입력하세요."
-
-msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "별칭을 입력하세요"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "인증서를 찾았습니다"
-
-msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "인증서 상세정보"
-
-msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "인증서 정보"
-
-msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "인증 기관:"
-
-msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "키 별칭 입력:"
-
-msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "비밀번호 입력:"
-
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "외부 인증서"
-
-msgid "IDS_ST_BODY_FALSE"
-msgstr "거짓"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "SD 카드에 있는 인증서를 설치할까요?"
-
-msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "키 용도:"
-
-msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "기관:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "소유자:"
-
-msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "공개 키:"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "인증서를 선택하세요"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "설치할 인증서 선택"
-
-msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "서명 알고리즘:"
-
-msgid "IDS_ST_BODY_TRUE"
-msgstr "진실"
-
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "신뢰할 수 있는 루트 인증서"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "사용자 인증서"
-
-msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "유효기간 시작일:"
-
-msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "유효기간 만료일:"
-
-msgid "IDS_ST_BUTTON_OPEN"
-msgstr "열기"
-
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "일반 이름:"
-
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "비밀번호가 바르지 않습니다"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "내용이 없습니다"
-
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "데이터가 없습니다"
-
-msgid "IDS_ST_BUTTON_NO"
-msgstr "아니요"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d개 선택"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "예"
 
-msgid "IDS_ST_SK2_CANCEL"
-msgstr "취소"
-
-msgid "IDS_ST_SK2_OK"
-msgstr "확인"
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "인증서"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
 msgstr "클라이언트 인증서"
 
+msgid "IDS_ST_SK2_OK"
+msgstr "확인"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "취소"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "인증서를 설치하지 못하였습니다. 인증서가 바르지 않거나 만료되었거나 입력한 비밀번호가 바르지 않습니다."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "디바이스 저장공간과 SD 카드로부터 인증서를 설치합니다."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "인증서를 설치할 수 없음"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "인증서 검색 결과"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "열기"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "아니요"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "설치"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "취소"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "버전:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "유효기간 만료일:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "유효기간 시작일:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "사용자 인증서"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "신뢰할 수 있는 루트 CA 인증서"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "진실"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "서명 알고리즘:"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "시리얼 번호:"
 
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "인증서를 선택하세요."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "공개키:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "소유자:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "기관:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "데이터가 없습니다"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "내용이 없습니다"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "제조사"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "키 용도:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "발급자:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "발행자"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "비밀번호가 바르지 않습니다."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "거짓"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "외부 인증서"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "비밀번호 입력:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "키 별칭 입력:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "일반 이름:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "인증 기관:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "인증서 정보"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "인증서 상세정보"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "인증서를 찾았습니다."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "별칭을 입력하세요."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "이미 사용 중인 별칭입니다. 고유한 별칭을 입력하세요."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "소유자"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "인증서 삭제"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "완료"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "취소"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "인증서 삭제 중..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "인증서 1개를 삭제합니다."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "인증서 삭제 중..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "인증서 %d개를 삭제합니다."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
 msgstr "인증서 설치"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "인증서 관리"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "사용"
 

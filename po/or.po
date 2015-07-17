@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "ସମସ୍ତ ଚୟନ"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "ଅଣସଂସ୍ଥାପନ କରନ୍ତୁ"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "କୌଣସି ସାର୍ଟିଫିକେଟ୍ ମିଳିଲା ନାହିଁ।"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ଆଇଟମ୍‌ଗୁଡିକ ଚୟନ କରନ୍ତୁ"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%dଟି ଚୟନ ହୋଇଛି"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "ହଁ"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "ସାର୍ଟିଫିକେଟଗୁଡିକ"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "କ୍ଲାଏଣ୍ଟ ସାର୍ଟିଫିକେଟ୍"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ଓକେ"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ବାତିଲ୍"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "ସାର୍ଟିଫିକେଟ୍ ସଂସ୍ଥାପନ କରିବାକୁ ବିଫଳ ହୋଇଛି। ସାର୍ଟିଫିକେଟ୍ ଅବୈଧ ଅଟେ, ସମୟସୀମା ସମାପ୍ତ ହୋଇଛି, କିମ୍ଵା ଆପଣ ଏକ ଭୁଲ୍ ପାସ୍‌ୱାର୍ଡ୍ ପ୍ରବେଶ କରିଛନ୍ତି।"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ଡିଭାଇସ୍ ମେମୋରୀ ଏବଂ SD କାର୍ଡ୍ ଠାରୁ ସାର୍ଟିଫିକେଟ୍‌ଗୁଡିକ ସଂସ୍ଥାପିତ ହେବ।"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "ସାର୍ଟିଫିକେଟ୍ ସଂସ୍ଥାପନ କରିବାରେ ଅସମର୍ଥ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "ସାର୍ଟିଫିକେଟ୍ ସନ୍ଧାନ ଫଳାଫଳଗୁଡିକ"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "ଖୋଲନ୍ତୁ"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ନାଁ"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ସଂସ୍ଥାପନ"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ବାତିଲ୍"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "ସଂସ୍କରଣ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "କୁ ବୈଧ:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "ଠାରୁ ବୈଧ:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ଉପଭୋକ୍ତା ସାର୍ଟିଫିକେଟ୍‌ଗୁଡିକ"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "ବିଶ୍ଵସ୍ତ ରୁଟ୍ CA ସାର୍ଟିଫିକେଟ୍‌."
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "ସତ୍ୟ"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "ସ୍ଵାକ୍ଷର ଆଲଗୋରିଦିମ୍:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "କ୍ରମିକ ନମ୍ବର:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "ଗୋଟିଏ ସାର୍ଟିଫିକେଟ୍ ଚୟନ କରନ୍ତୁ।"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "ପବ୍ଲିକ୍ କୀ:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ମାଲିକ:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "ସଂସ୍ଥା:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "କୌଣସି ଡାଟା ନାହିଁ"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "କୌଣସି ସୂଚନା ନାହିଁ"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ନିର୍ମାତା"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "କୀ ବ୍ୟବହାର:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ଇସୁକାରୀ:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ଇଷ୍ୟୁକାରୀ"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "ଭୁଲ୍ ପାସୱାର୍ଡ୍"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "ମିଥ୍ୟା"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "ବାହ୍ୟ ସାର୍ଟିଫିକେଟ୍‌ଗୁଡିକ"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "ପାସୱାର୍ଡ ପ୍ରବେଶ କରନ୍ତୁ:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "କୀ ଛଦ୍ମନାମ ପ୍ରବେଶ କରନ୍ତୁ:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "ସାଧାରଣ ନାମ:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "ସାର୍ଟିଫିକେସନ୍ ପ୍ରାଧିକରଣ:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ସାର୍ଟିଫିକେଟ୍ ସୂଚନା"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "ସାର୍ଟିଫିକେଟ୍ ବିବରଣୀସମୂହ"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "ସାର୍ଟିଫିକେଟ୍ ମିଳିଲା।"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ଛଦ୍ମନାମ ଶୂନ୍ୟ ରହି ପାରିବ ନାହିଁ।"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "ଛଦ୍ମନାମ ପୂର୍ବରୁ ବିଦ୍ୟମାନ ଅଛି। ଏକ ସ୍ଵତନ୍ତ୍ର ଛଦ୍ମନାମ ପ୍ରବେଶ କରନ୍ତୁ"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "ମାଲିକ"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "ସାର୍ଟିଫିକେଟଗୁ. ଅଣସଂସ୍ଥାପନ କର."
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ସମାପ୍ତ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ବାତିଲ୍"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "ସାର୍ଟିଫିକେଟ୍‌ ଅଣସଂସ୍ଥାପନ କରୁଛି..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 ସାର୍ଟିଫିକେଟ୍ ଅଣସଂସ୍ଥାପନ ହେବ।"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "ସାର୍ଟିଫିକେଟଗୁଡିକ ଅଣସଂସ୍ଥାପନ କରୁଛି..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d ସାର୍ଟିଫିକେଟଗୁଡିକ ଅଣସଂସ୍ଥାପିତ ହେବ।"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "ସାର୍ଟିଫିକେଟ୍ ସଂସ୍ଥାପନ କର."
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "ସାର୍ଟିଫିକେଟଗୁ. ପରିଚାଳନା କର."
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "ଏହା ପାଇଁ ବ୍ୟବହୃତ"
+

@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Отказ"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Потребителски сертификати"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Сертификати"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Няма съдържание"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Версия:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Настройки"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Деинсталиране"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Общи"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Производител"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Поверителност"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Избери всички"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Клиентски сертификат"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Издател:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Инсталиране"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Собственик"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Псевдонимът вече съществува. Въведете уникален псевдоним"
+msgstr "Псевдонимът вече съществува. Въведете уникален псевдоним."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Псевдонимът не може да е празен"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Намерени сертификати"
+msgstr "Псевдонимът не може да е празен."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Детайли за сертификата"
@@ -37,8 +31,14 @@ msgstr "Детайли за сертификата"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Информация за сертификат"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Сертификати"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Издател на сертификата:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Общо име:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Въведете псевдоним на ключ:"
@@ -46,32 +46,35 @@ msgstr "Въведете псевдоним на ключ:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Въведете парола:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Външни сертификати"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Невярно"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Инсталиране на сертификати от SD карта?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Издал"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Издател:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Предназначение на ключа:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Няма данни"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Няма данни."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Организация:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Собственик:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Публичен ключ:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Изберете сертификата"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Избери всички"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Изберете сертификат за инсталиране"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Сериен номер:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Алгоритъм на подписа:"
@@ -79,11 +82,17 @@ msgstr "Алгоритъм на подписа:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "false"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Надеждни главни сертификати"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Потребителски сертификати"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Надеждни главни CA сертификати"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Надеждни главни CA сертификати"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Валидно от:"
@@ -91,39 +100,51 @@ msgstr "Валидно от:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Валидно до:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Версия:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Отказ"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Отказ"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Отказ"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Инсталиране"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Отвори"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Общо име:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Деинсталиране"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Грешна парола"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Резултати от търс. на сертиф."
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Няма съдържание"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Инсталиране на сертификат"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Няма данни"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d избрани"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Не"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Избор на елементи"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Да"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Сертифик. не може да се инст."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Сертификатите от паметта на устройството и SD картата ще бъдат инсталирани."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Неуспешно инсталиране на сертификата. Сертификатът е невалиден, изтекъл е или сте въвели неправилна парола."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Отказ"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Клиентски сертификат"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Сериен номер:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Инсталиране на сертификат"
 

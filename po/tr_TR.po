@@ -1,129 +1,177 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "İptal"
-
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Sertifikalar"
-
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Sürüm:"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Hepsini seç"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "Kaldır"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Üretici"
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "Sertifika bulunamadı"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Hepsini seç"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Öğeleri seç"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Düzenleyici:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Kur"
-
-msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Takma ad zaten var. Benzersiz bir takma ad seçin"
-
-msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Takma ad boş bırakılamaz"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Sertifikalar bulundu"
-
-msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "Sertifika detayları"
-
-msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "Sertifika bilgileri"
-
-msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "Sertifikasyon yetkisi:"
-
-msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "Anahtar takma adını girin:"
-
-msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "Şifreyi girin:"
-
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Harici sertifikalar"
-
-msgid "IDS_ST_BODY_FALSE"
-msgstr "Yanlış"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Sertifikalar SD kartından yüklensin mi?"
-
-msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "Anahtar kullanımı:"
-
-msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "Organizasyon:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Sahibi:"
-
-msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "Genel anahtar:"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr " Sertifika seç"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Yüklenecek sertifikayı seçin"
-
-msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "İmza algoritması:"
-
-msgid "IDS_ST_BODY_TRUE"
-msgstr "Doğru"
-
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Güvenilir kök sertifikalar"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Kullanıcı sertifikaları"
-
-msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "İlk geçerlilik tarihi:"
-
-msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "Son geçerlilik tarihi:"
-
-msgid "IDS_ST_BUTTON_OPEN"
-msgstr "Aç"
-
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Ortak isim:"
-
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Yanlış şifre"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "İçerik yok"
-
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Bulunamadı"
-
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Hayır"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d seçildi"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "Evet"
 
-msgid "IDS_ST_SK2_CANCEL"
-msgstr "İptal"
-
-msgid "IDS_ST_SK2_OK"
-msgstr "Tamam"
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Sertifikalar"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
 msgstr "İstemci sertifikası"
 
+msgid "IDS_ST_SK2_OK"
+msgstr "Tamam"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "İptal"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Sertifika yüklenemedi. Sertifika geçersiz, süresi dolmuş veya yanlış bir şifre girdiniz."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Sertifikalar cihaz belleği ve SD karttan yüklenecek"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Sertifika yüklenemedi"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Sertifika arama sonuçları"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Aç"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Hayır"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Kur"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "İptal"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Sürüm:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Son geçerlilik tarihi:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "İlk geçerlilik tarihi:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Kullanıcı sertifikaları"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Güvenilir kök CA sertifikaları"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Doğru"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "İmza algoritması:"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Seri numarası:"
 
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Sertifika seç."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Genel anahtar:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Sahibi:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organizasyon:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Veri yok"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "İçerik yok"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Üretici"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Anahtar kullanımı:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Düzenleyici:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr " Veren"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Şifre yanlış."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Yanlış"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Harici sertifikalar"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Şifreyi girin:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Anahtar takma adını girin:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Ortak isim:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Sertifikasyon yetkisi:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Sertifika bilgileri"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Sertifika detayları"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Sertifikalar bulundu."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Takma ad boş bırakılamaz."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Takma ad zaten var. Benzersiz bir takma ad seçin."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Sahip"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Sertifikaları kaldır"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "BİTTİ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "İPTAL"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Sertifika kaldırılıyor..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 sertifika kaldırılacak."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Sertifikalar kaldırılıyor..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d sertifika kaldırılacak."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
 msgstr "Sertifika yükle"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Sertifikaları yönet"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Şunun için kullanılmış"
 

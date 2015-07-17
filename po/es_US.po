@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Todo"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Desinstalar"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "No se encontró certificado."
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Seleccionar elementos"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d seleccionado(s)"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "Sí"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certificados"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certificado cliente"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "Aceptar"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "No se pudo instalar el certificado. El certificado no es válido, venció o introdujo una contraseña incorrecta."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Se instalarán certificados desde la tarjeta de memoria y la memoria del dispositivo."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "No es posible inst. certific."
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Certificar resultados de búsq."
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Abrir"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "No"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalar"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versión:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Válido hasta:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Válido desde:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificados de usuario"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Cert. raíz CA de confianza"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Verdadero"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritmo de firma:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Número de serie:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Seleccione el certificado."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Clave pública:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Propietario:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organización:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "No hay datos"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "No hay contenido"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricante"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Uso de la clave:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emisor:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emisor"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Contraseña incorrecta."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Falso"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificados externos"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Introducir contraseña:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Introducir alias de clave:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nombre común:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Autoridad de certificación:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Información del certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detalles de certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certificados encontrados."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "El campo alias no puede estar vacío."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Este alias ya existe. Introducir un alias único."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Propietario"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Desinstalar certificados"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "REALIZADO"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "CANCELAR"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Desinstalando certificado..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "Se desinstalará 1 certificado."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Desinstalando certificados..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "Se desinstalarán %d certificados."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "Instalar cert."
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Administrar certificados"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Se usa para"
+

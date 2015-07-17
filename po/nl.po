@@ -1,0 +1,150 @@
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Gebruikerscertificaten"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Geen inhoud"
+
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Instellingen"
+
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Algemeen"
+
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Privacy"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Clientcertificaat"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Eigenaar"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Alias bestaat al. Geef een unieke alias op."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Alias kan niet leeg zijn."
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Certificaatdetails"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Certificaatgegevens"
+
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificaten"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Certificeringsinstantie:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Algemene naam:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Sleutelalias invoeren:"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Wachtwoord invoeren:"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Onwaar"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Uitgever"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Uitgever:"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Sleutelgebruik:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Geen gegevens"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Geen gegevens beschikbaar."
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organisatie:"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Openbare sleutel:"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Alles selecteren"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serienummer:"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Handtekeningalgoritme:"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Waar"
+
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Vertrouwde CA-hoofdcertificaten"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Vertrouwde CA-hoofdcertificaten"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Geldig vanaf:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Geldig tot:"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versie:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Annuleer"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Annuleren"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Annul."
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Installeren"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Openen"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Verwijderen"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Zoekresultaten certificaat"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Certificaat installeren"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d geselecteerd"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Items selecteren"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Certificaat niet geïnstalleerd"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certificaten uit het apparaatgeheugen en de SD-kaart worden geïnstalleerd."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Installeren certificaat mislukt. Het certificaat is ongeldig of verlopen of u hebt een onjuist wachtwoord ingevoerd."
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Annul."
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+

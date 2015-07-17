@@ -1,7 +1,35 @@
 SET(POFILES
-    ar.po  ca.po  de_DE.po  en.po     es_MX.po  fi.po     ga.po  hi.po  hy.po  it_IT.po  kk.po     lv.po  nb.po     pl.po     ro.po     sl.po  th.po     uz.po     zh_HK.po
-    az.po  cs.po  el_GR.po  en_US.po  et.po     fr_CA.po  gl.po  hr.po  id.po  ja_JP.po  ko_KR.po  mk.po  nl_NL.po  pt_BR.po  ru_RU.po  sr.po  tr_TR.po  vi.po     zh_SG.po
-    bg.po  da.po  en_PH.po  es_ES.po  eu.po     fr_FR.po  he.po  hu.po  is.po  ka.po     lt.po     ms.po  no.po     pt_PT.po  sk.po     sv.po  uk.po     zh_CN.po  zh_TW.po
+as.po
+bn.po
+bn_BD.po
+en.po
+en_PH.po
+en_US.po
+es_US.po
+gu.po
+hi.po
+id.po
+km.po
+kn.po
+ko_KR.po
+lo.po
+ml.po
+mr.po
+ms.po
+my.po
+ne.po
+or.po
+pa.po
+pt_BR.po
+ru_RU.po
+si.po
+ta.po
+te.po
+th.po
+tl.po
+ur.po
+vi.po
+zh_CN.po
 )
 
 SET(MSGFMT "${TZ_SYS_BIN}/msgfmt")

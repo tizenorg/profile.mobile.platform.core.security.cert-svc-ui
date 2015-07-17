@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Atšaukti"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Vartotojo sertifikatai"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Sertifikatai"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Nėra turinio"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Versija:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Nustat."
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Pašalinti"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Bendri nustatymai"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Gamintojas"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Privatumas"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Pasirinkti viską"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Kliento sertifikatas"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Leidėjas:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Įdiegti"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Savininkas"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Alternatyvusis vardas jau yra. Įveskite unikalų alternatyvųjį vardą"
+msgstr "Alternatyvusis vardas jau yra. Įveskite unikalų alternatyvųjį vardą."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Alternatyviojo vardo laukelis negali būti tuščias"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Sertifikatai rasti"
+msgstr "Alternatyviojo vardo laukelis negali būti tuščias."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Sertifikato informacija"
@@ -37,8 +31,14 @@ msgstr "Sertifikato informacija"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Sertifikato informacija"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Sertifikatai"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Sertifikavimo įstaiga:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Bendrasis pavadinimas:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Įveskite rakto alternatyvųjį vardą:"
@@ -46,32 +46,35 @@ msgstr "Įveskite rakto alternatyvųjį vardą:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Įveskite slaptažodį:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Išoriniai sertifikatai"
-
 msgid "IDS_ST_BODY_FALSE"
-msgstr "Neteisinga"
+msgstr "Ne"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Įdiegti sertifikatus iš SD kortelės?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Leidėjas"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Leidėjas:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Rakto naudojimas:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Duomenų nėra"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Nėra galimų duomenų."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organizacija:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Savininkas:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Viešasis raktas:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Pasirinkite sertifikatą"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Pasirinkti visus"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Pasirinkite norimą įdiegti sertifikatą"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serijos numeris:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Parašo algoritmas:"
@@ -79,11 +82,17 @@ msgstr "Parašo algoritmas:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Tikr."
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Patikimi pagrindiniai sertifikatai"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Vartotojo sertifikatai"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Patikimi pagrindiniai CA sertifikatai"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Patikimi pagr. CA sertifikatai"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Galioja nuo:"
@@ -91,39 +100,51 @@ msgstr "Galioja nuo:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Galioja iki:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versija:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Atšaukti"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Atšaukti"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Atšaukti"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Įdiegti"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Atidaryti"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Bendrasis pavadinimas:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Pašalinti"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Neteisingas slaptažodis"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Sertifikato ieškos rezultatai"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Nėra turinio"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Įdiegti sertifikatą"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Duomenų nėra"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "Pasirinkta: %d"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ne"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Rinktis elementus"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Taip"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Negalima įdiegti sertifikato"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Bus įdiegti sertifikatai iš įrenginio atminties ir SD kortelės."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Nepavyko įdiegti sertifikato. Sertifikatas netinkamas, negaliojantis arba įvedėte neteisingą slaptažodį."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Atšaukti"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Gerai"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Kliento sertifikatas"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Serijos numeris:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Įdiegti sertifikatą"
 

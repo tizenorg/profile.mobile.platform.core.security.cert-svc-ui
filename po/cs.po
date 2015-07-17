@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Zrušit"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Uživatelské certifikáty"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certifikáty"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Žádný obsah"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Verze:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Nastavení"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Odinstalovat"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Obecné"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Výrobce"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Soukromí"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Vybrat vše"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Klientský certifikát"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Vydavatel:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Instalovat"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Vlastník"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Alias již existuje. Zadejte jedinečný alias"
+msgstr "Alias již existuje. Zadejte jedinečný alias."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Alias nesmí být prázdný"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Nalezeny certifikáty"
+msgstr "Alias nesmí být prázdný."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Detaily certifikátu"
@@ -37,8 +31,14 @@ msgstr "Detaily certifikátu"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Informace o certifikátu"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certifikáty"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Certifikační autorita:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Běžný název:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Zadejte klíčový alias:"
@@ -46,32 +46,35 @@ msgstr "Zadejte klíčový alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Zadejte heslo:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Externí certifikáty"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Nepravda"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instalovat certifikáty z SD karty?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Vydavatel"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Vydavatel:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Použití klíče:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Žádná data"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Žádná data k dispozici."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organizace:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Vlastník:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Veřejný klíč:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Vyberte certifikát"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Vybrat vše"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Vyberte certifikát k instalaci"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sériové číslo:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritmus podpisu:"
@@ -79,11 +82,17 @@ msgstr "Algoritmus podpisu:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Ano"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Důvěryhodné kořenové certifikáty"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Uživatelské certifikáty"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Důvěryhodné kořenové certifikáty CA"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Důvěryhodné koř. certifikáty CA"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Platí od:"
@@ -91,39 +100,51 @@ msgstr "Platí od:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Platí do:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Verze:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Storno"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Storno"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Zrušit"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalovat"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Otevřít"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Běžný název:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Odinstalovat"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Nesprávné heslo"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Výsledky hledání certifikátu"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Žádný obsah"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instalovat certifikát"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Žádná data"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "Vybráno %d"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ne"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Vyberte položky"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Ano"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Certifikát nelze nainstalovat"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Budou nainstalovány certifikáty z paměti zařízení a z SD karty."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Certifikát se nepodařilo nainstalovat. Certifikát je neplatný, vypršela jeho platnost nebo jste zadali chybné heslo."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Zrušit"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Klientský certifikát"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Sériové číslo:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Instalovat certifikát"
 

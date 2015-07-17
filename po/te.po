@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "అన్నీ ఎంచుకోండి"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "అన్‌ఇన్స్టాల్"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "సర్టిఫికేట్ కనుగొనబడలేదు."
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ఐటమ్‌లను ఎంచుకోండి"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ఎంచుకోబడింది"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "అవును"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "సర్టిఫికేట్‍లు"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "క్లయింట్ సర్టిఫికేట్"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "సరే"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "రద్దు చేయి"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "సర్టిఫికేట్‌ని ఇన్‌స్టాల్ చేయడంలో విఫలమైంది. సర్టిఫికేట్ చెల్లదు, గడవు ముగిసింది లేదా మీరు తప్పైన పాస్‌వర్డ్‌ని నమోదు చేసారు."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "పరికర మెమరీ మరియు SD కార్డు నుండి సర్టిఫికేట్‌లు ఇన్‌స్టాల్ చేయబడతాయి."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "సర్టిఫికేట్‌లను వ్యవస్థాపించలేరు"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "సర్టిఫికేట్ శోధన ఫలితాలు"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "తెరువు"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "కాదు"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "స్థాపించు"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "రద్దు"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "వెర్షన్:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "ఇప్పటి వరకు చెల్లుతుంది:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "ఇప్పటి నుండి చెల్లుతుంది:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "యూజర్ సర్టిఫికేట్లు"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "విశ్వసనీయ రూట్ CA సర్టిఫికేట్‌లు"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "నిజమైన"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "సంతకం అల్గారిథమ్:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "క్రమ సంఖ్య:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "సర్టిఫికెట్‌ను ఎంచుకోండి."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "పబ్లిక్ కీ:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "యజమాని:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "ఆర్గనైజేషన్:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "డేటా లేదు"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "కంటెంట్‌లు లేవు"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "తయారీదారు"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "కీ వాడకం:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "మంజూరు చేసినది:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "జారీదారు"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "తప్పు పాస్వర్డ్."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "తప్పు"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "బాహ్య ప్రమాణపత్రాలు"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "పాస్‌వర్డ్ నమోదు చేయండి:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "కీ మారుపేరు నమోదు చేయండి:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "సాధారణ పేరు:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "ప్రమాణపత్ర ప్రమాణీకరణ:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ప్రమాణపత్రం సమాచారం"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "సర్టిఫికేట్ వివరాలు"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "ప్రమాణపత్రాలు కనుగొనబడ్డాయి."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "మారుపేరు ఖాళీగా ఉండరాదు."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "మారుపేరు ఇప్పటికే ఉంది. ప్రత్యేక మారుపేరు నమోదు చేయండి"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "యజమాని"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "సర్టిఫికేట్‌లను అన్ఇన్‌స్టాల్ చేయండి"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "పూర్తయింది"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "రద్దు చేయి"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "సర్టిఫికేట్‌ని అన్ఇన్‌స్టాల్ చేస్తోంది..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 సర్టిఫికేట్ అన్ఇన్‌స్టాల్ చేయబడుతుంది."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "సర్టిఫికేట్‌లను అన్ఇన్‌స్టాల్ చేస్తోంది..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d సర్టిఫికేట్‌లు అన్ఇన్‌స్టాల్ చేయబడతాయి."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "సర్టిఫికేట్‌ను ఇన్‌స్టాల్ చేయండి"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "సర్టిఫికేట్‌లను నిర్వహించండి"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "దీని కోసం ఉపయోగించబడింది"
+

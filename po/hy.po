@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Չեղարկել"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Օգտվողի վկայականներ"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Վկայականներ"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Պարունակության բացակայություն"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Տարբերակ՝"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Պարամետրեր"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Ապատեղադրել"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Ընդհանուր"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Արտադրող"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Գաղտնիություն"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Ընտրել բոլորը"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Սպասառուի վկայական"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Թողարկող՝"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Տեղադրել"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Սեփականատեր"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Փոխանունն արդեն գոյություն ունի: Մուտքագրեք եզակի փոխանուն"
+msgstr "Փոխանունն արդեն գոյություն ունի: Մուտքագրեք եզակի փոխանուն:"
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Փոխանունը չի կարող դատարկ լինել"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Վկայականներ են գտնվել"
+msgstr "Փոխանունը չի կարող դատարկ լինել:"
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Վկայականի տվյալները"
@@ -37,8 +31,14 @@ msgstr "Վկայականի տվյալները"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Վկայականի տվյալներ"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Վկայականներ"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Վկայագրման կենտրոն՝"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Հասարակ անունը՝"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Մուտքագրեք բանալու փոխանուն՝"
@@ -46,32 +46,35 @@ msgstr "Մուտքագրեք բանալու փոխանուն՝"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Մուտքագրեք գաղտնաբառ՝"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Արտաքին վկայականներ"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Կեղծ"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Տեղադրե՞լ վկայականներ SD քարտից:"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Թողարկող"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Թողարկող՝"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Բանալու օգտագործում՝"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Տվյալներ չկան"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Տվյալները առկա չեն:"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Կազմակերպությունը՝"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Սեփականատեր՝"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Բաց բանալի՝"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Ընտրեք վկայականը"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Ընտրել բոլորը"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Ընտրել տեղադրելու վկայականը"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Սերիական համարը՝"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Ստորագրության ալգորիթմ՝"
@@ -79,11 +82,17 @@ msgstr "Ստորագրության ալգորիթմ՝"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Ստույգ"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Վստահելի արմատային վկայականներ"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Օգտվողի վկայականներ"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Վստահելի արմատային CA վկայագրեր"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Վստահելի արմատ. ՎԿ վկայականներ"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Վավեր է սկասած ...-ից"
@@ -91,39 +100,51 @@ msgstr "Վավեր է սկասած ...-ից"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Վավեր է մինչև՝"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Տարբերակ՝"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Չեղարկել"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Դադարեցնել"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Դադարեցնել"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Տեղադրել"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Բացել"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Հասարակ անունը՝"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Ապատեղադրել"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Սխալ գաղտնաբառ"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Վկայականի որոնման արդյունքներ"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Պարունակության բացակայություն"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Տեղադրել վկայականը"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Տվյալներ չկան"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ընտրված"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ոչ"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Ընտրել տարրեր"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Այո"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Անհնար է վկայական տեղադրել"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Սարքի հիշողությունից եւ SD քարտից վկայականները կտեղադրվեն:"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Չհաջողվեց տեղադրել վկայականը: Վկայականն անվավեր է, ժամկետանց է, կամ Դուք սխալ գաղտնաբառ եք մուտքագրել"
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Դադարեցնել"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Սպասառուի վկայական"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Սերիական համարը՝"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Տեղադրել վկայականը"
 

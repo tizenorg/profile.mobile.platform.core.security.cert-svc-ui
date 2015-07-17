@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "ເລືອກທັງໝົດ"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "ຖອນການຕິດຕັ້ງ"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "ບໍ່ພົບໃບຢັ້ງຢືນ"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ເລືອກລາຍການ"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ຖືກເລືອກ"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "ແມ່ນແລ້ວ"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "ໃບຢັ້ງຢືນ"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ໃບຢັ້ງຢືນລູກຄ້າ"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ຕົກລົງ"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ຍົກເລີກ"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "ຕິດຕັ້ງໃບຢັ້ງຢືນບໍ່ສໍາເລັດ. ໃບຢັ້ງຢືນໃຊ້ບໍ່ໄດ້, ໝົດອາຍຸ, ຫຼືທ່ານປ້ອນລະຫັດບໍ່ຖືກຕ້ອງ."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ໃບຢັ້ງຢືນຈາກຄວາມຈໍາເຄື່ອງ ແລະແຜ່ນ SD ຈະຖືກຕິດຕັ້ງ."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "ບໍ່ສາມາດຕິດຕັ້ງໃບຢັ້ງຢືນໄດ້"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "ຜົນໄດ້ຮັບການຄົ້ນຫາໃບຢັ້ງຢືນ"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "ເປີດ"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ບໍ່"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ຕິດຕັ້ງ"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ຍົກເລີກ"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "ສະບັບ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "ໃຊ້ໄດ້ເຖິງ:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "ນໍາໃຊ້ໄດ້ຈາກ:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ໃບຢັ້ງຢືນຜູ້ໃຊ້"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "ໃບຢັ້ງຢືນ CA root ທີ່ເຊື່ອຖືໄດ້"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "ແທ້"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "ວິທີແກ້ໄຂລາຍເຊັນ:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "ເລກລໍາດັບ:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "ເລືອກໃບຢັ້ງຢືນ."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "ປຸ່ມທົ່ວໄປ:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ເຈົ້າຂອງ:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "ອົງການຈັດຕັ້ງ:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "ບໍ່ມີຂໍ້ມູນ"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "ບໍ່ມີເນື້ອໃນ"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ຜູ້ຜະລິດ"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "ການນໍາໃຊ້ຕົ້ນຕໍ:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ຜູ້ອອກ:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ຜູ້ອອກໃຫ້"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "ລະຫັດ​ຜ່າ​ນບໍ່​ຖືກຕ້ອງ."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "ປອມ"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "ໃບຢັ້ງຢືນທາງນອກ"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "ໃສ່ລະຫັດເຂົ້າໄປ:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "ໃສ່ຊື່ຫຼິ້ນທີ່ສໍາຄັນເຂົ້າໄປ:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "ຊື່ສາມັນ:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "ອົງການອອກໃບຢັ້ງຢືນ:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ຂໍ້ມູນໃບຢັ້ງຢືນ"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Certificate details"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "ພົບໃບຢັ້ງຢືນ."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ບໍ່ສາມາດປ່ອຍໃຫ້ບ່ອນຊື່ຫຼິ້ນຫວ່າງເປົ່າໄດ້."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "ມີຊື່ຫຼິ້ນຢູ່ຮຽບຮ້ອຍແລ້ວ. ໃສ່ຊື່ຫຼິ້ນພິເສດເຂົ້າໄປ."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "ເຈົ້າຂອງ"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "ຖອນຕິດຕັ້ງໃບຢັ້ງຢືນ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ສໍາເລັດ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ຍົກເລີກ"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "ກໍາລັງຖອນຕິດຕັ້ງໃບຢັ້ງຢືນ..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "ຢັ້ງຢືນ 1 ໃບຈະຖືກຖອນຕິດຕັ້ງ."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "ກໍາລັງຖອນຕິດຕັ້ງໃບຢັ້ງຢືນ..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "ໃບຢັ້ງຢືນ %d ໃບຈະຖືກຖອນຕິດຕັ້ງ."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "ຕິດຕັ້ງໃບຢັ້ງຢືນ"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "ຈັດການໃບຢັ້ງຢືນ"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "ໃຊ້ສໍາລັບ"
+

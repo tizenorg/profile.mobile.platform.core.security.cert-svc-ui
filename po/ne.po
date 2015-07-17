@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "सबै छान्नुहोस्"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "विस्थापन गर्नुहोस्"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "कुनै प्रमाणपत्र फेला परेन।"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "वस्तुहरू चयन गर्नु"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d चयन गरियो"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "हो"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "प्रमाणपत्रहरू"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ग्राहक प्रमाणपत्र"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ठीक छ"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "प्रमाणपत्र स्थापना गर्न असफल भयो। प्रमाणपत्र अमान्य छ, मिति समाप्त भएको छ, वा तपाईले गलत पासवर्ड प्रविष्‍ट गर्नुभएको छ।"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "यन्त्र मेमोरी र SD कार्ड बाट प्रमाणपत्रहरू स्थापना गरिने छ।"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "प्रमाणपत्र स्थापना गर्न असमर्थ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "प्रमाणपत्र खोजी परिणामहरू"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "खोल्नुहोस्"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "होइन"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "स्थापना"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "संस्‍करण:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "यसको लागि मान्य:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "देखि मान्य:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "प्रयोगकर्ता प्रमाणपत्रहरू"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "विश्‍वसनीय मूल CA प्रमाणपत्रहरू"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "सत्य"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "हस्ताक्षर एल्गोरिदम:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "श्रृंखला संख्‍या:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "एउटा प्रमाणपत्र छान्नुहोस्।"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "सार्वजनिक कुञ्जी:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "मालिक:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "संगठन:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "कुनै डाटा छैन"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "कुनै सामग्री छैन"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "निर्माता"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "मुख्य प्रयोगहरू:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "निकास दिने:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "जारीकर्ता"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "गलत पासवर्ड।"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "बेठीक"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "बाह्य प्रमाणपत्रहरू"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "पासवर्ड प्रविष्टि गर्नुहोस्:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "कुञ्जी उपनाम प्रविष्टि गर्नुहोस्:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "आम नाम:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "प्रमाणीकरण अधिकारी:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "प्रमाणपत्र जानकारी"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "प्रमाणपत्र विवरण"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "प्रमाणपत्रहरू फेला पर्‍यो।"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "उपनाम खाली हुन सक्दैन।"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "उपनाम पहिले नै उपस्थित छ। उपनाम प्रविष्टि गर्नुहोस्"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "मालिक"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "प्रमाणपत्रहरूको स्थापना रद्द गर्नुहोस्"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "भयो"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "रद्द गर्नुहोस्"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "प्रमाणपत्रको स्थापना रद्द गर्दै..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 प्रमाणपत्रको स्थापना रद्द गरिनेछ।"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "प्रमाणपत्रहरूको स्थापना रद्द गर्दै..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d प्रमाणपत्रहरूको स्थापना रद्द गरिनेछ।"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "प्रमाणपत्र स्थापना गर्नुहोस्"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "प्रमाणपत्रहरू व्यवस्थित गर्नुहोस्"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "यसको लागि प्रयोग गरिन्छ"
+

@@ -31,7 +31,7 @@
 #include <cert-svc/cinstance.h>
 
 #ifndef PACKAGE
-#define PACKAGE "ug-setting-manage-certificates-efl"
+#define PACKAGE "setting-manage-certificates-efl"
 #endif
 
 #ifndef LOCALEDIR
@@ -56,6 +56,7 @@ struct ug_data {
     ui_gadget_h         sub_ug;
     void                *data;
     Evas_Object         *popup;
+    Evas_Object         *more_popup2;
     Elm_Theme 			*theme;
 
     Evas_Object         *list_to_refresh;

@@ -29,46 +29,87 @@
 #include "certificates/certificates.h"
 
 static void install_pfx_button_cb (void *data, Evas_Object *obj, void *event_info);
+static char *_gl_text_get(void *data, Evas_Object *obj, const char *part);
+
+static Elm_Genlist_Item_Class itc_2text = {
+        .item_style = "1line",
+        .func.text_get = _gl_text_get,
+        .func.del = NULL
+};
+
+static char *_gl_text_get(void *data, Evas_Object *obj, const char *part) {
+
+    char * title = (char *) data;
+    if (!strcmp(part, "elm.text.main.left")) {
+        return strdup(title);
+    }
+    return NULL;
+}
 
 static void _clear_list (struct ListElement *listElement){
     deleteList(listElement);
 }
 
 static Eina_Bool _back_cb(void *data, Elm_Object_Item *it) {
-    if(NULL != data)
-		_clear_list((struct ListElement *) data);
+	LOGD("back_cb");
+
+	struct ug_data *ad = (struct ug_data *) data;
+	if (ad!=NULL)
+	{
+		_clear_list(ad->list_element);
+		ad->list_element = NULL;
+		ad->more_popup2 = NULL;
+		data = NULL;
+	}
 	return EINA_TRUE;   
 }
 
 static struct ListElement* scan_dir(const char * dir_path, Evas_Object *list, struct ListElement *lastListElement){
 
-    DIR                *dir;
+    DIR                *dir = NULL;
     struct dirent      *dp;
+    struct dirent      entry;
     Elm_Object_Item    *it;
     struct ListElement *current;
 
     dir = opendir(dir_path);
     if (dir == NULL) {
         LOGE("There's no such directory: %s", dir_path);
-        return lastListElement;
+        goto error;
     }
     LOGD("Scanning dir (%s) - looking for certs", dir_path);
-    while ((dp = readdir(dir)) != NULL) {
+    while ( readdir_r(dir, &entry, &dp) == 0  && dp != NULL) {
         char *tmp = NULL;
+	    char * dname = NULL;
+
         tmp = path_cat(dir_path, dp->d_name);
         char *dot = strrchr(dp->d_name, '.');
 
         if (dot != NULL && strlen(dot) > 3
                 && (strncmp(dot, ".pfx", 4) == 0 || strncmp(dot, ".PFX", 4) == 0 || strncmp(dot, ".p12", 4) == 0
-                        || strncmp(dot, ".P12", 4) == 0)) {
+                        || strncmp(dot, ".P12", 4) == 0 || strncmp(dot, ".crt", 4) == 0 || strncmp(dot, ".CRT", 4) == 0 || strncmp(dot, ".pem", 4) == 0 || strncmp(dot, ".PEM", 4) == 0)) {
             if (!(dp->d_type == DT_DIR)) {
                 current = addListElementWithPath(lastListElement, dp->d_name, dir_path);
+                if(current == NULL) {
+                    LOGE("Null value return from addListElementWithPath");
+                    goto error;
+                }
                 lastListElement = current;
-                it = elm_list_item_append(list, dp->d_name, NULL, NULL, install_pfx_button_cb, current);
+                dname = (char *) malloc(strlen(dp->d_name)+1);
+                if(dname == NULL) {
+                    LOGE("Fail to allocate memory");
+                    goto error;
+                }
+                strncpy(dname, dp->d_name, strlen(dp->d_name)+1);
+
+                if(strncmp(dot, ".crt", 4) == 0 || strncmp(dot, ".pem", 4) == 0)
+                    it = elm_genlist_item_append(list, &itc_2text, (void *)dname, NULL, ELM_GENLIST_ITEM_NONE, put_pkcs12_name_cb, current);
+                else
+                    it = elm_genlist_item_append(list, &itc_2text, (void *)dname, NULL, ELM_GENLIST_ITEM_NONE, install_pfx_button_cb, current);
+
                 if (!it){
                     LOGE("Error in elm_list_item_append");
                 }
-
                 SECURE_LOGD("elm list append     = %s", current->name);
                 SECURE_LOGD("elm list append dir = %s", current->path);
             }
@@ -79,10 +120,20 @@ static struct ListElement* scan_dir(const char * dir_path, Evas_Object *list, st
             tmp = NULL;
         }
     }
-    closedir(dir);
-    dir = NULL;
+
+error:
+    if(dir != NULL) {
+        closedir(dir);
+        dir = NULL;
+    }
 
     return lastListElement;
+}
+
+static void _dismissed_cb(void *data, Evas_Object *obj, void *event_info) {
+
+	evas_object_smart_callback_del(obj,"dismissed", _dismissed_cb);
+	evas_object_del(obj);
 }
 
 Elm_Object_Item* pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_info) {
@@ -92,38 +143,49 @@ Elm_Object_Item* pfx_cert_install_cb(void *data, Evas_Object *obj, void *event_i
         return NULL;
     }
     struct ug_data *ad   = (struct ug_data *) data;
+
+    if (ad!=NULL)
+    	_dismissed_cb(data, obj, event_info);
+
     Evas_Object    *list = NULL;
 
     struct ListElement *firstListElement = initList();
     struct ListElement *lastListElement  = firstListElement;
+    ad->list_element = lastListElement;
 
-    list = elm_list_add(ad->win_main);
+    list = elm_genlist_add(ad->win_main);
     elm_list_mode_set(list, ELM_LIST_COMPRESS);
+    elm_genlist_mode_set(list, ELM_LIST_COMPRESS);
+	evas_object_smart_callback_add(list, "selected", genlist_clicked_cb, NULL);
 
     lastListElement = scan_dir(PATH_SDCARD, list, lastListElement);
-
     lastListElement = scan_dir(PATH_MEDIA, list, lastListElement);
     scan_dir(PATH_MEDIA_DOWNLOADS, list, lastListElement);
 
     Elm_Object_Item *navi_it = NULL;
-    if(firstListElement->next) {
-		navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"), NULL, NULL, list, NULL);
-    }
-    else { //No content
-        Evas_Object *no_content = create_no_content_layout(ad);
 
-        if(!no_content){
-            LOGD("pfx_cert_install_cb: Cannot create no_content layout (NULL); return");
-            return NULL;
+    if(firstListElement != NULL) {
+        if(firstListElement->next) {
+            navi_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB", NULL, NULL, list, NULL);
         }
-		navi_it = elm_naviframe_item_push(ad->navi_bar, dgettext(PACKAGE, "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"), NULL, NULL, no_content, NULL);
+        else { //No content
+            Evas_Object *no_content = create_no_content_layout(ad);
+
+            if(!no_content){
+                LOGD("pfx_cert_install_cb: Cannot create no_content layout (NULL); return");
+                return NULL;
+            }
+            navi_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB", NULL, NULL, no_content, NULL);
+       }
     }
+
+    elm_object_item_domain_text_translatable_set(navi_it, PACKAGE, EINA_TRUE);
 
     if (ad->type_of_screen == PKCS12_SCREEN) {
     	elm_naviframe_item_pop_cb_set(navi_it, quit_cb, ad);
     }
     else {
-    	elm_naviframe_item_pop_cb_set(navi_it, _back_cb, NULL);
+    	elm_naviframe_item_pop_cb_set(navi_it, _back_cb, ad);
     }
 
     LOGD("pfx_cert_install_cb : EXIT");

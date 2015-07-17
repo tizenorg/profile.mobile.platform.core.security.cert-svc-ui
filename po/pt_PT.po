@@ -1,129 +1,177 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Cancelar"
-
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certificados"
-
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Versão:"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Seleccionar tudo"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "Desinstalar"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Fabricante"
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "Nenhum certificado encontrado."
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Seleccionar tudo"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Seleccionar itens"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Emissor:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Instalar"
-
-msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Pseudónimo já existe. Introduza um pseudónimo único"
-
-msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "O pseudónimo não pode estar vazio"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certificados encontrados"
-
-msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "Detalhes do certificado"
-
-msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "Informação do certificado"
-
-msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "Autoridade de certificação:"
-
-msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "Introduzir pseudónimo principal:"
-
-msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "Introduzir palavra-passe:"
-
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificados externos"
-
-msgid "IDS_ST_BODY_FALSE"
-msgstr "Falso"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instalar certificados do cartão SD?"
-
-msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "Utilização do código:"
-
-msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "Organização:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Proprietário:"
-
-msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "Código público:"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Seleccione o certificado"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Seleccionar certificado para instalar"
-
-msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "Algoritmo de assinatura:"
-
-msgid "IDS_ST_BODY_TRUE"
-msgstr "Verdadeiro"
-
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Certificados raiz fidedignos"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Certificados de utilizador"
-
-msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "Válido de:"
-
-msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "Válido até:"
-
-msgid "IDS_ST_BUTTON_OPEN"
-msgstr "Aberta"
-
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Nome comum:"
-
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Palavra-passe incorrecta"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Sem conteúdo"
-
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Sem dados"
-
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Não"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d selecionado(s)"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "Sim"
 
-msgid "IDS_ST_SK2_CANCEL"
-msgstr "Cancelar"
-
-msgid "IDS_ST_SK2_OK"
-msgstr "OK"
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certificados"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
 msgstr "Certificado cliente"
 
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Falha ao instalar o certificado. O certificado é inválido, expirou ou introduziu uma palavra-passe incorrecta."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Serão instalados certificados da memória do dispositivo e do cartão SD."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Imposs. instalar certificado"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Resultad. procura certificados"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Aberta"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Não"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalar"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versão:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Válido até:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Válido de:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificados de utilizador"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Certificados CA raiz fidedignos"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Verdadeiro"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Algoritmo de assinatura:"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Número de série:"
 
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Instalar certificado"
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Seleccione o certificado."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Código público:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Proprietário:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organização:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Sem dados"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Sem conteúdo"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Fabricante"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Utilização do código:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emissor:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emissor"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Palavra-passe incorrecta."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Falso"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Certificados externos"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Introduzir palavra-passe:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Introduzir pseudónimo principal:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nome comum:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Autoridade de certificação:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Informação do certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Detalhes do certificado"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certificados encontrados."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "O pseudónimo não pode estar vazio."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Pseudónimo já existe. Introduza um pseudónimo único."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Proprietário"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Desinstalar certificados"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "CONCLUÍDO"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "CANCELAR"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "A desinstalar certificado..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 certificado será desinstalado."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "A desinstalar certificados..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d certificados serão desinstalados."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "Instal. certificado"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Gerir certificados"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Utilizado para"
 

@@ -1,129 +1,177 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Cancel"
-
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certificates"
-
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Version:"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Select all"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "Uninstall"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Manufacturer"
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "No certificate found."
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Select all"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Select items"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Issuer:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Install"
-
-msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Alias already exists. Enter a unique alias"
-
-msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Alias cannot be empty"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certificates found"
-
-msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "Certificate details"
-
-msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "Certificate information"
-
-msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "Certification authority:"
-
-msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "Enter key alias:"
-
-msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "Enter password:"
-
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "External certificates"
-
-msgid "IDS_ST_BODY_FALSE"
-msgstr "False"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Install certificates from SD card?"
-
-msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "Key usage:"
-
-msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "Organization:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Owner:"
-
-msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "Public key:"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Select a certificate"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Select certificate to install"
-
-msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "Signature algorithm:"
-
-msgid "IDS_ST_BODY_TRUE"
-msgstr "True"
-
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Trusted root CA certificates"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "User certificates"
-
-msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "Valid from:"
-
-msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "Valid to:"
-
-msgid "IDS_ST_BUTTON_OPEN"
-msgstr "Open"
-
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Common name:"
-
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Incorrect password"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "No contents"
-
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "No data"
-
-msgid "IDS_ST_BUTTON_NO"
-msgstr "No"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d selected"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "Yes"
 
-msgid "IDS_ST_SK2_CANCEL"
-msgstr "Cancel"
-
-msgid "IDS_ST_SK2_OK"
-msgstr "OK"
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Certificates"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
 msgstr "Client certificate"
 
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Cancel"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Failed to install the certificate. The certificate is invalid, has expired or you have entered an incorrect password."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certificates from the device memory and SD card will be installed."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Unable to install certificate"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Certificate search results"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Open"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "No"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Install"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancel"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Version:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Valid to:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Valid from:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "User certificates"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Trusted root CA certificates"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "True"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Signature algorithm:"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "Serial number:"
 
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Select a certificate."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Public key:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Owner:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Organization:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "No data"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "No contents"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Manufacturer"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Key usage:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Issuer:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Issuer"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Incorrect password."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "False"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "External certificates"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Enter password:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Enter key alias:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Common name:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Certification authority:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Certificate information"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Certificate details"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Certificates found."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Alias cannot be empty."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Alias already exists. Enter a unique alias"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Owner"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Uninstall certificates"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "DONE"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "CANCEL"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Uninstalling certificate..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 certificate will be uninstalled."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Uninstalling certificates..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d certificates will be uninstalled."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
 msgstr "Install certificate"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Manage certificates"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Used for"
 

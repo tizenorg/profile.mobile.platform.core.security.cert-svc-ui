@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Prekliči"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certifikati uporabnika"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certifikati"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Ni vsebine"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Različica:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Nastavitve"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Odstrani"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Splošno"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Proizvajalec"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Zasebnost"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Izberi vse"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certifikat odjemalca"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Izdajatelj:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Namesti"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Lastnik"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Vzdevek že obstaja. Izberite enoličen vzdevek"
+msgstr "Vzdevek že obstaja. Izberite enoličen vzdevek."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Vzdevek ne sme biti prazen"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certifikati so najdeni"
+msgstr "Vzdevek ne sme biti prazen."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Podrobnosti certifikata"
@@ -37,8 +31,14 @@ msgstr "Podrobnosti certifikata"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Podatki o certifikatu"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certifikati"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Overovitelj certifikata:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Skupno ime:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Vnesite ključ vzdevka:"
@@ -46,32 +46,35 @@ msgstr "Vnesite ključ vzdevka:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Vnesite geslo:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Zunanji certifikati"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Napačno"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Želite namestiti certifikate iz kartice SD?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Izdajatelj"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Izdajatelj:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Uporaba ključa:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Ni podatkov"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Podatki niso na voljo."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organizacija:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Lastnik:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Javni ključ:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Izberite certifikat"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Izberi vse"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Izberite certifikat za namestitev"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serijska številka:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritem podpisa:"
@@ -79,11 +82,17 @@ msgstr "Algoritem podpisa:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Resnično"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Zaupanja vredni korenski certifikati"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Certifikati uporabnika"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Zaupanja vredni korenski certifikati CA"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Zaupanja vredni koren. cert. CA"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Veljavno od:"
@@ -91,39 +100,51 @@ msgstr "Veljavno od:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Veljavno do:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Različica:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Prekliči"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Prekliči"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Prekliči"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Namesti"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Odpri"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Skupno ime:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Odstrani"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Napačno geslo"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Rezultati iskanja certifikata"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Ni vsebine"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Namestite certifikat"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Ni podatkov"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d izbranih"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ne"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Izberite elemente"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Da"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Certifik. ni mogoče namestiti"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certifikati iz pomnilnika naprave in kartice SD bodo nameščeni."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Certifikata ni uspelo namestiti. Certifikat ni veljaven, je potekel ali pa ste vnesli napačno geslo."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Prekliči"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "V redu"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Certifikat odjemalca"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Serijska številka:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Namestite certifikat"
 

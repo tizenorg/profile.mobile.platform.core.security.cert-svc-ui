@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Avbryt"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Användarcertifikat"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certifikat"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Inget innehåll"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Version:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Inställningar"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Avinstallera"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Allmänt"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Tillverkare"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Privat"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Välj alla"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Klientcertifikat"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Utfärdare:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Installera"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Ägare"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Detta alias finns redan. Ange ett unikt alias"
+msgstr "Detta alias finns redan. Ange ett unikt alias."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Alias kan inte vara tomt"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certifikat hittades"
+msgstr "Alias kan inte vara tomt."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Certifikatinformation"
@@ -37,8 +31,14 @@ msgstr "Certifikatinformation"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Certifikatinformation"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certifikat"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Certifikatutfärdare:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Allmänt namn:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Ange nyckelalias:"
@@ -46,32 +46,35 @@ msgstr "Ange nyckelalias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Ange lösenord:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Externa certifikat"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Falsk"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Installera certifikat från SD-kort?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Utfärdare"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Utfärdare:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Nyckelanvändning:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Inga data"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Inga tillgängliga data."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organisation:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Ägare:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Offentlig nyckel:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Välj ett certifikat"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Välj alla"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Välj certifikat som du önskar installera"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serienummer:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Signaturalgoritm:"
@@ -79,11 +82,17 @@ msgstr "Signaturalgoritm:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Rätt"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Tillförlitliga rotcertifikat"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Användarcertifikat"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Tillförlitliga rot-CA-certifikat"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Betrodda rot-CA-certifikat"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Giltig från:"
@@ -91,39 +100,51 @@ msgstr "Giltig från:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Giltig för:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Version:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Installera"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Öppna"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Allmänt namn:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Avinstallera"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Fel lösenord"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Certifiera sökresultat"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Inget innehåll"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Installera certifikat"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Inga data"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d valda"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Nej"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Välj objekt"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Ja"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Kan inte installera certifikat"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certifikat från enhetsminnet och SD-kortet kommer att installeras."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Det gick inte att installera certifikatet. Certifikatet är ogiltigt, har upphört att gälla eller så har du angett ett felaktigt lösenord."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Avbryt"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Klientcertifikat"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Serienummer:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Installera certifikat"
 

@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Anulare"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificate utilizator"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certificate"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Conţinuturi inexistente"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Versiune:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Setări"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Dezinstalare"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "General"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Fabricant"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Confidenţialitate"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Selectare toate"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certificat client"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Emitent:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Instalare"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Proprietar"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Aliasul există deja. Introduceţi un alias unic"
+msgstr "Aliasul există deja. Introduceţi un alias unic."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Aliasul nu poate fi necompletat"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certificate găsite"
+msgstr "Aliasul nu poate fi necompletat."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Detalii certificat"
@@ -37,8 +31,14 @@ msgstr "Detalii certificat"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Informaţii certificat"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificate"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Autoritate de certificare:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nume comun:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Introduceţi aliasul cheie:"
@@ -46,32 +46,35 @@ msgstr "Introduceţi aliasul cheie:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Introduceţi parola:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificate externe"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Fals"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instalaţi certificate de pe cardul SD?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Emitent"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Emitent:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Utilizare cheie:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Nu există date"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Nicio dată disponibilă"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organizaţie:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Deţinător:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Cheie publică:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Selectaţi certificatul"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Selectare toate"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Selectaţi certificatul de instalat"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Număr de serie:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritmul semnăturii:"
@@ -79,11 +82,17 @@ msgstr "Algoritmul semnăturii:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Adevărat"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Certificate rădăcină de încredere"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Certificate utilizator"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Certificate CA rădăcină de încredere"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Certif. CA rădăcină de încred."
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Valid de la:"
@@ -91,39 +100,51 @@ msgstr "Valid de la:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Valid pentru:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versiune:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Anulare"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Anulare"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Anulare"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalare"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Deschidere"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Nume comun:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Dezinstalare"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Parolă incorectă"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Rezultate căutare certificat"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Conţinuturi inexistente"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instalare certificat"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Nu există date"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d selectate"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Nu"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Selectare elemente"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Da"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Certif. nu poate fi instalat"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Certificatele din memoria dispozitivului şi de pe cardul SD vor fi instalate."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Certificatul nu a putut fi instalat. Certificatul este nevalid, a expirat sau aţi introdus o parolă greşită."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Anulare"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Certificat client"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Număr de serie:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Instalare certificat"
 

@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "ਸਭ ਚੁਣੋ"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "ਅਣਸਥਾਪਿਤ ਕਰੋ"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "ਕੋਈ ਪ੍ਰਮਾਣਪੱਤਰ ਨਹੀਂ ਮਿਲਿਆ।"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ਆਈਟਮਾਂ ਚੁਣੋ"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ਚੁਣੇ"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "ਹਾਂ"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ਗਾਹਕ ਪ੍ਰਮਾਣਪੱਤਰ"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ਓਕੇ"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ਰੱਦ ਕਰੋ"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਨੂੰ ਸਥਾਪਿਤ ਕਰਨ ਵਿੱਚ ਅਸਫਲ। ਪ੍ਰਮਾਣਪੱਤਰ ਅਵੈਧ ਹੈ, ਉਸਦੀ ਮਿਆਦ ਸਮਾਪਤ ਹੋ ਗਈ ਹੈ ਜਾਂ ਤੁਸੀਂ ਕੋਈ ਗਲਤ ਪਾਸਵਰਡ ਦਾਖਲ ਕੀਤਾ ਹੈ।"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ਡਿਵਾਈਸ ਮੈਮਰੀ ਅਤੇ SD ਕਾਰਡ ਦੇ ਪ੍ਰਮਾਣਪੱਤਰ ਸਥਾਪਿਤ ਕੀਤੇ ਜਾਣਗੇ।"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਸਥਾਪਤ ਕਰਨ 'ਚ ਅਸਮਰੱਥ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਖੋਜ ਨਤੀਜੇ"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "ਖੋਲ੍ਹੋ"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ਨਹੀਂ"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ਸਥਾਪਿਤ ਕਰੋ"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ਰੱਦ"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "ਸੰਸਕਰਣ:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "ਇਸ ਤੇ ਯੋਗ:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "ਵੈਧਤਾ ਤੋਂ:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ਉਪਭੋਗੀ ਪ੍ਰਮਾਣਪੱਤਰ"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "ਵਿਸ਼ਵਾਸਯੋਗ ਰੂਟ CA ਪ੍ਰਮਾਣਪੱਤਰ"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "ਸਹੀ"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "ਹਸਤਾਖਰ ਅਲਗੋਰਿਦਮ:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "ਸੀਰੀਅਲ ਨੰਬਰ:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਚੁਣੋ।"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "ਜਨਤਕ ਕੁੰਜੀ:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ਮਾਲਕ:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "ਸੰਗਠਨ:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "ਕੋਈ ਡੈਟਾ ਨਹੀਂ"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "ਕੋਈ ਸਮੱਗਰੀ ਨਹੀਂ ਹੈ"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ਉਤਪਾਦਕ"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "ਕੁੰਜੀ ਉਪਯੋਗ:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ਜਾਰੀਕਰਤਾ:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ਜਾਰੀਕਰਤਾ"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "ਗਲਤ ਪਾਸਵਰਡ।"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "ਗਲਤ"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "ਬਾਹਰੀ ਪ੍ਰਮਾਣਪੱਤਰ"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "ਪਾਸਵਰਡ ਦਾਖ਼ਲ ਕਰੋ:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "ਕੁੰਜੀ ਉਪਨਾਮ ਦਾਖ਼ਲ ਕਰੋ:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "ਸਧਾਰਨ ਨਾਂ:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਅਧਿਕਾਰ:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਜਾਣਕਾਰੀ"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਵੇਰਵੇ"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਮਿਲੇ।"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ਉਪਨਾਮ ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ।"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "ਉਪਨਾਮ ਪਹਿਲਾਂ ਤੋਂ ਮੌਜੂਦ ਹੈ। ਕੋਈ ਵਿਲੱਖਣ ਉਪਨਾਮ ਦਾਖ਼ਲ ਕਰੋ।"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "ਮਾਲਕ"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰਾਂ ਨੂੰ ਅਣਸਥਾਪਿਤ ਕਰੋ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ਪੂਰਨ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ਰੱਦ ਕਰੋ"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਨੂੰ ਅਣਸਥਾਪਿਤ ਕਰ ਰਿਹਾ ਹੈ..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 ਪ੍ਰਮਾਣਪੱਤਰ ਅਣਸਥਾਪਿਤ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰਾਂ ਨੂੰ ਅਣਸਥਾਪਿਤ ਕਰ ਰਿਹਾ ਹੈ..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d ਪ੍ਰਮਾਣਪੱਤਰ ਅਣਸਥਾਪਿਤ ਹੋ ਜਾਣਗੇ।"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਸਥਾਪਿਤ ਕਰੋ"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "ਪ੍ਰਮਾਣਪੱਤਰ ਪ੍ਰਬੰਧਿਤ ਕਰੋ"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "ਇਸਦੇ ਲਈ ਉਪਯੋਗ ਕੀਤਾ ਗਿਆ"
+

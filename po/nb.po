@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Avbryt"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Brukersertifikater"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Sertifikater"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Ikke noe innhold"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Versjon:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Innstillinger"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Avinstaller"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Generelt"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Produsent"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Personvern"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Merk alt"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Klientsertifikat"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Utgiver:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Installer"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Eier"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Aliaset finnes allerede. Angi et unikt alias"
+msgstr "Aliaset finnes allerede. Angi et unikt alias."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Alias kan ikke stå tomt"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Sertifikater funnet"
+msgstr "Alias kan ikke stå tomt."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Sertifikatdetaljer"
@@ -37,8 +31,14 @@ msgstr "Sertifikatdetaljer"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Sertifikatinformasjon"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Sertifikater"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Sertifiseringsautoritet:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Felles navn:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Angi nøkkelalias:"
@@ -46,32 +46,35 @@ msgstr "Angi nøkkelalias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Skriv inn passord:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Eksterne sertifikater"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Usann"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Installere sertifikater fra SD-kort?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Utstedt av"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Utgiver:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Nøkkelbruk:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Ingen data"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Ingen data tilgjengelig."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organisasjon:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Eier:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Offentlig nøkkel:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Velg sertifikatet"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Merk alt"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Velg hvilket sertifikat du vil installere"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serienummer:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Signaturalgoritme:"
@@ -79,11 +82,17 @@ msgstr "Signaturalgoritme:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Sann"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Klarerte rotsertifikater"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Brukersertifikater"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Klarerte CA-rotsertifikater"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Klarerte CA-rotsertifikater"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Gyldig fra:"
@@ -91,39 +100,51 @@ msgstr "Gyldig fra:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Gyldig til:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versjon:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Avbryt"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Installer"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Åpne"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Felles navn:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Avinstaller"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Feil passord"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Resultater for sertifikatsøk"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Ikke noe innhold"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Installer sertifikat"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Ingen data"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d er valgt"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Nei"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Velg elementer"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Ja"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Kan ikke inst. sertifikatet"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Sertifikater fra enhetsminne og SD-kort vil bli installert."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Kunne ikke installere sertifikatet. Sertifikatet er ugyldig eller har utløpt, eller du har skrevet inn feil passord."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Avbryt"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Klientsertifikat"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Serienummer:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Installer sertifikat"
 

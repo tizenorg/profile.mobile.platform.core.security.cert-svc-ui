@@ -1,26 +1,23 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "キャンセル"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ユーザー証明書"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "証明書"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "コンテンツがありません。"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "バージョン:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "設定"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "削除"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "一般"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "製造社"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "プライバシー"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "全て選択"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "クライアント証明書"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "発行者:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "インストール"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "所有者"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
 msgstr "このエイリアスは既に存在しています。他と重複しないエイリアスを入力してください。"
@@ -28,17 +25,20 @@ msgstr "このエイリアスは既に存在しています。他と重複しな
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
 msgstr "別名は空欄にできません。"
 
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "証明書が見つかりました。"
-
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "証明書​の​詳細"
 
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "証明書情報"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "証明書"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "認証機関:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "コモンネーム:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "キーの別名を入力:"
@@ -46,32 +46,35 @@ msgstr "キーの別名を入力:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "パスワードを入力:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "外部証明書"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "False"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "SDカードから証明書をインストールしますか？"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "発行者"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "発行者:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "キー使用法:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "データがありません。"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "使用可能なデータがありません。"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "組織名:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "所有者:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "公開キー:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "証明書を選択してください。"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "全て選択"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "インストールする証明書を選択"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "シリアル番号:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "署名アルゴリズム:"
@@ -79,11 +82,17 @@ msgstr "署名アルゴリズム:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "True"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "信頼されたルート証明書"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True colour ON you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "ユーザー証明書"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour ON you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "信頼されたルートCA証明書"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "信頼されたルートCA証明書"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "有効期限の開始:"
@@ -91,39 +100,51 @@ msgstr "有効期限の開始:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "有効期限の終了:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "バージョン:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "キャンセル"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "ｷｬﾝｾﾙ"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "キャンセル"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "インストール"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "開く"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "コモンネーム:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "削除"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "パスワードが正しくありません。"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "証明書の検索結果"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "コンテンツがありません。"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "証明書をインストール"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "データがありません。"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d件選択"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "いいえ"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "アイテムを選択"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "はい"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "証明書のインストールに失敗"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "システムメモリ(本体)と外部SDカードから証明書をインストールします。"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "証明書のインストールに失敗しました。無効または期限切れの証明書であるか、正しくないパスワードが入力されました。"
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "キャンセル"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "クライアント証明書"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "シリアル番号:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "証明書をインストール"
 

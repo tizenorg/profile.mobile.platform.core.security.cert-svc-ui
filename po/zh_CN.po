@@ -1,129 +1,177 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "取消"
-
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "证书"
-
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "版本:"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "全选"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "卸载"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "制造商"
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "找不到证书"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "全选"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "选择项目"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "颁发者："
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "安装"
-
-msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "别名已存在。输入唯一的别名"
-
-msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "别名无法为空"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "已找到证书"
-
-msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "证书详情"
-
-msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "证书信息"
-
-msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "认证机构："
-
-msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "输入密钥别名："
-
-msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "输入密码："
-
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "外部证书"
-
-msgid "IDS_ST_BODY_FALSE"
-msgstr "假"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "是否从 SD 卡安装证书？"
-
-msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "密钥使用："
-
-msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "组织："
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "所有者："
-
-msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "公开密钥："
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "选择证书"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "选择要安装的证书"
-
-msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "签名算法："
-
-msgid "IDS_ST_BODY_TRUE"
-msgstr "正确"
-
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "信任根证书"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "用户证书"
-
-msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "生效日期:"
-
-msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "有效期："
-
-msgid "IDS_ST_BUTTON_OPEN"
-msgstr "打开"
-
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "公用名："
-
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "密码错误"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "无内容"
-
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "无数据"
-
-msgid "IDS_ST_BUTTON_NO"
-msgstr "否"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d 已选择"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "是"
 
-msgid "IDS_ST_SK2_CANCEL"
-msgstr "取消"
-
-msgid "IDS_ST_SK2_OK"
-msgstr "确定"
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "证书"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
 msgstr "客户端证书"
 
+msgid "IDS_ST_SK2_OK"
+msgstr "确定"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "取消"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "安装证书失败。证书无效、已过期或您输入的密码不正确。"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "将安装设备内存与 SD 卡中的证书。"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "無法安裝證書"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "证书搜索结果"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "打开"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "否"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "安装"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "版本:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "有效期："
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "生效日期:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "用户证书"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "信任的根 CA 证书"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "正确"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "签名算法："
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "序列号："
 
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "选择证书。"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "公开密钥："
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "所有者："
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "组织："
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "无数据"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "无内容"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "制造商"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "密钥使用："
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "颁发者："
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "发行者"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "密码错误"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "假"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "外部证书"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "输入密码："
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "输入密钥别名："
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "公用名："
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "认证机构："
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "证书信息"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "证书详情"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "已找到证书。"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "别名无法为空。"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "别名已存在。输入唯一的别名。"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "所有者"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "卸载证书"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "完成"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "正在卸载证书..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "将卸载 1 个证书。"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "正在卸载证书..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "将卸载 %d 个证书。"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
 msgstr "安装证书"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "管理证书"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "适用于"
 

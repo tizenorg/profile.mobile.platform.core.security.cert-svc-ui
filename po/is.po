@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Hætta v."
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Notandavottorð"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Skírteini"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Efni vantar"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Útgáfa:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Stillingar"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Fjarlægja"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Almennt"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Framleiðandi"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Leynd"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Velja allt"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Biðlaravottorð"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Útgefandi:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Setja upp"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Eigandi"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Samnefnið er þegar í notkun. Sláðu inn einkvæmt samnefni"
+msgstr "Samnefnið er þegar í notkun. Sláðu inn einkvæmt samnefni."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Samnefnið getur ekki verið autt"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Vottorð fundust"
+msgstr "Samnefnið getur ekki verið autt."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Upplýsingar um skírteini"
@@ -37,8 +31,14 @@ msgstr "Upplýsingar um skírteini"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Upplýsingar um vottorð"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Skírteini"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Vottunaraðili:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Sameiginlegt nafn:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Sláðu inn samnefni lykils:"
@@ -46,32 +46,35 @@ msgstr "Sláðu inn samnefni lykils:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Sláðu inn lykilorð:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Ytri vottorð"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Ósatt"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Setja upp vottorð af SD-korti?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Útgefandi"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Útgefandi:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Notkun lykils:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Engin gögn"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Það eru engin gögn til staðar."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Fyrirtæki:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Eigandi:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Almennur lykill:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Veldu vottorðið"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Velja allt"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Veldu vottorð til að setja upp"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Raðnúmer:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algóritmi undirskriftar:"
@@ -79,11 +82,17 @@ msgstr "Algóritmi undirskriftar:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Rétt"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Traust rótarvottorð"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Notandavottorð"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Traust CA-rótarvottorð"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Traust CA-rótarvottorð"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Gildir frá:"
@@ -91,39 +100,51 @@ msgstr "Gildir frá:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Gildir til:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Útgáfa:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Hætta v."
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Hætta við"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Hætta v."
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Setja upp"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Opna"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Sameiginlegt nafn:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Fjarlægja"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Rangt aðgangsorð"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Leitarniðurstöður vottorða"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Efni vantar"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Setja upp vottorð"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Engin gögn"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d valið"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Nei"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Velja hluti"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Já"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Ekki hægt að setja upp vottorð"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Vottorð úr minni tækisins og af SD-korti verða sett upp."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Mistókst að setja upp vottorðið. Vottorðið er ógilt, útrunnið eða þú hefur slegið inn rangt lykilorð."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Hætta við"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Í lagi"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Biðlaravottorð"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Raðnúmer:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Setja upp vottorð"
 

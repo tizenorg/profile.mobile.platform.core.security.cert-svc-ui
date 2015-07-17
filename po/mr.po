@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "सर्व निवडा"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "अनइंस्टॉल"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "कोणतेही प्रमाणपत्र आढळले नाही."
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "आयटेम्‍स निवडा"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d निवडलेले"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "होय"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "प्रमाणपत्रे"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "क्लाएंट प्रमाणपत्र"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ठीक"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "रद्द करा"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "प्रमाणपत्र इन्‍स्‍टॉल करण्‍यामध्‍ये अयशस्‍वी. प्रमाणपत्र अवैध आहे, कालबाह्य झाले आहे, किंवा आपण चुकीचा पासवर्ड प्रविष्‍ट केला आहे."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "उपकरण मेमरी आणि SD कार्ड वरून प्रमाणपत्रे इन्‍स्‍टॉल केली जातील."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "प्रमाणपत्र इंस्टॉल करण्यास अक्षम"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "प्रमाणपत्र शोध परिणाम"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "उघडा"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "नाही"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "इनस्टॉल"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "आवृत्ती:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "यासाठी वैध:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "पासून वैध:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "वापरकर्ता प्रमाणपत्र"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "विश्‍वसनीय मूळ CA प्रमाणपत्रे"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "वास्तव"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "स्वाक्षरी अल्गोरिथम:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "सिरियल नंबर:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "प्रमाणपत्र निवडा."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "सार्वजनिक की:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ओनर:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "संस्था:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "डेटा नाही"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "सामग्री नाही"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "निर्माता"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "कळ वापर:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "जारीकर्ता:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "वाटपकर्ता"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "चूकीचा पासवर्ड."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "खोटे"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "बाह्य प्रमाणपत्रे"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "पासवर्ड प्रविष्ट करा:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "मुख्य ऊर्फनाव प्रविष्ट करा:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "सामान्य नाव:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "प्रमाणीकरण अधिकार:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "प्रमाणपत्र माहिती"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "प्रमाणपत्र तपशील"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "प्रमाणपत्रे सापडली."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ऊर्फनाव रिक्त असू शकत नाही."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "ऊर्फनाव आधीपासूनच अस्तित्वात आहे. अनन्य ऊर्फनाव प्रविष्ट करा"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "मालक"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "प्रमाणपत्रे अनइन्स्टॉल करा"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "झाले"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "रद्द करा"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "प्रमाणपत्र अनइन्‍स्‍टॉल करत आहे..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 प्रमाणपत्र अनइन्‍स्‍टॉल करण्‍यात येईल."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "प्रमाणपत्रे अनइनस्‍टॉल करत आहे..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d प्रमाणपत्रे अनइन्स्टॉल करण्‍यात येतील."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "प्रमा. इन्स्टॉल करा"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "प्रमाणपत्रे व्यवस्थापित करा"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "साठी वापरलेले"
+

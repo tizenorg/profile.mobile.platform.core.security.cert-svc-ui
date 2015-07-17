@@ -1,28 +1,29 @@
 pkg_check_modules(ug-cert-selection-ug-efl_pkgs
     REQUIRED
-    elementary
-    ui-gadget-1
-    evas
+    glib-2.0
     dlog
-    capi-appfw-application
+    evas
+    elementary
+    efl-extension
+    ui-gadget-1
     cert-svc-vcore
-	efl-assist
 )
-FOREACH (flag ${ug-cert-selection-ug-efl_pkgs_CFLAGS})
-    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
-ENDFOREACH(flag)
-SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
 SET(SRCS
     src/cert-selection.c
     src/cert-selection-uigadget.c
 )
 
-SET(CMAKE_INSTALL_RPATH "${PREFIX}/lib")
+FOREACH(flag ${ug-cert-selection-ug-efl_pkgs_CFLAGS})
+    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
+ENDFOREACH(flag)
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
+
+SET(CMAKE_INSTALL_RPATH "${LIBDIR}")
+SET(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/view/include)
-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/common/include)
 
 ADD_DEFINITIONS(${ug-cert-selection-ug-efl_pkgs_DEPS_CFLAGS})
 ADD_DEFINITIONS(${ug-cert-selection-ug-efl_pkgs_DEPS_OTHER})

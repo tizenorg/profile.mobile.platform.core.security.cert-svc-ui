@@ -1,3 +1,177 @@
-msgid "IDS_COM_BODY_NO_CONTENTS"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Chọn tất cả"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Gỡ cài đặt"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "Không tìm thấy chứng chỉ"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Chọn mục"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "Đã chọn %d"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "OK"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "Chứng nhận"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Chứng chỉ hệ khách"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "OK"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "Hủy bỏ"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Cài đặt chứng chỉ bị lỗi. Chứng chỉ không hợp lệ, đã hết hạn hoặc bạn đã nhập sai mật mã."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Chứng chỉ từ thẻ SD và bộ nhớ của thiết bị sẽ được cài đặt."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Không thể cài đặt chứng chỉ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Kết quả tìm kiếm chứng chỉ"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "Mở"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "Không"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Cài đặt"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Thoát"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Phiên bản:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "Hợp lệ đến:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "Hợp lệ từ:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Chứng chỉ người dùng"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Chứng chỉ CA gốc đáng tin cậy"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "Đúng"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "Thuật toán chữ ký:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Số serial:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "Chọn giấy phép."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "Khóa dùng chung:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "Người sở hữu:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "Tổ chức:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Không có dữ liệu"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
 msgstr "Không nội dung"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "Nhà sản xuất"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "Sử dụng khóa:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Nhà phát hành:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Nhà phát hành"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "Mật mã sai."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "Sai"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "Chứng chỉ bên ngoài"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "Nhập mật mã:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "Nhập bí danh của khóa:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Tên chung:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "Cơ quan chứng nhận:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "Thông tin chứng chỉ"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Chi tiết của chứng chỉ"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "Tìm thấy chứng chỉ."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "Không thể bỏ trống phần bí danh."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "Bí danh đã tồn tại. Nhập bí danh duy nhất."
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Người sở hữu"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Gỡ cài đặt chứng chỉ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "HOÀN TẤT"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "HỦY"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Đang gỡ cài đặt chứng chỉ..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 chứng chỉ sẽ bị gỡ cài đặt."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Đang gỡ cài đặt các chứng chỉ..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d chứng chỉ sẽ bị gỡ cài đặt."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "Cài đặt chứng chỉ"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Quản lý chứng chỉ"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Được dùng để"
 

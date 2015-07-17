@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Annuler"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificats utilisateur"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Certificats"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Aucun contenu"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Version :"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Paramètres"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Désinstaller"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Général"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Fabricant"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Confident."
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Sélectionner tout"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Certificat client"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Émetteur :"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Installer"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Propriétaire"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "L'alias existe déjà. Saisissez un alias unique"
+msgstr "L'alias existe déjà. Saisissez un alias unique."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "L'alias doit être indiqué"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certificats trouvés"
+msgstr "L'alias doit être indiqué."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Détails du certificat"
@@ -37,8 +31,14 @@ msgstr "Détails du certificat"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Informations sur le certificat"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Certificats"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Autorité de certification :"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Nom commun :"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Entrez l'alias de la clé :"
@@ -46,32 +46,35 @@ msgstr "Entrez l'alias de la clé :"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Saisissez le mot de passe :"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Certificats externes"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Faux"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Installer les certificats depuis la carte SD ?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Émetteur"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Émetteur :"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Utilisation de la clé :"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Aucune donnée"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Aucune donnée disponible."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organisation :"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Propriétaire :"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Clé publique :"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Sélectionner un certificat"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Sélectionner tout"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Sélectionnez le certificat à installer"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Numéro de série :"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algorithme de signature :"
@@ -79,11 +82,17 @@ msgstr "Algorithme de signature :"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Vrai"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Certificats de base fiables"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Certificats utilisateur"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True Colour on You"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Certificats AC de base fiables"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Certificats AC de base fiables"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Valide depuis :"
@@ -91,39 +100,51 @@ msgstr "Valide depuis :"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Valide jusqu'à :"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Version :"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Annuler"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Annuler"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Annuler"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Installer"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Ouvrir"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Nom commun :"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Désinstaller"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Mot de passe incorrect"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Résultats recherche certif."
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Aucun contenu"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Installer le certificat"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Aucune donnée"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d sélectionné(s)"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Non"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Sélectionner éléments"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Oui"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Instal. certificat impossible"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Des certificats provenant de la mémoire de l'appareil et de la carte SD vont être installés."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Échec de l'installation du certificat. Le certificat n'est pas valide ou a expiré, ou vous avez saisi un mot de passe incorrect."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Annuler"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Certificat client"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Numéro de série :"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Installer le certificat"
 

@@ -1,3 +1,177 @@
-msgid "IDS_COM_BODY_NO_CONTENTS"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "เลือก​ทั้ง​หมด"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "ลบ​การ​ติด​ตั้ง"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "ไม่พบใบรับรอง"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "เลือกรายการ"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "เลือก %d รายการ"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "ใช่"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "ใบ​รับรอง"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ใบ​รับรอง​ผู้​ใช้"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "ตกลง"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ยกเลิก"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "การติดตั้งใบรับรองล้มเหลว ใบรับรองไม่ถูกต้อง หมดอายุ หรือคุณใส่รหัสผ่านไม่ถูกต้อง"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ใบรับรองจากหน่วยความจำอุปกรณ์และ SD การ์ด จะถูกติดตั้ง"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "ไม่สามารถติดตั้งใบรับรองได้"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "ผลลัพธ์การค้นหาใบรับรอง"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "เปิด"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "ไม่"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "ติด​ตั้ง"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ยกเลิก"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "เวอร์ชั่น:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "ใช้​งาน​ได้​สำหรับ:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "ใช้​งาน​ได้​ตั้งแต่:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "ใบรับรองสำหรับผู้ใช้งาน"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "ใบรับรอง CA ต้นทางที่เชื่อถือได้"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "จริง"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "อัลกอริธึมลายเซ็น:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "หมายเลขซีเรียล:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "เลือก​ใบ​รับรอง"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "คีย์สาธารณะ:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "เจ้าของ:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "หน่วย​งาน:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "ไม่​มี​ข้อมูล"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
 msgstr "ไม่​มี​คอน​เทนท์"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ผู้ผลิต"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "การใช้งานคีย์:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ผู้ออก:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ผู้​จำหน่าย"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "รหัสผ่าน\nไม่ถูกต้อง"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "เท็จ"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "ใบรับรองภายนอก"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "ใส่รหัสผ่าน:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "ใส่นามแฝงคีย์:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "ชื่อ​ทั่ว​ไป:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "การอนุญาตการรับรอง:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ข้อมูลใบอนุญาต"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "ราย​ละเอียด​ใบ​รับรอง​การ​ใช้​งาน"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "พบใบรับรอง"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "ต้องใส่นามแฝง"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "มีนามแฝงอยู่แล้ว ใส่นามแฝงที่ไม่ซ้ำ"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "เจ้า​ของ"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "ถอนการติดตั้งใบรับรอง"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "เรียบร้อย"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ยกเลิก"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "กำลังถอนการติดตั้งใบรับรอง..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 ใบรับรองจะถูกถอนการติดตั้ง"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "กำลังถอนการติดตั้งใบรับรอง..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d ใบรับรองจะถูกถอนการติดตั้ง"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "ติดตั้งใบรับรอง"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "จัดการใบรับรอง"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "ใช้สำหรับ"
 

@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Peruuta"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Käyttäjävarmenteet"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Varmenteet"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Ei sisältöjä"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Versio:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Asetukset"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Poista asennus"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Yleiset"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Valmistaja"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Yksityisyys"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Valitse kaikki"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Asiakasvarmenne"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Myöntäjä:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Asenna"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Omistaja"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Alias on jo olemassa. Anna yksilöllinen alias"
+msgstr "Alias on jo olemassa. Anna yksilöllinen alias."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Alias ei voi olla tyhjä"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Varmenteita löydetty"
+msgstr "Alias ei voi olla tyhjä."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Sertifikaatin lisätiedot"
@@ -37,8 +31,14 @@ msgstr "Sertifikaatin lisätiedot"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Varmenteen tiedot"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Varmenteet"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Varmenteen myöntäjä:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Yleinen nimi:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Anna avaimen alias:"
@@ -46,32 +46,35 @@ msgstr "Anna avaimen alias:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Anna salasana:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Ulkoiset varmenteet"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Epätosi"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Asennetaanko varmenteet SD-kortilta?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Myöntäjä"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Myöntäjä:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Avaimen käyttö:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Ei tietoja"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Tietoja ei ole käytettävissä."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organisaatio:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Omistaja:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Julkinen avain:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Valitse sertifikaatti"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Valitse kaikki"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Valitse asennettava varmenne"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Sarjanumero:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Allekirjoitusalgoritmi:"
@@ -79,11 +82,17 @@ msgstr "Allekirjoitusalgoritmi:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Tosi"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Luotettavat päävarmenteet"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Käyttäjävarmenteet"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Luotettavat myöntäjävarmenteet"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Luotettavat myöntäjävarmenteet"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Voimassa alkaen:"
@@ -91,39 +100,51 @@ msgstr "Voimassa alkaen:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Voimassa:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Versio:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Peruuta"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Peruuta"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Peruuta"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Asenna"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Avaa"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Yleinen nimi:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Poista asennus"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Virheellinen salasana"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Varmenteiden hakutulokset"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Ei sisältöjä"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Asenna varmenne"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Ei tietoja"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d valittu"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ei"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Valitse kohteet"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Kyllä"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Varmennetta ei voi asentaa"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Laitteen muistissa ja SD-kortilla olevat varmenteet asennetaan."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Varmenteen asentaminen epäonnistui. Varmenne ei kelpaa, se on vanhentunut tai olet antanut väärän salasanan."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Peruuta"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Asiakasvarmenne"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Sarjanumero:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Asenna varmenne"
 

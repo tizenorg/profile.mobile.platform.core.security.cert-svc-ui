@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Ezeztatu"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Erabiltzaile ziurtagiriak"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Ziurtagiriak"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Ez dago edukirik"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Bertsioa:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Ezarpenak"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Desinstalatu"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Orokorra"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Fabrikatzailea"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Pribatutasuna"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Denak aukeratu"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Bezeroaren ziurtagiria"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Jaulkitzailea:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Instalatu"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Jabea"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Ezizena badago. Adierazi ezizen berdin gabea"
+msgstr "Ezizena badago. Adierazi ezizen berdin gabea."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
 msgstr "Ezizena ezin da hutsik utzi"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Ziurtagiriak aurkituta"
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Ziurtagiriaren xehetasunak"
@@ -37,8 +31,14 @@ msgstr "Ziurtagiriaren xehetasunak"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Ziurtagiri informazioa"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Ziurtagiriak"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Ziurtapen agintea:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Ohiko izena:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Adierazi gako ezizena:"
@@ -46,32 +46,35 @@ msgstr "Adierazi gako ezizena:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Adierazi pasahitza:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Kanpo egiaztapenak"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Faltsua"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instalatu ziurtagiriak SD txarteletik?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Igorlea"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Jaulkitzailea:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Gako erabilera:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Daturik ez"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Ez dago datu erabilgarririk"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Erakundea:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Jabea:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Gako publikoa:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Ziurtagiri bat aukeratu"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Hautatu denak"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Hautatu ziurtagiria instalatzeko"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serie zenbakia:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Sinatzeko algoritmoa:"
@@ -79,11 +82,17 @@ msgstr "Sinatzeko algoritmoa:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Benetakoa"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Erro ziurtagiri fidagarriak"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Erabiltzaile ziurtagiriak"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True Colour on You"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "CA erro ziurtagiri fidagarriak"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "CA erro ziurtagiri fidagarriak"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Noiztik balioduna:"
@@ -91,39 +100,51 @@ msgstr "Noiztik balioduna:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Noiz arte balioduna:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Bertsioa:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Ezeztatu"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Utzi"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Utzi"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instalatu"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Ireki"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Ohiko izena:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Desinstalatu"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Pasahitz okerra"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Ziurtagiri bilaketa emaitzak"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Ez dago edukirik"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instalatu ziurtagiria"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Daturik ez"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d aukeratuta"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ez"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Hautatu elementuak"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Bai"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Ezin da ziurtagiria instalatu"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Gailuaren memoriako eta SD txarteleko ziurtagiriak instalatuko dira"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Ezin izan da ziurtagiria instalatu. Ziurtagiria baliogabea da edo iraungita dago edo pasahitz okerra idatzi duzu."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Ezeztatu"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "Ados"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Bezeroaren ziurtagiria"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Serie zenbakia:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Instalatu ziurtagiria"
 

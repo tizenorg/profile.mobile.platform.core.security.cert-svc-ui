@@ -1,129 +1,177 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "रद्द"
-
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "प्रमाणपत्र"
-
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "संस्करण:"
-
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "अनइंस्टॉल"
-
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "निर्माता"
-
 msgid "IDS_ST_BODY_SELECT_ALL"
 msgstr "सभी चुनें"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "जारीकर्ता:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "अस्थापित करें"
 
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "स्थापित करें"
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "कोई प्रमाणपत्र नहीं मिला।"
 
-msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "उपनाम पहले से मौजूद है। कोई विशिष्ट उपनाम दर्ज करें"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "मदें चुनें"
 
-msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "उपनाम खाली नहीं छोड़ सकते हैं"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "प्रमाणपत्र मिले"
-
-msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "प्रमाणपत्र विवरण"
-
-msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "प्रमाणपत्र जानकारी"
-
-msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "प्रमाणपत्र प्राधिकार:"
-
-msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "कुंजी उपनाम दर्ज करें:"
-
-msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "पासवर्ड दर्ज करें:"
-
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "बाह्य प्रमाणपत्र"
-
-msgid "IDS_ST_BODY_FALSE"
-msgstr "ग़लत"
-
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "SD कार्ड से प्रमाणपत्र स्थापित करें?"
-
-msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "कुंजी उपयोग:"
-
-msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "संगठन:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "स्वामी:"
-
-msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "सार्वजनिक कुंजी:"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "प्रमाणपत्र चुनें"
-
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "स्थापित करने के लिए प्रमाणपत्र चुनें"
-
-msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "हस्ताक्षर एल्गोरिथम:"
-
-msgid "IDS_ST_BODY_TRUE"
-msgstr "सच"
-
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "विश्वसनीय मूल प्रमाणपत्र"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "उपभोक्ता प्रमाणपत्र"
-
-msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "से मान्य:"
-
-msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "इस पर मान्य:"
-
-msgid "IDS_ST_BUTTON_OPEN"
-msgstr "खोलें"
-
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "सामान्य नाम:"
-
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "गलत पासवर्ड"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "कोई सामग्री नहीं"
-
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "कोई डाटा नहीं"
-
-msgid "IDS_ST_BUTTON_NO"
-msgstr "नहीं"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d चयनित"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "हाँ"
 
-msgid "IDS_ST_SK2_CANCEL"
-msgstr "रद्द"
-
-msgid "IDS_ST_SK2_OK"
-msgstr "ओके"
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "प्रमाणपत्र"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
 msgstr "क्लाइंट प्रमाणपत्र"
 
+msgid "IDS_ST_SK2_OK"
+msgstr "ओके"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "रद्द करें"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "प्रमाणपत्र स्थापित करने में विफल। प्रमाणपत्र अमान्य है, समाप्त हो गया है या आपने कोई गलत पासवर्ड दर्ज किया है।"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "डिवाइस मेमोरी और SD कार्ड से प्रमाणपत्र स्थापित किए जाएँगे"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "प्रमाणपत्र स्थापित करने में अक्षम"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "प्रमाणपत्र खोज परिणाम"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "खोलें"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "नहीं"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "स्थापित करें"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "रद्द"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "संस्करण:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "इस पर मान्य:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "से मान्य:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "उपभोक्ता प्रमाणपत्र"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "विश्वसनीय रूट CA प्रमाणपत्र"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "सच"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "हस्ताक्षर एल्गोरिथम:"
+
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
 msgstr "सीरियल नंबर:"
 
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "प्रमाणपत्र स्थापित करें"
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "प्रमाणपत्र चुनें"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "सार्वजनिक कुंजी:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "स्वामी:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "संगठन:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "कोई डाटा नहीं"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "कोई सामग्री नहीं"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "निर्माता"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "कुंजी उपयोग:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "जारीकर्ता:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "जारीकर्ता"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "गलत पासवर्ड।"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "असत्य"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "बाह्य प्रमाणपत्र"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "पासवर्ड प्रविष्ट करें:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "कुंजी उपनाम प्रविष्ट करें:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "सामान्य नाम:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "प्रमाणपत्र प्राधिकार:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "प्रमाणपत्र जानकारी"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "प्रमाणपत्र विवरण"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "प्रमाणपत्र मिले।"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "उपनाम खाली नहीं छोड़ सकते हैं"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "उपनाम पहले से मौजूद है। कोई विशिष्ट उपनाम प्रविष्ट करें।"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "स्वामी"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "प्रमाणपत्र अस्थापित करना"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "पूर्ण"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "रद्द करें"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "प्रमाणपत्र की स्थापना रद्द हो रही है..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 प्रमाणपत्र की स्थापना रद्द कर दी जाएगी।"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "प्रमाणपत्रों की स्थापना रद्द हो रही है..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d प्रमाणपत्र की स्थापना रद्द कर दी जाएगी।"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "प्रमाणपत्र स्थापित करना"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "प्रमाणपत्र प्रबंधित करना"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "इसके लिए प्रयुक्त"
 

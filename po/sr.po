@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Poništi"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Korisnički sertifikati"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Sertifikati"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Nema sadržaja"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Verzija:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Podešavanja"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Deinstaliraj"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Opšte"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Proizvođač"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Privatnost"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Izaberi sve"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Sertifikat klijenta"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Izdavač:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Instaliraj"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Vlasnik"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Pseudonim već postoji. Unesi jedinstven pseudonim"
+msgstr "Pseudonim već postoji. Unesi jedinstven pseudonim."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Pseudonim ne sme biti prazno polje"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Pronađeni sertifikati"
+msgstr "Pseudonim ne sme biti prazno polje."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Podaci o certifikatu"
@@ -37,8 +31,14 @@ msgstr "Podaci o certifikatu"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Informacije o sertifikatima"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Sertifikati"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Institucije za izdavanje sertifikata:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Zajedničko ime:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Unesi ključni pseudonim:"
@@ -46,32 +46,35 @@ msgstr "Unesi ključni pseudonim:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Unesi lozinku:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Eksterni sertifikati"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Pogrešno"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "Instalirati sertifikate sa SD kartice?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Izdavač"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Izdavač:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Upotreba ključa:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Nema podataka"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Podaci nedostupni."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organizacija:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Vlasnik:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Javni ključ:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Izaberi sertifikat"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Izaberi sve"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Izaberi sertifikat koji može da se instalira"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Serijski broj:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Algoritam potpisa:"
@@ -79,11 +82,17 @@ msgstr "Algoritam potpisa:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Tačno"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Pouzdani osnovni sertifikati"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Korisnički sertifikati"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Pouzdani osnovni CA sertifikati"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "Pouzdani osnovni CA certifikati"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Važi od:"
@@ -91,39 +100,51 @@ msgstr "Važi od:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Važi do:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Verzija:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Otkaži"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Otkaži"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Otkaži"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Instaliraj"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Otvori"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Zajedničko ime:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Deinstaliraj"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Pogrešna šifra"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Rezultati pretrage sertifikata"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Nema sadržaja"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Instaliraj sertifikat"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Nema podataka"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "Izabrano je %d"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Ne"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Izaberi stavke"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Da"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Nemoguće instalirati sertifik."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Instaliraće se sertifikati sa memorije uređaja i SD kartica."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Neuspešna instalacija sertifikata. Sertifikat je nevažeći, istekao je ili si uneo/la netačnu lozinku."
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Otkaži"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Sertifikat klijenta"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Serijski broj:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Instaliraj sertifikat"
 

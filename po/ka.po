@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "გაუქმება"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "მომხმარებლის სერთიფიკატი"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "სერთიფიკატები"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "შინაარსი ცარიელია"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "ვერსია:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "პარამეტრები"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "დეინსტალაცია"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "საერთო"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "მწარმოებელი"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "პირადი"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "ყველას არჩევა"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "კლიენტის სერთიფიკატი"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "გამომცემელი:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "დაინსტალირება"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "მფლობელი"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "ალიასი უკვე არსებობს. შეიყვანეთ უნიკალური ალიასი"
+msgstr "ალიასი უკვე არსებობს. შეიყვანეთ უნიკალური ალიასი."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "ალიასი არ უნდა იყოს ცარიელი"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "ნაპოვნია სერტიფიკატები"
+msgstr "ალიასი არ უნდა იყოს ცარიელი."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "სერთიფიკატის დეტალები"
@@ -37,8 +31,14 @@ msgstr "სერთიფიკატის დეტალები"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "სერტიფიკატის ინფორმაცია"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "სერთიფიკატები"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "სერტიფიკატის გამცემი:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "საერთო სახელი:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "შეიყვანეთ ძირითადი ალიასი:"
@@ -46,32 +46,35 @@ msgstr "შეიყვანეთ ძირითადი ალიასი:
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "აკრიფეთ პაროლი:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "გარე სერტიფიკატები"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "მცდარი"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "დააინსტალირებთ სერტიფიკატებს SD ბარათიდან?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "გამომცემელი"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "გამომცემელი:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "კოდის გამოყენება:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "მონაცემები არ არის"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "მონაცემები არ არის."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "ორგანიზაცია:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "მფლობელი:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "საჯარო კოდი:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "აირჩიეთ სერთიფიკატი"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "ყველას არჩევა"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "აირჩიეთ დასაინსტალირებელი სერთიფიკატი"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "სერიული ნომერი:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "ხელმოწერის ალგორითმი:"
@@ -79,11 +82,17 @@ msgstr "ხელმოწერის ალგორითმი:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "ჭეშმარიტი"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "სანდო ძირითადი სერთიფიკატები"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "მომხმარებლის სერთიფიკატი"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True color on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "სანდო ძირითადი CA სერთიფიკატები"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "სანდო ძირითადი CA სერთიფიკატები"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "ძალაში შესვლის დრო:"
@@ -91,39 +100,51 @@ msgstr "ძალაში შესვლის დრო:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "ვარგისიანობის ვადა:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "ვერსია:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "გაუქმება"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "გაუქმება"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "გაუქმება"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "დაინსტალირება"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "გახსნა"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "საერთო სახელი:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "დეინსტალაცია"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "პაროლი არასწორია"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "სერტიფიკატის ძიების შედეგები"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "შინაარსი ცარიელია"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "დააინსტალირეთ სერთიფიკატი"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "მონაცემები არ არის"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d არჩეულია"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "არა"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "ელემენტების არჩევა"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "დიახ"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "სერტიფიკატი ვერ ინსტალირდება"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "დაინსტალირდება სერტიფიკატები აპარატის მეხსიერებიდან და SD ბარათიდან."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "სერტიფიკატი ვერ დაინსტალირდა. სერტიფიკატი არასწორია, ვადა გაუვიდა, ან პაროლი არასწორად შეიყვანეთ"
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "გაუქმება"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "კლიენტის სერთიფიკატი"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "სერიული ნომერი:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "დააინსტალირეთ სერთიფიკატი"
 

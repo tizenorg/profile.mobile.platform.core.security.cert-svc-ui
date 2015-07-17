@@ -1,24 +1,27 @@
 pkg_check_modules(ug-setting-manage-certificates-efl_pkgs
     REQUIRED
-    elementary
+    dlog
+    glib-2.0
     ui-gadget-1
     evas
-    dlog
+    elementary
+    efl-extension
     cert-svc-vcore
 )
-FOREACH (flag ${ug-setting-manage-certificates-efl_pkgs_CFLAGS})
-    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
-ENDFOREACH(flag)
-SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
 SET(SRCS
     src/mgr-app-uigadget.c
 )
 
-SET(CMAKE_INSTALL_RPATH "${PREFIX}/lib")
+FOREACH(flag ${ug-setting-manage-certificates-efl_pkgs_CFLAGS})
+    SET(EXTRA_CFLAGS "${EXTRA_CFLAGS} ${flag}")
+ENDFOREACH(flag)
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
+
+SET(CMAKE_INSTALL_RPATH "${LIBDIR}")
+SET(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
 
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/ug/include)
-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/common/include)
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/view/include)
 INCLUDE_DIRECTORIES(${ug-setting-manage-certificates-efl_pkgs_INCLUDE_DIRS})
 

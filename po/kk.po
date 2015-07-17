@@ -1,35 +1,29 @@
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Тоқтату"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Пайдаланушы куәліктері"
 
-msgid "IDS_ST_BODY_CERTIFICATES"
-msgstr "Сертификаттар"
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Мазмұн жоқ"
 
-msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Нұсқа:"
+msgid "IDS_ST_OPT_SETTINGS"
+msgstr "Қондырғылар"
 
-msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Жою"
+msgid "IDS_ST_BODY_GENERAL"
+msgstr "Жалпы"
 
-msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Дайындаушы"
+msgid "IDS_ST_HEADER_PRIVACY"
+msgstr "Құпия"
 
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Бәрін бөлектеу"
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "Клиенттік сертификат"
 
-msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Беруші:"
-
-msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Орнату"
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "Иесі"
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Лақап ат бұрыннан бар. Бірегей лақап атты енгізіңіз"
+msgstr "Лақап ат бұрыннан бар. Бірегей лақап атты енгізіңіз."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Лақап ат бос болмауы қажет"
-
-msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Куәліктер табылды"
+msgstr "Лақап ат бос болмауы қажет."
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
 msgstr "Сертификат туралы мәліметтер"
@@ -37,8 +31,14 @@ msgstr "Сертификат туралы мәліметтер"
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
 msgstr "Куәлік туралы ақпарат"
 
+msgid "IDS_ST_BODY_CERTIFICATES"
+msgstr "Сертификаттар"
+
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
 msgstr "Куәліктендіру орталығы:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "Жалпы атауы:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
 msgstr "Кілт лақап атын енгізіңіз:"
@@ -46,32 +46,35 @@ msgstr "Кілт лақап атын енгізіңіз:"
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
 msgstr "Құпиясөзді енгізіңіз:"
 
-msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "Сыртқы куәліктер"
-
 msgid "IDS_ST_BODY_FALSE"
 msgstr "Қате"
 
-msgid "IDS_ST_BODY_INSTALL_CERTIFICATES_FROM_SD_CARD_Q"
-msgstr "SD картасынан куәліктер орнату керек пе?"
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "Беруші"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "Беруші:"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
 msgstr "Кілт қолданысы:"
 
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "Деректер жоқ"
+
+msgid "IDS_ST_BODY_NO_DATA_AVAILABLE"
+msgstr "Ешқандай деректер қолжетімді емес."
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Ұйым:"
-
-msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Иесі:"
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
 msgstr "Ашық кілт:"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Сертификатты таңдау"
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Бәрін бөлектеу"
 
-msgid "IDS_ST_BODY_SELECT_CERTIFICATE_TO_INSTALL"
-msgstr "Орнатуға қажетті куәлікті таңдау"
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "Сериялық нөмірі:"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
 msgstr "Қол қою алгоритмі:"
@@ -79,11 +82,17 @@ msgstr "Қол қою алгоритмі:"
 msgid "IDS_ST_BODY_TRUE"
 msgstr "Шын"
 
-msgid "IDS_ST_BODY_TRUSTED_ROOT_CERTIFICATES"
-msgstr "Сенімді түбір куәліктер"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU"
+msgstr "True color on you"
 
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Пайдаланушы куәліктері"
+msgid "IDS_ST_BODY_TRUE_COLOR_ON_YOU_M_RINGTONE"
+msgstr "True colour on you"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES"
+msgstr "Сенімді түбірлік CA сертификаттары"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "CA сенімді түбір сертификаттары"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Жарамды:"
@@ -91,39 +100,51 @@ msgstr "Жарамды:"
 msgid "IDS_ST_BODY_VALID_TO_C"
 msgstr "Көрсетілген мерзімге дейін жарамды:"
 
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "Нұсқа:"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Тоқтату"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB"
+msgstr "Бас тарту"
+
+msgid "IDS_ST_BUTTON_CANCEL_ABB2"
+msgstr "Бас тарту"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "Орнату"
+
 msgid "IDS_ST_BUTTON_OPEN"
 msgstr "Ашу"
 
-msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Жалпы атауы:"
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "Жою"
 
-msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Қате кілтсөз"
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "Сертификат іздеу нәтижелері"
 
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Мазмұн жоқ"
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
+msgstr "Куәлік орнату"
 
-msgid "IDS_ST_BODY_NO_DATA"
-msgstr "Деректер жоқ"
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d таңдалды"
 
-msgid "IDS_ST_BUTTON_NO"
-msgstr "Жоқ"
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "Элементтерді таңдау"
 
-msgid "IDS_ST_BUTTON_YES"
-msgstr "Иә"
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "Сертифик-ты орнату мүмкін емес"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "Құрылғы жадындағы және SD картасындағы сертификаттар орнатылады."
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "Сертификатты орнату сәтсіз аяқталды. Сертификат жарамсыз, мерзімі аяқталды немесе қате құпия сөз енгізілді"
 
 msgid "IDS_ST_SK2_CANCEL"
 msgstr "Бас тарту"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
-
-msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Клиенттік сертификат"
-
-msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Сериялық нөмірі:"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB"
-msgstr "Куәлік орнату"
 

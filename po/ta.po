@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "எல்லாம் தேர்வு"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "நிறுவல் நீக்குக"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "சான்றிதழ்கள் எதுவும் கண்டறியப்படவில்லை."
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "உருப்படிகளை தேர்க்கவும்"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d தேர்வுசெய்யப்பட்டது"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "ஆம்"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "சான்றுகள்"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "க்ளையன்ட் சான்றிதழ்"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "சரி"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ரத்து"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "சான்றிதழை நிறுவுதல் தோல்வியுற்றது. சான்றிதழ் செல்லாதது, காலாவதியானது அல்லது நீங்கள் தவறான கடவுச்சொல்லை உள்ளிட்டுள்ளீர்கள்."
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "சாதன நினைவகம் மற்றும் SD அட்டை ஆகியவற்றிலிருந்து சான்றிதழ்கள் நிறுவப்படும்."
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "சான்றிதழை நிறுவ இயலவில்லை"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "சான்றிதழ் தேடல் முடிவுகள்"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "திறக்கவும்"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "இல்லை"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "புகுத்து"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ரத்து"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "பதிப்பு:"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "இதுவரை செல்லுபடியாகும்:"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "இதிலிருந்து செல்லுபடியாகும்:"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "பயனர் சான்றிதழ்கள்"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "நம்பகமான மூல CA சான்றிதழ்கள்"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "சரி"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "கையொப்ப அல்காரிதம்:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "வரிசை எண்:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "சான்றிதழைத் தேர்ந்தெடுக்கவும்."
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "பொது விசை:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "உரிமையாளர்:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "நிறுவனம்:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "தரவு இல்லை"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "உள்ளடக்கம் இல்லை"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "உற்பத்தியாளர்"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "முக்கியப் பயன்பாடு:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "வழங்குநர்:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "அளிப்பவர்"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "கடவுச்சொல் தவறு."
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "தவறு"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "வெளியார்ந்த சான்றிதழ்கள்"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "கடவுச்சொல் உள்ளிடுக:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "முக்கிய அலைஸை உள்ளிடுக:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "பொதுவான பெயர்:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "சான்றிதழ் அதிகாரம்:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "சான்றிதழ் விபரம்"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "சான்றிதழ் விவரங்கள்"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "சான்றிதழ் கிடைத்த்து."
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "அலைஸ் காலியாக இருக்க இயலாது."
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "அலைஸ் முன்பே உள்ளது. ஓர் விசேஷ அலைஸை உள்ளிடவும்"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "உரிமையாளர்"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "சான்றிதழ்களை நிறுவல் நீக்கவும்"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "முடிந்தது"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ரத்துசெய்க"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "சான்றிதழை நிறுவல்நீக்குகிறது..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 சான்றிதழ் நிறுவல்நீக்கப்படும்."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "சான்றிதழ்களை நிறுவல்நீக்குகிறது..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d சான்றிதழ்கள் நிறுவல்நீக்கப்படும்."
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "சான்றிதழை நிறுவுக"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "சான்றிதழ்களை நிர்வகிக்க."
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "இதற்காக பயன்படுத்தப்படுகிறது"
+

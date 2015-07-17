@@ -1,0 +1,177 @@
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "အားလုံးကုိ ေရြးပါ"
+
+msgid "IDS_ST_BUTTON_UNINSTALL"
+msgstr "တပ္ဆင္ထားမႈကို ျဖဳတ္ပါ။"
+
+msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
+msgstr "ဆာတီဖီကိတ္ မေတြ႔ပါ"
+
+msgid "IDS_ST_HEADER_SELECT_ITEMS"
+msgstr "အရာမ်ားကို ေရြးခ်ယ္ပါ"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d ခု ေရြးထားသည္"
+
+msgid "IDS_ST_BUTTON_YES"
+msgstr "ဟုတ္ကဲ့"
+
+msgid "IDS_ST_HEADER_CERTIFICATES"
+msgstr "ေအာင္လက္မွတ္မ်ား"
+
+msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
+msgstr "ေဖာက္သည္ လက္မွတ္"
+
+msgid "IDS_ST_SK2_OK"
+msgstr "အိုေက"
+
+msgid "IDS_ST_SK2_CANCEL"
+msgstr "ပယိဖ်က္ပါ"
+
+msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
+msgstr "ဆာတီဖီကိတ္ ထည့္သြင္းရန္ မေအာင္ျမင္ပါ။ ဆာတီဖီကိတ္မွာ အက်ဳံးမဝင္၊ သက္တမ္းကုန္ (သို႔) မမွန္ေသာ စကားဝွက္ သင္ ထည့္ထားသည္။"
+
+msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
+msgstr "ကိရိယာ မွတ္ဥာဏ္ႏွင့္ SD ကတ္မွ ဆာတီဖီကိတ္မ်ားကို ထည့္သြင္းလိမ့္မည္။"
+
+msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
+msgstr "ဆာတီဖီကိတ္ တပ္ဆင္၍ မရႏိုင္ပါ"
+
+msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
+msgstr "ဆာတီဖီကိတ္ ရွာေဖြမႈ ရလဒ္မ်ား"
+
+msgid "IDS_ST_BUTTON_OPEN"
+msgstr "ဖြင့္ပါ"
+
+msgid "IDS_ST_BUTTON_NO"
+msgstr "မဟုတ္ပါ"
+
+msgid "IDS_ST_BUTTON_INSTALL"
+msgstr "တပ္ဆင္ပါ"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "ပယ္ဖ်က္ပါ"
+
+msgid "IDS_ST_BODY_VERSION_C"
+msgstr "ဗားရွင္း"
+
+msgid "IDS_ST_BODY_VALID_TO_C"
+msgstr "အထိ တရားဝင္သည္ :"
+
+msgid "IDS_ST_BODY_VALID_FROM_C"
+msgstr "မွစ၍ တရားဝင္သည္ :"
+
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "အသံုးျပုသူ အသိအမွတ္ျပုလွြာမ်ား"
+
+msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
+msgstr "ယုံၾကည္စိတ္ခ်ရသည့္ အရင္းအျမစ္ CA ဆာတီဖီကိတ္မ်ား"
+
+msgid "IDS_ST_BODY_TRUE"
+msgstr "အမွန္"
+
+msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
+msgstr "ဆာတီဖီကိတ္ အယ္လိုဂရစ္သမ္:"
+
+msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
+msgstr "ဆီရီရယ္ နံပါတ္:"
+
+msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
+msgstr "ေအာင္လက္မွတ္ ေရြးပါ"
+
+msgid "IDS_ST_BODY_PUBLIC_KEY_C"
+msgstr "အမ်ားသံုး ကီး:"
+
+msgid "IDS_ST_BODY_OWNER_C"
+msgstr "ပိုင္ရွင္:"
+
+msgid "IDS_ST_BODY_ORGANISATION_C"
+msgstr "အဖြဲ႔အစည္း:"
+
+msgid "IDS_ST_BODY_NO_DATA"
+msgstr "အခ်က္အလက္မရွိပါ"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "ပါ၀င္သည့္အရာမ်ား မရွိပါ"
+
+msgid "IDS_ST_BODY_MANUFACTURER"
+msgstr "ကုန္ထုတ္လုပ္သူ"
+
+msgid "IDS_ST_BODY_KEY_USAGE_C"
+msgstr "ေသာ့အသံုးျပဳျခင္း:"
+
+msgid "IDS_ST_BODY_ISSUER_COLON"
+msgstr "ထုတ္ေပးသူ:"
+
+msgid "IDS_ST_BODY_ISSUER"
+msgstr "ထုတ္ေပးသူ"
+
+msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
+msgstr "မမွန္ေသာ စကား၀ွက္"
+
+msgid "IDS_ST_BODY_FALSE"
+msgstr "အမွား"
+
+msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
+msgstr "ျပင္ပ ဆာတီဖီကိတ္မ်ား"
+
+msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
+msgstr "စကားဝွက္ သြင္းပါ:"
+
+msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
+msgstr "တျခားေခၚေသာ့ သြင္းပါ:"
+
+msgid "IDS_ST_BODY_COMMON_NAME_C"
+msgstr "သာမန္ အမည္:"
+
+msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
+msgstr "ဆာတီဖီကိတ္ေပးျခင္း အာဏာပိုင္:"
+
+msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
+msgstr "ဆာတီဖီကိတ္ အခ်က္အလက္"
+
+msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
+msgstr "Certificate details"
+
+msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
+msgstr "ဆာတီဖီကိတ္မ်ား ေတြ႔ျပီ။"
+
+msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
+msgstr "တျခားအမည္ကို အလြတ္ထားမရပါ။"
+
+msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
+msgstr "တျခားအမည္ ရွိေနျပီးျဖစ္သည္။ တျခားအမည္ တစ္ခု သြင္းပါ။"
+
+msgid "IDS_SCP_BODY_OWNER_ABB"
+msgstr "ပိုင္ရွင္"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "ဆာတီဖီကိတ္မ်ားကို တပ္ဆင္ထားျခင္းမွ ျဖဳတ္ျခင္း"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ၿပီးၿပီ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ပယ္ဖ်က္ပါ"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "ဆာတီဖီကိတ္ကို တပ္ဆင္ထားျခင္းမွ ျဖဳတ္ေနဆဲ..."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "ဆာတီဖီကိတ္ ၁ ခုကို တပ္ဆင္ထားျခင္းမွ ျဖဳတ္ပါလိမ့္မည္။"
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "ဆာတီဖီကိတ္မ်ားကို တပ္ဆင္ထားျခင္းမွ ျဖဳတ္ေနဆဲ..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "ဆာတီဖီကိတ္ %d ခုကို တပ္ဆင္ထားျခင္းမွ ျဖဳတ္ပါလိမ့္မည္။"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "လက္မွတ္ ထည့္သြင္းပါ"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "ဆာတီဖီကိတ္မ်ားကို စီမံျခင္း"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "အတြက္ သံုးထားသည္"
+
