@@ -21,7 +21,6 @@
  */
 
 #include <dlog.h>
-#include <cert-svc/cinstance.h>
 #include <efl_extension.h>
 
 #include "certificates/certificate_util.h"
@@ -41,10 +40,6 @@ void direct_pfx_install_screen_cb(void *data, Evas_Object *obj, void *event_info
 	LOGD("certificates_pfx_install_cb : IN");
 	struct ug_data *ad = (struct ug_data*) data;
 
-	if (certsvc_instance_new(&(ad->instance)) == CERTSVC_FAIL) {
-		LOGD("certsvc_instance_new returned CERTSVC_FAIL");
-		return;
-	}
 	ad->list_element = NULL;
 	ad->type_of_screen = PKCS12_SCREEN;
 	ad->refresh_screen_cb = NULL;
@@ -124,11 +119,6 @@ void certificates_menu_cb(void *data, Evas_Object *obj, void *event_info) {
 	LOGD("certificates_menu_cb");
 	struct ug_data *ad = (struct ug_data*) data;
 	Evas_Object *box = NULL;
-
-	if (certsvc_instance_new(&(ad->instance)) == CERTSVC_FAIL) {
-		LOGD("certsvc_instance_new returned CERTSVC_FAIL");
-		return;
-	}
 
 	box = elm_box_add(ad->navi_bar);
 	evas_object_size_hint_weight_set(box, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);

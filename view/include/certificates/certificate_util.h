@@ -24,9 +24,11 @@
 #define __CERT_UTIL_H_
 
 #include <Elementary.h>
+#include <Eina.h>
 #include <assert.h>
 #include <dlog.h>
 #include <cert-svc/cstring.h>
+#include <cert-svc/ccert.h>
 
 #include "certificates/certificates.h"
 
@@ -44,17 +46,17 @@ enum TypeOfCert {
 
 typedef struct item_data
 {
-	int status;
+	CertStatus status;
 	char *gname;
-	int storeType;
-	int index;
+	CertStoreType storeType;
+	size_t index;
 	char *title;
 } item_data_s;
 
 typedef struct ListElement {
     struct ListElement *prev, *next;
     char            *title;
-    int             storeType;
+    CertStoreType   storeType;
     char            *gname;
     char            *name;
     char            *path;
@@ -116,7 +118,6 @@ void clear_pfx_genlist_data              ();
  **/
 char *path_cat(const char *str1, char *str2);
 char *extractDataFromCert(char *path);
-const char* get_email(CertSvcString alias);
 
 //void back_cb          (void *data, Evas_Object *obj, void *event_info);
 Eina_Bool back_cb (void *data, Elm_Object_Item *it);
@@ -139,11 +140,13 @@ int safeStrCmp(const char* s1, const char* s2);
 item_data_s *item_data_create(
         const char *gname,
         const char *title,
-        int status,
-        int storeType,
-        int index);
+        CertStatus status,
+        CertStoreType storeType,
+        size_t index);
 
 void item_data_free(item_data_s *id);
+
+Eina_Bool certStatusToEnia(CertStatus status);
 
 #ifdef _cplusplus
 }

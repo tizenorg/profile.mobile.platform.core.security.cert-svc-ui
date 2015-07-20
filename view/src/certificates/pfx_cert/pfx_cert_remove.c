@@ -317,9 +317,9 @@ static Eina_Bool genlist_pfx_back_cb(void *data, Elm_Object_Item *it)
 
 void cert_remove_genlist_cb(void *data, CertStoreType storeType)
 {
-    int i;
-
-	int Length = 0, result = 0;
+    size_t i = 0;
+	size_t Length = 0;
+	int result = 0;
 
 	CertSvcStoreCertList* certList = NULL;
 	CertSvcInstance instance;
@@ -397,22 +397,6 @@ void WIFI_list_cb(void *data, Evas_Object *obj, void *event_info)
 void EMAIL_list_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	cert_remove_genlist_cb(data, EMAIL_STORE);
-}
-
-static Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
-{
-	Evas_Object *toolbar;
-	toolbar = elm_toolbar_add(parent);
-	elm_object_style_set(toolbar, "tabbar_with_title");
-	elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
-	elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
-
-	elm_toolbar_item_append(toolbar, NULL, "VPN", VPN_list_cb, parent);
-	elm_toolbar_item_append(toolbar, NULL, "WIFI", WIFI_list_cb, parent);
-	elm_toolbar_item_append(toolbar, NULL, "EMAIL", EMAIL_list_cb, parent);
-
-	elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_ALWAYS);
-	return toolbar;
 }
 
 static Evas_Object *_create_genlist(struct ug_data *ad, Evas_Object *parent)

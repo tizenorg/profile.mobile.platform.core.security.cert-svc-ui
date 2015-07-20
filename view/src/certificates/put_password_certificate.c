@@ -109,8 +109,16 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 		goto exit;
 	}
 
+	CertStoreType storeType = VPN_STORE;
+	if (sel_sub_item_id == 0)
+		storeType = VPN_STORE;
+	else if (sel_sub_item_id == 1)
+		storeType = WIFI_STORE;
+	else
+		storeType = EMAIL_STORE;
+
 	certsvc_string_new(ad->instance, alias, strlen(alias), &pkcs_alias);
-	certsvc_pkcs12_alias_exists(ad->instance, pkcs_alias, &is_unique);
+	certsvc_pkcs12_check_alias_exists_in_store(ad->instance, storeType, pkcs_alias, &is_unique);
 	if (CERTSVC_FALSE == is_unique) {
 		SECURE_LOGD("alias %s already exist", alias);
 		create_ok_pop(ad, "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS");
@@ -125,14 +133,6 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 	char *dot = strrchr(path, '.');
 	if (dot && (!strncasecmp(dot, ".crt", 4) || !strncasecmp(dot, ".pem", 4)))
 		Password.privateHandler = password;
-
-	CertStoreType storeType = VPN_STORE;
-	if (sel_sub_item_id == 0)
-		storeType = VPN_STORE;
-	else if (sel_sub_item_id == 1)
-		storeType = WIFI_STORE;
-	else
-		storeType = EMAIL_STORE;
 
 	returned_value = certsvc_pkcs12_import_from_file_to_store(ad->instance, storeType, Path, Password, Alias);
 

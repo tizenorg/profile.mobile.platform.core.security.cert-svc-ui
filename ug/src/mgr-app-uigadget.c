@@ -126,8 +126,6 @@ static void on_destroy(ui_gadget_h ug, app_control_h service, void *priv) {
     	ugd->theme = NULL;
     }
 
-	certsvc_instance_free(ugd->instance);
-
 	evas_object_hide(ugd->layout_main);
     evas_object_del(ugd->layout_main);	
     ugd->layout_main = NULL;

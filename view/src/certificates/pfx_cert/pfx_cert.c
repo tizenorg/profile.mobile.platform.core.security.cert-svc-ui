@@ -127,7 +127,7 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 	Evas_Object *check = NULL;
 	Evas_Object *content = NULL;
 	item_data_s *id = (item_data_s *)data;
-	Eina_Bool status = id->status;
+	Eina_Bool status = certStatusToEnia(id->status);
 
 	if (!strcmp(part, "elm.icon.2")) {
 		content = elm_layout_add(obj);
@@ -214,61 +214,6 @@ static Eina_Bool _back_pfx_cb(void *data, Elm_Object_Item *it)
 	return EINA_TRUE;
 }
 
-static void pfx_selection_cb(void *data, Evas_Object *obj, void *event_info)
-{
-    int index = (int) data;
-    struct ug_data *ad = get_ug_data();
-
-    if (!ad)
-    	return;
-
-    Elm_Object_Item *it = (Elm_Object_Item *) elm_genlist_selected_item_get(obj);
-    if (!it){
-        LOGE("it is NULL; return;");
-        return;
-    }
-
-    elm_genlist_item_selected_set(it, EINA_FALSE);
-
-    int                    certListlength = 0;
-    int                    returned;
-    CertSvcCertificateList certList;
-    CertSvcCertificate     cert;
-    CertSvcString          buffer;
-
-    if (CERTSVC_SUCCESS != certsvc_string_list_get_one(stringList, index, &buffer)) {
-        LOGE("certsvc_string_list_get_one returned not CERTSVC_SUCCESS");
-        return;
-    }
-    SECURE_LOGD("alias == %s", buffer);
-
-    returned = certsvc_pkcs12_load_certificate_list(ad->instance, buffer, &certList);
-	if (returned != CERTSVC_SUCCESS) {
-		LOGE("certsvc_pkcs12_load_certificate_list failed. ret[%d]", returned);
-		return;
-	}
-
-    returned = certsvc_certificate_list_get_length(certList, &certListlength);
-	if (returned != CERTSVC_SUCCESS) {
-        LOGE("certsvc_certificate_list_get_length failed. ret[%d]", returned);
-		return;
-    }
-
-    LOGD("Certificate List Length = %d", certListlength);
-
-    if (certListlength < 1){
-        return;
-    }
-
-	returned = certsvc_certificate_list_get_one(certList, 0, &cert);
-    if (returned != CERTSVC_SUCCESS) {
-        LOGE("certsvc_certificate_list_get_one failed. ret[%d]", returned);
-        return;
-    }
-
-    get_info_cert_from_certificate_cb(cert);
-}
-
 static void move_more_ctxpopup(Evas_Object *ctxpopup)
 {
 	Evas_Object *win = elm_object_top_widget_get(ctxpopup);
@@ -323,7 +268,6 @@ void more_button_cb(void *data, Evas_Object *obj, void *event_info)
 
 void create_genlist_cb(void *data, CertStoreType storeType)
 {
-    int i;
 	Evas_Object *parent = (Evas_Object *)data;
     Evas_Object *genlist_pfx = NULL;
     Evas_Object *no_content = NULL;
@@ -331,7 +275,9 @@ void create_genlist_cb(void *data, CertStoreType storeType)
     struct ListElement *lastListElement = NULL;
 	struct ug_data *ad = get_ug_data();
 
-	int Length = 0, result = 0;
+	size_t Length = 0;
+	size_t i = 0;
+	int result = 0;
 
 	CertSvcStoreCertList* certList = NULL;
 	CertSvcStoreCertList* certListHead = NULL;
@@ -431,7 +377,7 @@ void create_EMAIL_list_cb(void *data, Evas_Object *obj, void *event_info)
 	create_genlist_cb(data, EMAIL_STORE);
 }
 
-static Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
+Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
 {
 	Evas_Object *toolbar = elm_toolbar_add(parent);
 
@@ -447,7 +393,6 @@ static Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
 
 	return toolbar;
 }
-
 
 void pfx_cert_create_list(struct ug_data *ad)
 {

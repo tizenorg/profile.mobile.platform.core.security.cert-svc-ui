@@ -89,9 +89,9 @@ static void _popup_quit_cb(void *data, Evas_Object *obj, void *event_info)
 item_data_s *item_data_create(
     const char *gname,
     const char *title,
-    int status,
-    int storeType,
-    int index)
+    CertStatus status,
+    CertStoreType storeType,
+    size_t index)
 {
     item_data_s *id = malloc(sizeof(item_data_s));
     if (!id) {
@@ -125,6 +125,17 @@ void item_data_free(item_data_s *id)
         free(id->title);
         free(id);
     }
+}
+
+Eina_Bool certStatusToEnia(CertStatus status)
+{
+	switch (status) {
+	case ENABLED:
+		return EINA_TRUE;
+	case DISABLED:
+	default:
+		return EINA_FALSE;
+	}
 }
 
 Eina_Bool quit_cb(void *data, Elm_Object_Item *it)
@@ -643,9 +654,9 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 
 Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_path, struct ListElement *lastListElement)
 {
-	int length = 0;
+	size_t length = 0;
+	size_t index = 0;
 	int result = 0;
-	int index = 0;
 	Elm_Object_Item *it = NULL;
 	struct ListElement *current = NULL;
 	Eina_Bool no_content_bool = EINA_TRUE;
@@ -770,43 +781,6 @@ Evas_Object *create_no_content_layout(struct ug_data *ad)
 	evas_object_show(no_content);
 
 	return no_content;
-}
-
-const char *get_email(CertSvcString alias)
-{
-	struct ug_data *ad = get_ug_data();
-
-	const char *char_buffer;
-
-	CertSvcCertificateList certificateList;
-	CertSvcCertificate certificate;
-	CertSvcString email_buffer;
-	if (CERTSVC_SUCCESS != certsvc_pkcs12_load_certificate_list(
-			ad->instance,
-			alias,
-			&certificateList))
-		return dgettext(PACKAGE, "IDS_ST_BODY_NO_DATA");
-
-	if (CERTSVC_SUCCESS != certsvc_certificate_list_get_one(
-			certificateList,
-			0,
-			&certificate))
-		return dgettext(PACKAGE, "IDS_ST_BODY_NO_DATA");
-
-	if (CERTSVC_SUCCESS != certsvc_certificate_get_string_field(
-			certificate,
-			CERTSVC_SUBJECT_EMAIL_ADDRESS,
-			&email_buffer))
-		return dgettext(PACKAGE, "IDS_ST_BODY_NO_DATA");
-
-	certsvc_string_to_cstring(email_buffer, &char_buffer, NULL);
-	if (!char_buffer) {
-		LOGD("email is NULL; return NO_DATA");
-		return dgettext(PACKAGE, "IDS_ST_BODY_NO_DATA");
-	}
-
-	LOGD("get_email - return %s", char_buffer);
-	return char_buffer;
 }
 
 bool isEmptyStr(const char *str)

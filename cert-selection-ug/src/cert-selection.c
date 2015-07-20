@@ -20,6 +20,7 @@
  */
 
 #include <Elementary.h>
+#include <Eina.h>
 #include <efl_extension.h>
 #include <dlog.h>
 
@@ -37,7 +38,6 @@
 #define CERT_SVC_UI_RES_PATH "/usr/ug/res/images/cert-svc-ui"
 
 static CertSvcInstance   instance;
-static CertSvcStringList stringList;
 
 static int             state_index    = -1; //selected radio index
 static char            *selected_name = NULL;
@@ -48,10 +48,10 @@ static Elm_Genlist_Item_Class itc;
 
 typedef struct item_data
 {
-	int status;
+	CertStatus status;
 	char *gname;
-	int storeType;
-	int index;
+	CertStoreType storeType;
+	size_t index;
 	char *title;
 } item_data_s;
 
@@ -66,14 +66,11 @@ static void _move_more_ctxpopup(void *data);
 static void _cert_selection_cleanup()
 {
 	LOGD("_cert_selection_cleanup");
-	if (selected_name)
-	{
+	if (selected_name) {
 		free(selected_name);
 		selected_name = NULL;
 	}
 
-	certsvc_string_list_free(stringList);
-	memset(&stringList, 0, sizeof(stringList));
 	certsvc_instance_free(instance);
 }
 
@@ -249,36 +246,6 @@ static void _open(void *data, Evas_Object *obj, void *event_info) {
     _quit_cb(data, NULL);
 }
 
-const char* get_email(CertSvcString alias) {
-    LOGD("get_email()");
-
-    const char *char_buffer;
-
-    CertSvcCertificateList certificateList;
-    CertSvcCertificate certificate;
-    CertSvcString email_buffer;
-    if (CERTSVC_SUCCESS != certsvc_pkcs12_load_certificate_list(
-            instance,
-            alias,
-            &certificateList)) {
-        return NULL;
-    }
-    if (CERTSVC_SUCCESS != certsvc_certificate_list_get_one(
-            certificateList,
-            0,
-            &certificate)) {
-        return NULL;
-    }
-    if (CERTSVC_SUCCESS != certsvc_certificate_get_string_field(
-            certificate,
-            CERTSVC_SUBJECT_EMAIL_ADDRESS,
-            &email_buffer)) {
-        return NULL;
-    }
-    certsvc_string_to_cstring(email_buffer, &char_buffer, NULL);
-    return char_buffer;
-}
-
 static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
 {
    //Update genlist items. The Item texts will be translated in the gl_text_get().
@@ -300,9 +267,9 @@ static void _update_list_cb(void *data, Evas_Object *obj, void *event_info)
 
 	item_data_s *id = (item_data_s *) data;
 
-    int pkcs_index = id->index;
-    LOGD("pkcs_index = %d", pkcs_index);
-    state_index = pkcs_index;
+    size_t pkcs_index = id->index;
+    LOGD("pkcs_index = %u", pkcs_index);
+    state_index = (int)pkcs_index;
 
     selected = EINA_TRUE;
 
@@ -327,7 +294,7 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 
     if (!strcmp(part, "elm.icon.right")) {
         radio = elm_radio_add(obj);
-        elm_radio_state_value_set(radio, id->index);
+        elm_radio_state_value_set(radio, (int)(id->index));
         elm_radio_group_add(radio, radio_main);
         elm_radio_value_pointer_set(radio, &state_index);
         evas_object_repeat_events_set(radio, EINA_FALSE);
@@ -392,8 +359,8 @@ static Evas_Object *create_no_content_layout (struct ug_data *ad) {
 
 static void create_selection_list(struct ug_data *ad)
 {
-    int i = 0;
-    int Length = 0;
+    size_t i = 0;
+    size_t Length = 0;
     Evas_Object *no_content = NULL;
     Evas_Object *genlist = NULL;
 
@@ -412,12 +379,12 @@ static void create_selection_list(struct ug_data *ad)
 		return;
 	}
 
-	LOGD("create_selection_list: Number Of Certs [%d]", Length);
+	LOGD("create_selection_list: Number Of Certs [%u]", Length);
 
 	radio_main = NULL;
 
     // Refresh logic: 2. Make new layouts on Main screen
-	if(1 > Length){
+	if(Length == 0){
 		// No Content message when list is empty
 		no_content = create_no_content_layout(ad);
 		if(!no_content) {
@@ -571,11 +538,6 @@ void cert_selection_install_cb(void *data, Evas_Object *obj, void *event_info)
     itc.func.content_get = _gl_content_get;
     itc.func.state_get   = _gl_state_get;
     itc.func.del         = _gl_del;
-
-    if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-        LOGE("CERTSVC_FAIL");
-        return;
-    }
 
     create_selection_list(ad);
 
