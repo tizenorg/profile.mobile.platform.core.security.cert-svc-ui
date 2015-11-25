@@ -34,8 +34,6 @@ Certification service ui package, used by settings and ui-gadget
 %setup -q
 cp -a %{SOURCE1001} .
 
-%define _ugdir %{TZ_SYS_RO_UG}
-
 %build
 export CFLAGS="$CFLAGS -DTIZEN_DEBUG_ENABLE"
 export CXXFLAGS="$CXXFLAGS -DTIZEN_DEBUG_ENABLE"
@@ -52,7 +50,7 @@ export FFLAGS="$FFLAGS -DTIZEN_EMULATOR_MODE"
 %endif
 
 %{!?build_type:%define build_type "Release"}
-cmake . -DCMAKE_INSTALL_PREFIX=%{_ugdir} \
+cmake . -DCMAKE_INSTALL_PREFIX=%TZ_SYS_RO_UG \
         -DTZ_SYS_BIN=%{TZ_SYS_BIN} \
         -DTZ_SYS_SHARE=%{TZ_SYS_SHARE} \
         -DCMAKE_BUILD_TYPE=%{build_type}
@@ -61,9 +59,6 @@ cmake . -DCMAKE_INSTALL_PREFIX=%{_ugdir} \
 make
 
 %install
-rm -rf %{buildroot}
-mkdir -p %{buildroot}%{TZ_SYS_SHARE}/license
-cp LICENSE %{buildroot}%{TZ_SYS_SHARE}/license/%{name}
 %make_install
 
 %clean
@@ -76,12 +71,11 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %manifest %{name}.manifest
-%license %{TZ_SYS_SHARE}/license/%{name}
+%license LICENSE
 %{TZ_SYS_SHARE}/packages/%{name}.xml
-%{_ugdir}/lib/ug/libmgr-cert-view.so*
-%{_ugdir}/lib/ug/libsetting-manage-certificates-efl.so*
-%{_ugdir}/lib/ug/libcert-selection-ug-efl.so*
-%{_ugdir}/res/images/cert-svc-ui/00_nocontents_text_gray.png
-%{_ugdir}/res/locale/*/LC_MESSAGES/*
-%{_ugdir}/res/images/*
-%{_ugdir}/res/custom_editfield.edj
+%TZ_SYS_RO_UG/lib/libug-mgr-cert-view.so*
+%TZ_SYS_RO_UG/lib/libug-setting-manage-certificates-efl.so*
+%TZ_SYS_RO_UG/lib/libug-cert-selection-ug-efl.so*
+%TZ_SYS_RO_UG/res/locale/*/LC_MESSAGES/*
+%TZ_SYS_RO_UG/res/images
+%TZ_SYS_RO_UG/res/custom_editfield.edj
