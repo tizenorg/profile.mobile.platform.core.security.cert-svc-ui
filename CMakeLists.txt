@@ -3,13 +3,14 @@ PROJECT(setting-manage-certificates-efl C)
 
 INCLUDE(FindPkgConfig)
 
+STRING(REGEX MATCH "([^.]*)" SO_VERSION "${VERSION}")
+
 SET(CMAKE_C_FLAGS_RELEASE "-O2 -Wall")
 SET(CMAKE_C_FLAGS_DEBUG "-O0 -Wall -g -ggdb")
 SET(CMAKE_C_FLAGS_CCOV "-O2 -Wall --coverage")
 
 SET(PREFIX ${CMAKE_INSTALL_PREFIX})
 SET(LIBDIR "${PREFIX}/lib")
-SET(VERSION 0.1.0)
 
 SET(RESDIR "${PREFIX}/res")
 SET(DATADIR "${RESDIR}/etc")
