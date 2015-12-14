@@ -25,7 +25,6 @@ BuildRequires: pkgconfig(icu-i18n)
 BuildRequires: pkgconfig(vconf)
 BuildRequires: pkgconfig(capi-system-system-settings)
 BuildRequires: pkgconfig(libtzplatform-config)
-Requires: pkgconfig(libtzplatform-config)
 
 %description
 Certification service ui package, used by settings and ui-gadget
