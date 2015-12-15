@@ -1,177 +1,177 @@
 msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "User certificates"
+msgstr "İstifadəçi sertifikatları"
 
 msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "No contents"
+msgstr "Məzmun yoxdur"
 
 msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
-msgstr "%d selected"
+msgstr "%d seçilmişdir"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
-msgstr "Uninstall"
+msgstr "Quraşdırmanı ləğv et"
 
 msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Cancel"
+msgstr "Ləğv et"
 
 msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "DONE"
+msgstr "HAZIR"
 
 msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "CANCEL"
+msgstr "LƏĞV ET"
 
 msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Select all"
+msgstr "Hamısını seç"
 
 msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
-msgstr "No certificate found."
+msgstr "Sertifikat tapılmadı"
 
 msgid "IDS_ST_HEADER_SELECT_ITEMS"
-msgstr "Select items"
+msgstr "Elementləri seç"
 
 msgid "IDS_ST_BUTTON_YES"
-msgstr "Yes"
+msgstr "Bəli"
 
 msgid "IDS_ST_HEADER_CERTIFICATES"
-msgstr "Certificates"
+msgstr "Sertifikatlar"
 
 msgid "IDS_EMAIL_BUTTON_CLIENT_CERTIFICATE"
-msgstr "Client certificate"
+msgstr "Müştəri sertifikatı"
 
 msgid "IDS_ST_SK2_OK"
 msgstr "OK"
 
 msgid "IDS_ST_SK2_CANCEL"
-msgstr "Cancel"
+msgstr "İmtina"
 
 msgid "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD"
-msgstr "Failed to install the certificate. The certificate is invalid or has expired, or you have entered an incorrect password."
+msgstr "Sertifikatı quraşdırmaq mümkün olmadı. Sertifikat xətalıdır, vaxtı bitmişdir və ya siz yanış parol daxil etmisiniz"
 
 msgid "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED"
-msgstr "Certificates from both the device memory and the SD card will be installed."
+msgstr "Cihaz yaddaşında və SD kartda olan sertifikatlar quraşdırılacaq."
 
 msgid "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB"
-msgstr "Unable to install certificate"
+msgstr "Sertifikat quraşd mümkün olma"
 
 msgid "IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB"
-msgstr "Certificate search results"
+msgstr "Sertifikat axtarış nəticələri"
 
 msgid "IDS_ST_BUTTON_OPEN"
-msgstr "Open"
+msgstr "Aç"
 
 msgid "IDS_ST_BUTTON_NO"
-msgstr "No"
+msgstr "Xeyr"
 
 msgid "IDS_ST_BUTTON_INSTALL"
-msgstr "Install"
+msgstr "Yüklə"
 
 msgid "IDS_ST_BODY_VERSION_C"
-msgstr "Version:"
+msgstr "Versiyası:"
 
 msgid "IDS_ST_BODY_VALID_TO_C"
-msgstr "Valid to:"
+msgstr "Bu tarixə qədər qüvvədədir:"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
-msgstr "Valid from:"
+msgstr "...dan etibarlıdır:"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
-msgstr "Trusted root CA certificates"
+msgstr "Etibarlı CA sertifikatları"
 
 msgid "IDS_ST_BODY_TRUE"
-msgstr "True"
+msgstr "Doğru"
 
 msgid "IDS_ST_BODY_SIGNATURE_ALGORITHM_C"
-msgstr "Signature algorithm:"
+msgstr "İmza alqoritmi:"
 
 msgid "IDS_ST_BODY_SERIAL_NUMBER_COLON"
-msgstr "Serial number:"
+msgstr "Seriya nömrəsi:"
 
 msgid "IDS_ST_BODY_SELECT_CERTIFICATE"
-msgstr "Select the certificate."
+msgstr "Sertifikat sec."
 
 msgid "IDS_ST_BODY_PUBLIC_KEY_C"
-msgstr "Public key:"
+msgstr "Ümumi kod:"
 
 msgid "IDS_ST_BODY_OWNER_C"
-msgstr "Owner:"
+msgstr "Sahibi:"
 
 msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
-msgstr "Uninstalling certificate..."
+msgstr "Sertifikatın quraşdırılması ləğv edilir..."
 
 msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
-msgstr "Uninstalling certificates..."
+msgstr "Sertifikatların quraşdırılması ləğv edilir..."
 
 msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
-msgstr "%d certificates will be uninstalled."
+msgstr "%d sertifikatın quraşdırılması ləğv ediləcək."
 
 msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
-msgstr "1 certificate will be uninstalled."
+msgstr "1 sertifikatın quraşdırılması ləğv ediləcək."
 
 msgid "IDS_ST_HEADER_USED_FOR"
-msgstr "Used for"
+msgstr "İstifadə edilmişdir"
 
 msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
-msgstr "Uninstall certificates"
+msgstr "Sertifik quraşd ləğv et"
 
 msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
-msgstr "Manage certificates"
+msgstr "Sertifikatları idarə et"
 
 msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
-msgstr "Install certificate"
+msgstr "Sertifikatı quraş"
 
 msgid "IDS_ST_BODY_ORGANISATION_C"
-msgstr "Organization:"
+msgstr "Təşkilat:"
 
 msgid "IDS_ST_BODY_NO_DATA"
-msgstr "No data"
+msgstr "Məlumat yoxdur"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
-msgstr "Manufacturer"
+msgstr "İstehsalçı"
 
 msgid "IDS_ST_BODY_KEY_USAGE_C"
-msgstr "Key usage:"
+msgstr "Düymənin istifadəsi:"
 
 msgid "IDS_ST_BODY_ISSUER_COLON"
-msgstr "Issuer:"
+msgstr "Emitent:"
 
 msgid "IDS_ST_BODY_ISSUER"
-msgstr "Issuer"
+msgstr "Tələbatçı"
 
 msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "Incorrect password."
+msgstr "Yanlış şifrə."
 
 msgid "IDS_ST_BODY_FALSE"
-msgstr "False"
+msgstr "Saxta"
 
 msgid "IDS_ST_BODY_EXTERNAL_CERTIFICATES"
-msgstr "External certificates"
+msgstr "Xarici sertifikatlar"
 
 msgid "IDS_ST_BODY_ENTER_PASSWORD_C"
-msgstr "Enter password:"
+msgstr "Parolu daxil et:"
 
 msgid "IDS_ST_BODY_ENTER_KEY_ALIAS_C"
-msgstr "Enter key alias:"
+msgstr "Kod adını daxil et:"
 
 msgid "IDS_ST_BODY_COMMON_NAME_C"
-msgstr "Common name:"
+msgstr "Ümumi ad:"
 
 msgid "IDS_ST_BODY_CERTIFICATION_AUTHORITY_C"
-msgstr "Certification authority:"
+msgstr "Sertifikat üzrə səlahiyyətli orqan"
 
 msgid "IDS_ST_BODY_CERTIFICATE_INFORMATION"
-msgstr "Certificate information"
+msgstr "Sertifikata dair məlumat"
 
 msgid "IDS_ST_BODY_CERTIFICATE_DETAILS"
-msgstr "Certificate details"
+msgstr "Sertifikat detalları"
 
 msgid "IDS_ST_BODY_CERTIFICATES_FOUND"
-msgstr "Certificates found."
+msgstr "Sertifikatlar tapıldı."
 
 msgid "IDS_ST_BODY_ALIAS_CANNOT_BE_EMPTY"
-msgstr "Alias cannot be empty."
+msgstr "Ad boş ola bilməz."
 
 msgid "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS"
-msgstr "Alias already exists. Enter a unique alias."
+msgstr "Ad artıq mövcuddur. Unikal ad daxil edin."
 
 msgid "IDS_SCP_BODY_OWNER_ABB"
-msgstr "Owner"
+msgstr "Sahib"
 

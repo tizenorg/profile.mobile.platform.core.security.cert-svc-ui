@@ -20,12 +20,9 @@
  * @brief
  */
 
-#include <dlog.h>
-
+#include "common-utils.h"
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
-
-#include <dirent.h>
 
 static Eina_Bool trusted_root_cert_create_genlist(struct ug_data *ad, Evas_Object *parent)
 {
@@ -46,11 +43,16 @@ static Eina_Bool trusted_root_cert_create_genlist(struct ug_data *ad, Evas_Objec
 
 void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	if (!data)
+	Eina_Bool no_content_bool;
+	Elm_Object_Item *nf_it;
+	Evas_Object *box = NULL;
+	struct ListElement *firstListElement;
+	struct ug_data *ad = (struct ug_data *)data;
+
+	if (ad == NULL)
 		return;
 
-	struct ug_data *ad = (struct ug_data *)data;
-	struct ListElement *firstListElement = initList();
+	firstListElement = initList();
 
 	if (!firstListElement) {
 		LOGE("Fail to initList for firstListElement");
@@ -59,28 +61,25 @@ void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info)
 
 	ad->list_element = firstListElement;
 
-	Elm_Object_Item *nf_it;
-	Evas_Object *box = NULL;
 	box = elm_box_add(ad->navi_bar);
 	evas_object_size_hint_weight_set(box, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(box, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
-	Eina_Bool no_content_bool = trusted_root_cert_create_genlist(ad, box);
+	no_content_bool = trusted_root_cert_create_genlist(ad, box);
 	evas_object_show(ad->list_to_refresh);
 	elm_box_pack_end(box, ad->list_to_refresh);
 	evas_object_show(box);
 
-	if (!no_content_bool) { // There is some content
-		nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB", NULL, NULL, box, NULL);
+	if (!no_content_bool) {
+		nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB", common_back_btn(ad), NULL, box, NULL);
 	} else {
-		// No content
 		Evas_Object *no_content = create_no_content_layout(ad);
 
-		if(!no_content){
+		if (!no_content) {
 			LOGD("Cannot create no_content layout (NULL); return");
 			return;
 		}
-		nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB", NULL, NULL, no_content, NULL);
+		nf_it = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB", common_back_btn(ad), NULL, no_content, NULL);
 	}
 	elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
 	elm_naviframe_item_pop_cb_set(nf_it, back_cb, (struct Evas_Object *)ad);

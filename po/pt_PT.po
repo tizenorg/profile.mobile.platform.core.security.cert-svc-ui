@@ -1,17 +1,32 @@
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Seleccionar tudo"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Certificados de utilizador"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Sem conteúdo"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d selecionado(s)"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "Desinstalar"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Cancelar"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "CONCLUÍDO"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "CANCELAR"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Seleccionar tudo"
 
 msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
 msgstr "Nenhum certificado encontrado."
 
 msgid "IDS_ST_HEADER_SELECT_ITEMS"
 msgstr "Seleccionar itens"
-
-msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
-msgstr "%d selecionado(s)"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "Sim"
@@ -49,9 +64,6 @@ msgstr "Não"
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Instalar"
 
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Cancelar"
-
 msgid "IDS_ST_BODY_VERSION_C"
 msgstr "Versão:"
 
@@ -60,9 +72,6 @@ msgstr "Válido até:"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Válido de:"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Certificados de utilizador"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
 msgstr "Certificados CA raiz fidedignos"
@@ -85,14 +94,35 @@ msgstr "Código público:"
 msgid "IDS_ST_BODY_OWNER_C"
 msgstr "Proprietário:"
 
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "A desinstalar certificado..."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "A desinstalar certificados..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d certificados serão desinstalados."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 certificado será desinstalado."
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Utilizado para"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Desinstalar certificados"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Gerir certificados"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "Instal. certificado"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organização:"
 
 msgid "IDS_ST_BODY_NO_DATA"
 msgstr "Sem dados"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Sem conteúdo"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "Fabricante"
@@ -144,34 +174,4 @@ msgstr "Pseudónimo já existe. Introduza um pseudónimo único."
 
 msgid "IDS_SCP_BODY_OWNER_ABB"
 msgstr "Proprietário"
-
-msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
-msgstr "Desinstalar certificados"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "CONCLUÍDO"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "CANCELAR"
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
-msgstr "A desinstalar certificado..."
-
-msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
-msgstr "1 certificado será desinstalado."
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
-msgstr "A desinstalar certificados..."
-
-msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
-msgstr "%d certificados serão desinstalados."
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
-msgstr "Instal. certificado"
-
-msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
-msgstr "Gerir certificados"
-
-msgid "IDS_ST_HEADER_USED_FOR"
-msgstr "Utilizado para"
 

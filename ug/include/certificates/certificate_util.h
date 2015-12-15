@@ -23,10 +23,9 @@
 #ifndef __CERT_UTIL_H__
 #define __CERT_UTIL_H_
 
+#include <assert.h>
 #include <Elementary.h>
 #include <Eina.h>
-#include <assert.h>
-#include <dlog.h>
 #include <cert-svc/cstring.h>
 #include <cert-svc/ccert.h>
 
@@ -52,16 +51,6 @@ typedef struct item_data
 	size_t index;
 	char *title;
 } item_data_s;
-
-typedef struct ListElement {
-    struct ListElement *prev, *next;
-    char            *title;
-    CertStoreType   storeType;
-    char            *gname;
-    char            *name;
-    char            *path;
-    Eina_Bool       isChecked;
-} ListElement_t;
 
 enum PositionOfElement {
     NONE,           // This is no element of the list
@@ -146,18 +135,10 @@ item_data_s *item_data_create(
 
 void item_data_free(item_data_s *id);
 
-Eina_Bool certStatusToEnia(CertStatus status);
+Eina_Bool certStatusToEina(CertStatus status);
 
 #ifdef _cplusplus
 }
-#endif
-
-#ifdef LOG_TAG
-    #undef LOG_TAG
-#endif
-
-#ifndef LOG_TAG
-    #define LOG_TAG "CERT_SVC_UI"
 #endif
 
 //temporary enum definition

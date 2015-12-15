@@ -1,17 +1,32 @@
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "اختيار الكل"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "شهادات المستخدم"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "بدون محتويات"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "تم تحديد %d"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "إلغاء التثبيت"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "إلغاء"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "تم"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "إلغاء"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "اختيار الكل"
 
 msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
 msgstr "لم يتم العثور على أي شهادة"
 
 msgid "IDS_ST_HEADER_SELECT_ITEMS"
 msgstr "تحديد عناصر"
-
-msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
-msgstr "تم تحديد %d"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "نعم"
@@ -49,9 +64,6 @@ msgstr "لا"
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "تثبيت"
 
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "إلغاء"
-
 msgid "IDS_ST_BODY_VERSION_C"
 msgstr "النسخة:"
 
@@ -60,9 +72,6 @@ msgstr "صالح حتى:"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "صالح من:"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "شهادات المستخدم"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
 msgstr "شهادات CA الجذرية الموثوق بها"
@@ -85,14 +94,35 @@ msgstr "المفتاح العام:"
 msgid "IDS_ST_BODY_OWNER_C"
 msgstr "المالك:"
 
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "جارٍ إلغاء تثبيت الشهادة..."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "جارٍ إلغاء تثبيت الشهادات..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "سيتم إلغاء تثبيت %d من الشهادات."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "سيتم إلغاء تثبيت شهادة واحدة."
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "مستخدمة لـ"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "إلغاء تثبيت الشهادات"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "إدارة الشهادات"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "تثبيت الشهادة"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "المؤسسة:"
 
 msgid "IDS_ST_BODY_NO_DATA"
 msgstr "لا توجد بيانات"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "بدون محتويات"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "المصنع"
@@ -144,34 +174,4 @@ msgstr "الاسم المستعار موجود‬ بالفعل. أدخل ‏‫�
 
 msgid "IDS_SCP_BODY_OWNER_ABB"
 msgstr "المالك"
-
-msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
-msgstr "إلغاء تثبيت الشهادات"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "تم"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "إلغاء"
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
-msgstr "جارٍ إلغاء تثبيت الشهادة..."
-
-msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
-msgstr "سيتم إلغاء تثبيت شهادة واحدة."
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
-msgstr "جارٍ إلغاء تثبيت الشهادات..."
-
-msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
-msgstr "سيتم إلغاء تثبيت %d من الشهادات."
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
-msgstr "تثبيت الشهادة"
-
-msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
-msgstr "إدارة الشهادات"
-
-msgid "IDS_ST_HEADER_USED_FOR"
-msgstr "مستخدمة لـ"
 

@@ -20,28 +20,29 @@
  * @brief
  */
 
-#include <dlog.h>
 #include <efl_extension.h>
 
 #include <cert-svc/cpkcs12.h>
 
+#include "common-utils.h"
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
-static const char *const edj_path = CUSTOM_EDITFIELD_PATH;
+static const char *const dir_path = PATH_SDCARD;
 
 static Elm_Genlist_Item_Class itc_group;
 static Elm_Genlist_Item_Class itc_entry;
 static Elm_Genlist_Item_Class itc_entry_passwd;
 static struct ListElement *current_file;
-static Evas_Object *_gl_drop_type_content_get(void *data, Evas_Object *obj, const char *part);
-static int sel_sub_item_id = 0;
-static Elm_Genlist_Item_Class itc_drop;
-static Evas_Object *ctxpopup = NULL;
 
-Evas_Object *_entry = NULL;
-Evas_Object *_entry_pass = NULL;
-Evas_Object *btn = NULL;
+Evas_Object *_entry;
+Evas_Object *_entry_pass;
+
+#define CUSTOM_EDITFIELD_PATH "/usr/apps/cert-svc-ui/res/custom_editfield.edj"
+static int sel_sub_item_id;
+Evas_Object *btn;
+static Elm_Genlist_Item_Class itc_drop;
+static Evas_Object *ctxpopup;
 
 static void _get_string_from_entry(Evas_Object *obj, char **out)
 {
@@ -69,7 +70,7 @@ static void _get_string_from_entry(Evas_Object *obj, char **out)
 
 static void _cancel_button_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	struct ug_data *ad = get_ug_data();
+	struct ug_data *ad = (struct ug_data *)data;
 
 	elm_naviframe_item_pop(ad->navi_bar);
 }
@@ -77,7 +78,6 @@ static void _cancel_button_cb(void *data, Evas_Object *obj, void *event_info)
 static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	int returned_value;
-	int is_unique = CERTSVC_FALSE;
 
 	char *alias = NULL;
 	char *password = NULL;
@@ -86,14 +86,8 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 	CertSvcString Alias;
 	CertSvcString Path;
 	CertSvcString Password;
-	CertSvcString pkcs_alias;
 
-	struct ug_data *ad = get_ug_data();
-
-	if (!ad) {
-		LOGE("ug_data can't be null!");
-		return;
-	}
+	struct ug_data *ad = (struct ug_data *)data;
 
 	_get_string_from_entry(_entry_pass, &password);
 	_get_string_from_entry(_entry, &alias);
@@ -117,14 +111,6 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 	else
 		storeType = EMAIL_STORE;
 
-	certsvc_string_new(ad->instance, alias, strlen(alias), &pkcs_alias);
-	certsvc_pkcs12_check_alias_exists_in_store(ad->instance, storeType, pkcs_alias, &is_unique);
-	if (CERTSVC_FALSE == is_unique) {
-		SECURE_LOGD("alias %s already exist", alias);
-		create_ok_pop(ad, "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS");
-		goto exit;
-	}
-
 	SECURE_LOGD("certsvc_pkcs12_import_from_file(%s, %s)", path, alias);
 	certsvc_string_new(ad->instance, alias, strlen(alias), &Alias);
 	certsvc_string_new(ad->instance, path, strlen(path), &Path);
@@ -141,17 +127,18 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 		if (ad->user_cert_list_item)
 			elm_naviframe_item_pop_to(ad->user_cert_list_item);
 		else if (ad->type_of_screen == PKCS12_SCREEN)
-			quit_cb(ad, NULL); //Exit from UG called directly by cert select UG.
+			quit_cb(ad, NULL); /*Exit from UG called directly by cert select UG. */
 		else
 			elm_naviframe_item_pop(ad->navi_bar);
 
-		if (ad && ad->refresh_screen_cb)
+		if (ad->refresh_screen_cb)
 			ad->refresh_screen_cb(ad, NULL, NULL);
 
 		break;
 
 	case CERTSVC_INVALID_PASSWORD:
 		LOGE("Invalid password to %s", current_file->name);
+		create_ok_pop(ad, "IDS_ST_BODY_INCORRECT_PASSWORD");
 		break;
 
 	case CERTSVC_IO_ERROR:
@@ -165,14 +152,14 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 		break;
 
 	case CERTSVC_DUPLICATED_ALIAS:
-		// This case should not happened - alias was already checked
-		LOGE("Failed. Such alias already exist. This should not happen");
+		LOGD("Alias is duplicated. Try different alias.");
+		create_ok_pop(ad, "IDS_ST_BODY_ALIAS_ALREADY_EXISTS_ENTER_A_UNIQUE_ALIAS");
 		break;
 
 	case CERTSVC_FAIL:
 		LOGE("Failed. Wrong password probably.");
 		create_ok_pop(ad, "IDS_ST_POP_FAILED_TO_INSTALL_THE_CERTIFICATE_THE_CERTIFICATE_IS_INVALID_HAS_EXPIRED_OR_YOU_HAVE_ENTERED_AN_INCORRECT_PASSWORD");
-		// Do NOT delete list in this case!!!
+		/* Do NOT delete list in this case!!! */
 		goto exit;
 
 	default:
@@ -283,7 +270,6 @@ static Evas_Object *create_password_editfield_layout(Evas_Object *parent)
 /* for editfield done */
 
 
-/* for Elm_Genlist_Item_Class from here */
 static Evas_Object *_gl_content_edit_get(void *data, Evas_Object *obj, const char *part)
 {
 	if (!strcmp(part, "elm.icon.entry"))
@@ -302,37 +288,56 @@ static Evas_Object *_gl_content_pass_get(void *data, Evas_Object *obj, const cha
 
 static void _gl_sel(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("_gl_sel called");
+
+	struct ug_data *ad = (struct ug_data *)data;
+	if (ad == NULL)
+		return;
+
 	if (event_info)
 		elm_genlist_item_selected_set(event_info, EINA_FALSE);
 
-	struct ug_data *ad = get_ug_data();
-	if (ad->popup)
+	if (ad->popup) {
 		evas_object_del(ad->popup);
+		ad->popup = NULL;
+	}
 
-	ad->popup = NULL;
+	LOGD("_gl_sel done");
 }
 
 static char *_gl_get_text_group(void *data, Evas_Object *obj, const char *part)
 {
-	if (strcmp(part, "elm.text.main"))
-		return NULL;
+	LOGD("_gl_get_text_group called");
 
-	/* text group set only elm.text.main */
-	switch ((int)data) {
-	case 0:
-		LOGD("IDS_ST_BODY_ENTER_PASSWORD_C");
-		return strdup(dgettext(PACKAGE, "IDS_ST_BODY_ENTER_PASSWORD_C"));
-	case 1:
-		LOGD("IDS_ST_BODY_ENTER_KEY_ALIAS_C");
-		return strdup(dgettext(PACKAGE, "IDS_ST_BODY_ENTER_KEY_ALIAS_C"));
-	case 2:
-		LOGD("IDS_ST_HEADER_USED_FOR");
-		return strdup(dgettext(PACKAGE, "IDS_ST_HEADER_USED_FOR"));
-	default:
-		LOGE("Wrong index - return NULL");
+	char *str = NULL;
+
+	if (strcmp(part, "elm.text.main")) {
+		LOGD("_gl_get_text_group done. not text.main.");
 		return NULL;
 	}
 
+	switch ((int)data) {
+	case 0:
+		LOGD("IDS_ST_BODY_ENTER_PASSWORD_C");
+		str = strdup(dgettext(PACKAGE, "IDS_ST_BODY_ENTER_PASSWORD_C"));
+		break;
+	case 1:
+		LOGD("IDS_ST_BODY_ENTER_KEY_ALIAS_C");
+		str = strdup(dgettext(PACKAGE, "IDS_ST_BODY_ENTER_KEY_ALIAS_C"));
+		break;
+	case 2:
+		LOGD("IDS_ST_HEADER_USED_FOR");
+		str = strdup(dgettext(PACKAGE, "IDS_ST_HEADER_USED_FOR"));
+		break;
+	default:
+		LOGE("Wrong index - return NULL");
+		str = NULL;
+		break;
+	}
+
+	LOGD("_gl_get_text_group done");
+
+	return str;
 }
 
 static void move_dropdown(Evas_Object *ctxpopup, Evas_Object *btn)
@@ -351,7 +356,7 @@ static void ctxpopup_dismissed_cb(void *data, Evas_Object *obj, void *event_info
 static void ctxpopup_item_select_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	char buf[100];
-	sel_sub_item_id = data;
+	sel_sub_item_id = (int)data;
 
 	if (sel_sub_item_id == 0)
 		snprintf(buf, sizeof(buf), "<align=left>%s</align>", "VPN");
@@ -381,7 +386,7 @@ static void btn_dropdown_label_style_cb(void *data, Evas_Object *obj, void *even
 	ctxpopup = elm_ctxpopup_add(elm_object_top_widget_get(obj));
 	elm_object_style_set(ctxpopup, "dropdown/list");
 	eext_object_event_callback_add(ctxpopup, EEXT_CALLBACK_BACK, eext_ctxpopup_back_cb, NULL);
-	evas_object_smart_callback_add(ctxpopup,"dismissed", ctxpopup_dismissed_cb, NULL);
+	evas_object_smart_callback_add(ctxpopup, "dismissed", ctxpopup_dismissed_cb, NULL);
 
 	elm_ctxpopup_item_append(ctxpopup, "VPN", NULL, ctxpopup_item_select_cb, (void *)0);
 	elm_ctxpopup_item_append(ctxpopup, "WIFI", NULL, ctxpopup_item_select_cb, (void *)1);
@@ -395,15 +400,17 @@ static void btn_dropdown_label_style_cb(void *data, Evas_Object *obj, void *even
 
 static Evas_Object *_gl_drop_type_content_get(void *data, Evas_Object *obj, const char *part)
 {
-	struct ug_data *ad = get_ug_data();
+	LOGD("_gl_drop_type_content_get called");
 	char buf[100];
 	sel_sub_item_id = 0;
 
-	if (strcmp(part, "elm.icon.entry"))
+	if (strcmp(part, "elm.icon.entry")) {
+		LOGD("_gl_drop_type_content_get done. not entry icon.");
 		return NULL;
+	}
 
 	Evas_Object *ly = elm_layout_add(obj);
-	elm_layout_file_set(ly, edj_path, "eap_dropdown_button");
+	elm_layout_file_set(ly, CUSTOM_EDITFIELD_PATH, "eap_dropdown_button");
 	btn = elm_button_add(ly);
 
 	snprintf(buf, sizeof(buf), "<align=left>%s</align>", "VPN");
@@ -413,15 +420,16 @@ static Evas_Object *_gl_drop_type_content_get(void *data, Evas_Object *obj, cons
 	evas_object_propagate_events_set(btn, EINA_FALSE);
 	evas_object_size_hint_weight_set(btn, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(btn, EVAS_HINT_FILL, EVAS_HINT_FILL);
-	evas_object_smart_callback_add(btn, "clicked", btn_dropdown_label_style_cb, ad->navi_bar);
+	evas_object_smart_callback_add(btn, "clicked", btn_dropdown_label_style_cb, NULL);
 	elm_layout_content_set(ly, "btn", btn);
 	evas_object_show(btn);
 
+	LOGD("_gl_drop_type_content_get done");
 	return ly;
 }
 
 
-static void _set_itc_classes()
+static void _set_itc_classes(void)
 {
 	itc_group.item_style = "groupindex";
 	itc_group.func.text_get = _gl_get_text_group;
@@ -446,48 +454,25 @@ static void _set_itc_classes()
 	itc_drop.func.state_get = NULL;
 	itc_drop.func.del = NULL;
 }
-/* for Elm_Genlist_Item_Class done */
 
-
-static Evas_Object *_create_title_text_btn(Evas_Object *parent, const char *text, Evas_Smart_Cb func, void *data)
+void put_pkcs12_name_and_pass(struct ListElement *file, struct ug_data *ad)
 {
-	Evas_Object *btn = elm_button_add(parent);
-	if (!btn)
-		return NULL;
+	current_file = file;
 
-	elm_object_domain_translatable_text_set(btn, PACKAGE, text);
-	evas_object_smart_callback_add(btn, "clicked", func, data);
-
-	return btn;
-}
-
-static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
-{
-   //Update genlist items. The Item texts will be translated in the gl_text_get().
-   elm_genlist_realized_items_update(obj);
-}
-
-/* CALLBACK */
-void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	struct ug_data *ad = get_ug_data();
-	ad->popup = NULL;
-	current_file = (struct ListElement *) data;
-
-	Evas_Object *genlist = elm_genlist_add(ad->navi_bar);
-	elm_genlist_realization_mode_set(genlist, EINA_TRUE);
-	elm_genlist_homogeneous_set(genlist, EINA_TRUE);
+	Evas_Object *genlist = common_genlist(ad->navi_bar);
 
 	_set_itc_classes();
+
+	LOGD("Ready to append items to genlist");
 
 	Elm_Object_Item *passwd_entry_label = elm_genlist_item_append(
 			genlist,
 			&itc_group,
-			(void *) 0,
+			(void *)0,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
+			ad);
 	elm_genlist_item_select_mode_set(passwd_entry_label, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 	elm_genlist_item_append(
@@ -497,47 +482,45 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
+			ad);
 
 	Elm_Object_Item *name_entry_label = elm_genlist_item_append(
 			genlist,
 			&itc_group,
-			(void *) 1,
+			(void *)1,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
+			ad);
 	elm_genlist_item_select_mode_set(name_entry_label, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 	elm_genlist_item_append(
 			genlist,
 			&itc_entry,
-			(void *) 0,
+			(void *)0,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
+			ad);
 
 	Elm_Object_Item *ctxpopup_entry_label = elm_genlist_item_append(
 			genlist,
 			&itc_group,
-			(void *) 2,
+			(void *)2,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
+			ad);
 	elm_genlist_item_select_mode_set(ctxpopup_entry_label, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 	elm_genlist_item_append(
 			genlist,
 			&itc_drop,
-			NULL,
+			ad,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
-
-	evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
+			ad);
 
 	Elm_Object_Item *nf_it = elm_naviframe_item_push(
 			ad->navi_bar,
@@ -549,34 +532,28 @@ void put_pkcs12_name_and_pass_cb(void *data, Evas_Object *obj, void *event_info)
 
 	elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
 
-	if (!nf_it)
+	if (!nf_it) {
 		LOGE("Error in elm_naviframe_item_push");
+		return;
+	}
 
-	/* Title Cancel Button */
-	Evas_Object *right_btn = elm_button_add(ad->navi_bar);
-	elm_object_style_set(right_btn, "naviframe/title_done");
-	evas_object_smart_callback_add(right_btn, "clicked", _install_button_cb, ad->navi_bar);
-	elm_object_item_part_content_set(nf_it, "title_right_btn", right_btn);
+	add_common_done_btn(ad, _install_button_cb);
+	add_common_cancel_btn(ad, _cancel_button_cb);
 
-	/* Title Done Button */
-	Evas_Object *left_btn = elm_button_add(ad->navi_bar);
-	elm_object_style_set(left_btn, "naviframe/title_cancel");
-	evas_object_smart_callback_add(left_btn, "clicked", _cancel_button_cb, ad->navi_bar);
-	elm_object_item_part_content_set(nf_it, "title_left_btn", left_btn);
+	LOGD("append items to genlist done");
 }
 
-/* CALLBACK */
 void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	struct ug_data *ad = get_ug_data();
 	ad->popup = NULL;
 	current_file = (struct ListElement *) data;
 
-	Evas_Object *genlist = elm_genlist_add(ad->navi_bar);
-	elm_genlist_realization_mode_set(genlist, EINA_TRUE);
-	elm_genlist_homogeneous_set(genlist, EINA_TRUE);
+	Evas_Object *genlist = common_genlist(ad->navi_bar);
 
 	_set_itc_classes();
+
+	LOGD("Ready to append items to genlist");
 
 	Elm_Object_Item *name_entry_label = elm_genlist_item_append(
 				genlist,
@@ -585,7 +562,7 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info)
 				NULL,
 				ELM_GENLIST_ITEM_NONE,
 				_gl_sel,
-				NULL );
+				ad);
 	elm_genlist_item_select_mode_set(name_entry_label, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 	elm_genlist_item_append(
@@ -595,27 +572,25 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info)
 				NULL,
 				ELM_GENLIST_ITEM_NONE,
 				_gl_sel,
-				NULL );
-	Elm_Object_Item *ctxpopup_entry_label = elm_genlist_item_append (
+				ad);
+	Elm_Object_Item *ctxpopup_entry_label = elm_genlist_item_append(
 			genlist,
 			&itc_group,
 			(void *) 2,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
+			ad);
 	elm_genlist_item_select_mode_set(ctxpopup_entry_label, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 	elm_genlist_item_append(
 			genlist,
 			&itc_drop,
-			NULL,
+			ad,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			_gl_sel,
-			NULL );
-
-	evas_object_smart_callback_add(genlist, "language,changed", _gl_lang_changed, NULL);
+			ad);
 
 	Elm_Object_Item *nf_it = elm_naviframe_item_push(
 			ad->navi_bar,
@@ -630,13 +605,6 @@ void put_pkcs12_name_cb(void *data, Evas_Object *obj, void *event_info)
 
 	elm_object_item_domain_text_translatable_set(nf_it, PACKAGE, EINA_TRUE);
 
-	Evas_Object *right_btn = elm_button_add(ad->navi_bar);
-	elm_object_style_set(right_btn, "naviframe/title_done");
-	evas_object_smart_callback_add(right_btn, "clicked", _install_button_cb, NULL);
-	elm_object_item_part_content_set(nf_it, "title_right_btn", right_btn);
-
-	Evas_Object *left_btn = elm_button_add(ad->navi_bar);
-	elm_object_style_set(left_btn, "naviframe/title_cancel");
-	evas_object_smart_callback_add(left_btn, "clicked", _cancel_button_cb, NULL);
-	elm_object_item_part_content_set(nf_it, "title_left_btn", left_btn);
+	add_common_done_btn(ad, _install_button_cb);
+	add_common_cancel_btn(ad, _cancel_button_cb);
 }

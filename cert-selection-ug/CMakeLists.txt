@@ -1,3 +1,5 @@
+ADD_DEFINITIONS("-DBUILD_CERT_SELECTION_UG")
+
 pkg_check_modules(ug-cert-selection-ug-efl_pkgs
     REQUIRED
     glib-2.0
@@ -10,6 +12,7 @@ pkg_check_modules(ug-cert-selection-ug-efl_pkgs
 )
 
 SET(SRCS
+    ${CMAKE_SOURCE_DIR}/common/src/common-utils.c
     src/cert-selection.c
     src/cert-selection-uigadget.c
 )
@@ -19,23 +22,25 @@ FOREACH(flag ${ug-cert-selection-ug-efl_pkgs_CFLAGS})
 ENDFOREACH(flag)
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/view/include)
-
-ADD_DEFINITIONS(${ug-cert-selection-ug-efl_pkgs_DEPS_CFLAGS})
-ADD_DEFINITIONS(${ug-cert-selection-ug-efl_pkgs_DEPS_OTHER})
-
-INCLUDE_DIRECTORIES(${ug-cert-selection-ug-efl_pkgs_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(
+    ${CMAKE_SOURCE_DIR}/common/include
+    ${CMAKE_SOURCE_DIR}/cert-selection-ug/include
+    ${CMAKE_SOURCE_DIR}/view/include
+    ${ug-cert-selection-ug-efl_pkgs_INCLUDE_DIRS}
+)
 
 ADD_LIBRARY(${TARGET_CERT_SELECTION_UG} SHARED ${SRCS})
-SET_TARGET_PROPERTIES(${TARGET_CERT_SELECTION_UG}
+SET_TARGET_PROPERTIES(
+    ${TARGET_CERT_SELECTION_UG}
     PROPERTIES
+        COMPILE_FLAGS "-D_GNU_SOURCE -fPIC -fvisibility=default"
         SOVERSION ${SO_VERSION}
         VERSION ${VERSION}
 )
 
 TARGET_LINK_LIBRARIES(${TARGET_CERT_SELECTION_UG}
     ${ug-cert-selection-ug-efl_pkgs_LIBRARIES}
+    ${ug-cert-selection-ug-efl_pkgs_LDFLAGS}
 )
 
 INSTALL(TARGETS

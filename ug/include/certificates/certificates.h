@@ -25,29 +25,58 @@
 
 #include <Elementary.h>
 #include <cert-svc/ccert.h>
-#include <tzplatform_config.h>
 
 #include "mgr-app-uigadget.h"
 
+// Path to the certs
+//root path
+#define PATH_CERT_ROOT              "/opt/share/cert-svc/certs"
+
+//ssl
+#define PATH_CERT_SSL               "/opt/share/cert-svc/certs/ssl"
+#define PATH_CERT_SSL_ETC           "/opt/etc/ssl/certs"
+
+//sim
+#define PATH_CERT_SIM_OPERATOR      "/opt/share/cert-svc/certs/sim/operator"
+#define PATH_CERT_SIM_THIRDPARTY    "/opt/share/cert-svc/certs/sim/thirdparty"
+
+//user
+#define PATH_CERT_USER              "/opt/share/cert-svc/certs/user"
+#define PATH_CERT_TRUSTEDUSER       "/opt/share/cert-svc/certs/trusteduser"
+
+//code-signing
+#define PATH_CERT_WAC                "/opt/share/cert-svc/certs/code-signing/wac"
+
 //sd-card
-#define PATH_SDCARD          tzplatform_mkpath(TZ_SYS_STORAGE, "sdcard/")
-#define PATH_MEDIA           tzplatform_getenv(TZ_USER_CONTENT)
-#define PATH_MEDIA_DOWNLOADS tzplatform_mkpath(TZ_USER_CONTENT, "Downloads/")
+#define PATH_SDCARD                  "/opt/storage/sdcard"
+#define PATH_MEDIA                   "/opt/usr/media"
+#define PATH_MEDIA_DOWNLOADS         "/opt/usr/media/Downloads"
+
+typedef struct ListElement {
+    struct ListElement *prev, *next;
+    char            *title;
+    CertStoreType   storeType;
+    char            *gname;
+    char            *name;
+    char            *path;
+    Eina_Bool       isChecked;
+} ListElement_t;
 
 // certificates menu
 void direct_pfx_install_screen_cb(void *data, Evas_Object *obj, void *event_info);
-void certificates_menu_cb (void *data, Evas_Object *obj, void *event_info);
+void create_certificates_menu(struct ug_data *ad);
 void trusted_root_cert_cb (void *data, Evas_Object *obj, void *event_info);
 void pfx_cert_cb          (void *data, Evas_Object *obj, void *event_info);
+
 
 // trusted root certificates
 void trusted_root_cert_selection_cb     (void *data, Evas_Object *obj, void *event_info);
 Eina_Bool trusted_root_cert_create_list (struct ug_data *ad);
 
 // PFX certificate
-Elm_Object_Item* pfx_cert_install_cb (void *data, Evas_Object *obj, void *event_info);
+Elm_Object_Item* pfx_cert_install(struct ug_data *ad);
 void put_pkcs12_name_cb          (void *data, Evas_Object *obj, void *event_info);
-void put_pkcs12_name_and_pass_cb (void *data, Evas_Object *obj, void *event_info);
+void put_pkcs12_name_and_pass    (ListElement_t *file, struct ug_data *ad);
 void pfx_cert_remove_cb          (void *data, Evas_Object *obj, void *event_info);
 
 // cert general

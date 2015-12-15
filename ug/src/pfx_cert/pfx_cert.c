@@ -20,9 +20,6 @@
  * @brief
  */
 
-#include <dirent.h>
-
-#include <dlog.h>
 #include <efl_extension.h>
 #include <Elementary.h>
 
@@ -31,64 +28,48 @@
 #include <cert-svc/cpkcs12.h>
 #include <cert-svc/cstring.h>
 
+#include "common-utils.h"
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
 static CertSvcStringList stringList;
-static char **alias_list = NULL;
-static char **email_list = NULL;
-static int  max_length   = 0;
+static char **alias_list;
+static char **email_list;
+static int max_length;
 
 static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *part);
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part);
-static void move_more_ctxpopup(Evas_Object *ctxpopup);
 
-void clear_pfx_genlist_data()
+void clear_pfx_genlist_data(void)
 {
-    LOGD("clear_pfx_genlist_data()");
-    int i;
-    if (max_length < 1) {
-        alias_list = NULL;
-        email_list = NULL;
-        return;
-    }
+	LOGD("clear_pfx_genlist_data()");
+	int i;
+	if (max_length < 1) {
+		alias_list = NULL;
+		email_list = NULL;
+		return;
+	}
 
-    if (alias_list) {
-        for (i = 0; i < max_length; ++i)
-            free (alias_list[i]);
+	if (alias_list) {
+		for (i = 0; i < max_length; ++i)
+			free (alias_list[i]);
 
-        free(alias_list);
-        alias_list = NULL;
-    }
+		free(alias_list);
+		alias_list = NULL;
+	}
 
-    if (email_list) {
-        for (i = 0; i < max_length; ++i)
-            free (email_list[i]);
+	if (email_list) {
+		for (i = 0; i < max_length; ++i)
+			free (email_list[i]);
 
-        free(email_list);
-        email_list = NULL;
-    }
+		free(email_list);
+		email_list = NULL;
+	}
 
-    max_length = 0;
+	max_length = 0;
 
-    certsvc_string_list_free(stringList);
+	certsvc_string_list_free(stringList);
 	memset(&stringList, 0, sizeof(stringList));
-}
-
-static char *_gl_get_text_group(void *data, Evas_Object *obj, const char *part)
-{
-    int index = (int)data;
-    if (!safeStrCmp(part, "elm.text.main")) {
-		if (index == 1)
-			return strdup("WIFI");
-
-		if(index == 0)
-			return strdup("VPN");
-
-		return strdup("EMAIL");
-    }
-
-    return NULL;
 }
 
 static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
@@ -98,10 +79,10 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 	CertSvcString alias;
 
 	alias.privateHandler = strdup(id->gname);
-    if (!alias.privateHandler) {
-        LOGE("Fail to allocate memory");
-        return;
-    }
+	if (!alias.privateHandler) {
+		LOGE("Fail to allocate memory");
+		return;
+	}
 
 	alias.privateLength = strlen(id->gname);
 
@@ -127,7 +108,7 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 	Evas_Object *check = NULL;
 	Evas_Object *content = NULL;
 	item_data_s *id = (item_data_s *)data;
-	Eina_Bool status = certStatusToEnia(id->status);
+	Eina_Bool status = certStatusToEina(id->status);
 
 	if (!strcmp(part, "elm.icon.2")) {
 		content = elm_layout_add(obj);
@@ -143,9 +124,9 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 		elm_layout_content_set(content, "elm.swallow.content", check);
 
 		return content;
-    }
+	}
 
-    return NULL;
+	return NULL;
 }
 
 static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
@@ -161,7 +142,7 @@ static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
 	struct ListElement *current = (struct ListElement *)data;
 
 	Elm_Object_Item *it = (Elm_Object_Item *)elm_genlist_selected_item_get(obj);
-	if (!it){
+	if (!it) {
 		LOGE("Item object is null.");
 		return;
 	}
@@ -173,10 +154,10 @@ static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
 }
 
 static Elm_Genlist_Item_Class itc_2text = {
-    .item_style = "1line",
-    .func.text_get = _gl_text_get,
+	.item_style = "1line",
+	.func.text_get = _gl_text_get,
 	.func.content_get = _gl_content_get,
-    .func.del = NULL
+	.func.del = NULL
 };
 
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
@@ -189,98 +170,52 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 	return  NULL;
 }
 
-static void _gl_lang_changed(void *data, Evas_Object *obj, void *event_info)
+static Eina_Bool
+pfx_cert_naviframe_pop_cb(void *data, Elm_Object_Item *it)
 {
-   //Update genlist items. The Item texts will be translated in the gl_text_get().
-   elm_genlist_realized_items_update(obj);
-}
+	struct ug_data *ad = get_ug_data();
 
-static void _dismissed_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	struct ug_data *ad = (struct ug_data *) data;
-	evas_object_smart_callback_del(ad->win_main, "rotation,changed", move_more_ctxpopup);
-	evas_object_smart_callback_del(obj,"dismissed", _dismissed_cb);
-	evas_object_del(obj);
-	ad->more_popup2 = NULL;
-}
-
-static Eina_Bool _back_pfx_cb(void *data, Elm_Object_Item *it)
-{
-	struct ug_data *ad = (struct ug_data *)data;
 	evas_object_del(ad->more_popup2);
-	ad->more_popup2 = (Evas_Object *)-1;
-    clear_pfx_genlist_data();
+	ad->more_popup2 = NULL;
+
+	clear_pfx_genlist_data();
 
 	return EINA_TRUE;
-}
-
-static void move_more_ctxpopup(Evas_Object *ctxpopup)
-{
-	Evas_Object *win = elm_object_top_widget_get(ctxpopup);
-	Evas_Coord w;
-	Evas_Coord h;
-	int pos = -1;
-
-	elm_win_screen_size_get(win, NULL, NULL, &w, &h);
-	pos = elm_win_rotation_get(win);
-
-	switch (pos) {
-	case 0:
-	case 180:
-		evas_object_move(ctxpopup, (w / 2), h);
-		break;
-	case 90:
-		evas_object_move(ctxpopup,  (h / 2), w);
-		break;
-	case 270:
-		evas_object_move(ctxpopup, (h / 2), w);
-		break;
-	default:
-		LOGE("Invalid pos value[%d]", pos);
-		break;
-	}
 }
 
 void more_button_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	struct ug_data *ad = (struct ug_data *)data;
-	if (!ad)
+	Evas_Object *popup = NULL;
+
+	if (ad->more_popup2 != NULL)
 		return;
 
-	if (ad->more_popup2)
-		return;
+	popup = common_more_ctxpopup(obj);
 
-	ad->more_popup2 = elm_ctxpopup_add(ad->navi_bar);
-	elm_ctxpopup_auto_hide_disabled_set(ad->more_popup2, EINA_TRUE);
-	elm_object_style_set(ad->more_popup2, "more/default");
+	elm_ctxpopup_item_append(popup, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), NULL, install_button_cb, ad);
+	elm_ctxpopup_item_append(popup, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), NULL, pfx_cert_remove_cb, ad);
 
-	evas_object_smart_callback_add(ad->more_popup2,"dismissed", _dismissed_cb, ad);
-	eext_object_event_callback_add(ad->more_popup2, EEXT_CALLBACK_BACK, _dismissed_cb, ad);
-	eext_object_event_callback_add(ad->more_popup2, EEXT_CALLBACK_MORE, _dismissed_cb, ad);
+	evas_object_show(popup);
 
-	elm_ctxpopup_item_append(ad->more_popup2, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), NULL, install_button_cb, ad);
-	elm_ctxpopup_item_append(ad->more_popup2, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), NULL, pfx_cert_remove_cb, ad);
-	evas_object_smart_callback_add(ad->win_main, "rotation,changed", move_more_ctxpopup, ad->more_popup2);
-
-	move_more_ctxpopup(ad->more_popup2);
-	evas_object_show(ad->more_popup2);
+	ad->more_popup2 = popup;
 }
 
 void create_genlist_cb(void *data, CertStoreType storeType)
 {
 	Evas_Object *parent = (Evas_Object *)data;
-    Evas_Object *genlist_pfx = NULL;
-    Evas_Object *no_content = NULL;
-    struct ListElement *current = NULL;
-    struct ListElement *lastListElement = NULL;
+	Evas_Object *genlist_pfx = NULL;
+	Evas_Object *no_content = NULL;
+	struct ListElement *current = NULL;
+	struct ListElement *lastListElement = NULL;
 	struct ug_data *ad = get_ug_data();
 
 	size_t Length = 0;
 	size_t i = 0;
 	int result = 0;
 
-	CertSvcStoreCertList* certList = NULL;
-	CertSvcStoreCertList* certListHead = NULL;
+	CertSvcStoreCertList *certList = NULL;
+	CertSvcStoreCertList *certListHead = NULL;
 
 	CertSvcInstance instance;
 
@@ -291,75 +226,74 @@ void create_genlist_cb(void *data, CertStoreType storeType)
 
 	result = certsvc_pkcs12_get_certificate_list_from_store(instance, storeType, DISABLED, &certList, &Length);
 	if (result != CERTSVC_SUCCESS) {
-        certsvc_instance_free(instance);
+		certsvc_instance_free(instance);
 		LOGE("Fail to get the certificate list from store.");
 		return;
 	}
 
 	certListHead = certList;
 
-	genlist_pfx = elm_genlist_add(parent);
+	genlist_pfx = common_genlist(parent);
 	if (!genlist_pfx) {
-        certsvc_instance_free(instance);
+		certsvc_instance_free(instance);
 		return;
-    }
-
-	elm_genlist_mode_set(genlist_pfx, ELM_LIST_COMPRESS);
-	evas_object_smart_callback_add(genlist_pfx, "language,changed", _gl_lang_changed, NULL);
+	}
 
 	if (Length) {
 		for (i = 0; i < Length; i++) {
-            item_data_s *id = item_data_create(
-                certList->gname,
-                certList->title,
-                certList->status,
-                storeType,
-                i);
+			item_data_s *id = item_data_create(
+				certList->gname,
+				certList->title,
+				certList->status,
+				storeType,
+				i);
 
-            if(!id) {
-                certsvc_instance_free(instance);
-                LOGE("fail to allocate memory");
-                return;
-            }
+			if (!id) {
+				certsvc_instance_free(instance);
+				LOGE("fail to allocate memory");
+				return;
+			}
 
 			current = addListElementWithPathAndTitle(lastListElement, certList->gname, NULL, certList->title);
-            if (!current) {
-                item_data_free(id);
-                certsvc_instance_free(instance);
-                LOGE("Failed to allocate memory");
-                return;
-            }
+			if (!current) {
+				item_data_free(id);
+				certsvc_instance_free(instance);
+				LOGE("Failed to allocate memory");
+				return;
+			}
 
-		    lastListElement = current;
-		    current->storeType = storeType;
-		    certList = certList->next;
-		    elm_genlist_item_append(genlist_pfx, &itc_2text, id, NULL, ELM_GENLIST_ITEM_NONE, _cert_selection_cb, current);
+			lastListElement = current;
+			current->storeType = storeType;
+			certList = certList->next;
+			elm_genlist_item_append(genlist_pfx, &itc_2text, id, NULL, ELM_GENLIST_ITEM_NONE, _cert_selection_cb, current);
 		}
 
 		result = certsvc_pkcs12_free_certificate_list_loaded_from_store(instance, &certListHead);
 		if (result != CERTSVC_SUCCESS)
 			LOGE("Fail to free certificate list.");
 
+		/* delete the previous object set */
 		if (ad->user_cert_list_item)
-			elm_object_item_part_content_set(ad->user_cert_list_item, NULL , genlist_pfx); //deletes the previous object set.
+			elm_object_item_part_content_set(ad->user_cert_list_item, NULL, genlist_pfx);
 		else
-			ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", NULL, NULL, genlist_pfx, NULL);
+			ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", common_back_btn(ad), NULL, genlist_pfx, NULL);
 
 	} else {
 		no_content = create_no_content_layout(ad);
-		if (!no_content){
-			LOGD("Cannot create no_content layout (NULL); return");
-            certsvc_instance_free(instance);
+		if (!no_content) {
+			LOGE("Cannot create no_content layout");
+			certsvc_instance_free(instance);
 			return;
 		}
 
+		/* delete the previous object set */
 		if (ad->user_cert_list_item)
-			elm_object_item_part_content_set(ad->user_cert_list_item, NULL , no_content); //deletes the previous object set.
+			elm_object_item_part_content_set(ad->user_cert_list_item, NULL, no_content);
 		else
-			ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", NULL, NULL, no_content, NULL);
+			ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", common_back_btn(ad), NULL, no_content, NULL);
 	}
 
-    certsvc_instance_free(instance);
+	certsvc_instance_free(instance);
 }
 
 void create_VPN_list_cb(void *data, Evas_Object *obj, void *event_info)
@@ -396,58 +330,53 @@ Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
 
 void pfx_cert_create_list(struct ug_data *ad)
 {
-    Evas_Object *no_content = NULL;
-    clear_pfx_genlist_data();
+	Evas_Object *no_content = NULL;
+	Evas_Object *tabbar;
 
-    if (!ad)
+	clear_pfx_genlist_data();
+
+	if (!ad)
 		return;
 
 	no_content = create_no_content_layout(ad);
-	if (!no_content){
-		LOGD("Cannot create no_content layout (NULL); return");
+	if (!no_content) {
+		LOGE("Cannot create no_content layout");
 		return;
 	}
 
 	if (ad->user_cert_list_item)
-		elm_object_item_part_content_set(ad->user_cert_list_item, NULL , no_content); //deletes the previous object set.
+		elm_object_item_part_content_set(ad->user_cert_list_item, NULL, no_content);
 	else
-		ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", NULL, NULL, no_content, NULL);
-
-	Evas_Object *tabbar;
+		ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", common_back_btn(ad), NULL, no_content, NULL);
 
 	elm_naviframe_item_style_set(ad->user_cert_list_item, "tabbar");
 	tabbar = create_2_text_with_title_tabbar(ad->win_main);
 	elm_object_item_part_content_set(ad->user_cert_list_item, "tabbar", tabbar);
-
 	elm_object_item_part_text_set(ad->user_cert_list_item, NULL, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"));
 }
 
 void refresh_pfx_cert_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	struct ug_data *ad = (struct ug_data *) data;
-	if (!ad)
-		return;
+	struct ug_data *ad = get_ug_data();
 
-	ad->more_popup2=NULL;
+	evas_object_del(ad->more_popup2);
+	ad->more_popup2 = NULL;
+
 	pfx_cert_create_list(ad);
 }
 
 void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info)
 {
-    struct ug_data *ad = (struct ug_data *)data;
-    if (!ad)
-    	return;
+	struct ug_data *ad = get_ug_data();
 
-    ad->user_cert_list_item = NULL;
-    pfx_cert_create_list(ad);
-    if (!ad->user_cert_list_item)
-        return;
+	ad->user_cert_list_item = NULL;
+	pfx_cert_create_list(ad);
 
 	eext_object_event_callback_add(ad->navi_bar, EEXT_CALLBACK_MORE, more_button_cb, ad);
-    eext_object_event_callback_add(ad->navi_bar, EEXT_CALLBACK_BACK, eext_naviframe_back_cb, NULL);
+	eext_object_event_callback_add(ad->navi_bar, EEXT_CALLBACK_BACK, eext_naviframe_back_cb, NULL);
 	ad->more_popup2 = NULL;
 
-    elm_naviframe_item_pop_cb_set(ad->user_cert_list_item, _back_pfx_cb, ad);
+	elm_naviframe_item_pop_cb_set(ad->user_cert_list_item, pfx_cert_naviframe_pop_cb, ad);
 
-    ad->refresh_screen_cb = refresh_pfx_cert_cb;
+	ad->refresh_screen_cb = refresh_pfx_cert_cb;
 }

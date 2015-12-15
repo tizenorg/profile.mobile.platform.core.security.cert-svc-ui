@@ -1,7 +1,7 @@
 Name:    cert-svc-ui
-Summary: Certification service ui package
-Version: 1.0.1
-Release: 53
+Summary: Certification service ui gadget
+Version: 1.0.2
+Release: 2
 Group:   System/Libraries
 License: Apache-2.0
 Source0: %{name}-%{version}.tar.gz
@@ -27,11 +27,11 @@ BuildRequires: pkgconfig(capi-system-system-settings)
 BuildRequires: pkgconfig(libtzplatform-config)
 
 %description
-Certification service ui package, used by settings and ui-gadget
+Certification service
 
 %prep
 %setup -q
-cp -a %{SOURCE1001} .
+cp -a %SOURCE1001 .
 
 %build
 export CFLAGS="$CFLAGS -DTIZEN_DEBUG_ENABLE"
@@ -49,20 +49,16 @@ export FFLAGS="$FFLAGS -DTIZEN_EMULATOR_MODE"
 %endif
 
 %{!?build_type:%define build_type "Release"}
-cmake . -DCMAKE_INSTALL_PREFIX=%TZ_SYS_RO_UG \
-        -DTZ_SYS_BIN=%{TZ_SYS_BIN} \
-        -DTZ_SYS_SHARE=%{TZ_SYS_SHARE} \
-        -DVERSION=%version \
-        -DCMAKE_BUILD_TYPE=%{build_type}
+%cmake . -DCMAKE_INSTALL_PREFIX=%TZ_SYS_RO_UG \
+        -DTZ_SYS_BIN=%TZ_SYS_BIN \
+        -DTZ_SYS_SHARE=%TZ_SYS_SHARE \
+        -DCMAKE_BUILD_TYPE=%{build_type} \
+        -DVERSION=%version
 
-#VERBOSE=1 make
-make
+make %{?_smp_mflags}
 
 %install
 %make_install
-
-%clean
-rm -rf %{buildroot}
 
 %post -p /sbin/ldconfig
 
@@ -70,12 +66,11 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%manifest %{name}.manifest
+%manifest %name.manifest
 %license LICENSE
-%{TZ_SYS_SHARE}/packages/%{name}.xml
-%TZ_SYS_RO_UG/lib/libug-mgr-cert-view.so*
+%TZ_SYS_SHARE/packages/%name.xml
 %TZ_SYS_RO_UG/lib/libug-setting-manage-certificates-efl.so*
 %TZ_SYS_RO_UG/lib/libug-cert-selection-ug-efl.so*
-%TZ_SYS_RO_UG/res/locale/*/LC_MESSAGES/*
-%TZ_SYS_RO_UG/res/images
+%TZ_SYS_RO_UG/res/locale/*
+%TZ_SYS_RO_UG/res/images/*
 %TZ_SYS_RO_UG/res/custom_editfield.edj

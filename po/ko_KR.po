@@ -1,17 +1,32 @@
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "모두 선택"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "사용자 인증서"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "내용이 없습니다"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d개 선택"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "삭제"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "취소"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "완료"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "취소"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "모두 선택"
 
 msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
 msgstr "인증서를 찾을 수 없습니다."
 
 msgid "IDS_ST_HEADER_SELECT_ITEMS"
 msgstr "항목 선택"
-
-msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
-msgstr "%d개 선택"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "예"
@@ -49,9 +64,6 @@ msgstr "아니요"
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "설치"
 
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "취소"
-
 msgid "IDS_ST_BODY_VERSION_C"
 msgstr "버전:"
 
@@ -60,9 +72,6 @@ msgstr "유효기간 만료일:"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "유효기간 시작일:"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "사용자 인증서"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
 msgstr "신뢰할 수 있는 루트 CA 인증서"
@@ -85,14 +94,35 @@ msgstr "공개키:"
 msgid "IDS_ST_BODY_OWNER_C"
 msgstr "소유자:"
 
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "인증서 삭제 중..."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "인증서 삭제 중..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "인증서 %d개를 삭제합니다."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "인증서 1개를 삭제합니다."
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "사용"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "인증서 삭제"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "인증서 관리"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "인증서 설치"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "기관:"
 
 msgid "IDS_ST_BODY_NO_DATA"
 msgstr "데이터가 없습니다"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "내용이 없습니다"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "제조사"
@@ -107,7 +137,7 @@ msgid "IDS_ST_BODY_ISSUER"
 msgstr "발행자"
 
 msgid "IDS_ST_BODY_INCORRECT_PASSWORD"
-msgstr "비밀번호가 바르지 않습니다."
+msgstr "잘못된 비밀번호를 입력하였습니다."
 
 msgid "IDS_ST_BODY_FALSE"
 msgstr "거짓"
@@ -144,34 +174,4 @@ msgstr "이미 사용 중인 별칭입니다. 고유한 별칭을 입력하세�
 
 msgid "IDS_SCP_BODY_OWNER_ABB"
 msgstr "소유자"
-
-msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
-msgstr "인증서 삭제"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "완료"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "취소"
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
-msgstr "인증서 삭제 중..."
-
-msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
-msgstr "인증서 1개를 삭제합니다."
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
-msgstr "인증서 삭제 중..."
-
-msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
-msgstr "인증서 %d개를 삭제합니다."
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
-msgstr "인증서 설치"
-
-msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
-msgstr "인증서 관리"
-
-msgid "IDS_ST_HEADER_USED_FOR"
-msgstr "사용"
 

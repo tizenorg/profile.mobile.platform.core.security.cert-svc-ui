@@ -1,17 +1,32 @@
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Выделить все"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Сертификаты пользователей"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "Нет содержимого"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "Выбрано: %d"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "Удалить"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "Отмена"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "ГОТОВО"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "ОТМЕНА"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Выделить все"
 
 msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
 msgstr "Сертификат не найден"
 
 msgid "IDS_ST_HEADER_SELECT_ITEMS"
 msgstr "Выберите элементы"
-
-msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
-msgstr "Выбрано: %d"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "Да"
@@ -49,9 +64,6 @@ msgstr "Нет"
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Установить"
 
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "Отмена"
-
 msgid "IDS_ST_BODY_VERSION_C"
 msgstr "Версия:"
 
@@ -60,9 +72,6 @@ msgstr "Действителен до:"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "Действителен с:"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Сертификаты пользователей"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
 msgstr "Довер. корневые сертификаты ЦС"
@@ -85,14 +94,35 @@ msgstr "Открытый ключ:"
 msgid "IDS_ST_BODY_OWNER_C"
 msgstr "Владелец:"
 
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Удаление сертификата..."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Удаление сертификатов..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d сертификата(-ов) будет удалено."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 сертификат будет удален."
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Используется для"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Удаление сертификатов"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Управление сертификатами"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "Уст. сертификат"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Организация:"
 
 msgid "IDS_ST_BODY_NO_DATA"
 msgstr "Нет данных"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "Нет содержимого"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "Изготовитель"
@@ -144,34 +174,4 @@ msgstr "Такой псевдоним уже существует. Введит�
 
 msgid "IDS_SCP_BODY_OWNER_ABB"
 msgstr "Владелец"
-
-msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
-msgstr "Удаление сертификатов"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "ГОТОВО"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "ОТМЕНА"
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
-msgstr "Удаление сертификата..."
-
-msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
-msgstr "1 сертификат будет удален."
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
-msgstr "Удаление сертификатов..."
-
-msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
-msgstr "%d сертификата(-ов) будет удалено."
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
-msgstr "Уст. сертификат"
-
-msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
-msgstr "Управление сертификатами"
-
-msgid "IDS_ST_HEADER_USED_FOR"
-msgstr "Используется для"
 

@@ -20,10 +20,6 @@
  * @brief
  */
 
-#define _GNU_SOURCE
-
-#include <dlog.h>
-
 #include <efl_extension.h>
 
 #include <cert-svc/ccert.h>
@@ -31,14 +27,16 @@
 #include <cert-svc/cpkcs12.h>
 
 #include "mgr-app-uigadget.h"
+#include "common-utils.h"
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
 #define CERT_GENLIST_1TEXT1EDIT_STYLE  "dialogue/1text.1icon.5"
 #define CERT_GENLIST_TITLE_STYLE "dialogue/title"
+#define CERT_SVC_UI_RES_PATH "/usr/ug/res/images/cert-svc-ui"
 
-static const char* const align_begin = "<align=center>";
-static const char* const align_end   = "</align>";
+static const char *const align_begin = "<align=center>";
+static const char *const align_end   = "</align>";
 
 static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info);
 
@@ -55,11 +53,12 @@ static void _info_pop_response_no_cb(void *data, Evas_Object *obj, void *event_i
 static void _info_pop_response_yes_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	struct ug_data *ad = (struct ug_data *)data;
-	if (ad->popup)
+	if (ad->popup) {
 		evas_object_del(ad->popup);
+		ad->popup = NULL;
+	}
 
-	ad->popup = NULL;
-	pfx_cert_install_cb(ad, NULL, NULL);
+	pfx_cert_install(ad);
 }
 
 static void _info_pop_response_ok_cb(void *data, Evas_Object *obj, void *event_info)
@@ -73,7 +72,7 @@ static void _info_pop_response_ok_cb(void *data, Evas_Object *obj, void *event_i
 
 static void _popup_quit_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	struct ug_data *ad = (struct ug_data*) data;
+	struct ug_data *ad = (struct ug_data *)data;
 	if (ad->popup)
 		evas_object_del(ad->popup);
 
@@ -87,70 +86,63 @@ static void _popup_quit_cb(void *data, Evas_Object *obj, void *event_info)
 }
 
 item_data_s *item_data_create(
-    const char *gname,
-    const char *title,
-    CertStatus status,
-    CertStoreType storeType,
-    size_t index)
+	const char *gname,
+	const char *title,
+	CertStatus status,
+	CertStoreType storeType,
+	size_t index)
 {
-    item_data_s *id = malloc(sizeof(item_data_s));
-    if (!id) {
-        LOGE("Fail to allocate item_data_s class");
-        return NULL;
-    }
+	item_data_s *id = malloc(sizeof(item_data_s));
+	if (!id) {
+		LOGE("Fail to allocate item_data_s class");
+		return NULL;
+	}
 
 
-    id->gname = strdup(gname);
-    id->title = strdup(title);
+	id->gname = strdup(gname);
+	id->title = strdup(title);
 
-    if (!id->gname || !id->title) {
-        LOGE("Failed to allocate memory");
-        free(id->gname);
-        free(id->title);
-        free(id);
-        return NULL;
-    }
+	if (!id->gname || !id->title) {
+		LOGE("Failed to allocate memory");
+		free(id->gname);
+		free(id->title);
+		free(id);
+		return NULL;
+	}
 
-    id->status = status;
-    id->storeType = storeType;
-    id->index = index;
+	id->status = status;
+	id->storeType = storeType;
+	id->index = index;
 
-    return id;
+	return id;
 }
 
 void item_data_free(item_data_s *id)
 {
-    if (id) {
-        free(id->gname);
-        free(id->title);
-        free(id);
-    }
+	if (id) {
+		free(id->gname);
+		free(id->title);
+		free(id);
+	}
 }
 
-Eina_Bool certStatusToEnia(CertStatus status)
+Eina_Bool certStatusToEina(CertStatus status)
 {
-	switch (status) {
-	case ENABLED:
-		return EINA_TRUE;
-	case DISABLED:
-	default:
-		return EINA_FALSE;
-	}
+	return status == ENABLED ? EINA_TRUE : EINA_FALSE;
 }
 
 Eina_Bool quit_cb(void *data, Elm_Object_Item *it)
 {
-	LOGD("quit_cb");
 	struct ug_data *ad = (struct ug_data *)data;
 
-	if (ad->ug) {
-		deleteList(ad->list_element);
-		ad->list_element = NULL;
-		elm_naviframe_item_pop(ad->navi_bar);
-		ug_destroy_me(ad->ug);
-		ad->ug = NULL;
-		ad->more_popup2 = NULL;
-	}
+	if (ad->ug == NULL)
+		return EINA_FALSE;
+
+	deleteList(ad->list_element);
+	ad->list_element = NULL;
+	ug_destroy_me(ad->ug);
+	ad->ug = NULL;
+	ad->more_popup2 = NULL;
 
 	return EINA_FALSE;
 }
@@ -179,9 +171,9 @@ void set_object_text_with_alignment(Evas_Object *object, const char *content)
 	char *text = NULL;
 	size_t i = 0;
 	size_t j = 0;
-    size_t align_begin_len = strlen(align_begin);
-    size_t align_end_len = strlen(align_end);
-    size_t content_len = strlen(content);
+	size_t align_begin_len = strlen(align_begin);
+	size_t align_end_len = strlen(align_end);
+	size_t content_len = strlen(content);
 	text = (char *)malloc((align_begin_len + align_end_len + content_len + 1) * sizeof(char));
 	if (!text) {
 		LOGE("Failed to allocate memory");
@@ -223,12 +215,12 @@ Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *contentId)
 
 	evas_object_size_hint_weight_set(ad->popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 
-	//no button
+	/* no button */
 	Evas_Object *btn_no = elm_button_add(ad->popup);
 	elm_object_domain_translatable_text_set(btn_no, PACKAGE, "IDS_ST_BUTTON_CANCEL");
 	elm_object_style_set(btn_no, "popup");
 
-	//yes button
+	/* yes button */
 	Evas_Object *btn_yes = elm_button_add(ad->popup);
 	elm_object_domain_translatable_text_set(btn_yes, PACKAGE, "IDS_ST_BUTTON_INSTALL");
 	evas_object_smart_callback_add(btn_yes, "clicked", _info_pop_response_yes_cb, ad);
@@ -253,19 +245,11 @@ Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *contentId)
 	return ad->popup;
 }
 
-static void _dismissed_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	evas_object_smart_callback_del(obj,"dismissed", _dismissed_cb);
-	evas_object_del(obj);
-}
-
-
 void install_button_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	LOGD("install_button_cb()");
 	struct ug_data *ad = (struct ug_data *)data;
-	if (ad)
-		_dismissed_cb(data, ad->more_popup2, event_info);
+
+	common_dismissed_cb(ad->win_main, obj, event_info);
 
 	create_yes_no_pop(ad, "IDS_ST_POP_CERTIFICATES_FROM_THE_DEVICE_MEMORY_AND_SD_CARD_WILL_BE_INSTALLED");
 }
@@ -281,17 +265,16 @@ Evas_Object *create_ok_pop(struct ug_data *ad, const char *contentId)
 
 	evas_object_size_hint_weight_set(ad->popup, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 
-	//ok button
 	Evas_Object *btn_ok = elm_button_add(ad->popup);
 	elm_object_domain_translatable_text_set(btn_ok, PACKAGE, "IDS_ST_SK2_OK");
 	elm_object_style_set(btn_ok, "popup");
 	evas_object_smart_callback_add(btn_ok, "clicked", _info_pop_response_ok_cb, ad->popup);
 
-	//set_object_text_with_alignment(ad->popup, dgettext(PACKAGE, contentId));
+	/* set_object_text_with_alignment(ad->popup, dgettext(PACKAGE, contentId)); */
 	elm_object_domain_translatable_text_set(ad->popup, PACKAGE, contentId);
 
 	evas_object_smart_callback_add(ad->popup, "language,changed", _popup_lang_changed, contentId);
-	elm_object_domain_translatable_part_text_set(ad->popup,"title,text", PACKAGE, "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB");
+	elm_object_domain_translatable_part_text_set(ad->popup, "title,text", PACKAGE, "IDS_ST_HEADER_UNABLE_TO_INSTALL_CERTIFICATE_ABB");
 
 	elm_object_part_content_set(ad->popup, "button1", btn_ok);
 
@@ -318,7 +301,6 @@ char *path_cat(const char *str1, char *str2)
 		return NULL;
 }
 
-// extract title from certificate ------------------
 char *extractDataFromCert(char *path)
 {
 	struct ug_data *ad = get_ug_data();
@@ -534,7 +516,7 @@ struct ListElement *findLastElement(struct ListElement *listElement)
 	return lastListElement;
 }
 
-struct ListElement *findFirstElement(struct ListElement* listElement)
+struct ListElement *findFirstElement(struct ListElement *listElement)
 {
 	struct ListElement *firsListElement = listElement;
 	while (firsListElement->prev)
@@ -559,8 +541,6 @@ void deleteList(struct ListElement *listElement)
 	}
 }
 
-// ------------------------------------------------
-//@@@test
 Eina_Bool back_cb(void *data, Elm_Object_Item *it)
 {
 	LOGD("back_cb");
@@ -634,7 +614,7 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 	Eina_Bool status = id->status;
 	Evas_Object *content;
 
-    if (!strcmp(part, "elm.icon.2")) {
+	if (!strcmp(part, "elm.icon.2")) {
 		content = elm_layout_add(obj);
 		elm_layout_theme_set(content, "layout", "list/C/type.3", "default");
 		check = elm_check_add(content);
@@ -647,9 +627,9 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 		evas_object_smart_callback_add(check, "changed", _chk_changed_cb, data);
 		elm_layout_content_set(content, "elm.swallow.content", check);
 		return content;
-    }
+	}
 
-    return NULL;
+	return NULL;
 }
 
 Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_path, struct ListElement *lastListElement)
@@ -660,8 +640,8 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_pa
 	Elm_Object_Item *it = NULL;
 	struct ListElement *current = NULL;
 	Eina_Bool no_content_bool = EINA_TRUE;
-	CertSvcStoreCertList* certList = NULL;
-	CertSvcStoreCertList* certListHead = NULL;
+	CertSvcStoreCertList *certList = NULL;
+	CertSvcStoreCertList *certListHead = NULL;
 	CertSvcInstance instance;
 
 	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
@@ -690,51 +670,50 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_pa
 
 	while (index < length) {
 		no_content_bool = EINA_FALSE;
-        item_data_s *id = item_data_create(
-                certList->gname,
-                certList->title,
-                certList->status,
-                SYSTEM_STORE,
-                index);
-        if (!id) {
-            LOGE("Failed to allocate memory for item_data");
-            certsvc_instance_free(instance);
-	        elm_genlist_item_class_free(itc);
-            return no_content_bool;
-        }
+		item_data_s *id = item_data_create(
+				certList->gname,
+				certList->title,
+				certList->status,
+				SYSTEM_STORE,
+				index);
+		if (!id) {
+			LOGE("Failed to allocate memory for item_data");
+			certsvc_instance_free(instance);
+			elm_genlist_item_class_free(itc);
+			return no_content_bool;
+		}
 
 		current = addListElementWithPathAndTitle(lastListElement, certList->gname, NULL, certList->title);
-        if (!current) {
-            certsvc_instance_free(instance);
-	        elm_genlist_item_class_free(itc);
-            item_data_free(id);
-		    LOGE("currrent is NULL. ");
-		    return no_content_bool;
-        }
+		if (!current) {
+			certsvc_instance_free(instance);
+			elm_genlist_item_class_free(itc);
+			item_data_free(id);
+			LOGE("currrent is NULL. ");
+			return no_content_bool;
+		}
 		current->storeType = SYSTEM_STORE;
 		lastListElement = current;
 
 		it = elm_genlist_item_append(
-				genlist,				/* genlist object */
-				itc,					/* item class */
-				id,   					/* item class user data */
+				genlist,
+				itc,
+				id,
 				NULL,
-				ELM_GENLIST_ITEM_NONE,	/* item type */
-				_cert_selection_cb,		/* select smart callback */
-				current);				/* smart callback user data */
+				ELM_GENLIST_ITEM_NONE,
+				_cert_selection_cb,
+				current);
 
 		if (!it)
 			LOGE("Error in elm_list_item_append");
 
 		index++;
 		certList = certList->next;
-	
 	}
 
 	certsvc_pkcs12_free_certificate_list_loaded_from_store(instance, &certListHead);
 	ad->list_to_refresh = genlist;
 	elm_genlist_item_class_free(itc);
-    certsvc_instance_free(instance);
+	certsvc_instance_free(instance);
 
 	return no_content_bool;
 }
@@ -752,27 +731,27 @@ static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
 	struct ug_data *ad = get_ug_data();
 	ad->data = NULL;
 
-	get_info_cert_from_file_cb(ad,data);
+	get_info_cert_from_file_cb(ad, data);
 }
 
 Evas_Object *create_no_content_layout(struct ug_data *ad)
 {
 	char buf[256] = {0,};
 
-	if(!ad)
+	if (ad == NULL)
 		return NULL;
 
 	Evas_Object *no_content = elm_layout_add(ad->win_main);
-	if(!no_content)
+	if (no_content == NULL)
 		return NULL;
 
 	elm_layout_theme_set(no_content, "layout", "nocontents", "default");
 	evas_object_size_hint_weight_set(no_content, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(no_content, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
-	Evas_Object* icon = elm_image_add(no_content);
+	Evas_Object *icon = elm_image_add(no_content);
 
-	snprintf(buf, sizeof(buf), "%s/00_nocontents_text_gray.png", CERTSVC_UI_IMG_PATH);
+	snprintf(buf, sizeof(buf), "%s/00_nocontents_text_gray.png", CERT_SVC_UI_RES_PATH);
 
 	elm_image_file_set(icon, buf, NULL);
 	elm_object_part_content_set(no_content, "nocontents.image", icon);

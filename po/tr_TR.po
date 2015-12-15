@@ -1,17 +1,32 @@
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "Hepsini seç"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "Kullanıcı sertifikaları"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "İçerik yok"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d seçildi"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "Kaldır"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "İptal"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "BİTTİ"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "İPTAL"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "Hepsini seç"
 
 msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
 msgstr "Sertifika bulunamadı"
 
 msgid "IDS_ST_HEADER_SELECT_ITEMS"
 msgstr "Öğeleri seç"
-
-msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
-msgstr "%d seçildi"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "Evet"
@@ -49,9 +64,6 @@ msgstr "Hayır"
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "Kur"
 
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "İptal"
-
 msgid "IDS_ST_BODY_VERSION_C"
 msgstr "Sürüm:"
 
@@ -60,9 +72,6 @@ msgstr "Son geçerlilik tarihi:"
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "İlk geçerlilik tarihi:"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "Kullanıcı sertifikaları"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
 msgstr "Güvenilir kök CA sertifikaları"
@@ -85,14 +94,35 @@ msgstr "Genel anahtar:"
 msgid "IDS_ST_BODY_OWNER_C"
 msgstr "Sahibi:"
 
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "Sertifika kaldırılıyor..."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "Sertifikalar kaldırılıyor..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "%d sertifika kaldırılacak."
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "1 sertifika kaldırılacak."
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "Şunun için kullanılmış"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "Sertifikaları kaldır"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "Sertifikaları yönet"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "Sertifika yükle"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "Organizasyon:"
 
 msgid "IDS_ST_BODY_NO_DATA"
 msgstr "Veri yok"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "İçerik yok"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "Üretici"
@@ -144,34 +174,4 @@ msgstr "Takma ad zaten var. Benzersiz bir takma ad seçin."
 
 msgid "IDS_SCP_BODY_OWNER_ABB"
 msgstr "Sahip"
-
-msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
-msgstr "Sertifikaları kaldır"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "BİTTİ"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "İPTAL"
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
-msgstr "Sertifika kaldırılıyor..."
-
-msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
-msgstr "1 sertifika kaldırılacak."
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
-msgstr "Sertifikalar kaldırılıyor..."
-
-msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
-msgstr "%d sertifika kaldırılacak."
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
-msgstr "Sertifika yükle"
-
-msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
-msgstr "Sertifikaları yönet"
-
-msgid "IDS_ST_HEADER_USED_FOR"
-msgstr "Şunun için kullanılmış"
 

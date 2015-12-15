@@ -28,40 +28,25 @@
 #include <glib.h>
 #include <app.h>
 
-#ifndef PACKAGE
-#define PACKAGE "setting-manage-certificates-efl"
-#endif
-
-#ifndef LOCALEDIR
-#define LOCALEDIR PREFIX "/res/locale"
-#endif
-
 struct ug_data {
-    Evas_Object         *win_main;
-    Evas_Object         *bg;
-    Evas_Object         *popup;
-    Evas_Object         *layout_main;
-    Evas_Object         *navi_bar;
-    GList               *view_list;
-    ui_gadget_h         ug;
-    ui_gadget_h         sub_ug;
-    app_control_h       *service;
-    void                *data;
-    Elm_Object_Item		*user_cert_list_item;
-    Elm_Theme 			*theme;
-	Evas_Object 		*ctx_popup;
+	Evas_Object     *win_main;
+	Evas_Object     *bg;
+	Evas_Object     *popup;
+	Evas_Object     *layout_main;
+	Evas_Object     *navi_bar;
+	GList           *view_list;
+	ui_gadget_h     ug;
+	ui_gadget_h     sub_ug;
+	app_control_h   *service;
+	void            *data;
+	Elm_Object_Item *user_cert_list_item;
+	Elm_Theme       *theme;
+	Evas_Object     *ctx_popup;
+	Evas_Object     *more_popup2;
 };
 
 struct ug_data *get_ug_data();
 
 void cert_selection_install_cb(void *data, Evas_Object *obj, void *event_info);
-
-#ifdef LOG_TAG
-    #undef LOG_TAG
-#endif
-
-#ifndef LOG_TAG
-    #define LOG_TAG "CERT_SVC_UI"
-#endif
 
 #endif /* __UG_SETTING_SELECT_CERTIFICATE_EFL_H__ */

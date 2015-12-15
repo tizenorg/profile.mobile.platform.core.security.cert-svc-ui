@@ -1,3 +1,5 @@
+ADD_DEFINITIONS("-DBUILD_MGR_APP")
+
 pkg_check_modules(ug-setting-manage-certificates-efl_pkgs
     REQUIRED
     dlog
@@ -5,12 +7,26 @@ pkg_check_modules(ug-setting-manage-certificates-efl_pkgs
     ui-gadget-1
     evas
     elementary
+    edje
+    eina
     efl-extension
     cert-svc-vcore
+    capi-system-system-settings
+    icu-i18n
+    vconf
 )
 
 SET(SRCS
+    ${CMAKE_SOURCE_DIR}/common/src/common-utils.c
     src/mgr-app-uigadget.c
+    src/certificates_menu.c
+    src/certificate_util.c
+    src/detail_info_cert.c
+    src/put_password_certificate.c
+    src/trusted_root_ca_cert/trusted_root_ca_cert.c
+    src/pfx_cert/pfx_cert.c
+    src/pfx_cert/pfx_cert_install.c
+    src/pfx_cert/pfx_cert_remove.c
 )
 
 FOREACH(flag ${ug-setting-manage-certificates-efl_pkgs_CFLAGS})
@@ -18,16 +34,17 @@ FOREACH(flag ${ug-setting-manage-certificates-efl_pkgs_CFLAGS})
 ENDFOREACH(flag)
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${EXTRA_CFLAGS}")
 
-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/ug/include)
-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/view/include)
-INCLUDE_DIRECTORIES(${ug-setting-manage-certificates-efl_pkgs_INCLUDE_DIRS})
-
-ADD_DEFINITIONS(${ug-setting-manage-certificates-efl_pkgs_DEPS_CFLAGS})
-ADD_DEFINITIONS(${ug-setting-manage-certificates-efl_pkgs_DEPS_OTHER})
+INCLUDE_DIRECTORIES(
+    ${CMAKE_SOURCE_DIR}/common/include
+    ${CMAKE_SOURCE_DIR}/ug/include
+    ${ug-setting-manage-certificates-efl_pkgs_INCLUDE_DIRS}
+)
 
 ADD_LIBRARY(${TARGET_CERT_MANAGER_UG} SHARED ${SRCS})
-SET_TARGET_PROPERTIES(${TARGET_CERT_MANAGER_UG}
+SET_TARGET_PROPERTIES(
+    ${TARGET_CERT_MANAGER_UG}
     PROPERTIES
+        COMPILE_FLAGS "-D_GNU_SOURCE -fPIC -fvisibility=default"
         SOVERSION ${SO_VERSION}
         VERSION ${VERSION}
 )
@@ -35,7 +52,6 @@ SET_TARGET_PROPERTIES(${TARGET_CERT_MANAGER_UG}
 TARGET_LINK_LIBRARIES(${TARGET_CERT_MANAGER_UG}
     ${ug-setting-manage-certificates-efl_pkgs_LIBRARIES}
     ${ug-setting-manage-certificates-efl_pkgs_LDFLAGS}
-    ${TARGET_CERT_VIEW}
 )
 
 INSTALL(TARGETS

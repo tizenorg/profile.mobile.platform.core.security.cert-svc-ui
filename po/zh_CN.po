@@ -1,17 +1,32 @@
-msgid "IDS_ST_BODY_SELECT_ALL"
-msgstr "全选"
+msgid "IDS_ST_BODY_USER_CERTIFICATES"
+msgstr "用户证书"
+
+msgid "IDS_ST_BODY_NO_CONTENT"
+msgstr "无内容"
+
+msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
+msgstr "%d 已选择"
 
 msgid "IDS_ST_BUTTON_UNINSTALL"
 msgstr "卸载"
+
+msgid "IDS_ST_BUTTON_CANCEL"
+msgstr "取消"
+
+msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
+msgstr "完成"
+
+msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
+msgstr "取消"
+
+msgid "IDS_ST_BODY_SELECT_ALL"
+msgstr "全选"
 
 msgid "IDS_ST_TPOP_NO_CERTIFICATE_FOUND"
 msgstr "找不到证书"
 
 msgid "IDS_ST_HEADER_SELECT_ITEMS"
 msgstr "选择项目"
-
-msgid "IDS_ST_HEADER_PD_SELECTED_ABB"
-msgstr "%d 已选择"
 
 msgid "IDS_ST_BUTTON_YES"
 msgstr "是"
@@ -49,9 +64,6 @@ msgstr "否"
 msgid "IDS_ST_BUTTON_INSTALL"
 msgstr "安装"
 
-msgid "IDS_ST_BUTTON_CANCEL"
-msgstr "取消"
-
 msgid "IDS_ST_BODY_VERSION_C"
 msgstr "版本:"
 
@@ -60,9 +72,6 @@ msgstr "有效期："
 
 msgid "IDS_ST_BODY_VALID_FROM_C"
 msgstr "生效日期:"
-
-msgid "IDS_ST_BODY_USER_CERTIFICATES"
-msgstr "用户证书"
 
 msgid "IDS_ST_BODY_TRUSTED_ROOT_CA_CERTIFICATES_ABB"
 msgstr "信任的根 CA 证书"
@@ -85,14 +94,35 @@ msgstr "公开密钥："
 msgid "IDS_ST_BODY_OWNER_C"
 msgstr "所有者："
 
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
+msgstr "正在卸载证书..."
+
+msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
+msgstr "正在卸载证书..."
+
+msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
+msgstr "将卸载 %d 个证书。"
+
+msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
+msgstr "将卸载 1 个证书。"
+
+msgid "IDS_ST_HEADER_USED_FOR"
+msgstr "适用于"
+
+msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
+msgstr "卸载证书"
+
+msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
+msgstr "管理证书"
+
+msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
+msgstr "安装证书"
+
 msgid "IDS_ST_BODY_ORGANISATION_C"
 msgstr "组织："
 
 msgid "IDS_ST_BODY_NO_DATA"
 msgstr "无数据"
-
-msgid "IDS_ST_BODY_NO_CONTENT"
-msgstr "无内容"
 
 msgid "IDS_ST_BODY_MANUFACTURER"
 msgstr "制造商"
@@ -144,34 +174,4 @@ msgstr "别名已存在。输入唯一的别名。"
 
 msgid "IDS_SCP_BODY_OWNER_ABB"
 msgstr "所有者"
-
-msgid "IDS_ST_HEADER_UNINSTALL_CERTIFICATES_ABB"
-msgstr "卸载证书"
-
-msgid "IDS_TPLATFORM_ACBUTTON_DONE_ABB"
-msgstr "完成"
-
-msgid "IDS_TPLATFORM_ACBUTTON_CANCEL_ABB"
-msgstr "取消"
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATE_ING"
-msgstr "正在卸载证书..."
-
-msgid "IDS_ST_POP_1_CERTIFICATE_WILL_BE_UNINSTALLED"
-msgstr "将卸载 1 个证书。"
-
-msgid "IDS_ST_POP_UNINSTALLING_CERTIFICATES_ING"
-msgstr "正在卸载证书..."
-
-msgid "IDS_ST_POP_PD_CERTIFICATES_WILL_BE_UNINSTALLED"
-msgstr "将卸载 %d 个证书。"
-
-msgid "IDS_ST_HEADER_INSTALL_CERTIFICATE_ABB2"
-msgstr "安装证书"
-
-msgid "IDS_ST_HEADER_MANAGE_CERTIFICATES_ABB"
-msgstr "管理证书"
-
-msgid "IDS_ST_HEADER_USED_FOR"
-msgstr "适用于"
 
