@@ -42,7 +42,7 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
 	int index = (int) data;
 
-	if (strcmp(part, "elm.text.main.left"))
+	if (strcmp(part, "elm.text"))
 		return NULL;
 
 	if (index == 0)
@@ -56,23 +56,16 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 static Evas_Object *_create_genlist(struct ug_data *ad, Evas_Object *parent)
 {
 	Evas_Object *genlist = elm_genlist_add(parent);
+	elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
 	evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(genlist, EVAS_HINT_FILL, EVAS_HINT_FILL);
 
 	Elm_Genlist_Item_Class *itc = elm_genlist_item_class_new();
 	if (itc == NULL)
-		goto error;
+		return genlist;
 
-	itc->item_style = "1line";
+	itc->item_style = "default";
 	itc->func.text_get = _gl_text_get;
-
-	Elm_Genlist_Item_Class *itc1 = elm_genlist_item_class_new();
-	if (itc1 == NULL)
-		goto error;
-
-	itc1->item_style = "1line";
-	itc1->func.text_get = _gl_text_get;
-	elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
 
 	evas_object_smart_callback_add(genlist, "selected", genlist_clicked_cb, NULL);
 
@@ -87,25 +80,19 @@ static Evas_Object *_create_genlist(struct ug_data *ad, Evas_Object *parent)
 
 	elm_genlist_item_append(
 			genlist,
-			itc1,
+			itc,
 			(void *)1,
 			NULL,
 			ELM_GENLIST_ITEM_NONE,
 			pfx_cert_cb,
 			ad);
 
-error:
-	if (itc != NULL)
-		elm_genlist_item_class_free(itc);
-
 	return genlist;
 }
 
 void create_certificates_menu(struct ug_data *ad)
 {
-	Evas_Object *genlist = NULL;
-
-	genlist = _create_genlist(ad, ad->navi_bar);
+	Evas_Object *genlist = _create_genlist(ad, ad->navi_bar);
 	evas_object_show(genlist);
 
 	Elm_Object_Item *nf_it = elm_naviframe_item_push(

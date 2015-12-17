@@ -19,26 +19,32 @@
  * @version     1.0
  * @brief
  */
+#include "mgr-app-uigadget.h"
+#include "common-utils.h"
+#include "certificates/certificates.h"
 
 #include <efl_extension.h>
-
 #include <cert-svc/ccert.h>
 #include <cert-svc/cinstance.h>
 #include <cert-svc/cpkcs12.h>
 
-#include "mgr-app-uigadget.h"
-#include "common-utils.h"
 #include "certificates/certificate_util.h"
-#include "certificates/certificates.h"
 
-#define CERT_GENLIST_1TEXT1EDIT_STYLE  "dialogue/1text.1icon.5"
-#define CERT_GENLIST_TITLE_STYLE "dialogue/title"
-#define CERT_SVC_UI_RES_PATH "/usr/ug/res/images/cert-svc-ui"
+static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	if (!data)
+		return;
 
-static const char *const align_begin = "<align=center>";
-static const char *const align_end   = "</align>";
+	Elm_Object_Item *it = (Elm_Object_Item *)elm_genlist_selected_item_get(obj);
+	if (!it)
+		return;
 
-static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info);
+	elm_genlist_item_selected_set(it, EINA_FALSE);
+	struct ug_data *ad = get_ug_data();
+	ad->data = NULL;
+
+	get_info_cert_from_file_cb(ad, data);
+}
 
 static void _info_pop_response_no_cb(void *data, Evas_Object *obj, void *event_info)
 {
@@ -82,7 +88,6 @@ static void _popup_quit_cb(void *data, Evas_Object *obj, void *event_info)
 		ug_destroy_me(ad->ug);
 		ad->ug = NULL;
 	}
-
 }
 
 item_data_s *item_data_create(
@@ -163,40 +168,6 @@ void genlist_clicked_cb(void *data, Evas_Object *obj, void *event_info)
 		return;
 
 	elm_genlist_item_selected_set(it, EINA_FALSE);
-}
-
-
-void set_object_text_with_alignment(Evas_Object *object, const char *content)
-{
-	char *text = NULL;
-	size_t i = 0;
-	size_t j = 0;
-	size_t align_begin_len = strlen(align_begin);
-	size_t align_end_len = strlen(align_end);
-	size_t content_len = strlen(content);
-	text = (char *)malloc((align_begin_len + align_end_len + content_len + 1) * sizeof(char));
-	if (!text) {
-		LOGE("Failed to allocate memory");
-		return;
-	}
-
-	for (i = 0; i < align_begin_len; ++i) {
-		text[j] = align_begin[i];
-		++j;
-	}
-	for (i = 0; i < content_len; ++i) {
-		text[j] = content[i];
-		++j;
-	}
-	for (i = 0; i < align_end_len; ++i) {
-		text[j] = align_end[i];
-		++j;
-	}
-
-	text[j] = 0;
-
-	elm_object_text_set(object, text);
-	free(text);
 }
 
 static void _popup_lang_changed(void *data, Evas_Object *obj, void *event_info)
@@ -564,11 +535,11 @@ void back_install_cb(void *data, Evas_Object *obj, void *event_info)
 
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
-	item_data_s *id = data;
-	if (!strcmp(part, "elm.text.main.left"))
-		return strdup(id->title);
+	item_data_s *id = (item_data_s *)data;
+	if (strcmp(part, "elm.text"))
+		return NULL;
 
-	return NULL;
+	return strdup(id->title);
 }
 
 static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
@@ -612,24 +583,22 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 	Evas_Object *check;
 	item_data_s *id = (item_data_s *) data;
 	Eina_Bool status = id->status;
-	Evas_Object *content;
 
-	if (!strcmp(part, "elm.icon.2")) {
-		content = elm_layout_add(obj);
-		elm_layout_theme_set(content, "layout", "list/C/type.3", "default");
-		check = elm_check_add(content);
-		elm_object_style_set(check, "on&off");
-		elm_check_state_set(check, status);
-		evas_object_repeat_events_set(check, EINA_FALSE);
-		evas_object_propagate_events_set(check, EINA_FALSE);
-		evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-		evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
-		evas_object_smart_callback_add(check, "changed", _chk_changed_cb, data);
-		elm_layout_content_set(content, "elm.swallow.content", check);
-		return content;
-	}
+	if (strcmp(part, "elm.swallow.end"))
+		return NULL;
 
-	return NULL;
+	check = elm_check_add(obj);
+
+	elm_object_style_set(check, "on&off");
+	elm_check_state_set(check, status);
+	evas_object_repeat_events_set(check, EINA_FALSE);
+	evas_object_propagate_events_set(check, EINA_FALSE);
+	evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
+	evas_object_smart_callback_add(check, "changed", _chk_changed_cb, data);
+	evas_object_show(check);
+
+	return check;
 }
 
 Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_path, struct ListElement *lastListElement)
@@ -664,7 +633,7 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_pa
 		return no_content_bool;
 	}
 
-	itc->item_style = "1line";
+	itc->item_style = "default";
 	itc->func.content_get = _gl_content_get;
 	itc->func.text_get = _gl_text_get;
 
@@ -718,22 +687,6 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_pa
 	return no_content_bool;
 }
 
-static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
-{
-	if (!data)
-		return;
-
-	Elm_Object_Item *it = (Elm_Object_Item *)elm_genlist_selected_item_get(obj);
-	if (!it)
-		return;
-
-	elm_genlist_item_selected_set(it, EINA_FALSE);
-	struct ug_data *ad = get_ug_data();
-	ad->data = NULL;
-
-	get_info_cert_from_file_cb(ad, data);
-}
-
 Evas_Object *create_no_content_layout(struct ug_data *ad)
 {
 	char buf[256] = {0,};
@@ -751,7 +704,7 @@ Evas_Object *create_no_content_layout(struct ug_data *ad)
 
 	Evas_Object *icon = elm_image_add(no_content);
 
-	snprintf(buf, sizeof(buf), "%s/00_nocontents_text_gray.png", CERT_SVC_UI_RES_PATH);
+	snprintf(buf, sizeof(buf), "%s/00_nocontents_text_gray.png", IMGDIR);
 
 	elm_image_file_set(icon, buf, NULL);
 	elm_object_part_content_set(no_content, "nocontents.image", icon);

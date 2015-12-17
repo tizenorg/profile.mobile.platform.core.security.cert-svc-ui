@@ -50,7 +50,6 @@ export FFLAGS="$FFLAGS -DTIZEN_EMULATOR_MODE"
 
 %{!?build_type:%define build_type "Release"}
 %cmake . -DCMAKE_INSTALL_PREFIX=%TZ_SYS_RO_UG \
-        -DTZ_SYS_BIN=%TZ_SYS_BIN \
         -DTZ_SYS_SHARE=%TZ_SYS_SHARE \
         -DCMAKE_BUILD_TYPE=%{build_type} \
         -DVERSION=%version
