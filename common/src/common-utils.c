@@ -80,23 +80,21 @@ Evas_Object *add_common_cancel_btn(struct ug_data *ad, E_CB cancel_cb)
 
 void common_dismissed_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	struct ug_data *ad = get_ug_data();
-
-	evas_object_smart_callback_del((Evas_Object *)data, "rotation,changed", common_dismissed_cb);
-	evas_object_smart_callback_del(obj, "dismissed", common_dismissed_cb);
+	Evas_Object *win = elm_object_top_widget_get(obj);
+	evas_object_smart_callback_del(win, "rotation,changed", common_dismissed_cb);
 	evas_object_del(obj);
 
+	/* TODO: how to handle global data generically.. */
+	struct ug_data *ad = get_ug_data();
 	ad->more_popup2 = NULL;
 }
 
-void common_rotate_popup_cb(void *data, Evas_Object *obj, void *event_info)
+void common_move_more_ctxpopup(Evas_Object *popup)
 {
 	int pos = -1;
 	Evas_Coord w;
 	Evas_Coord h;
-	Evas_Object *popup = (Evas_Object *)data;
-	Evas_Object *win = (Evas_Object *)obj;
-
+	Evas_Object *win = elm_object_top_widget_get(popup);
 	elm_win_screen_size_get(win, NULL, NULL, &w, &h);
 	pos = elm_win_rotation_get(win);
 
@@ -115,18 +113,25 @@ void common_rotate_popup_cb(void *data, Evas_Object *obj, void *event_info)
 	}
 }
 
+static void
+win_rotation_changed_cb(void *data, Evas_Object *obj, void *event_info)
+{
+	Evas_Object *ctxpopup = (Evas_Object *)data;
+	common_move_more_ctxpopup(ctxpopup);
+}
+
 Evas_Object *common_more_ctxpopup(Evas_Object *parent)
 {
 	Evas_Object *popup = elm_ctxpopup_add(parent);
-	Evas_Object *win = elm_object_top_widget_get(popup);
+	Evas_Object *win = elm_object_top_widget_get(parent);
 
 	elm_ctxpopup_auto_hide_disabled_set(popup, EINA_TRUE);
 	elm_object_style_set(popup, "more/default");
 
-	evas_object_smart_callback_add(win, "rotation,changed", common_rotate_popup_cb, popup);
-	evas_object_smart_callback_add(popup, "dismissed", common_dismissed_cb, win);
-	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, eext_ctxpopup_back_cb, NULL);
-	eext_object_event_callback_add(popup, EEXT_CALLBACK_MORE, eext_ctxpopup_back_cb, NULL);
+	evas_object_smart_callback_add(win, "rotation,changed", win_rotation_changed_cb, popup);
+	evas_object_smart_callback_add(popup, "dismissed", common_dismissed_cb, NULL);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_BACK, common_dismissed_cb, NULL);
+	eext_object_event_callback_add(popup, EEXT_CALLBACK_MORE, common_dismissed_cb, NULL);
 
 	elm_ctxpopup_direction_priority_set(
 		popup,
@@ -135,7 +140,9 @@ Evas_Object *common_more_ctxpopup(Evas_Object *parent)
 		ELM_CTXPOPUP_DIRECTION_UNKNOWN,
 		ELM_CTXPOPUP_DIRECTION_UNKNOWN);
 
-	common_rotate_popup_cb(popup, win, NULL);
+	common_move_more_ctxpopup(popup);
+
+	evas_object_show(popup);
 
 	return popup;
 }
