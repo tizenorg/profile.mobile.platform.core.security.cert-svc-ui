@@ -373,7 +373,6 @@ void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info)
 	pfx_cert_create_list(ad);
 
 	eext_object_event_callback_add(ad->navi_bar, EEXT_CALLBACK_MORE, more_button_cb, ad);
-	eext_object_event_callback_add(ad->navi_bar, EEXT_CALLBACK_BACK, eext_naviframe_back_cb, NULL);
 	ad->more_popup2 = NULL;
 
 	elm_naviframe_item_pop_cb_set(ad->user_cert_list_item, pfx_cert_naviframe_pop_cb, ad);
