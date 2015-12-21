@@ -23,6 +23,12 @@
 #include "common-utils.h"
 #include "certificates/certificates.h"
 
+#include <unistd.h>
+#include <sys/types.h>
+#include <pwd.h>
+#include <string.h>
+#include <stdlib.h>
+
 #include <efl_extension.h>
 #include <cert-svc/ccert.h>
 #include <cert-svc/cinstance.h>
@@ -735,4 +741,63 @@ int safeStrCmp(const char *s1, const char *s2)
 		return -1;
 
 	return strcmp(s1, s2);
+}
+
+static char *get_user_name(void)
+{
+	struct passwd *pwd = getpwuid(getuid());
+
+	return (pwd == NULL) ? NULL : strdup(pwd->pw_name);
+}
+
+char *get_media_path(void)
+{
+	char *username = get_user_name();
+	if (username == NULL)
+		return NULL;
+
+	size_t len = strlen(username) + strlen("/home//content");
+	char *media_path = (char *)malloc(sizeof(char) * len + 1);
+	if (media_path == NULL) {
+		free(username);
+		return NULL;
+	}
+
+	memset(media_path, 0x00, len + 1);
+	strcpy(media_path, "/home/");
+	strcat(media_path, username);
+	strcat(media_path, "/content");
+
+	free(username);
+
+	return media_path;
+}
+
+char *get_media_downloads_path(void)
+{
+	char *username = get_user_name();
+	if (username == NULL)
+		return NULL;
+
+	size_t len = strlen(username) + strlen("/home//content/Downloads");
+	char *media_path = (char *)malloc(sizeof(char) * len + 1);
+	if (media_path == NULL) {
+		free(username);
+		return NULL;
+	}
+
+	memset(media_path, 0x00, len + 1);
+	strcpy(media_path, "/home/");
+	strcat(media_path, username);
+	strcat(media_path, "/content/Downloads");
+
+	free(username);
+
+	return media_path;
+}
+
+char *get_sdcard_path(void)
+{
+	/* TODO: find sdcard path */
+	return get_media_downloads_path();
 }

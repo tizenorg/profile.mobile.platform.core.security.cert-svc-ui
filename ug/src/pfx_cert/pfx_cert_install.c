@@ -157,9 +157,17 @@ Elm_Object_Item *pfx_cert_install(struct ug_data *ad)
 	list = common_genlist(ad->win_main);
 	evas_object_smart_callback_add(list, "selected", genlist_clicked_cb, NULL);
 
-	lastListElement = scan_dir(PATH_SDCARD, list, lastListElement);
-	lastListElement = scan_dir(PATH_MEDIA, list, lastListElement);
-	scan_dir(PATH_MEDIA_DOWNLOADS, list, lastListElement);
+	char *path_media = get_media_path();
+	char *path_media_downloads = get_media_downloads_path();
+	char *path_sdcard = get_sdcard_path();
+
+	lastListElement = scan_dir(path_media, list, lastListElement);
+	lastListElement = scan_dir(path_media_downloads, list, lastListElement);
+	scan_dir(path_sdcard, list, lastListElement);
+
+	free(path_media);
+	free(path_media_downloads);
+	free(path_sdcard);
 
 	Elm_Object_Item *navi_it = NULL;
 

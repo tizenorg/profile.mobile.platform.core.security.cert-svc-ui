@@ -28,8 +28,6 @@
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
-static const char *const dir_path = PATH_SDCARD;
-
 static Elm_Genlist_Item_Class itc_group;
 static Elm_Genlist_Item_Class itc_entry;
 static Elm_Genlist_Item_Class itc_entry_passwd;
@@ -38,7 +36,8 @@ static struct ListElement *current_file;
 Evas_Object *_entry;
 Evas_Object *_entry_pass;
 
-#define CUSTOM_EDITFIELD_PATH "/usr/apps/cert-svc-ui/res/custom_editfield.edj"
+#define CUSTOM_EDITFIELD_PATH RESDIR "/custom_editfield.edj"
+
 static int sel_sub_item_id;
 Evas_Object *btn;
 static Elm_Genlist_Item_Class itc_drop;

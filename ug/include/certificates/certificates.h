@@ -28,29 +28,9 @@
 
 #include "mgr-app-uigadget.h"
 
-// Path to the certs
-//root path
-#define PATH_CERT_ROOT              "/opt/share/cert-svc/certs"
-
-//ssl
-#define PATH_CERT_SSL               "/opt/share/cert-svc/certs/ssl"
-#define PATH_CERT_SSL_ETC           "/opt/etc/ssl/certs"
-
-//sim
-#define PATH_CERT_SIM_OPERATOR      "/opt/share/cert-svc/certs/sim/operator"
-#define PATH_CERT_SIM_THIRDPARTY    "/opt/share/cert-svc/certs/sim/thirdparty"
-
-//user
-#define PATH_CERT_USER              "/opt/share/cert-svc/certs/user"
-#define PATH_CERT_TRUSTEDUSER       "/opt/share/cert-svc/certs/trusteduser"
-
-//code-signing
-#define PATH_CERT_WAC                "/opt/share/cert-svc/certs/code-signing/wac"
-
-//sd-card
-#define PATH_SDCARD                  "/opt/storage/sdcard"
-#define PATH_MEDIA                   "/opt/usr/media"
-#define PATH_MEDIA_DOWNLOADS         "/opt/usr/media/Downloads"
+char *get_media_path(void);
+char *get_media_downloads_path(void);
+char *get_sdcard_path(void);
 
 typedef struct ListElement {
     struct ListElement *prev, *next;
