@@ -398,7 +398,7 @@ static char *_gl_get_text(void *data, Evas_Object *obj, const char *part)
 	int index = (int)data;
 	char *cert_data = NULL;
 
-	if (strcmp(part, "elm.text.main") == 0)
+	if (strcmp(part, "elm.text") == 0)
 		cert_data = _getCertFieldLabel(index);
 	else if (strcmp(part, "elm.text.multiline") == 0)
 		cert_data = _getCertFieldData(index);
@@ -412,7 +412,7 @@ static char *_gl_get_text_group(void *data, Evas_Object *obj, const char *part)
 	cert_info_group_e group = (cert_info_group_e)data;
 	const char *text = NULL;
 
-	if (safeStrCmp(part, "elm.text.main") != 0)
+	if (safeStrCmp(part, "elm.text") != 0)
 		return NULL;
 
 	switch (group) {
@@ -437,7 +437,7 @@ static char *_gl_get_text_group(void *data, Evas_Object *obj, const char *part)
 }
 
 static Elm_Genlist_Item_Class itc_group = {
-	.item_style       = "groupindex",
+	.item_style       = "group_index",
 	.func.text_get    = _gl_get_text_group,
 	.func.content_get = NULL,
 	.func.state_get   = NULL,
@@ -445,15 +445,10 @@ static Elm_Genlist_Item_Class itc_group = {
 };
 
 static Elm_Genlist_Item_Class itc_2text = {
-	.item_style       = "multiline_sub.main",
+	.item_style       = "multiline",
 	.func.text_get    = _gl_get_text,
 	.func.content_get = NULL,
 	.func.state_get   = NULL,
-	.func.del         = NULL
-};
-
-static Elm_Genlist_Item_Class separator = {
-	.item_style       = "dialogue/separator",
 	.func.del         = NULL
 };
 
@@ -475,33 +470,18 @@ void show_detail_info(void)
 	evas_object_smart_callback_add(genlist, "selected", genlist_clicked_cb, NULL);
 
 	for (i = 0; i < NUMBER_OF_CERT_FIELDS; i++) {
-		if (field_name[i] == CERTSVC_SUBJECT_COMMON_NAME) {
-			it = elm_genlist_item_append(genlist, &separator, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-			elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-
+		if (field_name[i] == CERTSVC_SUBJECT_COMMON_NAME)
 			it = elm_genlist_item_append(genlist, &itc_group, (void *)OWNER, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-			elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-		} else if (field_name[i] == CERTSVC_ISSUER_COMMON_NAME) {
+		else if (field_name[i] == CERTSVC_ISSUER_COMMON_NAME)
 			it = elm_genlist_item_append(genlist, &itc_group, (void *)ISSUER, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-			elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-		} else if (field_name[i] == CERTSVC_VERSION) {
+		else if (field_name[i] == CERTSVC_VERSION)
 			it = elm_genlist_item_append(genlist, &itc_group, (void *)DATA, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-			elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-		}
 
-		LOGD("Try to append %d genlist item...", i);
+		elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 		it = elm_genlist_item_append(genlist, &itc_2text, (void *)i, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
 		elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
-		if (field_name[i] == CERTSVC_SUBJECT_ORGANIZATION_NAME
-				|| field_name[i] == CERTSVC_ISSUER_ORGANIZATION_NAME
-				|| field_name[i] == CERTSVC_KEY) {
-			it = elm_genlist_item_append(genlist, &separator, NULL, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
-			elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
-		}
-
-		elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 		LOGD("Succesful append %d genlist", i);
 	}
 
