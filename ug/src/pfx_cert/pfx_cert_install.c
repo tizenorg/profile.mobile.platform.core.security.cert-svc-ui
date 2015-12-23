@@ -31,8 +31,8 @@
 static void install_pfx_button_cb(void *data, Evas_Object *obj, void *event_info);
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part);
 
-static Elm_Genlist_Item_Class itc_2text = {
-	.item_style = "1line",
+static Elm_Genlist_Item_Class itc = {
+	.item_style = "default",
 	.func.text_get = _gl_text_get,
 	.func.del = NULL
 };
@@ -41,7 +41,7 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
 	char *title = (char *)data;
 
-	if (!strcmp(part, "elm.text.main.left"))
+	if (!strcmp(part, "elm.text"))
 		return strdup(title);
 	return NULL;
 }
@@ -112,7 +112,7 @@ static struct ListElement *scan_dir(const char *dir_path, Evas_Object *list, str
 		if (strncmp(dot, ".crt", 4) == 0 || strncmp(dot, ".pem", 4) == 0)
 			it = elm_genlist_item_append(
 					list,
-					&itc_2text,
+					&itc,
 					(void *)dname,
 					NULL,
 					ELM_GENLIST_ITEM_NONE,
@@ -121,7 +121,7 @@ static struct ListElement *scan_dir(const char *dir_path, Evas_Object *list, str
 		else
 			it = elm_genlist_item_append(
 					list,
-					&itc_2text,
+					&itc,
 					(void *)dname,
 					NULL,
 					ELM_GENLIST_ITEM_NONE,

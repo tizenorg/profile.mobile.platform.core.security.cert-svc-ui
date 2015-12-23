@@ -310,8 +310,8 @@ static char *_gl_get_text_group(void *data, Evas_Object *obj, const char *part)
 
 	char *str = NULL;
 
-	if (strcmp(part, "elm.text.main")) {
-		LOGD("_gl_get_text_group done. not text.main.");
+	if (strcmp(part, "elm.text")) {
+		LOGD("_gl_get_text_group done. not text.");
 		return NULL;
 	}
 
@@ -430,10 +430,10 @@ static Evas_Object *_gl_drop_type_content_get(void *data, Evas_Object *obj, cons
 
 static void _set_itc_classes(void)
 {
-	itc_group.item_style = "groupindex";
+	itc_group.item_style = "group_index";
 	itc_group.func.text_get = _gl_get_text_group;
-	itc_entry.func.state_get = NULL;
-	itc_entry.func.del = NULL;
+	itc_group.func.state_get = NULL;
+	itc_group.func.del = NULL;
 
 	itc_entry.item_style = "entry";
 	itc_entry.func.text_get = NULL;
