@@ -269,6 +269,7 @@ static char *_getCertFieldData(int index)
 	int status = -1;
 	CertSvcString buffer;
 	char *char_buffer = NULL;
+	size_t char_buffer_len = 0;
 	char *cert_Data = NULL;
 
 	switch (index) {
@@ -295,13 +296,12 @@ static char *_getCertFieldData(int index)
 
 	case 11:
 		certsvc_certificate_get_string_field(certInstance, CERTSVC_KEY, &buffer);
-		char_buffer = strndup(buffer.privateHandler, buffer.privateLength);
+		certsvc_string_to_cstring(buffer, &char_buffer, &char_buffer_len);
 		if (char_buffer != NULL) {
 			LOGD("char_buffer : %s", char_buffer);
 			cert_Data = format_key(char_buffer);
 
 			certsvc_string_free(buffer);
-			free(char_buffer);
 			if (cert_Data == NULL)
 				SECURE_LOGD("Fail to get cert_Data");
 			else

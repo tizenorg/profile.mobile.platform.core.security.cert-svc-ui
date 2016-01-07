@@ -278,59 +278,6 @@ char *path_cat(const char *str1, char *str2)
 		return NULL;
 }
 
-char *extractDataFromCert(char *path)
-{
-	struct ug_data *ad = get_ug_data();
-
-	CertSvcCertificate cert;
-	CertSvcString buffer;
-	char *char_buffer = NULL;
-
-	if (CERTSVC_SUCCESS != certsvc_certificate_new_from_file(ad->instance, path, &cert)) {
-		LOGD("certsvc_certificate_new_from_file has been succeeded");
-		return NULL;
-	}
-
-	if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_COMMON_NAME, &buffer) && buffer.privateLength > 0) {
-		LOGD("certsvc_certificate_get_string_field for the CN field has been succeeded");
-		goto CATCH;
-	}
-
-	certsvc_string_free(buffer);
-
-	if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_ORGANIZATION_NAME, &buffer) && buffer.privateLength > 0) {
-		LOGD("certsvc_certificate_get_string_field for the O field has been succeeded");
-		goto CATCH;
-	}
-
-	certsvc_string_free(buffer);
-
-	if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_ORGANIZATION_UNIT_NAME, &buffer) && buffer.privateLength > 0) {
-		LOGD("certsvc_certificate_get_string_field for the OU field has been succeeded");
-		goto CATCH;
-	}
-
-	certsvc_string_free(buffer);
-
-	if (CERTSVC_SUCCESS == certsvc_certificate_get_string_field(cert, CERTSVC_SUBJECT_EMAIL_ADDRESS, &buffer) && buffer.privateLength > 0) {
-		LOGD("certsvc_certificate_get_string_field for the emailAddress field has been succeeded");
-		goto CATCH;
-	}
-
-	certsvc_string_free(buffer);
-	certsvc_certificate_free(cert);
-	return NULL;
-
-CATCH:
-	char_buffer = strndup(buffer.privateHandler, buffer.privateLength);
-	LOGD("char_buffer : %s", char_buffer);
-
-	certsvc_string_free(buffer);
-	certsvc_certificate_free(cert);
-
-	return char_buffer;
-}
-
 struct ListElement *nextElement(struct ListElement *listElement)
 {
 	if (!listElement)
@@ -552,18 +499,21 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 {
 	item_data_s *id = (item_data_s *)data;
 
-	CertSvcString alias;
-	alias.privateHandler = strdup(id->gname);
-	if (!alias.privateHandler) {
-		LOGE("Failed to allocate memory");
-		return;
-	}
-	alias.privateLength = strlen(id->gname);
-
 	CertSvcInstance instance;
+
 	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
 		LOGE("CERTSVC_FAIL to create instance");
-		free(alias.privateHandler);
+		return;
+	}
+
+	CertSvcString alias;
+	if (certsvc_string_new(
+			instance,
+			id->gname,
+			strlen(id->gname),
+			&alias) != CERTSVC_SUCCESS) {
+		LOGE("certsvc_string_new failed.");
+		certsvc_instance_free(instance);
 		return;
 	}
 

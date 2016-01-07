@@ -173,24 +173,19 @@ static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info
 
 	while (CertList) {
 		if (EINA_TRUE == state_pointer[i]) {
-			FileName.privateHandler = strdup(CertList->gname);
-			if (!FileName.privateHandler) {
-				LOGE("Failed to allocate memory");
+			ret = certsvc_string_new(instance, CertList->gname, strlen(CertList->gname), &FileName);
+			if (ret != CERTSVC_SUCCESS) {
+				LOGE("Failed to certsvc_string_new.");
 				certsvc_instance_free(instance);
 				return;
 			}
-
-			FileName.privateLength = strlen(FileName.privateHandler);
 
 			ret = certsvc_pkcs12_delete_certificate_from_store(instance, CertList->storeType, FileName);
 			if (ret != CERTSVC_SUCCESS) {
 				LOGE("Fail to delete selected certificate");
 				certsvc_instance_free(instance);
-				free(FileName.privateHandler);
 				return;
 			}
-
-			free(FileName.privateHandler);
 		}
 		i++;
 		CertList = CertList->next;

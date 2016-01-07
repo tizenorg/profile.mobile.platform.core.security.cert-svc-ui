@@ -78,17 +78,18 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 	CertSvcInstance instance;
 	CertSvcString alias;
 
-	alias.privateHandler = strdup(id->gname);
-	if (!alias.privateHandler) {
-		LOGE("Fail to allocate memory");
+	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
+		LOGE("CERTSVC_FAIL to create instance");
 		return;
 	}
 
-	alias.privateLength = strlen(id->gname);
-
-	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-		LOGE("CERTSVC_FAIL to create instance");
-		free(alias.privateHandler);
+	if (certsvc_string_new(
+			instance,
+			id->gname,
+			strlen(id->gname),
+			&alias) != CERTSVC_SUCCESS) {
+		LOGE("certsvc_string_new failed");
+		certsvc_instance_free(instance);
 		return;
 	}
 
@@ -97,8 +98,11 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 			id->storeType,
 			DISABLED,
 			alias,
-			(elm_check_state_get(obj) ? ENABLED : DISABLED)) != CERTSVC_SUCCESS)
+			(elm_check_state_get(obj) ? ENABLED : DISABLED)) != CERTSVC_SUCCESS) {
 		LOGE("Failed to enable/disable status.");
+		certsvc_instance_free(instance);
+		return;
+	}
 
 	certsvc_instance_free(instance);
 }

@@ -113,13 +113,16 @@ static void _install_button_cb(void *data, Evas_Object *obj, void *event_info)
 	SECURE_LOGD("certsvc_pkcs12_import_from_file(%s, %s)", path, alias);
 	certsvc_string_new(ad->instance, alias, strlen(alias), &Alias);
 	certsvc_string_new(ad->instance, path, strlen(path), &Path);
-	certsvc_string_new(ad->instance, (password) ? password : "", (password) ? strlen(password) : 1, &Password);
-
-	char *dot = strrchr(path, '.');
-	if (dot && (!strncasecmp(dot, ".crt", 4) || !strncasecmp(dot, ".pem", 4)))
-		Password.privateHandler = password;
+	if (password == NULL)
+		certsvc_string_new(ad->instance, NULL, 0, &Password);
+	else
+		certsvc_string_new(ad->instance, password, strlen(password), &Password);
 
 	returned_value = certsvc_pkcs12_import_from_file_to_store(ad->instance, storeType, Path, Password, Alias);
+
+	certsvc_string_free(Alias);
+	certsvc_string_free(Password);
+	certsvc_string_free(Path);
 
 	switch (returned_value) {
 	case CERTSVC_SUCCESS:
@@ -172,6 +175,7 @@ exit:
 	free(password);
 	free(alias);
 	free(path);
+
 	return;
 }
 
