@@ -700,50 +700,35 @@ static char *get_user_name(void)
 	return (pwd == NULL) ? NULL : strdup(pwd->pw_name);
 }
 
-char *get_media_path(void)
+static char *generate_path_with_username(const char *format)
 {
 	char *username = get_user_name();
 	if (username == NULL)
 		return NULL;
 
-	size_t len = strlen(username) + strlen("/home//content");
+	/* -2 for %s characters in format */
+	size_t len = strlen(username) + strlen(format) - 2;
 	char *media_path = (char *)malloc(sizeof(char) * len + 1);
 	if (media_path == NULL) {
 		free(username);
 		return NULL;
 	}
 
-	memset(media_path, 0x00, len + 1);
-	strcpy(media_path, "/home/");
-	strcat(media_path, username);
-	strcat(media_path, "/content");
+	snprintf(media_path, len + 1, format, username);
 
 	free(username);
 
 	return media_path;
 }
 
+char *get_media_path(void)
+{
+	return generate_path_with_username("/home/%s/content");
+}
+
 char *get_media_downloads_path(void)
 {
-	char *username = get_user_name();
-	if (username == NULL)
-		return NULL;
-
-	size_t len = strlen(username) + strlen("/home//content/Downloads");
-	char *media_path = (char *)malloc(sizeof(char) * len + 1);
-	if (media_path == NULL) {
-		free(username);
-		return NULL;
-	}
-
-	memset(media_path, 0x00, len + 1);
-	strcpy(media_path, "/home/");
-	strcat(media_path, username);
-	strcat(media_path, "/content/Downloads");
-
-	free(username);
-
-	return media_path;
+	return generate_path_with_username("/home/%s/content/Downloads");
 }
 
 char *get_sdcard_path(void)
