@@ -502,7 +502,7 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 	CertSvcInstance instance;
 
 	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
-		LOGE("CERTSVC_FAIL to create instance");
+		LOGE("Failed to certsvc_instance_new().");
 		return;
 	}
 
@@ -569,8 +569,8 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_pa
 	CertSvcStoreCertList *certListHead = NULL;
 	CertSvcInstance instance;
 
-	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-		LOGD("CERTSVC_FAIL to create instance");
+	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
+		LOGE("Failed to certsvc_instance_new().");
 		return no_content_bool;
 	}
 

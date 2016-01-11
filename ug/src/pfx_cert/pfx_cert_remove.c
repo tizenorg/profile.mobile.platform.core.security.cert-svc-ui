@@ -166,8 +166,8 @@ static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info
 	CertSvcInstance instance;
 	CertSvcStoreCertList *certListHead = CertList;
 
-	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-		LOGE("CERTSVC_FAIL to create instance.");
+	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
+		LOGE("Failed to certsvc_instance_new().");
 		return;
 	}
 
@@ -300,8 +300,8 @@ void cert_remove_genlist_cb(void *data, CertStoreType storeType)
 	CertSvcInstance instance;
 	Elm_Genlist_Item_Class *itc;
 
-	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-		LOGD("CERTSVC_FAIL to create instance.");
+	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
+		LOGE("Failed to certsvc_instance_new().");
 		return;
 	}
 

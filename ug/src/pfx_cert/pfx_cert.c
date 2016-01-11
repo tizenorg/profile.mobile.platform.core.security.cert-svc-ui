@@ -78,8 +78,8 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 	CertSvcInstance instance;
 	CertSvcString alias;
 
-	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-		LOGE("CERTSVC_FAIL to create instance");
+	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
+		LOGE("Failed to certsvc_instance_new().");
 		return;
 	}
 
@@ -223,8 +223,8 @@ void create_genlist_cb(void *data, CertStoreType storeType)
 
 	CertSvcInstance instance;
 
-	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-		LOGE("CERTSVC_FAIL to create instance.");
+	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
+		LOGE("Failed to certsvc_instance_new().");
 		return;
 	}
 

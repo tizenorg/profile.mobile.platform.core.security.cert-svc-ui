@@ -335,8 +335,8 @@ static void create_selection_list(struct ug_data *ad)
 	CertSvcStoreCertList *certList = NULL;
 	CertStoreType storeType = (CertStoreType) EMAIL_STORE;
 
-	if (certsvc_instance_new(&instance) == CERTSVC_FAIL) {
-		LOGE("CERTSVC_FAIL to create instance.");
+	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
+		LOGE("Failed to certsvc_instance_new().");
 		return;
 	}
 
