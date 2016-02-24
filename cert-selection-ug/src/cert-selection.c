@@ -28,11 +28,13 @@
 #include <cert-svc/cpkcs12.h>
 #include <cert-svc/cstring.h>
 
+#include <tzplatform_config.h>
+
 #include "common-utils.h"
 #include "cert-selection-uigadget.h"
 
 #define CERT_MAX_DATA_SIZE  256
-#define CERT_SVC_UI_RES_PATH "/usr/ug/res/images/cert-svc-ui"
+#define CERT_SVC_UI_RES_PATH tzplatform_mkpath(TZ_SYS_RO_UG, "res/images/cert-svc-ui")
 
 static CertSvcInstance   instance;
 
