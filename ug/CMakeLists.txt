@@ -14,6 +14,7 @@ pkg_check_modules(ug-setting-manage-certificates-efl_pkgs
     capi-system-system-settings
     icu-i18n
     vconf
+    libtzplatform-config
 )
 
 SET(SRCS

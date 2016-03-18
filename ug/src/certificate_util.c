@@ -23,6 +23,8 @@
 #include "common-utils.h"
 #include "certificates/certificates.h"
 
+#include <tzplatform_config.h>
+
 #include <unistd.h>
 #include <sys/types.h>
 #include <pwd.h>
@@ -742,12 +744,14 @@ static char *generate_path_with_username(const char *format)
 
 char *get_media_path(void)
 {
-	return generate_path_with_username("/home/%s/content");
+	const char *format = tzplatform_mkpath(TZ_SYS_HOME, "%s/content");
+	return generate_path_with_username(format);
 }
 
 char *get_media_downloads_path(void)
 {
-	return generate_path_with_username("/home/%s/content/Downloads");
+	const char *format = tzplatform_mkpath(TZ_SYS_HOME, "%s/content/Downloads");
+	return generate_path_with_username(format);
 }
 
 char *get_sdcard_path(void)

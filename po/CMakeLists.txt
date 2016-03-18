@@ -51,7 +51,7 @@ zh_HK.po
 zh_TW.po
 )
 
-SET(MSGFMT "/usr/bin/msgfmt")
+SET(MSGFMT "${TZ_SYS_BIN}/msgfmt")
 
 FOREACH(pofile ${POFILES})
     SET(pofile ${CMAKE_CURRENT_SOURCE_DIR}/${pofile})

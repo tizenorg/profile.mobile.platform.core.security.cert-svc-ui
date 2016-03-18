@@ -26,6 +26,11 @@ BuildRequires: pkgconfig(vconf)
 BuildRequires: pkgconfig(capi-system-system-settings)
 BuildRequires: pkgconfig(libtzplatform-config)
 
+%global TZ_SYS_BIN         %{?TZ_SYS_BIN:%TZ_SYS_BIN}%{!?TZ_SYS_BIN:%_bindir}
+%global TZ_SYS_RO_PACKAGES %{?TZ_SYS_RO_PACKAGES:%TZ_SYS_RO_PACKAGES}%{!?TZ_SYS_RO_PACKAGES:%_datadir/packages}
+%global TZ_SYS_RO_UG       %{?TZ_SYS_RO_UG:%TZ_SYS_RO_UG}%{!?TZ_SYS_RO_UG:/usr/ug}
+%global TZ_SYS_RO_APP      %{?TZ_SYS_RO_APP:%TZ_SYS_RO_APP}%{!?TZ_SYS_RO_APP:/usr/apps}
+
 %description
 Certification service
 
@@ -50,7 +55,8 @@ export FFLAGS="$FFLAGS -DTIZEN_EMULATOR_MODE"
 
 %{!?build_type:%define build_type "Release"}
 %cmake . -DCMAKE_INSTALL_PREFIX=%TZ_SYS_RO_UG \
-        -DTZ_SYS_SHARE=%TZ_SYS_SHARE \
+        -DTZ_SYS_RO_PACKAGES=%TZ_SYS_RO_PACKAGES \
+        -DTZ_SYS_BIN=%TZ_SYS_BIN \
         -DCMAKE_BUILD_TYPE=%{build_type} \
         -DVERSION=%version
 
@@ -67,7 +73,7 @@ make %{?_smp_mflags}
 %defattr(-,root,root,-)
 %manifest %name.manifest
 %license LICENSE
-%TZ_SYS_SHARE/packages/%name.xml
+%TZ_SYS_RO_PACKAGES/%name.xml
 %TZ_SYS_RO_UG/lib/libug-setting-manage-certificates-efl.so*
 %TZ_SYS_RO_UG/lib/libug-cert-selection-ug-efl.so*
 %TZ_SYS_RO_UG/res/locale/*

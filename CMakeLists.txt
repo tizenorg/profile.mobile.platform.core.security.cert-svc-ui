@@ -52,5 +52,7 @@ INSTALL(FILES
 	DESTINATION ${ICONDIR}
 )
 
+CONFIGURE_FILE(cert-svc-ui.xml.in cert-svc-ui.xml @ONLY)
+
 INSTALL(FILES data/icons/custom_editfield.edj DESTINATION ${RESDIR})
-INSTALL(FILES cert-svc-ui.xml DESTINATION ${TZ_SYS_SHARE}/packages)
+INSTALL(FILES cert-svc-ui.xml DESTINATION ${TZ_SYS_RO_PACKAGES})
