@@ -695,9 +695,28 @@ int safeStrCmp(const char *s1, const char *s2)
 
 static char *get_user_name(void)
 {
-	struct passwd *pwd = getpwuid(getuid());
+	struct passwd pwd;
+	struct passwd *result;
+	char *buf;
+	char *user_name;
+	int buf_size;
 
-	return (pwd == NULL) ? NULL : strdup(pwd->pw_name);
+	buf_size = sysconf(_SC_GETPW_R_SIZE_MAX);
+	if (buf_size == -1)
+		buf_size = 16384;
+
+	buf = (char *)malloc(buf_size);
+	if (buf == NULL)
+		return NULL;
+
+	if (getpwuid_r(getuid(), &pwd, buf, buf_size, &result) != 0) {
+		free(buf);
+		return NULL;
+	}
+
+	user_name = strdup(pwd.pw_name);
+	free(buf);
+	return (user_name == NULL) ? NULL : user_name;
 }
 
 static char *generate_path_with_username(const char *format)
