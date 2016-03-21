@@ -28,14 +28,9 @@
 #include "certificates/certificate_util.h"
 #include "certificates/certificates.h"
 
-static void install_pfx_button_cb(void *data, Evas_Object *obj, void *event_info);
-static char *_gl_text_get(void *data, Evas_Object *obj, const char *part);
+static Elm_Genlist_Item_Class itc;
 
-static Elm_Genlist_Item_Class itc = {
-	.item_style = "default",
-	.func.text_get = _gl_text_get,
-	.func.del = NULL
-};
+static void install_pfx_button_cb(void *data, Evas_Object *obj, void *event_info);
 
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
@@ -69,6 +64,10 @@ static struct ListElement *scan_dir(const char *dir_path, Evas_Object *list, str
 	struct dirent entry;
 	Elm_Object_Item *it;
 	struct ListElement *current;
+
+	itc.item_style = "default";
+	itc.func.text_get = _gl_text_get;
+	itc.func.del = NULL;
 
 	dir = opendir(dir_path);
 	if (dir == NULL) {

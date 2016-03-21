@@ -5,9 +5,19 @@ INCLUDE(FindPkgConfig)
 
 STRING(REGEX MATCH "([^.]*)" SO_VERSION "${VERSION}")
 
+# Set compiler flags
 SET(CMAKE_C_FLAGS_RELEASE "-O2 -Wall")
 SET(CMAKE_C_FLAGS_DEBUG "-O0 -Wall -g -ggdb")
 SET(CMAKE_C_FLAGS_CCOV "-O2 -Wall --coverage")
+
+ADD_DEFINITIONS("-Werror")                      # Make all warnings into errors.
+ADD_DEFINITIONS("-Wall")                        # Generate all warnings
+ADD_DEFINITIONS("-Wextra")                      # Generate even more extra warnings
+ADD_DEFINITIONS("-Wno-unused-parameter")        # Ignore unused parameter
+
+# Set linker flag
+SET(CMAKE_SHARED_LINKER_FLAGS  "-Wl,--as-needed")
+SET(CMAKE_EXE_LINKER_FLAGS     "-Wl,--as-needed")
 
 SET(PREFIX ${CMAKE_INSTALL_PREFIX})
 

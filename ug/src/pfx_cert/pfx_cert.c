@@ -36,6 +36,7 @@ static CertSvcStringList stringList;
 static char **alias_list;
 static char **email_list;
 static int max_length;
+static Elm_Genlist_Item_Class itc_2text;
 
 static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *part);
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part);
@@ -157,13 +158,6 @@ static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
 	get_info_cert_from_file_cb(ad, data);
 }
 
-static Elm_Genlist_Item_Class itc_2text = {
-	.item_style = "1line",
-	.func.text_get = _gl_text_get,
-	.func.content_get = _gl_content_get,
-	.func.del = NULL
-};
-
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
 	item_data_s *id = data;
@@ -269,6 +263,12 @@ void create_genlist_cb(void *data, CertStoreType storeType)
 			lastListElement = current;
 			current->storeType = storeType;
 			certList = certList->next;
+
+			itc_2text.item_style = "1line";
+			itc_2text.func.text_get = _gl_text_get;
+			itc_2text.func.content_get = _gl_content_get;
+			itc_2text.func.del = NULL;
+
 			elm_genlist_item_append(genlist_pfx, &itc_2text, id, NULL, ELM_GENLIST_ITEM_NONE, _cert_selection_cb, current);
 		}
 

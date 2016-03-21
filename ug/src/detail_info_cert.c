@@ -37,7 +37,7 @@
 #include "common-utils.h"
 #include "certificates/certificate_util.h"
 
-static char *format_key (char *key);
+static char *format_key (const char *key);
 Eina_Bool _back(void *data, Elm_Object_Item *it);
 
 #define UG_ICU_ARR_LENGTH  256
@@ -68,6 +68,9 @@ typedef enum __cert_info_group {
 	ISSUER,
 	DATA
 } cert_info_group_e;
+
+static Elm_Genlist_Item_Class itc_group;
+static Elm_Genlist_Item_Class itc_2text;
 
 static char *_get_icu_time_string(const char *locale, const char *customSkeleton, const char *timezone, UDate date)
 {
@@ -268,7 +271,7 @@ static char *_getCertFieldData(int index)
 	time_t time;
 	int status = -1;
 	CertSvcString buffer;
-	char *char_buffer = NULL;
+	const char *char_buffer = NULL;
 	size_t char_buffer_len = 0;
 	char *cert_Data = NULL;
 
@@ -330,7 +333,7 @@ static char *_getCertFieldData(int index)
 	return cert_Data;
 }
 
-static char *format_key(char *key)
+static char *format_key(const char *key)
 {
 	LOGD("format_key");
 	int i = 0;
@@ -436,28 +439,24 @@ static char *_gl_get_text_group(void *data, Evas_Object *obj, const char *part)
 	return strdup(dgettext(PACKAGE, text));
 }
 
-static Elm_Genlist_Item_Class itc_group = {
-	.item_style       = "group_index",
-	.func.text_get    = _gl_get_text_group,
-	.func.content_get = NULL,
-	.func.state_get   = NULL,
-	.func.del         = NULL
-};
-
-static Elm_Genlist_Item_Class itc_2text = {
-	.item_style       = "multiline",
-	.func.text_get    = _gl_get_text,
-	.func.content_get = NULL,
-	.func.state_get   = NULL,
-	.func.del         = NULL
-};
-
 void show_detail_info(void)
 {
 	int i = 0;
-	Elm_Object_Item *it;
+	Elm_Object_Item *it = NULL;
 	Evas_Object *genlist;
 	struct ug_data *ad = get_ug_data();
+
+	itc_group.item_style       = "group_index";
+	itc_group.func.text_get    = _gl_get_text_group;
+	itc_group.func.content_get = NULL;
+	itc_group.func.state_get   = NULL;
+	itc_group.func.del         = NULL;
+
+	itc_2text.item_style       = "multiline";
+	itc_2text.func.text_get    = _gl_get_text;
+	itc_2text.func.content_get = NULL;
+	itc_2text.func.state_get   = NULL;
+	itc_2text.func.del         = NULL;
 
 	if (!ad)
 		return;
