@@ -1,6 +1,6 @@
 Name:    cert-svc-ui
 Summary: Certification service ui gadget
-Version: 1.0.2
+Version: 1.0.3
 Release: 2
 Group:   Security/Certificate Management
 License: Apache-2.0
