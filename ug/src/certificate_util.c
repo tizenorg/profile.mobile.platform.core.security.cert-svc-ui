@@ -16,6 +16,7 @@
 /*
  * @file        certificate_util.c
  * @author      Janusz Kozerski (j.kozerski@samsung.com)
+                Sangwan Kwon (Sangwan.kwon@samsung.com)
  * @version     1.0
  * @brief
  */
@@ -111,15 +112,12 @@ item_data_s *item_data_create(
 		return NULL;
 	}
 
-
 	id->gname = strdup(gname);
 	id->title = strdup(title);
 
 	if (!id->gname || !id->title) {
 		LOGE("Failed to allocate memory");
-		free(id->gname);
-		free(id->title);
-		free(id);
+		item_data_free(id);
 		return NULL;
 	}
 
@@ -146,13 +144,12 @@ Eina_Bool certStatusToEina(CertStatus status)
 
 Eina_Bool quit_cb(void *data, Elm_Object_Item *it)
 {
+	LOGD("Start quit cb function.");
 	struct ug_data *ad = (struct ug_data *)data;
 
 	if (ad->ug == NULL)
 		return EINA_FALSE;
 
-	deleteList(ad->list_element);
-	ad->list_element = NULL;
 	ug_destroy_me(ad->ug);
 	ad->ug = NULL;
 	ad->more_popup2 = NULL;
@@ -305,88 +302,15 @@ struct ListElement *initList()
 	return firstListElement;
 }
 
-struct ListElement *addListElement(struct ListElement *lastListElement, const char *name)
-{
-	if (!lastListElement)
-		return NULL;
-
-	struct ListElement *newListElement = initList();
-	if (!newListElement)
-		return NULL;
-
-	SECURE_LOGD("name %s", name);
-	newListElement->name = malloc((strlen(name) + 1) * sizeof(char));
-	if (!newListElement->name) {
-		free(newListElement);
-		return NULL;
-	}
-
-	strncpy(newListElement->name, name, strlen(name) + 1);
-	SECURE_LOGD("name %s", newListElement->name);
-
-	newListElement->title = NULL;
-	newListElement->path = NULL;
-
-	lastListElement->next = newListElement;
-	newListElement->prev = lastListElement;
-	newListElement->next = NULL;
-	newListElement->isChecked = EINA_FALSE;
-
-	return newListElement;
-}
-
-struct ListElement *addListElementWithPath(struct ListElement *lastListElement, const char *name, const char *path)
-{
-	struct ListElement *newListElement = addListElement(lastListElement, name);
-	if (!newListElement)
-		return NULL;
-
-	newListElement->path = strdup(path);
-	if (!newListElement->path) {
-		free(newListElement->name);
-		free(newListElement);
-		return NULL;
-	}
-
-	lastListElement->next = newListElement;
-	newListElement->prev = lastListElement;
-	newListElement->next = NULL;
-	newListElement->isChecked = EINA_FALSE;
-
-	return newListElement;
-}
-
-struct ListElement *addListElementWithPathAndTitle(struct ListElement *lastListElement, const char *gname, const char *path, const char *title)
-{
-	struct ListElement *newListElement = initList();
-	if (!newListElement)
-		return NULL;
-
-	newListElement->title = strdup(title);
-	newListElement->gname = strdup(gname);
-
-	if (!newListElement->title || !newListElement->gname) {
-		free(newListElement->title);
-		free(newListElement->gname);
-		free(newListElement);
-		return NULL;
-	}
-
-	if (lastListElement) {
-		lastListElement->next = newListElement;
-		newListElement->prev  = lastListElement;
-	}
-
-	newListElement->next = NULL;
-	newListElement->isChecked = EINA_FALSE;
-
-	return newListElement;
-}
-
 void freeListElement(struct ListElement *listElementToRemove)
 {
 	if (!listElementToRemove)
 		return;
+
+	if (listElementToRemove->name) {
+		free(listElementToRemove->name);
+		listElementToRemove->name = NULL;
+	}
 
 	if (listElementToRemove->gname) {
 		free(listElementToRemove->gname);
@@ -397,6 +321,65 @@ void freeListElement(struct ListElement *listElementToRemove)
 		free(listElementToRemove->title);
 		listElementToRemove->title = NULL;
 	}
+
+	if (listElementToRemove->path) {
+		free(listElementToRemove->path);
+		listElementToRemove->path = NULL;
+	}
+
+}
+
+struct ListElement *addListElement(
+					struct ListElement *lastListElement,
+					const char *title,
+					const char *gname,
+					const char *name,
+					const char *path)
+{
+	if (!lastListElement)
+		return NULL;
+
+	struct ListElement *newListElement = initList();
+	if (!newListElement)
+		goto error;
+
+	if(title != NULL) {
+		newListElement->title = strdup(title);
+		if (!newListElement->title)
+			goto error;
+	}
+
+	if(gname != NULL) {
+		newListElement->gname = strdup(gname);
+		if (!newListElement->gname)
+			goto error;
+	}
+
+	if(name != NULL) {
+		newListElement->name = strdup(name);
+		if (!newListElement->name)
+			goto error;
+	}
+
+	if(path != NULL) {
+		newListElement->path = strdup(path);
+		if (!newListElement->path)
+			goto error;
+	}
+
+	lastListElement->next = newListElement;
+	newListElement->prev = lastListElement;
+	newListElement->next = NULL;
+	newListElement->isChecked = EINA_FALSE;
+
+	return newListElement;
+
+error:
+	LOGW("Memory allocation error.");
+	if(newListElement == NULL)
+		freeListElement(newListElement);
+
+	return NULL;
 }
 
 /*
@@ -444,11 +427,12 @@ struct ListElement *findLastElement(struct ListElement *listElement)
 
 struct ListElement *findFirstElement(struct ListElement *listElement)
 {
-	struct ListElement *firsListElement = listElement;
-	while (firsListElement->prev)
-		firsListElement = firsListElement->prev;
+	struct ListElement *firstListElement = listElement;
 
-	return firsListElement;
+	while (firstListElement->prev)
+		firstListElement = firstListElement->prev;
+
+	return firstListElement;
 }
 
 void deleteList(struct ListElement *listElement)
@@ -469,7 +453,7 @@ void deleteList(struct ListElement *listElement)
 
 Eina_Bool back_cb(void *data, Elm_Object_Item *it)
 {
-	LOGD("back_cb");
+	LOGD("Start back cb function.");
 	struct ug_data *ad = (struct ug_data *)data;
 
 	deleteList(ad->list_element);
@@ -481,7 +465,7 @@ Eina_Bool back_cb(void *data, Elm_Object_Item *it)
 
 void back_install_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	LOGD("back_install_cb");
+	LOGD("Start back install cb function.");
 	struct ug_data *ad = (struct ug_data *) data;
 
 	deleteList(ad->list_element_install);
@@ -499,6 +483,7 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 
 static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 {
+	LOGD("Start smart callback function.");
 	item_data_s *id = (item_data_s *)data;
 
 	CertSvcInstance instance;
@@ -561,6 +546,7 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 
 Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_path, struct ListElement *lastListElement)
 {
+	LOGD("Start to make list.");
 	size_t length = 0;
 	size_t index = 0;
 	int result = 0;
@@ -610,7 +596,7 @@ Eina_Bool make_list(struct ug_data *ad, Evas_Object *genlist, const char *dir_pa
 			return no_content_bool;
 		}
 
-		current = addListElementWithPathAndTitle(lastListElement, certList->gname, NULL, certList->title);
+		current = addListElement(lastListElement, certList->title, certList->gname, NULL, NULL);
 		if (!current) {
 			certsvc_instance_free(instance);
 			elm_genlist_item_class_free(itc);

@@ -43,6 +43,7 @@ static Eina_Bool trusted_root_cert_create_genlist(struct ug_data *ad, Evas_Objec
 
 void trusted_root_cert_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Start layout - Trusted root CA certificates.");
 	Eina_Bool no_content_bool;
 	Elm_Object_Item *nf_it;
 	Evas_Object *box = NULL;

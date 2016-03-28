@@ -55,6 +55,7 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 
 static Evas_Object *_create_genlist(struct ug_data *ad, Evas_Object *parent)
 {
+	LOGD("Start to create genlist in Manage Cerificates.");
 	Evas_Object *genlist = elm_genlist_add(parent);
 	elm_genlist_mode_set(genlist, ELM_LIST_COMPRESS);
 	evas_object_size_hint_weight_set(genlist, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
@@ -69,6 +70,7 @@ static Evas_Object *_create_genlist(struct ug_data *ad, Evas_Object *parent)
 
 	evas_object_smart_callback_add(genlist, "selected", genlist_clicked_cb, NULL);
 
+	// Add "Trusted root CA certificates"
 	elm_genlist_item_append(
 			genlist,
 			itc,
@@ -78,6 +80,7 @@ static Evas_Object *_create_genlist(struct ug_data *ad, Evas_Object *parent)
 			trusted_root_cert_cb,
 			ad);
 
+	// Add "User certificates"
 	elm_genlist_item_append(
 			genlist,
 			itc,
@@ -92,6 +95,7 @@ static Evas_Object *_create_genlist(struct ug_data *ad, Evas_Object *parent)
 
 void create_certificates_menu(struct ug_data *ad)
 {
+	LOGD("Start to create certificates menu.");
 	Evas_Object *genlist = _create_genlist(ad, ad->navi_bar);
 	evas_object_show(genlist);
 

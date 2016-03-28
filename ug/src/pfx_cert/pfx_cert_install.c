@@ -95,9 +95,9 @@ static struct ListElement *scan_dir(const char *dir_path, Evas_Object *list, str
 			continue;
 
 
-		current = addListElementWithPath(lastListElement, dp->d_name, dir_path);
+		current = addListElement(lastListElement, NULL, NULL, dp->d_name, dir_path);
 		if (current == NULL) {
-			LOGE("Null value return from addListElementWithPath");
+			LOGE("Null value return from addListElement");
 			goto error;
 		}
 

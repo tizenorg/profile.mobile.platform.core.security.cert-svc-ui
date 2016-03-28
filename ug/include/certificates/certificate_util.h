@@ -16,6 +16,7 @@
 /*
  * @file        certificate_util.h
  * @author      Janusz Kozerski (j.kozerski@samsung.com)
+ *              Sangwan Kwon (sangwan.kwon@samsung.com)
  * @version     1.0
  * @brief
  */
@@ -53,38 +54,36 @@ typedef struct item_data
 } item_data_s;
 
 enum PositionOfElement {
-    NONE,           // This is no element of the list
-    FIRST,          // First element of list - there is nothing before, but is something after
-    LAST,           // Last element of the list - there is nothing after, but is something before
-    IN_THE_MIDDLE,  // There are element before and after this element
-    THE_LAST_ONE,   // It means that this is the only one element on the list
+	NONE,           // This is no element of the list
+	FIRST,          // First element of list - there is nothing before, but is something after
+	LAST,           // Last element of the list - there is nothing after, but is something before
+	IN_THE_MIDDLE,  // There are element before and after this element
+	THE_LAST_ONE,   // It means that this is the only one element on the list
 };
 
 enum CountOfSelected {
-    SELECTED_NONE,   // NONE element is selected
-    SELECTED_FEW,    // At least one, but not all element are selected
-    SELECTED_ALL,    // ALL element are selected
+	SELECTED_NONE,   // NONE element is selected
+	SELECTED_FEW,    // At least one, but not all element are selected
+	SELECTED_ALL,    // ALL element are selected
 };
 
 Eina_Bool quit_cb(void *data, Elm_Object_Item *it);
-void list_clicked_cb    (void *data, Evas_Object *obj, void *event_info);
-void genlist_clicked_cb (void *data, Evas_Object *obj, void *event_info);
+void list_clicked_cb(void *data, Evas_Object *obj, void *event_info);
+void genlist_clicked_cb(void *data, Evas_Object *obj, void *event_info);
 
 struct ListElement* initList();
-struct ListElement* nextElement             (struct ListElement *listElement);
-struct ListElement* addListElement          (struct ListElement* lastListElement, const char *name);
-struct ListElement* addListElementWithPath  (struct ListElement* lastListElement, const char *name, const char *path);
-struct ListElement* addListElementWithPathAndTitle(
-        struct ListElement* lastListElement,
-        const char *name,
-        const char *path,
-        const char *title);
-struct ListElement* findLastElement      (struct ListElement* listElement);
-struct ListElement* findFirstElement     (struct ListElement* listElement);
-enum PositionOfElement removeListElement (struct ListElement *listElementToRemove);
-void deleteList                          (struct ListElement* listElement);
-void clear_pfx_genlist_data              ();
-
+struct ListElement* nextElement(struct ListElement *listElement);
+struct ListElement* addListElement(
+		struct ListElement* lastListElement,
+		const char *title,
+		const char *gname,
+		const char *name,
+		const char *path);
+struct ListElement* findLastElement(struct ListElement* listElement);
+struct ListElement* findFirstElement(struct ListElement* listElement);
+enum PositionOfElement removeListElement(struct ListElement *listElementToRemove);
+void deleteList(struct ListElement* listElement);
+void clear_pfx_genlist_data();
 
 /**
  * Path concatenation
@@ -107,30 +106,29 @@ void clear_pfx_genlist_data              ();
  **/
 char *path_cat(const char *str1, char *str2);
 
-//void back_cb          (void *data, Evas_Object *obj, void *event_info);
-Eina_Bool back_cb (void *data, Elm_Object_Item *it);
-void back_install_cb  (void *data, Evas_Object *obj, void *event_info);
+Eina_Bool back_cb(void *data, Elm_Object_Item *it);
+void back_install_cb(void *data, Evas_Object *obj, void *event_info);
 void install_button_cb(void *data, Evas_Object *obj, void *event_info);
 
 Evas_Object *create_yes_no_pop(struct ug_data *ad, const char *content);
-Evas_Object *create_ok_pop    (struct ug_data *ad, const char *content);
+Evas_Object *create_ok_pop(struct ug_data *ad, const char *content);
 
 Evas_Object *create_no_content_layout (struct ug_data *ad);
 
 Eina_Bool make_list(
-        struct ug_data     *ad,
-        Evas_Object        *list,
-        const char         *dir_path,
-        struct ListElement *lastListElement);
+		struct ug_data *ad,
+		Evas_Object *list,
+		const char *dir_path,
+		struct ListElement *lastListElement);
 
 int safeStrCmp(const char* s1, const char* s2);
 
 item_data_s *item_data_create(
-        const char *gname,
-        const char *title,
-        CertStatus status,
-        CertStoreType storeType,
-        size_t index);
+		const char *gname,
+		const char *title,
+		CertStatus status,
+		CertStoreType storeType,
+		size_t index);
 
 void item_data_free(item_data_s *id);
 

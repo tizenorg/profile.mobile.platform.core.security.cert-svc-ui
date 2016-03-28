@@ -16,6 +16,7 @@
 /*
  * @file        pfx_cert.c
  * @author      Janusz Kozerski (j.kozerski@samsung.com)
+ *              Sangwan Kwon (sangwan.kwon@samsung.com)
  * @version     1.0
  * @brief
  */
@@ -183,6 +184,7 @@ pfx_cert_naviframe_pop_cb(void *data, Elm_Object_Item *it)
 
 void more_button_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("more_button_cb");
 	struct ug_data *ad = (struct ug_data *)data;
 	Evas_Object *popup = NULL;
 
@@ -252,7 +254,13 @@ void create_genlist_cb(void *data, CertStoreType storeType)
 				return;
 			}
 
-			current = addListElementWithPathAndTitle(lastListElement, certList->gname, NULL, certList->title);
+			current = addListElement(
+				lastListElement,
+				NULL,
+				certList->gname,
+				NULL,
+				NULL);
+
 			if (!current) {
 				item_data_free(id);
 				certsvc_instance_free(instance);
@@ -302,16 +310,19 @@ void create_genlist_cb(void *data, CertStoreType storeType)
 
 void create_VPN_list_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Create list about VPN.");
 	create_genlist_cb(data, VPN_STORE);
 }
 
 void create_WIFI_list_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Create list about WIFI.");
 	create_genlist_cb(data, WIFI_STORE);
 }
 
 void create_EMAIL_list_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Create list about EMAIL.");
 	create_genlist_cb(data, EMAIL_STORE);
 }
 
@@ -334,6 +345,7 @@ Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
 
 void pfx_cert_create_list(struct ug_data *ad)
 {
+	LOGD("Create list about pfx_cert.");
 	Evas_Object *no_content = NULL;
 	Evas_Object *tabbar;
 
