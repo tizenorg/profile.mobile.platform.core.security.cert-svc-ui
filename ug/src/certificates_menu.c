@@ -40,7 +40,7 @@ void direct_pfx_install_screen_cb(void *data, Evas_Object *obj, void *event_info
 
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
-	int index = (int) data;
+	int index = (intptr_t)data;
 
 	if (strcmp(part, "elm.text"))
 		return NULL;

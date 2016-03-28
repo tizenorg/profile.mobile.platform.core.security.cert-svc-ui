@@ -384,7 +384,7 @@ static char *format_key(const char *key)
 
 static void _gl_realized(void *data, Evas_Object *obj, void *ei)
 {
-	int id = (int)elm_object_item_data_get(ei);
+	int id = (intptr_t)elm_object_item_data_get(ei);
 
 	if (ei == NULL)
 		return;
@@ -398,7 +398,7 @@ static void _gl_realized(void *data, Evas_Object *obj, void *ei)
 
 static char *_gl_get_text(void *data, Evas_Object *obj, const char *part)
 {
-	int index = (int)data;
+	int index = (intptr_t)data;
 	char *cert_data = NULL;
 
 	if (strcmp(part, "elm.text") == 0)
@@ -478,7 +478,7 @@ void show_detail_info(void)
 
 		elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
-		it = elm_genlist_item_append(genlist, &itc_2text, (void *)i, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
+		it = elm_genlist_item_append(genlist, &itc_2text, (void *)(intptr_t)i, NULL, ELM_GENLIST_ITEM_NONE, NULL, NULL);
 		elm_genlist_item_select_mode_set(it, ELM_OBJECT_SELECT_MODE_DISPLAY_ONLY);
 
 		LOGD("Succesful append %d genlist", i);

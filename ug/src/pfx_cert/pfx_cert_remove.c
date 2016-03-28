@@ -104,8 +104,8 @@ static void _gl_sel(void *data, Evas_Object *obj, void *ei)
 
 static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *part)
 {
-	item_data_s *id = (item_data_s *) data;
-	int index = id->index;
+	item_data_s *id = (item_data_s *)data;
+	int index = (intptr_t)id->index;
 	Evas_Object *check;
 
 	if (strcmp(part, "elm.icon.right"))
@@ -125,7 +125,7 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 	evas_object_propagate_events_set(check, EINA_FALSE);
 	evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
-	evas_object_smart_callback_add(check, "changed", _chk_changed_cb, (void *)index);
+	evas_object_smart_callback_add(check, "changed", _chk_changed_cb, (void *)(intptr_t)index);
 
 	return check;
 }

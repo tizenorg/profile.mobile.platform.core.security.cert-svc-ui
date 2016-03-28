@@ -319,7 +319,7 @@ static char *_gl_get_text_group(void *data, Evas_Object *obj, const char *part)
 		return NULL;
 	}
 
-	switch ((int)data) {
+	switch ((intptr_t)data) {
 	case 0:
 		LOGD("IDS_ST_BODY_ENTER_PASSWORD_C");
 		str = strdup(dgettext(PACKAGE, "IDS_ST_BODY_ENTER_PASSWORD_C"));
@@ -359,7 +359,7 @@ static void ctxpopup_dismissed_cb(void *data, Evas_Object *obj, void *event_info
 static void ctxpopup_item_select_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	char buf[100];
-	sel_sub_item_id = (int)data;
+	sel_sub_item_id = (intptr_t)data;
 
 	if (sel_sub_item_id == 0)
 		snprintf(buf, sizeof(buf), "<align=left>%s</align>", "VPN");
