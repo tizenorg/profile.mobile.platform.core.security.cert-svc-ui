@@ -169,22 +169,9 @@ static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 	return  NULL;
 }
 
-static Eina_Bool
-pfx_cert_naviframe_pop_cb(void *data, Elm_Object_Item *it)
-{
-	struct ug_data *ad = get_ug_data();
-
-	evas_object_del(ad->more_popup2);
-	ad->more_popup2 = NULL;
-
-	clear_pfx_genlist_data();
-
-	return EINA_TRUE;
-}
-
 void more_button_cb(void *data, Evas_Object *obj, void *event_info)
 {
-	LOGD("more_button_cb");
+	LOGD("Start more button callback.");
 	struct ug_data *ad = (struct ug_data *)data;
 	Evas_Object *popup = NULL;
 
@@ -199,6 +186,25 @@ void more_button_cb(void *data, Evas_Object *obj, void *event_info)
 	evas_object_show(popup);
 
 	ad->more_popup2 = popup;
+}
+
+static Eina_Bool
+pfx_cert_naviframe_pop_cb(void *data, Elm_Object_Item *it)
+{
+	LOGD("Start pop up callback.");
+	struct ug_data *ad = get_ug_data();
+
+	if (ad->more_popup2 != NULL) {
+		evas_object_del(ad->more_popup2);
+		ad->more_popup2 = NULL;
+	}
+
+	// Delete a callback function.
+	eext_object_event_callback_del(ad->navi_bar, EEXT_CALLBACK_MORE, more_button_cb);
+
+	clear_pfx_genlist_data();
+
+	return EINA_TRUE;
 }
 
 void create_genlist_cb(void *data, CertStoreType storeType)
@@ -373,10 +379,13 @@ void pfx_cert_create_list(struct ug_data *ad)
 
 void refresh_pfx_cert_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Refresh pfx cert.");
 	struct ug_data *ad = get_ug_data();
 
-	evas_object_del(ad->more_popup2);
-	ad->more_popup2 = NULL;
+	if (ad->more_popup2 != NULL) {
+		evas_object_del(ad->more_popup2);
+		ad->more_popup2 = NULL;
+	}
 
 	pfx_cert_create_list(ad);
 }
