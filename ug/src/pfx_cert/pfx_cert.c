@@ -371,6 +371,7 @@ void refresh_pfx_cert_cb(void *data, Evas_Object *obj, void *event_info)
 
 void pfx_cert_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Start layout - User certificates");
 	struct ug_data *ad = get_ug_data();
 
 	ad->user_cert_list_item = NULL;
