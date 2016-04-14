@@ -377,9 +377,17 @@ void EMAIL_list_cb(void *data, Evas_Object *obj, void *event_info)
 
 static void _create_genlist(struct ug_data *ad)
 {
-	Evas_Object *tabbar;
+	if (ad == NULL)
+		return;
 
-	genlist = common_genlist(ad->navi_bar);
+	Evas_Object *tabbar;
+	Evas_Object *no_content = create_no_content_layout(ad);
+	if (no_content == NULL) {
+		LOGE("Cannot create no_content layout");
+		return;
+	}
+
+	genlist = no_content;
 
 	Elm_Object_Item *itm = elm_naviframe_item_push(
 			ad->navi_bar,
@@ -401,6 +409,7 @@ static void _create_genlist(struct ug_data *ad)
 
 void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Start uninstall cert step");
 	struct ug_data *ad = (struct ug_data *) data;
 
 	common_dismissed_cb(ad->more_popup2, obj, event_info);
