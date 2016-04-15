@@ -31,6 +31,8 @@ BuildRequires: pkgconfig(libtzplatform-config)
 %global TZ_SYS_RO_UG       %{?TZ_SYS_RO_UG:%TZ_SYS_RO_UG}%{!?TZ_SYS_RO_UG:/usr/ug}
 %global TZ_SYS_RO_APP      %{?TZ_SYS_RO_APP:%TZ_SYS_RO_APP}%{!?TZ_SYS_RO_APP:/usr/apps}
 
+%global CERT_SVC_UI_PATH   %{TZ_SYS_RO_APP}/cert-svc-ui
+
 %description
 Certification service
 
@@ -58,6 +60,7 @@ export FFLAGS="$FFLAGS -DTIZEN_EMULATOR_MODE"
         -DTZ_SYS_RO_PACKAGES=%TZ_SYS_RO_PACKAGES \
         -DTZ_SYS_BIN=%TZ_SYS_BIN \
         -DCMAKE_BUILD_TYPE=%{build_type} \
+        -DAPP_PATH=%{CERT_SVC_UI_PATH} \
         -DVERSION=%version
 
 make %{?_smp_mflags}
@@ -76,6 +79,8 @@ make %{?_smp_mflags}
 %TZ_SYS_RO_PACKAGES/%name.xml
 %TZ_SYS_RO_UG/lib/libug-setting-manage-certificates-efl.so*
 %TZ_SYS_RO_UG/lib/libug-cert-selection-ug-efl.so*
+%CERT_SVC_UI_PATH/lib/ug/libug-setting-manage-certificates-efl.so*
+%CERT_SVC_UI_PATH/lib/ug/libug-cert-selection-ug-efl.so*
 %TZ_SYS_RO_UG/res/locale/*
 %TZ_SYS_RO_UG/res/images/*
 %TZ_SYS_RO_UG/res/custom_editfield.edj

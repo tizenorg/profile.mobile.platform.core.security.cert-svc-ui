@@ -142,7 +142,7 @@ error:
 
 Elm_Object_Item *pfx_cert_install(struct ug_data *ad)
 {
-	Evas_Object *list = NULL;
+	LOGD("Start to install pfx certificates.");
 
 	struct ListElement *firstListElement = initList();
 	struct ListElement *lastListElement = firstListElement;
@@ -153,7 +153,7 @@ Elm_Object_Item *pfx_cert_install(struct ug_data *ad)
 		return NULL;
 	}
 
-	list = common_genlist(ad->win_main);
+	Evas_Object *list = common_genlist(ad->win_main);
 	evas_object_smart_callback_add(list, "selected", genlist_clicked_cb, NULL);
 
 	char *path_media = get_media_path();
@@ -163,12 +163,11 @@ Elm_Object_Item *pfx_cert_install(struct ug_data *ad)
 	lastListElement = scan_dir(path_media, list, lastListElement);
 	lastListElement = scan_dir(path_media_downloads, list, lastListElement);
 	scan_dir(path_sdcard, list, lastListElement);
+	evas_object_show(list);
 
 	free(path_media);
 	free(path_media_downloads);
 	free(path_sdcard);
-
-	Elm_Object_Item *navi_it = NULL;
 
 	if (firstListElement->next == NULL) {
 		deleteList(firstListElement);
@@ -180,16 +179,15 @@ Elm_Object_Item *pfx_cert_install(struct ug_data *ad)
 		}
 	}
 
-	navi_it = elm_naviframe_item_push(
-			ad->navi_bar,
-			"IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB",
-			common_back_btn(ad),
-			NULL,
-			list,
-			NULL);
+	Elm_Object_Item *navi_it = elm_naviframe_item_push(
+		ad->navi_bar,
+		"IDS_ST_HEADER_CERTIFICATE_SEARCH_RESULTS_ABB",
+		common_back_btn(ad),
+		NULL,
+		list,
+		NULL);
 
 	elm_object_item_domain_text_translatable_set(navi_it, PACKAGE, EINA_TRUE);
-
 	elm_naviframe_item_pop_cb_set(
 		navi_it,
 		((ad->type_of_screen == PKCS12_SCREEN) ? quit_cb : _back_cb),

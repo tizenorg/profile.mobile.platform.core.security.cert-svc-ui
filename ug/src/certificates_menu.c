@@ -28,6 +28,7 @@
 
 void direct_pfx_install_screen_cb(void *data, Evas_Object *obj, void *event_info)
 {
+	LOGD("Start direct pfx install screen. ref : wifi -> advanced");
 	struct ug_data *ad = (struct ug_data *)data;
 
 	ad->list_element = NULL;
