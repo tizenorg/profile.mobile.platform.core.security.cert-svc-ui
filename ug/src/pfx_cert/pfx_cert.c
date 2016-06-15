@@ -183,6 +183,7 @@ void more_button_cb(void *data, Evas_Object *obj, void *event_info)
 	elm_ctxpopup_item_append(popup, dgettext(PACKAGE, "IDS_ST_BUTTON_INSTALL"), NULL, install_button_cb, ad);
 	elm_ctxpopup_item_append(popup, dgettext(PACKAGE, "IDS_ST_BUTTON_UNINSTALL"), NULL, pfx_cert_remove_cb, ad);
 
+	common_move_more_ctxpopup(popup);
 	evas_object_show(popup);
 
 	ad->more_popup2 = popup;

@@ -140,9 +140,5 @@ Evas_Object *common_more_ctxpopup(Evas_Object *parent)
 		ELM_CTXPOPUP_DIRECTION_UNKNOWN,
 		ELM_CTXPOPUP_DIRECTION_UNKNOWN);
 
-	common_move_more_ctxpopup(popup);
-
-	evas_object_show(popup);
-
 	return popup;
 }

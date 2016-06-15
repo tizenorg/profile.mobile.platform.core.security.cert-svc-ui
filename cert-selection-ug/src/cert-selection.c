@@ -432,6 +432,7 @@ static void _cert_naviframe_more_cb(void *data, Evas_Object *obj, void *event_in
 			ad);
 	elm_object_item_domain_text_translatable_set(item_install, PACKAGE, EINA_TRUE);
 
+	common_move_more_ctxpopup(popup);
 	evas_object_show(popup);
 
 	ad->ctx_popup = popup;

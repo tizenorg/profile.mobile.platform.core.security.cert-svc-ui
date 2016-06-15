@@ -50,6 +50,7 @@ Evas_Object *add_common_cancel_btn(struct ug_data *ad, E_CB);
 
 void common_dismissed_cb(void *data, Evas_Object *obj, void *event_info);
 Evas_Object *common_more_ctxpopup(Evas_Object *parent);
+void common_move_more_ctxpopup(Evas_Object *popup);
 
 #ifdef _cplusplus
 }
