@@ -2,13 +2,13 @@
 <manifest xmlns="http://tizen.org/ns/packages" package="cert-svc-ui" api-version="3.0" version="0.1" install-location="internal-only">
 	<label>cert-svc-ui ug</label>
 	<description>Cert Service UI</description>
-	<ui-application appid="setting-manage-certificates-efl" exec="setting-manage-certificates-efl" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false">
+	<ui-application appid="setting-manage-certificates-efl" exec="setting-manage-certificates-efl" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false" launch_mode="caller">
 		<label>Setting manager certificate</label>
 	</ui-application>
-	<ui-application appid="cert-selection-ug-efl" exec="cert-selection-ug-efl" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false">
+	<ui-application appid="cert-selection-ug-efl" exec="cert-selection-ug-efl" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false" launch_mode="caller">
 		<label>Certificate selection UG</label>
 	</ui-application>
-	<ui-application appid="mgr-cert-view" exec="mgr-cert-view" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false">
+	<ui-application appid="mgr-cert-view" exec="mgr-cert-view" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false" launch_mode="caller">
 		<label>Managing cert view</label>
 	</ui-application>
 </manifest>
