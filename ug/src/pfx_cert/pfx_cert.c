@@ -263,7 +263,7 @@ void create_genlist_cb(void *data, CertStoreType storeType)
 
 			current = addListElement(
 				lastListElement,
-				NULL,
+				certList->title,
 				certList->gname,
 				NULL,
 				NULL);

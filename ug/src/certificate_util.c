@@ -336,9 +336,6 @@ struct ListElement *addListElement(
 					const char *name,
 					const char *path)
 {
-	if (!lastListElement)
-		return NULL;
-
 	struct ListElement *newListElement = initList();
 	if (!newListElement)
 		goto error;
@@ -367,16 +364,17 @@ struct ListElement *addListElement(
 			goto error;
 	}
 
-	lastListElement->next = newListElement;
 	newListElement->prev = lastListElement;
 	newListElement->next = NULL;
 	newListElement->isChecked = EINA_FALSE;
+	if (lastListElement != NULL)
+		lastListElement->next = newListElement;
 
 	return newListElement;
 
 error:
 	LOGW("Memory allocation error.");
-	if(newListElement == NULL)
+	if(newListElement)
 		freeListElement(newListElement);
 
 	return NULL;
