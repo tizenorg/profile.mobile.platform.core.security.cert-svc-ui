@@ -34,9 +34,11 @@
 static Eina_Bool *state_pointer;
 static Evas_Object *genlist;
 static int checked_count;
-static Elm_Object_Item *select_all_btn_item;
-Evas_Object *done;
+static Elm_Object_Item *navi_object_item;
+static Evas_Object *done;
+static CertSvcInstance instance;
 static CertSvcStoreCertList *CertList;
+static Elm_Genlist_Item_Class itc;
 
 static void _pfx_cert_remove_cleanup(void)
 {
@@ -44,7 +46,6 @@ static void _pfx_cert_remove_cleanup(void)
 		free(state_pointer);
 		state_pointer = NULL;
 	}
-
 }
 
 static void _navi_text_update(void)
@@ -66,7 +67,7 @@ static void _navi_text_update(void)
 
 	/* pText must contain %d */
 	snprintf(formatedText, size, pText, checked_count);
-	elm_object_item_part_text_set(select_all_btn_item, NULL, formatedText);
+	elm_object_item_part_text_set(navi_object_item, NULL, formatedText);
 	free(formatedText);
 }
 
@@ -89,11 +90,10 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 
 static void _gl_sel(void *data, Evas_Object *obj, void *ei)
 {
-	Evas_Object *ck;
 	Elm_Object_Item *item = ei;
 
 	elm_genlist_item_selected_set(item, EINA_FALSE);
-	ck = elm_object_item_part_content_get(ei, "elm.icon.right");
+	Evas_Object *ck = elm_object_item_part_content_get(ei, "elm.icon.right");
 
 	if (!ck)
 		return;
@@ -104,15 +104,14 @@ static void _gl_sel(void *data, Evas_Object *obj, void *ei)
 
 static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *part)
 {
-	item_data_s *id = (item_data_s *)data;
-	int index = (intptr_t)id->index;
-	Evas_Object *check;
-
-	if (strcmp(part, "elm.icon.right"))
+	if (strcmp(part, "elm.swallow.end") != 0)
 		return NULL;
 
-	check = elm_check_add(obj);
+	Evas_Object *check = elm_check_add(obj);
 	elm_object_style_set(check, "default/genlist");
+
+	item_data_s *id = (item_data_s *)data;
+	int index = (intptr_t)id->index;
 
 	/* set the State pointer to keep the current UI state of Checkbox */
 	elm_check_state_pointer_set(check, &(state_pointer[index]));
@@ -126,27 +125,28 @@ static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *pa
 	evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
 	evas_object_smart_callback_add(check, "changed", _chk_changed_cb, (void *)(intptr_t)index);
+	evas_object_show(check);
 
 	return check;
 }
 
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
-	item_data_s *id = (item_data_s *)data;
-
-	if (!strcmp(part, "elm.text.main.left.top"))
-		return strdup(id->title);
-
-	if (strcmp(part, "elm.text.sub.left.bottom"))
+	item_data_s *item = (item_data_s *)data;
+	if (strcmp(part, "elm.text") == 0) {
+		return strdup(item->title);
+	} else if (strcmp(part, "elm.text.sub") == 0) {
+		if (item->storeType == VPN_STORE)
+			return strdup("VPN");
+		else if (item->storeType == WIFI_STORE)
+			return strdup("WIFI");
+		else if (item->storeType == EMAIL_STORE)
+			return strdup("EMAIL");
+		else
+			return NULL;
+	} else {
 		return NULL;
-
-	if (id->storeType == VPN_STORE)
-		return strdup("Store Type: VPN");
-
-	if (id->storeType == WIFI_STORE)
-		return strdup("Store Type: WIFI");
-
-	return strdup("Store Type: EMAIL");
+	}
 }
 
 static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info)
@@ -163,31 +163,23 @@ static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info
 	ad->popup = NULL;
 
 	CertSvcString FileName;
-	CertSvcInstance instance;
 	CertSvcStoreCertList *certListHead = CertList;
-
-	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
-		LOGE("Failed to certsvc_instance_new().");
-		return;
-	}
 
 	while (CertList) {
 		if (EINA_TRUE == state_pointer[i]) {
 			ret = certsvc_string_new(instance, CertList->gname, strlen(CertList->gname), &FileName);
 			if (ret != CERTSVC_SUCCESS) {
 				LOGE("Failed to certsvc_string_new.");
-				certsvc_instance_free(instance);
 				return;
 			}
 
 			ret = certsvc_pkcs12_delete_certificate_from_store(instance, CertList->storeType, FileName);
 			if (ret != CERTSVC_SUCCESS) {
 				LOGE("Fail to delete selected certificate");
-				certsvc_instance_free(instance);
 				return;
 			}
 		}
-		i++;
+		++i;
 		CertList = CertList->next;
 	}
 
@@ -201,7 +193,6 @@ static void genlist_pfx_delete_cb(void *data, Evas_Object *obj, void *event_info
 	if (ad && ad->refresh_screen_cb)
 		ad->refresh_screen_cb(ad, NULL, NULL);
 
-	certsvc_instance_free(instance);
 	LOGD("genlist_pfx_delete_cb done");
 }
 
@@ -288,76 +279,81 @@ static Eina_Bool genlist_pfx_back_cb(void *data, Elm_Object_Item *it)
 		_pfx_cert_remove_cleanup();
 	}
 
+	certsvc_instance_free(instance);
+	navi_object_item = NULL;
+
 	return EINA_TRUE;
 }
 
 void cert_remove_genlist_cb(void *data, CertStoreType storeType)
 {
+	Evas_Object *parent = (Evas_Object *)data;
+	struct ug_data *ad = get_ug_data();
+
+	CertSvcStoreCertList *certList = NULL;
+
 	size_t i = 0;
 	size_t Length = 0;
-	int result = 0;
-	CertSvcStoreCertList *certList = NULL;
-	CertSvcInstance instance;
-	Elm_Genlist_Item_Class *itc;
-
-	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
-		LOGE("Failed to certsvc_instance_new().");
-		return;
-	}
-
-	result = certsvc_pkcs12_get_certificate_list_from_store(instance, storeType, DISABLED, &certList, &Length);
+	int result = certsvc_pkcs12_get_certificate_list_from_store(instance, storeType, DISABLED, &certList, &Length);
 	if (result != CERTSVC_SUCCESS) {
 		LOGE("Fail to get the certificate list from store.");
-		certsvc_instance_free(instance);
 		return;
 	}
+
 	CertList = certList;
 
 	if (genlist)
 		elm_genlist_clear(genlist);
+
+	genlist = common_genlist(parent);
+	if (genlist == NULL)
+		return;
+
+	elm_object_item_part_text_set(navi_object_item, NULL, dgettext(PACKAGE, "IDS_ST_HEADER_SELECT_ITEMS"));
+	checked_count = 0;
+	elm_object_disabled_set(done, EINA_TRUE);
 
 	if (state_pointer) {
 		free(state_pointer);
 		state_pointer = NULL;
 	}
 
-	itc = elm_genlist_item_class_new();
-	if (!itc) {
-		LOGE("Fail to malloc genlist item class");
-		certsvc_instance_free(instance);
+	itc.item_style = "type1";
+	itc.func.content_get = _gl_content_get;
+	itc.func.text_get = _gl_text_get;
+
+	if (Length == 0) {
+		Evas_Object *no_content = create_no_content_layout(ad);
+		if (no_content == NULL) {
+			LOGE("Cannot create no_content layout");
+			return;
+		}
+
+		elm_object_item_part_content_set(navi_object_item, NULL, no_content);
+
 		return;
 	}
 
-	itc->item_style = "2line.top";
-	itc->func.content_get = _gl_content_get;
-	itc->func.text_get = _gl_text_get;
+	state_pointer = malloc((Length + 1) * sizeof(Eina_Bool));
+	for (i = 0; i < Length; i++) {
+		state_pointer[i] = EINA_FALSE;
+		item_data_s *id = item_data_create(
+				certList->gname,
+				certList->title,
+				certList->status,
+				storeType,
+				i);
 
-	if (Length) {
-		state_pointer = malloc((Length + 1) * sizeof(Eina_Bool));
-		for (i = 0; i < Length; i++) {
-			state_pointer[i] = EINA_FALSE;
-			item_data_s *id = item_data_create(
-					certList->gname,
-					certList->title,
-					certList->status,
-					storeType,
-					i);
-
-			if (!id) {
-				certsvc_instance_free(instance);
-				elm_genlist_item_class_free(itc);
-				LOGE("fail to allocate memory");
-				return;
-			}
-
-			certList = certList->next;
-			elm_genlist_item_append(genlist, itc, id, NULL, ELM_GENLIST_ITEM_NONE, _gl_sel, (void *)i);
+		if (!id) {
+			LOGE("fail to allocate memory");
+			return;
 		}
 
+		certList = certList->next;
+		elm_genlist_item_append(genlist, &itc, id, NULL, ELM_GENLIST_ITEM_NONE, _gl_sel, (void *)i);
 	}
 
-	certsvc_instance_free(instance);
-	elm_genlist_item_class_free(itc);
+	elm_object_item_part_content_set(navi_object_item, NULL, genlist);
 }
 
 void VPN_list_cb(void *data, Evas_Object *obj, void *event_info)
@@ -380,37 +376,40 @@ static void _create_genlist(struct ug_data *ad)
 	if (ad == NULL)
 		return;
 
-	Evas_Object *tabbar;
+	navi_object_item = NULL;
+
 	Evas_Object *no_content = create_no_content_layout(ad);
 	if (no_content == NULL) {
 		LOGE("Cannot create no_content layout");
 		return;
 	}
 
-	genlist = no_content;
+	if (certsvc_instance_new(&instance) != CERTSVC_SUCCESS) {
+		LOGE("Failed to certsvc_instance_new().");
+		return;
+	}
 
-	Elm_Object_Item *itm = elm_naviframe_item_push(
-			ad->navi_bar,
-			"IDS_ST_HEADER_SELECT_ITEMS",
-			common_back_btn(ad),
-			NULL,
-			genlist,
-			NULL);
-	select_all_btn_item = itm;
+	navi_object_item = elm_naviframe_item_push(
+			ad->navi_bar, dgettext(PACKAGE, "IDS_ST_HEADER_SELECT_ITEMS"),
+			common_back_btn(ad), NULL, no_content, NULL);
 
-	elm_object_item_domain_text_translatable_set(itm, PACKAGE, EINA_TRUE);
+	elm_object_item_domain_text_translatable_set(navi_object_item, PACKAGE, EINA_TRUE);
 
-	elm_naviframe_item_pop_cb_set(itm, genlist_pfx_back_cb, ad);
-	elm_naviframe_item_style_set(itm, "tabbar");
-	tabbar = create_2_text_with_title_tabbar(ad->win_main);
-	elm_object_item_part_content_set(itm, "tabbar", tabbar);
+	elm_naviframe_item_pop_cb_set(navi_object_item, genlist_pfx_back_cb, ad);
+	elm_naviframe_item_style_set(navi_object_item, "tabbar");
 
+	Evas_Object *tabbar = create_2_text_with_title_tabbar(ad->win_main);
+	elm_toolbar_item_append(tabbar, NULL, "VPN", VPN_list_cb, ad->win_main);
+	elm_toolbar_item_append(tabbar, NULL, "WIFI", WIFI_list_cb, ad->win_main);
+	elm_toolbar_item_append(tabbar, NULL, "EMAIL", EMAIL_list_cb, ad->win_main);
+
+	elm_object_item_part_content_set(navi_object_item, "tabbar", tabbar);
 }
 
 void pfx_cert_remove_cb(void *data, Evas_Object *obj, void *event_info)
 {
 	LOGD("Start uninstall cert step");
-	struct ug_data *ad = (struct ug_data *) data;
+	struct ug_data *ad = (struct ug_data *)data;
 
 	common_dismissed_cb(ad->more_popup2, obj, event_info);
 

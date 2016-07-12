@@ -326,35 +326,16 @@ void create_EMAIL_list_cb(void *data, Evas_Object *obj, void *event_info)
 	create_genlist_cb(data, EMAIL_STORE);
 }
 
-Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
-{
-	Evas_Object *toolbar = elm_toolbar_add(parent);
-
-	elm_object_style_set(toolbar, "tabbar_with_title");
-	elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
-	elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
-
-	elm_toolbar_item_append(toolbar, NULL, "VPN", create_VPN_list_cb, parent);
-	elm_toolbar_item_append(toolbar, NULL, "WIFI", create_WIFI_list_cb, parent);
-	elm_toolbar_item_append(toolbar, NULL, "EMAIL", create_EMAIL_list_cb, parent);
-
-	elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_ALWAYS);
-
-	return toolbar;
-}
-
 void pfx_cert_create_list(struct ug_data *ad)
 {
 	LOGD("Create list about pfx_cert.");
-	Evas_Object *no_content = NULL;
-	Evas_Object *tabbar;
 
 	clear_pfx_genlist_data();
 
 	if (!ad)
 		return;
 
-	no_content = create_no_content_layout(ad);
+	Evas_Object *no_content = create_no_content_layout(ad);
 	if (!no_content) {
 		LOGE("Cannot create no_content layout");
 		return;
@@ -366,7 +347,12 @@ void pfx_cert_create_list(struct ug_data *ad)
 		ad->user_cert_list_item = elm_naviframe_item_push(ad->navi_bar, "IDS_ST_BODY_USER_CERTIFICATES", common_back_btn(ad), NULL, no_content, NULL);
 
 	elm_naviframe_item_style_set(ad->user_cert_list_item, "tabbar");
-	tabbar = create_2_text_with_title_tabbar(ad->win_main);
+
+	Evas_Object *tabbar = create_2_text_with_title_tabbar(ad->win_main);
+	elm_toolbar_item_append(tabbar, NULL, "VPN", create_VPN_list_cb, ad->win_main);
+	elm_toolbar_item_append(tabbar, NULL, "WIFI", create_WIFI_list_cb, ad->win_main);
+	elm_toolbar_item_append(tabbar, NULL, "EMAIL", create_EMAIL_list_cb, ad->win_main);
+
 	elm_object_item_part_content_set(ad->user_cert_list_item, "tabbar", tabbar);
 	elm_object_item_part_text_set(ad->user_cert_list_item, NULL, dgettext(PACKAGE, "IDS_ST_BODY_USER_CERTIFICATES"));
 }

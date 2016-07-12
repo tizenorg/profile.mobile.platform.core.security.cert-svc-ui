@@ -657,6 +657,20 @@ Evas_Object *create_no_content_layout(struct ug_data *ad)
 	return no_content;
 }
 
+Evas_Object *create_2_text_with_title_tabbar(Evas_Object *parent)
+{
+	Evas_Object *toolbar = elm_toolbar_add(parent);
+
+	elm_object_style_set(toolbar, "tabbar_with_title");
+	elm_toolbar_shrink_mode_set(toolbar, ELM_TOOLBAR_SHRINK_EXPAND);
+	elm_toolbar_transverse_expanded_set(toolbar, EINA_TRUE);
+
+	elm_toolbar_select_mode_set(toolbar, ELM_OBJECT_SELECT_MODE_ALWAYS);
+	evas_object_show(toolbar);
+
+	return toolbar;
+}
+
 bool isEmptyStr(const char *str)
 {
 	if (!str || '\0' == str[0])
