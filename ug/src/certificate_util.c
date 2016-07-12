@@ -742,6 +742,5 @@ char *get_media_downloads_path(void)
 
 char *get_sdcard_path(void)
 {
-	/* TODO: find sdcard path */
-	return get_media_downloads_path();
+	return strdup(SDCARD_MNT_PATH);
 }

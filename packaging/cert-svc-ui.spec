@@ -32,6 +32,7 @@ BuildRequires: pkgconfig(libtzplatform-config)
 %global TZ_SYS_RO_APP      %{?TZ_SYS_RO_APP:%TZ_SYS_RO_APP}%{!?TZ_SYS_RO_APP:/usr/apps}
 
 %global CERT_SVC_UI_PATH   %{TZ_SYS_RO_APP}/cert-svc-ui
+%global SDCARD_MNT_PATH    /sdcard
 
 %description
 Certification service
@@ -61,6 +62,7 @@ export FFLAGS="$FFLAGS -DTIZEN_EMULATOR_MODE"
         -DTZ_SYS_BIN=%TZ_SYS_BIN \
         -DCMAKE_BUILD_TYPE=%{build_type} \
         -DAPP_PATH=%{CERT_SVC_UI_PATH} \
+        -DSDCARD_MNT_PATH:PATH=%{SDCARD_MNT_PATH} \
         -DVERSION=%version
 
 make %{?_smp_mflags}
