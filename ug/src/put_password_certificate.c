@@ -275,7 +275,7 @@ static Evas_Object *create_password_editfield_layout(Evas_Object *parent)
 
 static Evas_Object *_gl_content_edit_get(void *data, Evas_Object *obj, const char *part)
 {
-	if (!strcmp(part, "elm.icon.entry"))
+	if (strcmp(part, "elm.swallow.content") == 0)
 		return create_singleline_editfield_layout(obj);
 
 	return NULL;
@@ -283,7 +283,7 @@ static Evas_Object *_gl_content_edit_get(void *data, Evas_Object *obj, const cha
 
 static Evas_Object *_gl_content_pass_get(void *data, Evas_Object *obj, const char *part)
 {
-	if (!strcmp(part, "elm.icon.entry"))
+	if (strcmp(part, "elm.swallow.content") == 0)
 		return create_password_editfield_layout(obj);
 
 	return NULL;
@@ -403,12 +403,11 @@ static void btn_dropdown_label_style_cb(void *data, Evas_Object *obj, void *even
 
 static Evas_Object *_gl_drop_type_content_get(void *data, Evas_Object *obj, const char *part)
 {
-	LOGD("_gl_drop_type_content_get called");
 	char buf[100];
 	sel_sub_item_id = 0;
 
-	if (strcmp(part, "elm.icon.entry")) {
-		LOGD("_gl_drop_type_content_get done. not entry icon.");
+	if (strcmp(part, "elm.swallow.content") != 0) {
+		LOGD("_gl_drop_type_content_get done. not entry icon part(%s)", part);
 		return NULL;
 	}
 
@@ -427,7 +426,7 @@ static Evas_Object *_gl_drop_type_content_get(void *data, Evas_Object *obj, cons
 	elm_layout_content_set(ly, "btn", btn);
 	evas_object_show(btn);
 
-	LOGD("_gl_drop_type_content_get done");
+	LOGD("_gl_drop_type_content_get done on part(%s)", part);
 	return ly;
 }
 
@@ -439,19 +438,19 @@ static void _set_itc_classes(void)
 	itc_group.func.state_get = NULL;
 	itc_group.func.del = NULL;
 
-	itc_entry.item_style = "entry";
+	itc_entry.item_style = "full";
 	itc_entry.func.text_get = NULL;
 	itc_entry.func.content_get = _gl_content_edit_get;
 	itc_entry.func.state_get = NULL;
 	itc_entry.func.del = NULL;
 
-	itc_entry_passwd.item_style = "entry";
+	itc_entry_passwd.item_style = "full";
 	itc_entry_passwd.func.text_get = NULL;
 	itc_entry_passwd.func.content_get = _gl_content_pass_get;
 	itc_entry_passwd.func.state_get = NULL;
 	itc_entry_passwd.func.del = NULL;
 
-	itc_drop.item_style = "entry";
+	itc_drop.item_style = "full";
 	itc_drop.func.text_get = NULL;
 	itc_drop.func.content_get = _gl_drop_type_content_get;
 	itc_drop.func.state_get = NULL;
