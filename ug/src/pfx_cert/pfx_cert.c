@@ -111,28 +111,23 @@ static void _chk_changed_cb(void *data, Evas_Object *obj, void *ei)
 
 static Evas_Object *_gl_content_get(void *data, Evas_Object *obj, const char *part)
 {
-	Evas_Object *check = NULL;
-	Evas_Object *content = NULL;
 	item_data_s *id = (item_data_s *)data;
 	Eina_Bool status = certStatusToEina(id->status);
 
-	if (!strcmp(part, "elm.icon.2")) {
-		content = elm_layout_add(obj);
-		elm_layout_theme_set(content, "layout", "list/C/type.3", "default");
-		check = elm_check_add(content);
-		elm_object_style_set(check, "on&off");
-		elm_check_state_set(check, status);
-		evas_object_repeat_events_set(check, EINA_FALSE);
-		evas_object_propagate_events_set(check, EINA_FALSE);
-		evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-		evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
-		evas_object_smart_callback_add(check, "changed", _chk_changed_cb, data);
-		elm_layout_content_set(content, "elm.swallow.content", check);
+	if (strcmp(part, "elm.swallow.end") != 0)
+		return NULL;
 
-		return content;
-	}
+	Evas_Object *check = elm_check_add(obj);
+	elm_object_style_set(check, "on&off");
+	elm_check_state_set(check, status);
+	evas_object_repeat_events_set(check, EINA_FALSE);
+	evas_object_propagate_events_set(check, EINA_FALSE);
+	evas_object_size_hint_weight_set(check, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(check, EVAS_HINT_FILL, EVAS_HINT_FILL);
+	evas_object_smart_callback_add(check, "changed", _chk_changed_cb, data);
+	evas_object_show(check);
 
-	return NULL;
+	return check;
 }
 
 static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
@@ -161,10 +156,8 @@ static void _cert_selection_cb(void *data, Evas_Object *obj, void *event_info)
 
 static char *_gl_text_get(void *data, Evas_Object *obj, const char *part)
 {
-	item_data_s *id = data;
-
-	if (!strcmp(part, "elm.text.main.left"))
-		return strdup(id->title);
+	if (strcmp(part, "elm.text") == 0)
+		return strdup(((item_data_s *)data)->title);
 
 	return  NULL;
 }
@@ -279,7 +272,7 @@ void create_genlist_cb(void *data, CertStoreType storeType)
 			current->storeType = storeType;
 			certList = certList->next;
 
-			itc_2text.item_style = "1line";
+			itc_2text.item_style = "default";
 			itc_2text.func.text_get = _gl_text_get;
 			itc_2text.func.content_get = _gl_content_get;
 			itc_2text.func.del = NULL;
