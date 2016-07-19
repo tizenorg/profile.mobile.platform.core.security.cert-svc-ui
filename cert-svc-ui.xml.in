@@ -11,4 +11,8 @@
 	<ui-application appid="mgr-cert-view" exec="mgr-cert-view" nodisplay="true" ui-gadget="true" hw-acceleration="use-GL" multiple="false" type="capp" taskmanage="false" launch_mode="caller">
 		<label>Managing cert view</label>
 	</ui-application>
+	<privileges>
+		<privilege>http://tizen.org/privilege/mediastorage</privilege>
+		<privilege>http://tizen.org/privilege/externalstorage</privilege>
+	</privileges>
 </manifest>
